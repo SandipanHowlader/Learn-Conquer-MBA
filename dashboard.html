@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - MBA Curriculum(WBSU)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-current-topic="dashboard">
+
+    <header class="navbar glass-nav">
+        <div class="nav-left">
+            <button id="mobileMenuBtn" class="mobile-menu-btn">☰</button>
+            <div class="logo">Learn & Concure <span> MBA Tutorials</span></div>
+        </div>
+        <div class="nav-links">
+            <button id="darkModeToggle" class="theme-btn hover-effect" title="Dark Mode">🌙</button>
+            <span class="welcome-text hide-mobile">Welcome, <strong id="userNameDisplay">Student</strong></span>
+            <a href="index.html" id="logoutBtn" class="logout-btn hover-effect">Sign Out</a>
+        </div>
+    </header>
+
+    <div class="main-wrapper" id="mainWrapper">
+        
+        <!-- The JavaScript will inject the 4-Semester Sidebar here -->
+        <aside class="sidebar" id="sidebar-container"></aside>
+
+        <!-- Center Content: Dashboard Grid -->
+        <main class="content premium-card" id="mainContent">
+            <div class="bread-crumbs">Home / Curriculum Dashboard</div>
+            
+            <div class="article-header-flex">
+                <div>
+                    <h1>Master of Business Administration (MBA)</h1>
+                    <p class="lead-text">Welcome to your learning portal. Select a unit from the sidebar, or explore the semester breakdown below to begin studying.</p>
+                </div>
+            </div>
+            
+            <div class="dashboard-stats">
+                <div class="stat-box">
+                    <div class="stat-number">4</div>
+                    <div class="stat-label">Semesters</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">120</div>
+                    <div class="stat-label">Total Credits</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">40+</div>
+                    <div class="stat-label">Total Papers</div>
+                </div>
+            </div>
+            
+            <hr class="premium-hr">
+
+            <div class="semester-grid">
+                <!-- Semester I -->
+                <div class="sem-card">
+                    <div class="sem-card-header">Semester I (Core)</div>
+                    <div class="sem-card-body">
+                        <p><strong>7 Papers</strong> | 30 Credits</p>
+                        <ul class="mini-list">
+                            <li>Management Principles</li>
+                            <li>Economics for Managers</li>
+                            <li>Accounting for Managers</li>
+                            <li>Business Communication</li>
+                            <li>Business Environment</li>
+                            <li>Statistics for Business</li>
+                            <li>MIS & Computer Application</li>
+                        </ul>
+                        <!-- You can link this button to the first unit of Semester 1 -->
+                        <a href="s1-mgt-u1.html" class="sem-btn">Start Semester I</a>
+                    </div>
+                </div>
+
+                <!-- Semester II -->
+                <div class="sem-card">
+                    <div class="sem-card-header">Semester II (Core)</div>
+                    <div class="sem-card-body">
+                        <p><strong>7 Papers</strong> | 30 Credits</p>
+                        <ul class="mini-list">
+                           <li>Financial Management</li>
+                           <li>Marketing Management</li>
+                           <li>Human Resource Mgmt</li>
+                           <li>Operations Management</li>
+                           <li>Management Science" },
+                           <li>Business Research Methods</li>
+                           <li>Organization Behaviour</li>
+                        </ul>
+                        <a href="#" class="sem-btn">Start Semester II</a>
+                    </div>
+                </div>
+
+                <!-- Semester III -->
+                <div class="sem-card">
+                    <div class="sem-card-header">Semester III</div>
+                    <div class="sem-card-body">
+                        <p><strong>2 Core + 5 Electives (3 Major + 2 Minor)</strong> | 30 Credits</p>
+                        <p><strong>Core Papers:</p>
+                        <ul class="mini-list">
+                            <li>Business Analytics (Core)</li>
+                            <li>Internship Project</li>
+                        </ul>
+                        <p>Specialization: Systems & Ops</p>
+                         <ul class="mini-list">
+                            <li>Decision Models</li>
+                            <li>Programming Logic (C/Python)</li>
+                            <li>Total Quality Management</li>
+                        </ul>
+                        <p>Specialization: Finance</p>
+                         <ul class="mini-list">
+                            <li>Corporate Taxation</li>
+                            <li>Financial Markets & Services</li>
+                            <li>Investment Management</li>
+                        </ul>
+                        <p>Specialization: Marketing Management</p>
+                         <ul class="mini-list">
+                            <li>Integrated Mktg Comm.</li>
+                            <li>Marketing Research</li>
+                            <li>Consumer Behaviour</li>
+                        </ul>
+                        <p>Specialization: Human Resources</p>
+                         <ul class="mini-list">
+                            <li>HR Planning & Analytics</li>
+                            <li>Human Resource Dev.</li>
+                            <li>Compensation Management</li>
+                        </ul>
+                        <a href="#" class="sem-btn">Start Semester III</a>
+                    </div>
+                </div>
+
+                <!-- Semester IV -->
+                <div class="sem-card">
+                    <div class="sem-card-header">Semester IV</div>
+                    <div class="sem-card-body">
+                        <p><strong>2 Core + 5 Electives (3 Major + 2 Minor)</strong> | 30 Credits</p>
+                        <p><strong>Core Papers:</p>
+                        <ul class="mini-list">
+                            <li>Strategic & Innovation Mgmt</li>
+                            <li>Final Project & Viva</li>
+                        </ul>
+                        <p>Specialization: Systems & Ops</p>
+                         <ul class="mini-list">
+                            <li>Systems Analysis (SSAD)</li>
+                            <li>Networking Fundamentals</li>
+                            <li>DBMS and RDBMS</li>
+                        </ul>
+                        <p>Specialization: Finance</p>
+                         <ul class="mini-list">
+                            <li>Financial Engineering</li>
+                            <li>Strategic Financial Mgmt</li>
+                            <li>Management Control Systems</li>
+                        </ul>
+                        <p>Specialization: Marketing Management</p>
+                         <ul class="mini-list">
+                            <li>Sales & Distribution</li>
+                            <li>Service Mktg & Retail</li>
+                            <li>Digital Marketing</li>
+                        </ul>
+                        <p>Specialization: Human Resources</p>
+                         <ul class="mini-list">
+                            <li>Strategic HRM</li>
+                            <li>Performance Management</li>
+                            <li>Industrial Relations</li>
+                        </ul>
+                        <a href="#" class="sem-btn">Start Semester IV</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

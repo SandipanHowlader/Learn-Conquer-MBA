@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accounting for Managers - WBSU MBA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-current-topic="s1-acc-u1">
+    <div class="progress-container"><div class="progress-bar" id="myBar"></div></div>
+
+    <header class="navbar glass-nav">
+        <div class="nav-left">
+            <button id="mobileMenuBtn" class="mobile-menu-btn">☰</button>
+            <div class="logo">Learn & Concure <span> MBA Tutorials</span></div>
+        </div>
+        <div class="nav-links">
+            <button id="focusModeBtn" class="theme-btn hover-effect" title="Focus Mode">📖</button>
+            <button id="darkModeToggle" class="theme-btn hover-effect" title="Dark Mode">🌙</button>
+            <a href="index.html" id="logoutBtn" class="logout-btn hover-effect">Sign Out</a>
+        </div>
+    </header>
+
+    <div class="main-wrapper" id="mainWrapper">
+        
+        <!-- JavaScript will automatically generate and inject the entire 4-Semester Sidebar here -->
+        <aside class="sidebar" id="sidebar-container"></aside>
+
+        <!-- Center Content: Tutorial -->
+        <main class="content premium-card" id="mainContent">
+            <div class="bread-crumbs">Semester-I / Accounting for Managers / Unit 1</div>
+            
+            <div class="article-header-flex">
+                <div>
+                    <h1>Introduction to Accounting: Concepts, Conventions and Standards</h1>
+                    <div class="article-meta">
+                        <span>4 Credits | Read Time: 45 mins</span>
+                    </div>
+                </div>
+                <div class="action-buttons">
+                    <!--button class="icon-btn hover-effect" onclick="window.print()" title="Print PDF">🖨️</button-->
+                </div>
+            </div>
+            <hr class="premium-hr">
+            
+            <div class="article-body">
+                <div class="concept-block">
+                    <strong>Topics Covered in This Unit:</strong>
+                    <ul class="custom-bullets" style="margin-top: 10px;">
+                        <li>Branches of Accounting – Concept, Importance and Scope[cite: 2]</li>
+                        <li>Business Entities[cite: 2]</li>
+                        <li>Transactions[cite: 2]</li>
+                        <li>Accounting – Concepts and Conventions[cite: 2]</li>
+                        <li>Generally Accepted Accounting Principles (GAAP)[cite: 2]</li>
+                        <li>Concept of Accounting Standards[cite: 2]</li>
+                    </ul>
+                </div>
+
+                <h2 id="intro">0. Introduction — Meaning, Objectives and Functions of Accounting</h2>
+                
+                <h3 id="meaning">0.1 Meaning and Definition</h3>
+                <p class="lead-text">Accounting is often described as the language of business because it communicates financial information about an enterprise to all those who need it — owners, managers, investors, lenders, employees, government and the public[cite: 2].</p>
+                <p>In simple terms, accounting is the process of identifying, measuring, recording, classifying, summarising, analysing and communicating financial information about an economic entity to its users for decision-making[cite: 2].</p>
+                <div class="concept-block">
+                    <button class="copy-btn" onclick="copyText('def-text', this)">Copy</button>
+                    <div id="def-text">
+                        <strong>The American Accounting Association (AAA):</strong> "The process of identifying, measuring and communicating economic information to permit informed judgements and decisions by users of that information."[cite: 2]<br><br>
+                        <strong>The AICPA definition:</strong> Emphasises the art of recording, classifying and summarising transactions of a financial character. Together, these definitions highlight that accounting is both a discipline of recording (bookkeeping) and a discipline of analysis and communication (accountancy)[cite: 2].
+                    </div>
+                </div>
+
+                <h3 id="bookkeeping">0.2 Book-keeping, Accounting and Accountancy — Distinction</h3>
+                <table class="tutorial-table">
+                    <tr>
+                        <th>Basis[cite: 2]</th>
+                        <th>Book-keeping[cite: 2]</th>
+                        <th>Accounting[cite: 2]</th>
+                        <th>Accountancy[cite: 2]</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Meaning</strong></td>
+                        <td>Recording of day-to-day monetary transactions in the books of original entry and ledger[cite: 2].</td>
+                        <td>Summarising, analysing and interpreting the recorded data to draw meaningful conclusions[cite: 2].</td>
+                        <td>The theoretical body of knowledge/profession that governs accounting practice[cite: 2].</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Nature</strong></td>
+                        <td>Routine and clerical in nature[cite: 2].</td>
+                        <td>Analytical and interpretative in nature[cite: 2].</td>
+                        <td>Conceptual / academic in nature[cite: 2].</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Objective</strong></td>
+                        <td>To maintain systematic records[cite: 2].</td>
+                        <td>To ascertain profit/loss and financial position[cite: 2].</td>
+                        <td>To lay down principles and standards for accounting[cite: 2].</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Skill level</strong></td>
+                        <td>Basic, can be done by a clerk[cite: 2].</td>
+                        <td>Requires higher-level knowledge and judgement[cite: 2].</td>
+                        <td>Requires expert/professional knowledge[cite: 2].</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Scope</strong></td>
+                        <td>Narrower — a part of accounting[cite: 2].</td>
+                        <td>Wider than book-keeping[cite: 2].</td>
+                        <td>Widest — encompasses both book-keeping and accounting[cite: 2].</td>
+                    </tr>
+                </table>
+
+                <h3 id="objectives">0.3 Objectives of Accounting</h3>
+                <ul class="custom-bullets">
+                    <li><strong>To maintain systematic records:</strong> So that transactions need not be relied upon memory and can be verified at any time[cite: 2].</li>
+                    <li><strong>To ascertain the results of operations:</strong> By preparing the Trading and Profit & Loss Account to determine gross and net profit or loss for a period[cite: 2].</li>
+                    <li><strong>To ascertain the financial position:</strong> By preparing the Balance Sheet, showing assets, liabilities and capital as on a particular date[cite: 2].</li>
+                    <li><strong>To provide information to users:</strong> For rational economic decision-making by owners, investors, creditors, management, government, etc[cite: 2].</li>
+                    <li><strong>To assist management:</strong> In planning, budgeting, controlling costs, and evaluating the efficiency of operations[cite: 2].</li>
+                    <li><strong>To ensure legal compliance:</strong> By maintaining records as required under the Companies Act, Income Tax Act, GST law, and other statutes[cite: 2].</li>
+                    <li><strong>To protect business assets:</strong> By keeping proper records that help prevent and detect errors, frauds and misappropriation[cite: 2].</li>
+                    <li><strong>To facilitate control:</strong> Through comparison of budgeted and actual performance, and period-to-period trend analysis[cite: 2].</li>
+                </ul>
+
+                <h3 id="functions">0.4 Functions of Accounting</h3>
+                <ul class="custom-bullets">
+                    <li><strong>Recording Function:</strong> Recording transactions in the journal and subsidiary books in chronological order — the primary function of accounting (traditionally called book-keeping)[cite: 2].</li>
+                    <li><strong>Classifying Function:</strong> Grouping all transactions relating to a particular person, item or expense at one place, i.e., posting to ledger accounts[cite: 2].</li>
+                    <li><strong>Summarising Function:</strong> Preparing the Trial Balance and final accounts to present the classified data in a concise and usable form[cite: 2].</li>
+                    <li><strong>Analysis and Interpretation Function:</strong> Analysing financial data (e.g., through ratios) and interpreting it to draw meaningful conclusions about performance and position[cite: 2].</li>
+                    <li><strong>Communicating Function:</strong> Reporting the interpreted results to users through financial statements, reports and other means of disclosure[cite: 2].</li>
+                    <li><strong>Forecasting Function:</strong> Using historical accounting data as a basis for budgeting and forecasting future income, expenditure and cash flows[cite: 2].</li>
+                    <li><strong>Decision-Making Function:</strong> Assisting management and other stakeholders in choosing between alternative courses of action based on financial data[cite: 2].</li>
+                    <li><strong>Controlling Function:</strong> Facilitating cost control and managerial control through techniques such as budgetary control and standard costing[cite: 2].</li>
+                </ul>
+
+                <h3 id="users">0.5 Users of Accounting Information</h3>
+                <table class="tutorial-table">
+                    <tr>
+                        <th>Category[cite: 2]</th>
+                        <th>Users[cite: 2]</th>
+                        <th>Primary Interest[cite: 2]</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="2"><strong>Internal Users</strong></td>
+                        <td>Owners / Management</td>
+                        <td>Profitability, efficiency, and basis for planning and control decisions[cite: 2].</td>
+                    </tr>
+                    <tr>
+                        <td>Employees</td>
+                        <td>Job security, wages, bonus, and stability of the organisation[cite: 2].</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="5"><strong>External Users</strong></td>
+                        <td>Investors / Shareholders</td>
+                        <td>Return on investment, safety of capital, and growth prospects[cite: 2].</td>
+                    </tr>
+                    <tr>
+                        <td>Creditors / Lenders / Banks</td>
+                        <td>Creditworthiness, liquidity and ability to repay debt[cite: 2].</td>
+                    </tr>
+                    <tr>
+                        <td>Government / Tax Authorities</td>
+                        <td>Compliance with tax laws and computation of correct tax liability[cite: 2].</td>
+                    </tr>
+                    <tr>
+                        <td>Customers</td>
+                        <td>Continuity of the business, especially where warranties/after-sales service are involved[cite: 2].</td>
+                    </tr>
+                    <tr>
+                        <td>Researchers, Public & Regulators</td>
+                        <td>Economic trends, corporate behaviour, and regulatory compliance[cite: 2].</td>
+                    </tr>
+                </table>
+
+                <h2 id="branches">1. Branches of Accounting</h2>
+                
+                <h3>1.1 Concept of Accounting</h3>
+                <p>Accounting is the systematic process of identifying, recording, classifying, summarising, analysing and interpreting the financial transactions of a business in terms of money, and communicating the results to the users of financial information[cite: 2]. The American Institute of Certified Public Accountants (AICPA) defines accounting as the art of recording, classifying and summarising in a significant manner and in terms of money, transactions and events which are, in part at least, of a financial character, and interpreting the results thereof[cite: 2].</p>
+                <p>As business grew in size and complexity, a single stream of accounting could no longer satisfy the varied information needs of management, owners, government and other stakeholders, leading to the development of several specialised branches of accounting[cite: 2].</p>
+
+                <h3>1.2 Branches of Accounting</h3>
+                <ul class="custom-bullets">
+                    <li><strong>(a) Financial Accounting:</strong> Concerned with recording business transactions, classifying them, summarising them in the form of final accounts (Trading Account, Profit and Loss Account, and Balance Sheet), and communicating the results to external users. It follows historical cost concepts and is governed by GAAP and Accounting Standards[cite: 2].</li>
+                    <li><strong>(b) Cost Accounting:</strong> Deals with the ascertainment, allocation, apportionment and control of cost of products or services. It helps management determine the cost of production, fix selling prices, control costs, and take decisions relating to make-or-buy. Primarily used for internal decision-making[cite: 2].</li>
+                    <li><strong>(c) Management Accounting:</strong> Uses financial and cost data along with other quantitative and qualitative information to assist managers in planning, controlling, and decision-making. It includes techniques such as budgeting, standard costing, and ratio analysis. It is forward-looking in nature[cite: 2].</li>
+                    <li><strong>(d) Tax Accounting:</strong> Focuses on the preparation of accounts and records in accordance with tax laws (Income Tax, GST, etc.), computation of taxable income, and tax planning to ensure statutory compliance[cite: 2].</li>
+                    <li><strong>(e) Social Responsibility Accounting:</strong> Measures and reports the social costs and social benefits generated by a business, such as environmental impact and employee welfare[cite: 2].</li>
+                    <li><strong>(f) Human Resource Accounting:</strong> Attempts to identify, measure and report the value of human resources (employees) as an asset of the organisation[cite: 2].</li>
+                    <li><strong>(g) Government Accounting:</strong> Relates to the accounting systems used by central, state and local governments to record receipts and payments of public funds[cite: 2].</li>
+                    <li><strong>(h) Auditing:</strong> Involves the independent examination and verification of financial statements to ensure accuracy, fairness and compliance with applicable laws and standards[cite: 2].</li>
+                    <li><strong>(i) Fiduciary Accounting:</strong> Maintained by a person who holds a position of trust — such as a trustee, executor, or receiver — on behalf of another party[cite: 2].</li>
+                    <li><strong>(j) Forensic Accounting:</strong> Combines accounting, auditing and investigative skills to examine financial records for evidence of fraud, embezzlement, or financial misrepresentation[cite: 2].</li>
+                </ul>
+
+                <h3>1.2A Comparative View of the Major Branches</h3>
+                <table class="tutorial-table">
+                    <tr>
+                        <th>Branch[cite: 2]</th>
+                        <th>Primary Users[cite: 2]</th>
+                        <th>Time Orientation[cite: 2]</th>
+                        <th>Key Output[cite: 2]</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Financial Accounting</strong></td>
+                        <td>External stakeholders (investors, creditors, government)</td>
+                        <td>Historical (past transactions)</td>
+                        <td>Trading, P&L Account and Balance Sheet</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Cost Accounting</strong></td>
+                        <td>Internal management (production/operations)</td>
+                        <td>Historical and current</td>
+                        <td>Cost sheets, cost reports</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Management Accounting</strong></td>
+                        <td>Internal management (top and middle level)</td>
+                        <td>Present and future (forward-looking)</td>
+                        <td>Budgets, variance reports, MIS reports</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Tax Accounting</strong></td>
+                        <td>Tax authorities and management</td>
+                        <td>Historical (as per assessment year)</td>
+                        <td>Tax returns, computation statements</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Social Responsibility Accounting</strong></td>
+                        <td>Society, regulators, public</td>
+                        <td>Historical and ongoing</td>
+                        <td>CSR / sustainability reports</td>
+                    </tr>
+                </table>
+
+                <h3>1.3 Importance of Accounting</h3>
+                <ul class="custom-bullets">
+                    <li><strong>Systematic Record-Keeping:</strong> Provides a permanent and organised record of all financial transactions[cite: 2].</li>
+                    <li><strong>Ascertainment of Profit/Loss:</strong> Helps determine the operating results of a business over a specific period through the Profit and Loss Account[cite: 2].</li>
+                    <li><strong>Ascertainment of Financial Position:</strong> The Balance Sheet reveals the assets, liabilities and capital position of the business at a given date[cite: 2].</li>
+                    <li><strong>Aid to Management:</strong> Provides data for planning, budgeting, controlling costs and making informed business decisions[cite: 2].</li>
+                    <li><strong>Facilitates Comparison:</strong> Enables comparison of performance across periods (trend analysis) and with other firms[cite: 2].</li>
+                    <li><strong>Legal Compliance:</strong> Helps meet statutory requirements relating to taxation, company law, and other regulations[cite: 2].</li>
+                    <li><strong>Aid in Raising Finance:</strong> Accurate financial records build the credibility needed to raise loans and attract investors[cite: 2].</li>
+                    <li><strong>Evidence in Legal Matters:</strong> Properly maintained books of accounts serve as evidence in courts of law in case of disputes[cite: 2].</li>
+                    <li><strong>Assists Various Stakeholders:</strong> Supplies relevant information to owners, employees, government, creditors, investors and the public[cite: 2].</li>
+                </ul>
+
+                <h3>1.4 Scope of Accounting</h3>
+                <p>The scope of accounting has expanded considerably from mere record-keeping to encompass a wide range of activities essential for organisational decision-making[cite: 2]:</p>
+                <ul class="custom-bullets">
+                    <li><strong>Recording:</strong> Systematically entering financial transactions in the books of original entry in a chronological order[cite: 2].</li>
+                    <li><strong>Classifying:</strong> Grouping transactions of a similar nature at one place, i.e., posting entries from the journal to the ledger accounts[cite: 2].</li>
+                    <li><strong>Summarising:</strong> Presenting classified data in a manner useful to users, through preparation of Trial Balance, Trading and P&L Account, and Balance Sheet[cite: 2].</li>
+                    <li><strong>Analysing and Interpreting:</strong> Establishing relationships between various items of financial statements and explaining what the figures mean[cite: 2].</li>
+                    <li><strong>Communicating:</strong> Reporting the results, in the form of financial statements and reports, to the users of accounting information[cite: 2].</li>
+                </ul>
+
+                <h3>1.5 Limitations of Accounting</h3>
+                <ul class="custom-bullets">
+                    <li>It records only those transactions and events that can be expressed in monetary terms; qualitative factors are ignored[cite: 2].</li>
+                    <li>Historical cost-based figures may not reflect current market or replacement values, especially during periods of inflation[cite: 2].</li>
+                    <li>Accounting statements are, to some extent, affected by personal judgements (e.g., estimating useful life for depreciation)[cite: 2].</li>
+                    <li>Being based on past data, accounting information may not fully capture future risks and opportunities[cite: 2].</li>
+                    <li>Window-dressing and creative accounting practices can sometimes distort the true picture, despite regulatory safeguards[cite: 2].</li>
+                </ul>
+
+                <h2 id="entities">2. Business Entities</h2>
+                
+                <h3>2.1 Meaning</h3>
+                <p>A business entity refers to an organisation formed for the purpose of carrying on a commercial, industrial, or professional activity. In accounting, the Business Entity (or Accounting Entity/Separate Entity) concept treats the business as separate and distinct from its owner(s). This means that the accounting records are kept from the point of view of the business, not the owner, and the owner is treated as a creditor of the business to the extent of capital contributed[cite: 2].</p>
+
+                <h3>2.2 Types / Forms of Business Entities</h3>
+                <ul class="custom-bullets">
+                    <li><strong>(a) Sole Proprietorship:</strong> A business owned, managed and controlled by a single individual who bears all the risk and enjoys all the profits. Easy to form, minimal legal formalities, but owner has unlimited liability[cite: 2].</li>
+                    <li><strong>(b) Partnership:</strong> An association of two or more persons who agree to carry on a business and share its profits and losses in an agreed ratio. Partners generally have unlimited liability[cite: 2].</li>
+                    <li><strong>(c) Limited Liability Partnership (LLP):</strong> A hybrid form combining features of a partnership and a company, where partners have limited liability and the LLP has a separate legal identity[cite: 2].</li>
+                    <li><strong>(d) Joint Stock Company:</strong> An artificial legal person, created by law, having a separate legal entity distinct from its members, perpetual succession, a common seal, and limited liability of shareholders[cite: 2].</li>
+                    <li><strong>(e) Cooperative Society:</strong> A voluntary association of persons who join together for mutual benefit, primarily to provide goods or services to members[cite: 2].</li>
+                    <li><strong>(f) Hindu Undivided Family (HUF) Business:</strong> A distinct business form recognised under Hindu Law, managed by the Karta (head of the family), owned jointly by members of the family[cite: 2].</li>
+                </ul>
+
+                <h3>2.2A Comparative Features of Business Entities</h3>
+                <table class="tutorial-table">
+                    <tr>
+                        <th>Feature[cite: 2]</th>
+                        <th>Sole Proprietorship[cite: 2]</th>
+                        <th>Partnership[cite: 2]</th>
+                        <th>Company[cite: 2]</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Formation</strong></td>
+                        <td>Simple; minimal legal formality</td>
+                        <td>Partnership deed; registration optional but advisable</td>
+                        <td>Incorporation under Companies Act; formal registration mandatory</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Legal Status</strong></td>
+                        <td>No separate legal entity</td>
+                        <td>No separate legal entity (except LLP)</td>
+                        <td>Separate legal entity</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Liability</strong></td>
+                        <td>Unlimited</td>
+                        <td>Unlimited (joint and several)</td>
+                        <td>Limited to unpaid share value</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Number of Owners</strong></td>
+                        <td>One</td>
+                        <td>Minimum 2, maximum as per law (generally 50 for non-banking)</td>
+                        <td>Minimum 2 (private) / 7 (public); no upper limit for public company</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Continuity</strong></td>
+                        <td>Ends with death/incapacity of owner</td>
+                        <td>May dissolve on death/retirement of a partner</td>
+                        <td>Perpetual succession</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Control of Profits</strong></td>
+                        <td>Entire profit to owner</td>
+                        <td>Shared as per agreed ratio</td>
+                        <td>Distributed as dividend to shareholders</td>
+                    </tr>
+                </table>
+
+                <h3>2.3 Why the Concept of Business Entity Matters in Accounting</h3>
+                <ul class="custom-bullets">
+                    <li>It enables accurate measurement of the business's own income, expenses, assets and liabilities, separate from personal transactions of the owner[cite: 2].</li>
+                    <li>It forms the basis for the accounting equation: Assets = Liabilities + Owner's Capital (Equity)[cite: 2].</li>
+                    <li>It allows meaningful comparison of financial performance between different entities, regardless of legal form[cite: 2].</li>
+                    <li>It supports legal and tax accountability, since financial statements report only business-related transactions[cite: 2].</li>
+                </ul>
+
+                <div class="concept-block">
+                    <strong>2.4 Illustration — Business Entity Concept in Practice</strong><br><br>
+                    Suppose the proprietor of a business, Mr. Rao, invests ₹5,00,000 as capital and later withdraws ₹20,000 for personal use. Applying the business entity concept, the ₹5,00,000 is recorded as "Capital" — a liability of the business towards Mr. Rao — and the ₹20,000 withdrawal is recorded as "Drawings", which reduces his capital. The business's cash account, and not Mr. Rao's personal wealth, is affected by these entries. This illustrates how even an unincorporated sole proprietorship is treated as an entity distinct from its owner purely for accounting purposes[cite: 2].
+                </div>
+
+                <h2 id="transactions">3. Transactions</h2>
+                
+                <h3>3.1 Meaning of a Transaction</h3>
+                <p>A transaction is an event or activity that involves an exchange of value between two or more parties and can be measured in terms of money. Only those events which have a financial character and can be expressed in monetary terms are recorded in the books of accounts[cite: 2].</p>
+
+                <h3>3.2 Characteristics of a Transaction</h3>
+                <ul class="custom-bullets">
+                    <li>It involves a transfer of money, goods, or services[cite: 2].</li>
+                    <li>It must be measurable in monetary terms[cite: 2].</li>
+                    <li>It causes a change in the financial position of the business (affects at least two accounts, as per the dual aspect concept)[cite: 2].</li>
+                    <li>It is supported by a source document such as an invoice, receipt, voucher, or cheque[cite: 2].</li>
+                </ul>
+
+                <h3>3.3 Types of Transactions</h3>
+                <table class="tutorial-table">
+                    <tr>
+                        <th>Basis[cite: 2]</th>
+                        <th>Types[cite: 2]</th>
+                        <th>Explanation[cite: 2]</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="2"><strong>On the basis of exchange</strong></td>
+                        <td>Cash Transaction</td>
+                        <td>Where payment/receipt of cash takes place immediately, e.g., cash sale.</td>
+                    </tr>
+                    <tr>
+                        <td>Credit Transaction</td>
+                        <td>Where payment/receipt is deferred to a future date, e.g., credit purchase.</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2"><strong>On the basis of nature</strong></td>
+                        <td>Revenue Transaction</td>
+                        <td>Transactions of a routine, recurring nature affecting the Profit & Loss Account, e.g., sale of goods.</td>
+                    </tr>
+                    <tr>
+                        <td>Capital Transaction</td>
+                        <td>Transactions that affect the long-term assets/liabilities of the business, e.g., purchase of machinery.</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2"><strong>On the basis of relationship</strong></td>
+                        <td>Internal Transaction</td>
+                        <td>Transactions that do not involve any external party, e.g., depreciation.</td>
+                    </tr>
+                    <tr>
+                        <td>External Transaction</td>
+                        <td>Transactions involving another party outside the business, e.g., purchase from a supplier.</td>
+                    </tr>
+                </table>
+
+                <h3>3.4 Source Documents Supporting Transactions</h3>
+                <table class="tutorial-table">
+                    <tr>
+                        <th>Source Document[cite: 2]</th>
+                        <th>Purpose[cite: 2]</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Cash Memo / Receipt</strong></td>
+                        <td>Evidence of cash sale or cash received</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Invoice / Bill</strong></td>
+                        <td>Evidence of credit sale or credit purchase of goods</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Debit Note</strong></td>
+                        <td>Issued when goods are returned to a supplier or an amount is claimed from them</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Credit Note</strong></td>
+                        <td>Issued when goods are received back from a customer or an allowance is given</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Cheque / Pay-in-slip</strong></td>
+                        <td>Evidence of payment/deposit through the bank</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Salary/Wage Slip</strong></td>
+                        <td>Evidence of payment made to employees</td>
+                    </tr>
+                </table>
+
+                <h3>3.5 Illustration — Dual Effect of a Transaction</h3>
+                <table class="tutorial-table">
+                    <tr>
+                        <th>Transaction[cite: 2]</th>
+                        <th>Account Debited (Increase/Decrease)[cite: 2]</th>
+                        <th>Account Credited (Increase/Decrease)[cite: 2]</th>
+                    </tr>
+                    <tr>
+                        <td>Started business with cash ₹1,00,000</td>
+                        <td>Cash A/c (Asset increases)</td>
+                        <td>Capital A/c (Owner's equity increases)</td>
+                    </tr>
+                    <tr>
+                        <td>Purchased goods for cash ₹20,000</td>
+                        <td>Purchases A/c (Expense increases)</td>
+                        <td>Cash A/c (Asset decreases)</td>
+                    </tr>
+                    <tr>
+                        <td>Sold goods on credit ₹15,000</td>
+                        <td>Debtor's A/c (Asset increases)</td>
+                        <td>Sales A/c (Revenue increases)</td>
+                    </tr>
+                    <tr>
+                        <td>Paid rent ₹5,000</td>
+                        <td>Rent A/c (Expense increases)</td>
+                        <td>Cash A/c (Asset decreases)</td>
+                    </tr>
+                    <tr>
+                        <td>Purchased furniture on credit ₹30,000</td>
+                        <td>Furniture A/c (Asset increases)</td>
+                        <td>Creditor's A/c (Liability increases)</td>
+                    </tr>
+                </table>
+
+                <h2 id="concepts">4. Accounting – Concepts and Conventions</h2>
+                <p>Accounting concepts and conventions are the basic assumptions and customary practices that provide a foundation for preparing and presenting financial statements in a consistent, comparable and reliable manner[cite: 2].</p>
+
+                <h3>4.1 Accounting Concepts</h3>
+                <ul class="custom-bullets">
+                    <li><strong>(a) Business Entity Concept:</strong> The business is treated as an entity separate from its owner(s); only business transactions are recorded in the books[cite: 2].</li>
+                    <li><strong>(b) Money Measurement Concept:</strong> Only those transactions and events that can be expressed in monetary terms are recorded in accounting[cite: 2].</li>
+                    <li><strong>(c) Going Concern Concept:</strong> It is assumed that the business will continue to operate for a foreseeable future and there is no intention to close it down[cite: 2].</li>
+                    <li><strong>(d) Cost Concept (Historical Cost Concept):</strong> Assets are recorded in the books at their original purchase/acquisition cost[cite: 2].</li>
+                    <li><strong>(e) Dual Aspect Concept (Duality Concept):</strong> Every transaction has two aspects — a debit and a credit — of equal amount. Assets = Liabilities + Capital[cite: 2].</li>
+                    <li><strong>(f) Accounting Period Concept:</strong> The indefinite life of a business is divided into shorter, defined periods (usually one year) for which financial statements are prepared[cite: 2].</li>
+                    <li><strong>(g) Matching Concept:</strong> Expenses incurred during a period should be matched against the revenues earned in the same period to correctly determine the net profit or loss[cite: 2].</li>
+                    <li><strong>(h) Realisation Concept:</strong> Revenue is recognised only when it is realised, i.e., when goods are sold or services are rendered[cite: 2].</li>
+                    <li><strong>(i) Accrual Concept:</strong> Revenues and costs are recognised as they are earned or incurred (not as money is received or paid)[cite: 2].</li>
+                </ul>
+
+                <h3>4.1A Quick Reference — Accounting Concepts at a Glance</h3>
+                <table class="tutorial-table">
+                    <tr>
+                        <th>Concept[cite: 2]</th>
+                        <th>One-line Example[cite: 2]</th>
+                    </tr>
+                    <tr><td>Business Entity</td><td>Owner's personal car purchase is not recorded in business books</td></tr>
+                    <tr><td>Money Measurement</td><td>Employee skill is not recorded; only salary paid is recorded</td></tr>
+                    <tr><td>Going Concern</td><td>Assets depreciated over useful life, not written off at once</td></tr>
+                    <tr><td>Cost Concept</td><td>Building shown at purchase price, not current market price</td></tr>
+                    <tr><td>Dual Aspect</td><td>Purchase of asset on credit increases both an asset and a liability</td></tr>
+                    <tr><td>Accounting Period</td><td>Financial statements prepared for the year ended 31st March</td></tr>
+                    <tr><td>Matching</td><td>Commission expense matched against the sales that generated it</td></tr>
+                    <tr><td>Realisation</td><td>Revenue booked on delivery of goods, not on receipt of advance</td></tr>
+                    <tr><td>Accrual</td><td>Outstanding rent recorded as an expense of the period, though unpaid</td></tr>
+                </table>
+
+                <h3>4.2 Accounting Conventions</h3>
+                <ul class="custom-bullets">
+                    <li><strong>(a) Convention of Consistency:</strong> Accounting methods and practices, once adopted, should be followed consistently from one period to another[cite: 2].</li>
+                    <li><strong>(b) Convention of Conservatism (Prudence):</strong> "Anticipate no profit but provide for all possible losses." Assets and income are not overstated, and liabilities and expenses are not understated[cite: 2].</li>
+                    <li><strong>(c) Convention of Full Disclosure:</strong> Financial statements should disclose all material and relevant information fully and fairly[cite: 2].</li>
+                    <li><strong>(d) Convention of Materiality:</strong> Only items or information that are significant enough to influence the decisions of users need to be disclosed separately[cite: 2].</li>
+                </ul>
+
+                <h3>4.3 Summary Table: Concepts vs Conventions</h3>
+                <table class="tutorial-table">
+                    <tr>
+                        <th>Aspect[cite: 2]</th>
+                        <th>Accounting Concepts[cite: 2]</th>
+                        <th>Accounting Conventions[cite: 2]</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Meaning</strong></td>
+                        <td>Basic assumptions underlying the preparation of accounts</td>
+                        <td>Customs or traditions guiding presentation of accounts</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Nature</strong></td>
+                        <td>Theoretical / foundational</td>
+                        <td>Practical / customary</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Flexibility</strong></td>
+                        <td>Generally rigid and universally applied</td>
+                        <td>Allow some scope for judgement</td>
+                    </tr>
+                </table>
+
+                <h2 id="gaap">5. Generally Accepted Accounting Principles (GAAP)</h2>
+                
+                <h3>5.1 Meaning</h3>
+                <p>Generally Accepted Accounting Principles (GAAP) refer to the body of rules, conventions, procedures and concepts that are widely accepted by the accounting profession as being necessary and appropriate to describe accounting practice at a particular time. GAAP provides a common framework so that financial statements prepared by different entities are understandable, comparable, reliable and relevant to users[cite: 2].</p>
+
+                <h3>5.2 Characteristics / Features of GAAP</h3>
+                <ul class="custom-bullets">
+                    <li>Man-made rules and conventions, evolved through accounting practice and professional judgement rather than being scientifically proven laws[cite: 2].</li>
+                    <li>They provide a framework for recording, classifying and reporting financial transactions in a uniform manner[cite: 2].</li>
+                    <li>They are dynamic and continue to evolve with changes in the business and economic environment[cite: 2].</li>
+                    <li>They aim to make financial statements comparable, understandable and reliable for all users[cite: 2].</li>
+                </ul>
+
+                <h3>5.3 Basic Principles Constituting GAAP</h3>
+                <p>The basic principles include: Principle of Business Entity, Going Concern, Money Measurement, Cost, Dual Aspect, Accounting Period, Conservatism, Consistency, Materiality, Full Disclosure, Matching, and Realisation[cite: 2].</p>
+
+                <h3>5.4 Objectives / Importance of GAAP</h3>
+                <ul class="custom-bullets">
+                    <li><strong>Uniformity:</strong> Ensures that all entities follow a common basis[cite: 2].</li>
+                    <li><strong>Comparability:</strong> Enables users to compare the performance of one enterprise with another, or across time periods[cite: 2].</li>
+                    <li><strong>Reliability:</strong> Enhances the trustworthiness of financial statements[cite: 2].</li>
+                    <li><strong>Relevance:</strong> Ensures that reported information is useful for decision-making[cite: 2].</li>
+                    <li><strong>Legal Compliance:</strong> Provides a basis for meeting statutory and regulatory reporting requirements[cite: 2].</li>
+                    <li><strong>Reduces Manipulation:</strong> Limits the scope for management to distort financial results[cite: 2].</li>
+                </ul>
+
+                <h3>5.5 Sources of GAAP</h3>
+                <ul class="custom-bullets">
+                    <li>Pronouncements of professional accounting bodies (e.g., ICAI in India, FASB in the USA)[cite: 2].</li>
+                    <li>Accounting Standards and Ind AS / IFRS[cite: 2].</li>
+                    <li>Statutory provisions, such as the Companies Act, 2013 and SEBI regulations[cite: 2].</li>
+                    <li>General customs and conventions followed and accepted over time in accounting practice[cite: 2].</li>
+                    <li>Rulings, guidance notes and interpretations issued by regulatory and professional bodies[cite: 2].</li>
+                </ul>
+
+                <h2 id="standards">6. Concept of Accounting Standards</h2>
+
+                <h3>6.1 Meaning</h3>
+                <p>Accounting Standards (AS) are written, authoritative policy documents that lay down uniform rules and guidelines for recognition, measurement, presentation, and disclosure of accounting transactions and events in financial statements[cite: 2]. In India, Accounting Standards are formulated by the Institute of Chartered Accountants of India (ICAI) through its Accounting Standards Board (ASB)[cite: 2].</p>
+
+                <h3>6.2 Need for Accounting Standards</h3>
+                <ul class="custom-bullets">
+                    <li><strong>Uniformity in Accounting Treatment:</strong> Reduces the diversity of accounting practices[cite: 2].</li>
+                    <li><strong>Comparability:</strong> Enables meaningful comparison of financial statements[cite: 2].</li>
+                    <li><strong>Reliability and Credibility:</strong> Enhances stakeholder confidence[cite: 2].</li>
+                    <li><strong>Reduces Manipulation and Window-Dressing:</strong> Restricts creative accounting[cite: 2].</li>
+                    <li><strong>Facilitates Statutory Compliance:</strong> Helps auditors evaluate true and fair view[cite: 2].</li>
+                    <li><strong>Assists Management:</strong> Provides clear guidance to preparers of accounts[cite: 2].</li>
+                </ul>
+
+                <h3>6.3 Objectives of Accounting Standards</h3>
+                <ul class="custom-bullets">
+                    <li>To standardise diverse accounting policies and practices[cite: 2].</li>
+                    <li>To improve the reliability of financial statements[cite: 2].</li>
+                    <li>To provide a set of standard accounting policies, valuation norms, and disclosure requirements[cite: 2].</li>
+                    <li>To assist auditors in forming an opinion[cite: 2].</li>
+                </ul>
+
+                <h3>6.4 Process of Formulation (in India)</h3>
+                <ul class="custom-bullets">
+                    <li>Identification of broad areas by the Accounting Standards Board (ASB) of ICAI[cite: 2].</li>
+                    <li>Constitution of study groups to prepare draft standards[cite: 2].</li>
+                    <li>Circulation of the draft to Council members and specified outside bodies for comments[cite: 2].</li>
+                    <li>Finalisation of the Exposure Draft and its wide circulation for public exposure[cite: 2].</li>
+                    <li>Consideration of comments by the ASB and finalisation of the draft for submission to the ICAI Council[cite: 2].</li>
+                    <li>Consideration of the final draft by the Council and issuance of the Accounting Standard[cite: 2].</li>
+                </ul>
+
+                <h3>6.5 GAAP vs Accounting Standards</h3>
+                <table class="tutorial-table">
+                    <tr>
+                        <th>Basis[cite: 2]</th>
+                        <th>GAAP[cite: 2]</th>
+                        <th>Accounting Standards[cite: 2]</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Nature</strong></td>
+                        <td>Broad body of concepts, principles and conventions</td>
+                        <td>Specific written statements/rules on particular accounting issues</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Scope</strong></td>
+                        <td>Wider — includes concepts, conventions, principles, and standards</td>
+                        <td>Narrower — a subset/component within the overall GAAP framework</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Authority</strong></td>
+                        <td>Evolved through general acceptance and practice</td>
+                        <td>Issued by a designated regulatory/professional body (e.g., ICAI, IASB)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Enforceability</strong></td>
+                        <td>Not always legally binding</td>
+                        <td>Often mandatory / legally enforceable for specified entities</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Flexibility</strong></td>
+                        <td>General guidance, allows judgement</td>
+                        <td>Detailed, specific and relatively rigid rules</td>
+                    </tr>
+                </table>
+
+                <h3>6.6 Benefits and Limitations of Accounting Standards</h3>
+                <p><strong>Benefits:</strong> Brings uniformity and comparability, enhances reliability, reduces scope for manipulation, and facilitates cross-border comparison (IFRS/Ind AS)[cite: 2].</p>
+                <p><strong>Limitations:</strong> Rigid application may not suit unique circumstances, choosing between alternative permitted treatments allows some manipulation, standards may lag behind evolving business practices, and compliance burden is increased for small enterprises[cite: 2].</p>
+
+                <h3>6.7 Illustrative List of Indian Accounting Standards (AS) Issued by ICAI</h3>
+                <table class="tutorial-table">
+                    <tr>
+                        <th>AS No.[cite: 2]</th>
+                        <th>Title[cite: 2]</th>
+                        <th>Subject Matter[cite: 2]</th>
+                    </tr>
+                    <tr><td>AS 1</td><td>Disclosure of Accounting Policies</td><td>Requires disclosure of significant accounting policies followed</td></tr>
+                    <tr><td>AS 2</td><td>Valuation of Inventories</td><td>Lays down principles for valuing inventory (cost or NRV, whichever is lower)</td></tr>
+                    <tr><td>AS 9</td><td>Revenue Recognition</td><td>Conditions for recognising revenue from sale of goods, services and use of resources</td></tr>
+                    <tr><td>AS 10</td><td>Property, Plant and Equipment</td><td>Recognition, measurement and disclosure of fixed assets</td></tr>
+                    <tr><td>AS 13</td><td>Accounting for Investments</td><td>Classification and valuation of investments</td></tr>
+                    <tr><td>AS 20</td><td>Earnings Per Share</td><td>Computation and presentation of EPS</td></tr>
+                    <tr><td>AS 26</td><td>Intangible Assets</td><td>Recognition and measurement of intangible assets such as patents and goodwill</td></tr>
+                </table>
+
+                <h3>6.8 Convergence with IFRS — Indian Accounting Standards (Ind AS)</h3>
+                <p>With globalisation of business and capital markets, there has been a strong push towards convergence of national accounting standards with International Financial Reporting Standards (IFRS) issued by the IASB[cite: 2]. In India, this convergence has been achieved through Indian Accounting Standards (Ind AS), which are IFRS-converged standards notified by the Ministry of Corporate Affairs (MCA) under the Companies (Indian Accounting Standards) Rules, 2015[cite: 2]. Ind AS are mandatorily applicable in a phased manner to specified classes of companies, while smaller companies continue to follow the earlier Accounting Standards (AS)[cite: 2].</p>
+
+                <h2 id="review">Review Questions</h2>
+                <h3>Short Answer Type</h3>
+                <ol class="custom-bullets">
+                    <li>Define accounting. State any two definitions given by professional bodies[cite: 2].</li>
+                    <li>Distinguish between book-keeping and accounting[cite: 2].</li>
+                    <li>What are the main branches of accounting? Briefly explain any three[cite: 2].</li>
+                    <li>Explain the business entity concept with a suitable example[cite: 2].</li>
+                    <li>What is a transaction? State its essential characteristics[cite: 2].</li>
+                    <li>Distinguish between capital and revenue transactions[cite: 2].</li>
+                    <li>What do you mean by GAAP? Why is it necessary?[cite: 2]</li>
+                    <li>Define Accounting Standards. Name the body responsible for issuing Accounting Standards in India[cite: 2].</li>
+                </ol>
+
+                <h3>Long Answer / Essay Type</h3>
+                <ol class="custom-bullets">
+                    <li>Discuss the various branches of accounting, bringing out their importance and scope in modern business[cite: 2].</li>
+                    <li>Explain the different forms of business entities and their significance for accounting purposes[cite: 2].</li>
+                    <li>Explain the basic accounting concepts with suitable examples for each[cite: 2].</li>
+                    <li>Explain the accounting conventions of consistency, conservatism, full disclosure and materiality with examples[cite: 2].</li>
+                    <li>What is GAAP? Discuss its basic principles and importance in financial reporting[cite: 2].</li>
+                    <li>Discuss the need, objectives and process of formulation of Accounting Standards in India[cite: 2].</li>
+                    <li>Distinguish between GAAP and Accounting Standards. Discuss the benefits and limitations of Accounting Standards[cite: 2].</li>
+                </ol>
+
+                <h2 id="summary">Summary</h2>
+                <p>This unit introduced the foundational framework of accounting for managers. It began with the meaning and branches of accounting — financial, cost, management, tax, social responsibility, human resource and government accounting — along with the importance and expanding scope of accounting as an information system[cite: 2]. It then examined the concept of business entities and their various legal forms, emphasising the business entity concept that underlies all accounting[cite: 2]. The nature, characteristics and types of transactions were discussed as the raw material of accounting records[cite: 2]. The unit further explained the core accounting concepts (business entity, money measurement, going concern, cost, dual aspect, accounting period, matching, realisation, accrual) and conventions (consistency, conservatism, full disclosure, materiality) that guide the preparation of financial statements[cite: 2]. Finally, it covered Generally Accepted Accounting Principles (GAAP) as the broad framework of accepted rules, and Accounting Standards as specific authoritative pronouncements that operationalise GAAP to ensure uniformity, comparability and reliability in financial reporting[cite: 2].</p>
+
+            </div>
+            
+            <div class="completion-section">
+                <button id="markCompleteBtn" class="complete-btn">✔️ Mark as Complete</button>
+            </div>
+
+            <div class="pagination">
+                <button class="prev-btn hover-effect disabled">❮ Previous</button>
+                <a href="s1-acc-u2.html" style="text-decoration: none;"><button class="next-btn hover-effect">Unit 2: Accounting Cycle ❯</button></a>
+            </div>
+        </main>
+
+        <aside class="right-sidebar" id="rightSidebar">
+            <div class="widget sticky-widget premium-card">
+                <h3>Unit Contents</h3>
+                <ul class="toc-list">
+                    <li><a href="#intro">0. Introduction</a></li>
+                    <li><a href="#branches">1. Branches of Accounting</a></li>
+                    <li><a href="#entities">2. Business Entities</a></li>
+                    <li><a href="#transactions">3. Transactions</a></li>
+                    <li><a href="#concepts">4. Concepts and Conventions</a></li>
+                    <li><a href="#gaap">5. GAAP</a></li>
+                    <li><a href="#standards">6. Accounting Standards</a></li>
+                    <li><a href="#review">Review Questions</a></li>
+                    <li><a href="#summary">Summary</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

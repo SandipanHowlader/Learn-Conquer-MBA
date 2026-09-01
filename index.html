@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn & Conquer MBA Tutorials</title>
+         <!-- PWA Meta Tags -->
+    <meta name="description" content="Empower your learning journey with interactive Way.">
+    <meta name="theme-color" content="#667eea">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Learn & Conquer">
+    
+    <!-- Apple Touch Icons (for iOS home screen) -->
+    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icon.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="icon.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon.png">
+    
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="manifest.json">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="split-login-body">
+<!-- =========================================
+         SPLASH SCREEN
+    ========================================= -->
+    <div id="splash-screen" class="splash-screen">
+        <div class="splash-content">
+            <img src="icon.png" alt="StrongResume Logo" class="splash-logo">
+            <h1 class="splash-title">Learn & Concure : MBA Tutorials</h1>
+            <p class="splash-subtitle" style="margin-bottom: 10px; font-weight: 600; color: var(--accent-color);">Design & Develop by Sandipan</p>
+            <p class="splash-subtitle">Journey Loading...</p>
+            <div class="loader"></div>
+        </div>
+    </div>
+    <div class="login-left">
+        <div class="login-left-content">
+            <h1>Master the<br>WBSU MBA Syllabus.</h1>
+            <p>Your complete 4-semester curriculum, transformed into interactive, easy-to-read tutorials. Track your progress, save notes, and ace your exams.</p>
+            <div class="feature-pills">
+                <span>📚 40+ Papers</span>
+                <span>✅ Progress Tracking</span>
+                <span>🌙 Dark Mode</span>
+            </div>
+        </div>
+    </div>
+    <div class="login-right">
+        <div class="login-container">
+            <div class="login-header">
+                <div class="brand-badge">WBSU PORTAL</div>
+                <h2>Welcome Back</h2>
+                <p>Enter your student credentials to continue.</p>
+            </div>
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="e.g. Sandipan" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <div class="password-wrapper">
+                        <input type="password" id="password" placeholder="e.g. DMM-2026-11" required>
+                        <button type="button" id="togglePassword" class="toggle-password" aria-label="Toggle Password">👁️</button>
+                    </div>
+                </div>
+                <button type="submit" id="loginBtn" class="login-btn premium-btn">Access Curriculum</button>
+                <p id="error-msg" class="error"></p>
+            </form>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
