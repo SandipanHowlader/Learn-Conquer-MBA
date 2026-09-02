@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Management Principles and Application - Unit 1</title>
-        <!-- Apple Touch Icons (for iOS home screen) -->
+    <title>Management Principles and Application - Unit-1</title>
+    <!-- Apple Touch Icons (for iOS home screen) -->
     <link rel="apple-touch-icon" href="icon.png">
     <link rel="apple-touch-icon" sizes="152x152" href="icon.png">
     <link rel="apple-touch-icon" sizes="180x180" href="icon.png">
@@ -14,8 +14,76 @@
     <link rel="icon" type="image/png" href="icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="icon.png">
     <link rel="icon" type="image/png" sizes="16x16" href="icon.png">
+    
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .diagram-wrap { margin: 35px 0; text-align: center; }
+        .diagram-wrap svg { max-width: 100%; height: auto; background: #ffffff; border-radius: 14px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: all 0.3s ease; border: 1px solid var(--border-color); }
+        .diagram-caption { font-size: 0.85rem; color: var(--text-light); margin-top: 12px; font-style: italic; }
+
+        /* Dark Mode Transitions for SVGs */
+        body.dark-mode .diagram-wrap svg { background: #1e293b; box-shadow: 0 4px 15px rgba(0,0,0,0.4); border-color: #334155; }
+        .svg-bg { fill: #ffffff; transition: fill 0.3s ease; }
+        body.dark-mode .svg-bg { fill: #1e293b; }
+        
+        .svg-text { fill: #1e293b; transition: fill 0.3s ease; }
+        body.dark-mode .svg-text { fill: #f8fafc; }
+        
+        .svg-text-muted { fill: #64748b; transition: fill 0.3s ease; }
+        body.dark-mode .svg-text-muted { fill: #94a3b8; }
+        
+        .svg-line { stroke: #94a3b8; transition: stroke 0.3s ease; }
+        body.dark-mode .svg-line { stroke: #475569; }
+        
+        .svg-marker { fill: #94a3b8; transition: fill 0.3s ease; }
+        body.dark-mode .svg-marker { fill: #475569; }
+
+        /* Specific Color Adaptations for Grids and Nodes */
+        .svg-box-blue { fill: #eff6ff; stroke: #3b82f6; transition: all 0.3s ease; }
+        .svg-text-blue { fill: #1d4ed8; transition: fill 0.3s ease; }
+        body.dark-mode .svg-box-blue { fill: rgba(59, 130, 246, 0.15); stroke: #3b82f6; }
+        body.dark-mode .svg-text-blue { fill: #60a5fa; }
+
+        .svg-box-yellow { fill: #fffbeb; stroke: #f59e0b; transition: all 0.3s ease; }
+        .svg-text-yellow { fill: #b45309; transition: fill 0.3s ease; }
+        body.dark-mode .svg-box-yellow { fill: rgba(245, 158, 11, 0.15); stroke: #f59e0b; }
+        body.dark-mode .svg-text-yellow { fill: #fbbf24; }
+
+        .svg-box-green { fill: #f0fdf4; stroke: #10b981; transition: all 0.3s ease; }
+        .svg-text-green { fill: #047857; transition: fill 0.3s ease; }
+        body.dark-mode .svg-box-green { fill: rgba(16, 185, 129, 0.15); stroke: #10b981; }
+        body.dark-mode .svg-text-green { fill: #34d399; }
+
+        .svg-box-red { fill: #fef2f2; stroke: #ef4444; transition: all 0.3s ease; }
+        .svg-text-red { fill: #b91c1c; transition: fill 0.3s ease; }
+        body.dark-mode .svg-box-red { fill: rgba(239, 68, 68, 0.15); stroke: #ef4444; }
+        body.dark-mode .svg-text-red { fill: #f87171; }
+
+        .svg-box-purple { fill: #faf5ff; stroke: #a855f7; transition: all 0.3s ease; }
+        .svg-text-purple { fill: #7e22ce; transition: fill 0.3s ease; }
+        body.dark-mode .svg-box-purple { fill: rgba(168, 85, 247, 0.15); stroke: #a855f7; }
+        body.dark-mode .svg-text-purple { fill: #c084fc; }
+        
+        .svg-node-dark { fill: #334155; transition: fill 0.3s ease; }
+        body.dark-mode .svg-node-dark { fill: #475569; }
+        
+        .svg-solid-blue { fill: #2b6cb0; transition: fill 0.3s ease; }
+        body.dark-mode .svg-solid-blue { fill: #3b82f6; }
+        
+        .svg-solid-green { fill: #2f855a; transition: fill 0.3s ease; }
+        body.dark-mode .svg-solid-green { fill: #10b981; }
+        
+        .svg-solid-yellow { fill: #b7791f; transition: fill 0.3s ease; }
+        body.dark-mode .svg-solid-yellow { fill: #f59e0b; }
+        
+        .svg-solid-purple { fill: #b83280; transition: fill 0.3s ease; }
+        body.dark-mode .svg-solid-purple { fill: #d946ef; }
+        
+        .svg-solid-red { fill: #c53030; transition: fill 0.3s ease; }
+        body.dark-mode .svg-solid-red { fill: #ef4444; }
+    </style>
 </head>
 <body data-current-topic="s1-mgt-u1">
     <div class="progress-container"><div class="progress-bar" id="myBar"></div></div>
@@ -33,19 +101,19 @@
     </header>
 
     <div class="main-wrapper" id="mainWrapper">
-        
+
         <!-- JavaScript will automatically generate and inject the entire 4-Semester Sidebar here -->
         <aside class="sidebar" id="sidebar-container"></aside>
 
         <!-- Center Content: Tutorial -->
         <main class="content premium-card" id="mainContent">
             <div class="bread-crumbs">Semester-I / Management Principles and Application / Unit 1</div>
-            
+
             <div class="article-header-flex">
                 <div>
                     <h1>Introduction to Management</h1>
                     <div class="article-meta">
-                        <span>Read Time: 45 mins</span>
+                        <span>4 Credits | Read Time: 75 mins | Comprehensive MBA Edition</span>
                     </div>
                 </div>
                 <div class="action-buttons">
@@ -53,489 +121,486 @@
                 </div>
             </div>
             <hr class="premium-hr">
-            
+
             <div class="article-body">
-                <h2 id="concept">1. Concept, Nature, and Importance of Management</h2>
-                
-                <h3>1.1 Concept of Management</h3>
-                <p>Management is the process of planning, organizing, staffing, directing, and controlling organizational resources (human, financial, physical, and informational) to achieve predetermined goals efficiently and effectively.</p>
-                
                 <div class="concept-block">
-                    <strong>Key Definitions:</strong>
+                    <strong>Topics Covered in This Unit:</strong>
                     <ul class="custom-bullets" style="margin-top: 10px;">
-                        <li><strong>Harold Koontz:</strong> "Management is the art of getting things done through and with people in formally organized groups."</li>
-                        <li><strong>Peter Drucker:</strong> "Management is a multi-purpose organ that manages business, manages managers, and manages workers and work."</li>
-                        <li><strong>F.W. Taylor:</strong> "Management is the art of knowing what you want to do and then seeing that it is done in the best and cheapest way."</li>
-                        <li><strong>Mary Parker Follett:</strong> "Management is the art of getting things done through people."</li>
+                        <li>Concept, nature, and importance of management</li>
+                        <li>Functions of Management (POSDC)</li>
+                        <li>Managerial functions at different organizational levels</li>
+                        <li>Managerial skills (Katz) and levels of management</li>
+                        <li>Goals, Productivity, Effectiveness, and Efficiency (Drucker)</li>
+                        <li>Mintzberg’s 10 Managerial Roles Approach</li>
+                        <li>Management process / Operational approach</li>
+                        <li>Development of management thought (Classical, Neo-classical, Modern)</li>
+                        <li>Fayol’s 14 Principles of Management</li>
                     </ul>
-                    <p style="margin-top: 10px;">Management, therefore, is both a <strong>process</strong> (a series of continuous, interrelated activities) and a <strong>discipline</strong> (a systematic body of knowledge).</p>
                 </div>
 
-                <h3>1.2 Nature of Management</h3>
-                <p>Management as a field of study has the following characteristics:</p>
+                <h2 id="concept">1. Concept, Nature, and Importance of Management</h2>
+                
+                <h3 id="meaning">1.1 Concept of Management</h3>
+                <p class="lead-text">Management is a universal, underlying force. It is the invisible engine that binds an organization together, transforming disorganized human, physical, and financial resources into a cohesive, productive unit directed toward specific goals.</p>
+                <p>The concept of management has evolved significantly over time. It can be viewed from several perspectives, moving from a narrow focus on "handling people" to a comprehensive view of systemic optimization:</p>
+                <div class="concept-block">
+                    <button class="copy-btn" onclick="copyText('def-text1', this)">Copy</button>
+                    <div id="def-text1">
+                        <strong>Traditional View (Mary Parker Follett):</strong> "Management is the art of getting things done through people." <em>(Critique: This is now considered too narrow as it implies a manipulative approach and entirely ignores the management of physical/financial resources).</em><br><br>
+                        <strong>Scientific View (F.W. Taylor):</strong> "Management is knowing exactly what you want men to do, and then seeing that they do it in the best and cheapest way."<br><br>
+                        <strong>Process View (Henri Fayol):</strong> "To manage is to forecast and to plan, to organize, to command, to co-ordinate and to control."<br><br>
+                        <strong>Modern Comprehensive View:</strong> Management is the continuous, dynamic process of planning, organizing, leading, and controlling an organization's resources to achieve goals efficiently and effectively within a rapidly changing external environment.
+                    </div>
+                </div>
+
+                <h3 id="nature">1.2 Nature / Characteristics of Management</h3>
                 <ul class="custom-bullets">
-                    <li><strong>Goal-Oriented Process</strong> – Every organization has goals, and management is the process undertaken to achieve them.</li>
-                    <li><strong>Universal Process</strong> – Management principles apply to all types of organizations (business, government, hospitals, educational institutions) and at all levels.</li>
-                    <li><strong>Multidimensional Activity</strong> – Management involves management of work, people, and operations simultaneously.</li>
-                    <li><strong>Continuous Process</strong> – Management is an ongoing process consisting of a series of interrelated functions.</li>
-                    <li><strong>Group Activity</strong> – Management involves working with and through people organized into groups.</li>
-                    <li><strong>Dynamic Function</strong> – Management must adapt to a changing environment (economic, social, political, technological).</li>
-                    <li><strong>Intangible Force</strong> – Management cannot be seen but its presence can be felt through the results (order, coordination, productivity) it produces.</li>
-                    <li><strong>Management as an Art, Science, and Profession</strong> – Discussed in detail below.</li>
+                    <li><strong>Goal-Oriented:</strong> Management has no justification for existing without purposeful goals. All managerial actions (whether expanding a product line or cutting costs) are directed towards achieving specific targets.</li>
+                    <li><strong>Pervasive (Universal):</strong> The principles of management are universally applicable. Whether it is a multi-national tech corporation, a local hospital, an NGO, or a cricket team, management is required at all levels.</li>
+                    <li><strong>Multidimensional:</strong> Management does not deal with just one activity. It involves three distinct dimensions:
+                        <ul style="list-style-type: circle; padding-left: 20px; margin-top: 5px;">
+                            <li><em>Management of Work:</em> Translating overarching goals into actionable tasks.</li>
+                            <li><em>Management of People:</em> Handling individual psychology and managing group dynamics (HR).</li>
+                            <li><em>Management of Operations:</em> Overseeing the transformation of inputs into desired outputs (supply chain, production).</li>
+                        </ul>
+                    </li>
+                    <li><strong>Continuous Process:</strong> Management is an ongoing, dynamic cycle. A manager's job never truly ends; planning leads to organizing, which leads to controlling, which identifies deviations that require <em>new</em> planning.</li>
+                    <li><strong>Intangible Force:</strong> Management cannot be physically touched or seen under a microscope. Its presence is felt strictly through organizational outcomes (e.g., high employee morale, profitability, orderly operations, low turnover).</li>
+                    <li><strong>Both Science and Art:</strong> It is a <em>Science</em> because it relies on systematized bodies of knowledge, universal principles, and cause-and-effect relationships (e.g., time/motion studies, quantitative forecasting). It is an <em>Art</em> because applying those principles to complex, emotional human beings requires personal skill, creativity, intuition, and situational judgement.</li>
                 </ul>
 
-                <h4>Is Management a Science, an Art, or a Profession?</h4>
-                <table class="tutorial-table">
-                    <tr>
-                        <th>Aspect</th>
-                        <th>Explanation</th>
-                    </tr>
-                    <tr>
-                        <td><strong>Science</strong></td>
-                        <td>Management has a systematic body of knowledge, universally applicable principles derived through observation and experimentation. However, it is a "soft" or social science since it deals with human behavior, which is unpredictable — hence called an <strong>inexact science</strong>.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Art</strong></td>
-                        <td>Art involves the practical application of knowledge and skills to achieve desired results. Management requires personal skill, creativity, and practice, making it an art — specifically, the art of getting things done through people.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Profession</strong></td>
-                        <td>A profession requires specialized knowledge, formal education, a representative body, and a code of conduct. Management is emerging as a profession (e.g., MBA degrees, bodies like AIMA), though it does not yet have entry restrictions like medicine or law.</td>
-                    </tr>
-                </table>
-                <p><strong>Conclusion:</strong> Management is both a science and an art — it uses scientific methods to build knowledge (science) and applies that knowledge with skill and creativity (art). It is also increasingly recognized as a profession.</p>
-
-                <h3>1.3 Importance of Management</h3>
+                <h3 id="importance">1.3 Importance of Management</h3>
                 <ul class="custom-bullets">
-                    <li><strong>Achievement of Group Goals</strong> – Creates a team spirit and coordinates individual efforts toward common objectives.</li>
-                    <li><strong>Optimum Utilization of Resources</strong> – Ensures the best use of physical, financial, and human resources, reducing wastage.</li>
-                    <li><strong>Reduces Costs</strong> – Through effective planning, organizing, and control, management minimizes costs and maximizes output.</li>
-                    <li><strong>Establishes Sound Organization</strong> – Defines authority-responsibility relationships, avoiding duplication of effort.</li>
-                    <li><strong>Establishes Equilibrium</strong> – Helps organizations adapt to changes in the external environment (technology, market, government policy).</li>
-                    <li><strong>Essential for Prosperity of Society</strong> – Efficient management leads to economic growth, better quality of goods/services, employment generation, and improved standard of living.</li>
-                    <li><strong>Change Management</strong> – Helps organizations foresee and manage change through innovation and improvement.</li>
-                    <li><strong>Development of the Nation</strong> – Good management is a key input for economic and social development.</li>
+                    <li><strong>Optimal Utilization of Resources:</strong> Management ensures that scarce resources (men, money, materials, machines) are utilized efficiently, eliminating waste, redundancy, and bottlenecks.</li>
+                    <li><strong>Cost Reduction:</strong> By improving productivity and standardizing processes, effective management brings down the overall cost of operations, leading to higher profitability and economies of scale.</li>
+                    <li><strong>Adaptation to Change:</strong> In a dynamic macro-environment (PESTEL factors: Political, Economic, Social, Technological), management serves as the radar and rudder, helping the organization pivot, innovate, and survive disruptions.</li>
+                    <li><strong>Achievement of Group Goals:</strong> It aligns the disparate, sometimes conflicting, individual efforts of employees towards a common, unified organizational objective.</li>
                 </ul>
 
                 <h2 id="functions">2. Functions of Management</h2>
-                <p>The functions of management are commonly grouped under the acronym <strong>POSDCORB</strong> (Luther Gulick) or more commonly taught as <strong>five core functions</strong>, based on Henri Fayol's and later theorists' work:</p>
-
-                <h3>2.1 Planning</h3>
-                <p>Deciding in advance <strong>what</strong> to do, <strong>how</strong> to do it, <strong>when</strong> to do it, and <strong>who</strong> is to do it. It bridges the gap between where we are and where we want to be. Involves setting objectives, forecasting, formulating policies, and preparing schedules/budgets.</p>
-
-                <h3>2.2 Organizing</h3>
-                <p>The process of identifying and grouping activities, defining and delegating authority and responsibility, and establishing relationships to enable people to work most effectively together. Includes division of work, departmentalization, and establishing hierarchy.</p>
-
-                <h3>2.3 Staffing</h3>
-                <p>Manning the organization structure through proper recruitment, selection, training, development, promotion, and compensation of personnel. Often called the "human resource function" of management.</p>
-
-                <h3>2.4 Directing (Leading)</h3>
-                <p>Guiding, motivating, supervising, and communicating with subordinates so they contribute effectively to organizational goals. It includes four sub-elements:</p>
-                <ul class="custom-bullets">
-                    <li>Supervision</li>
-                    <li>Motivation</li>
-                    <li>Leadership</li>
-                    <li>Communication</li>
-                </ul>
-
-                <h3>2.5 Controlling</h3>
-                <p>The process of measuring actual performance against planned targets, identifying deviations, and taking corrective action. Involves:</p>
-                <ul class="custom-bullets">
-                    <li>Setting standards</li>
-                    <li>Measuring actual performance</li>
-                    <li>Comparing with standards</li>
-                    <li>Correcting deviations</li>
-                </ul>
-
-                <div class="concept-block">
-                    <p><strong>Note:</strong> Some texts also add <strong>Coordinating</strong> as a separate function (especially in the classical approach) since coordination is required to synchronize the efforts of individuals/departments to achieve unity of action.</p>
-                    <p><strong>Diagrammatic Flow:</strong><br>
-                    Planning → Organizing → Staffing → Directing → Controlling<br>
-                    <em>(Continuous, cyclical, and interrelated process)</em></p>
-                </div>
-
-                <h2 id="levels">3. Managerial Functions at Different Organizational Levels</h2>
-                <p>Management functions are performed differently depending on the level of management in the hierarchy:</p>
-
-                <h3>3.1 Top-Level Management (Board of Directors, CEO, President, GM)</h3>
-                <ul class="custom-bullets">
-                    <li>Focuses primarily on <strong>Planning and Organizing</strong></li>
-                    <li>Determines overall objectives, policies, and strategies</li>
-                    <li>Responsible for the welfare and survival of the organization</li>
-                    <li>Interacts with the external environment (government, shareholders, society)</li>
-                    <li>Long-term/strategic decision-making</li>
-                </ul>
-
-                <h3>3.2 Middle-Level Management (Departmental Heads, Branch Managers)</h3>
-                <ul class="custom-bullets">
-                    <li>Focuses on <strong>Organizing and Directing</strong></li>
-                    <li>Implements policies framed by top management</li>
-                    <li>Coordinates activities of different sections/departments</li>
-                    <li>Acts as a link between top and lower management</li>
-                    <li>Medium-term/tactical decision-making</li>
-                </ul>
-
-                <h3>3.3 Lower-Level / Supervisory Management (Foremen, Supervisors, Section Officers)</h3>
-                <ul class="custom-bullets">
-                    <li>Focuses primarily on <strong>Directing and Controlling</strong></li>
-                    <li>Directly supervises workers and day-to-day operations</li>
-                    <li>Ensures work quality and discipline</li>
-                    <li>Short-term/operational decision-making</li>
-                    <li>Maintains a link between workers and middle management</li>
-                </ul>
-
-                <h4>Summary Table</h4>
-                <table class="tutorial-table">
-                    <tr>
-                        <th>Level</th>
-                        <th>Primary Functions</th>
-                        <th>Nature of Decisions</th>
-                        <th>Time Horizon</th>
-                    </tr>
-                    <tr>
-                        <td>Top</td>
-                        <td>Planning, Organizing</td>
-                        <td>Strategic</td>
-                        <td>Long-term</td>
-                    </tr>
-                    <tr>
-                        <td>Middle</td>
-                        <td>Organizing, Directing</td>
-                        <td>Tactical</td>
-                        <td>Medium-term</td>
-                    </tr>
-                    <tr>
-                        <td>Lower/Supervisory</td>
-                        <td>Directing, Controlling</td>
-                        <td>Operational</td>
-                        <td>Short-term</td>
-                    </tr>
-                </table>
-
-                <h2 id="skills">4. Managerial Skills and Levels of Management</h2>
+                <p>Management is fundamentally described as a process comprising a series of interrelated and interdependent functions. While early thinkers coined complex acronyms like <strong>POSDCORB</strong>, the modern academic consensus groups management into five core functions:</p>
                 
-                <h3>4.1 Robert L. Katz's Managerial Skills</h3>
-                <p>Robert Katz identified three essential skills needed by managers:</p>
-                <ul class="custom-bullets">
-                    <li><strong>1. Conceptual Skills</strong> – The ability to see the organization as a whole, understand complex relationships, and think in abstract terms. Essential for <strong>top management</strong> in strategic decision-making.</li>
-                    <li><strong>2. Human (Interpersonal) Skills</strong> – The ability to work with, understand, motivate, and lead people, both individually and in groups. Equally important at <strong>all levels</strong> of management.</li>
-                    <li><strong>3. Technical Skills</strong> – Specialized knowledge and proficiency in a specific field (e.g., accounting, engineering, marketing techniques). Most important at the <strong>lower/supervisory level</strong>, where hands-on knowledge of the job is required.</li>
-                </ul>
-                <p><strong>Some texts add a fourth skill:</strong><br>
-                <strong>4. Design Skills</strong> – The ability to solve problems in ways that benefit the organization, not just identify problems.</p>
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The five functions of management arranged as a continuous cycle">
+                        <defs>
+                            <marker id="arrHeadMgt" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                                <path d="M0,0L10,5L0,10z" class="svg-marker"/>
+                            </marker>
+                            <marker id="arrHeadDashMgt" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                                <path d="M0,0L10,5L0,10z" class="svg-marker"/>
+                            </marker>
+                        </defs>
+                        <rect width="600" height="400" rx="14" class="svg-bg"/>
+                        <text x="300" y="30" text-anchor="middle" font-size="16" font-weight="600" class="svg-text">The Management Process — A Continuous Cycle</text>
 
-                <h3>4.2 Katz's Skill-Level Matrix</h3>
+                        <!-- connecting arrows -->
+                        <line x1="345" y1="91" x2="385" y2="119" stroke-width="2.5" marker-end="url(#arrHeadMgt)" class="svg-line"/>
+                        <line x1="413" y1="202" x2="397" y2="248" stroke-width="2.5" marker-end="url(#arrHeadMgt)" class="svg-line"/>
+                        <line x1="325" y1="300" x2="275" y2="300" stroke-width="2.5" marker-end="url(#arrHeadMgt)" class="svg-line"/>
+                        <line x1="203" y1="248" x2="187" y2="202" stroke-width="2.5" marker-end="url(#arrHeadMgt)" class="svg-line"/>
+                        <path d="M215,119 Q120,20 255,91" fill="none" stroke-width="2" stroke-dasharray="5,4" marker-end="url(#arrHeadDashMgt)" class="svg-line"/>
+                        <text x="185" y="55" text-anchor="middle" font-size="11" class="svg-text-muted">Feedback Loop / New Plan</text>
+
+                        <!-- nodes -->
+                        <circle cx="300" cy="60" r="55" class="svg-solid-blue"/>
+                        <text x="300" y="55" text-anchor="middle" font-size="13" font-weight="600" fill="#ffffff">1. Planning</text>
+                        <text x="300" y="72" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.8)">What &amp; how?</text>
+
+                        <circle cx="430" cy="150" r="55" class="svg-solid-green"/>
+                        <text x="430" y="145" text-anchor="middle" font-size="13" font-weight="600" fill="#ffffff">2. Organizing</text>
+                        <text x="430" y="162" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.8)">Structure &amp; tasks</text>
+
+                        <circle cx="380" cy="300" r="55" class="svg-solid-yellow"/>
+                        <text x="380" y="295" text-anchor="middle" font-size="13" font-weight="600" fill="#ffffff">3. Staffing</text>
+                        <text x="380" y="312" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.8)">Right people</text>
+
+                        <circle cx="220" cy="300" r="55" class="svg-solid-purple"/>
+                        <text x="220" y="295" text-anchor="middle" font-size="13" font-weight="600" fill="#ffffff">4. Directing</text>
+                        <text x="220" y="312" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.8)">Lead &amp; motivate</text>
+
+                        <circle cx="170" cy="150" r="55" class="svg-solid-red"/>
+                        <text x="170" y="145" text-anchor="middle" font-size="13" font-weight="600" fill="#ffffff">5. Controlling</text>
+                        <text x="170" y="162" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.8)">Check &amp; correct</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 1 — The Management Process is not a linear list, but a continuous, recurring cycle.</p>
+                </div>
+
                 <table class="tutorial-table">
                     <tr>
-                        <th>Level of Management</th>
-                        <th>Conceptual Skills</th>
-                        <th>Human Skills</th>
-                        <th>Technical Skills</th>
+                        <th style="width: 20%;">Function</th>
+                        <th>MBA Context & Description</th>
                     </tr>
                     <tr>
-                        <td>Top Management</td>
-                        <td>High</td>
-                        <td>Moderate-High</td>
-                        <td>Low</td>
+                        <td><strong>1. Planning</strong></td>
+                        <td>The primary, foundational function involving foresight. It is the process of setting goals, forecasting the future, evaluating alternatives, and determining the best course of action. It bridges the gap from where the firm currently is, to where it desires to be.</td>
                     </tr>
                     <tr>
-                        <td>Middle Management</td>
-                        <td>Moderate</td>
-                        <td>High</td>
-                        <td>Moderate</td>
+                        <td><strong>2. Organizing</strong></td>
+                        <td>Translating the plan into action by designing the organizational structure. It involves identifying tasks, grouping them into logical departments (departmentalization), assigning duties, establishing authority-responsibility relationships, and allocating capital.</td>
                     </tr>
                     <tr>
-                        <td>Lower Management</td>
-                        <td>Low</td>
-                        <td>High</td>
-                        <td>High</td>
+                        <td><strong>3. Staffing</strong></td>
+                        <td>The human resource function. It involves manpower planning, recruitment, rigorous selection, training, compensation, performance appraisal, and retention of employees. It ensures the organizational structure is populated with competent personnel.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>4. Directing (Leading)</strong></td>
+                        <td>The execution phase. Directing is highly interpersonal. It involves communicating with, motivating, guiding, and supervising employees to execute the plans. It encompasses leadership styles and conflict resolution on the floor.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>5. Controlling</strong></td>
+                        <td>The measurement phase. It involves establishing strict performance standards (KPIs), measuring actual performance against them, identifying deviations, and taking corrective action. Controlling completes the loop, providing data for the next planning cycle.</td>
                     </tr>
                 </table>
-                <p><em>(Illustrated as an inverted/direct pyramid: conceptual skill needs decrease going down the hierarchy while technical skill needs increase.)</em></p>
 
-                <h3>4.3 Levels of Management (Recap)</h3>
-                <ol class="custom-bullets">
-                    <li><strong>Top-Level Management</strong> – Board of Directors, Chairman, Managing Director, CEO</li>
-                    <li><strong>Middle-Level Management</strong> – Divisional/Departmental Managers</li>
-                    <li><strong>Lower-Level Management</strong> – Supervisors, Foremen, Section Leaders</li>
-                </ol>
+                <h2 id="levels">3. Managerial Functions at Different Levels & Managerial Skills</h2>
 
-                <h2 id="goals">5. Goals, Productivity, Effectiveness, and Efficiency</h2>
+                <h3 id="organizational-levels">3.1 Managerial Functions at Different Organizational Levels</h3>
+                <p>The organizational hierarchy is structured like a pyramid, indicating the flow of formal authority and the number of managers at each level.</p>
+                <ul class="custom-bullets">
+                    <li><strong>Top Management (Board of Directors, CEO, C-Suite):</strong> Responsible for defining the overall vision, mission, and long-term strategic plans. They scan the external macro-environment, manage major financial acquisitions, frame broad policies, and are responsible for the ultimate survival of the firm. <em>Time horizon: Long-term (3 to 10+ years). Focus: Planning & Organizing.</em></li>
+                    <li><strong>Middle Management (Department Heads, Plant Managers):</strong> The vital bridge between top and lower management. They translate top-level strategy into actionable departmental plans (tactical planning). They are heavily involved in organizing resources and coordinating between different silos. <em>Time horizon: Medium-term (1 to 3 years). Focus: Organizing & Staffing.</em></li>
+                    <li><strong>Lower/First-Line Management (Supervisors, Foremen, Team Leaders):</strong> Directly oversee the non-managerial workforce (operators, clerks). They focus on day-to-day execution, maintaining quality standards, assigning specific shifts, ensuring safety, and addressing immediate worker grievances. <em>Time horizon: Short-term (Daily/Weekly). Focus: Directing & Controlling.</em></li>
+                </ul>
+
+                <h3 id="katz-skills">3.2 Managerial Skills (Robert Katz's Approach)</h3>
+                <p>Robert Katz identified three critical skill sets required by managers. The importance of these skills shifts drastically depending on the manager's level in the hierarchy.</p>
                 
-                <h3>5.1 Goals</h3>
-                <p>Goals are the desired future outcomes that an organization strives to achieve. They provide direction, motivate employees, and act as a benchmark for evaluating performance. Goals can be classified as:</p>
-                <ul class="custom-bullets">
-                    <li><strong>Strategic goals</strong> (set by top management)</li>
-                    <li><strong>Tactical goals</strong> (set by middle management)</li>
-                    <li><strong>Operational goals</strong> (set by lower management)</li>
-                </ul>
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 600 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Robert Katz's Skill-Level Matrix">
+                        <rect width="600" height="360" rx="14" class="svg-bg"/>
+                        <text x="300" y="30" text-anchor="middle" font-size="16" font-weight="600" class="svg-text">Katz's Managerial Skill Mix by Hierarchy Level</text>
 
-                <h3>5.2 Productivity</h3>
-                <p>Productivity is the ratio of output to input in a given time period, with due consideration to quality:</p>
-                <div class="concept-block">
-                    <strong>Productivity = Output / Input</strong>
+                        <!-- organizational pyramid -->
+                        <polygon points="120,60 180,60 200,130 100,130" class="svg-solid-blue"/>
+                        <text x="150" y="102" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">TOP</text>
+
+                        <polygon points="100,135 200,135 230,225 70,225" class="svg-solid-green"/>
+                        <text x="150" y="187" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">MIDDLE</text>
+
+                        <polygon points="70,230 230,230 270,320 30,320" class="svg-solid-yellow"/>
+                        <text x="150" y="282" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">LOWER / SUPERVISORY</text>
+
+                        <!-- skill bars -->
+                        <!-- Conceptual -->
+                        <polygon points="340,60 400,60 378,320 362,320" fill="#60a5fa"/>
+                        <text x="370" y="340" text-anchor="middle" font-size="12" font-weight="600" class="svg-text">Conceptual</text>
+
+                        <!-- Human -->
+                        <rect x="430" y="60" width="40" height="260" fill="#34d399"/>
+                        <text x="450" y="340" text-anchor="middle" font-size="12" font-weight="600" class="svg-text">Human</text>
+
+                        <!-- Technical -->
+                        <polygon points="510,320 570,320 548,60 532,60" fill="#fbbf24"/>
+                        <text x="540" y="340" text-anchor="middle" font-size="12" font-weight="600" class="svg-text">Technical</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 2 — As a manager moves up the corporate ladder, they must rely less on technical hard skills and significantly more on conceptual, big-picture thinking. Human skills remain uniformly critical.</p>
                 </div>
-                <p>It reflects how well resources (labor, capital, materials) are combined and utilized. High productivity means more output is achieved with the same or fewer inputs.</p>
 
-                <h3>5.3 Effectiveness</h3>
-                <p>Effectiveness means <strong>"doing the right things"</strong> — achieving the stated goals or desired outcomes, regardless of the resources consumed. It focuses on the end result.</p>
+                <ul class="custom-bullets">
+                    <li><strong>Conceptual Skills:</strong> The mental ability to view the organization as a holistic system, understand how its parts depend on one another, and visualize how the organization fits into the broader industry/economy. <em>Crucial for Top Management.</em></li>
+                    <li><strong>Human (Interpersonal) Skills:</strong> The ability to work effectively with, understand, empathize with, and motivate other people, both individually and in groups. Includes emotional intelligence and conflict resolution. <em>Crucial for ALL levels.</em></li>
+                    <li><strong>Technical Skills:</strong> Specialized knowledge, expertise, and proficiency in using specific tools, procedures, and techniques (e.g., accounting rules, coding languages, engineering schematics). <em>Crucial for Lower Management.</em></li>
+                </ul>
 
-                <h3>5.4 Efficiency</h3>
-                <p>Efficiency means <strong>"doing things right"</strong> — achieving goals with the minimum use of resources (least wastage of time, money, and materials). It focuses on the input-output relationship.</p>
+                <h2 id="efficiency">4. Goals, Productivity, Effectiveness, and Efficiency</h2>
 
-                <h3>5.5 Relationship Between Effectiveness and Efficiency</h3>
+                <h3 id="goals-prod">4.1 Goals and Productivity</h3>
+                <ul class="custom-bullets">
+                    <li><strong>Goals:</strong> The desired future states or specific targets an organization attempts to realize. (e.g., Achieving a 20% ROI, capturing 15% market share).</li>
+                    <li><strong>Productivity:</strong> A quantitative measure of resource utilization. It is the ratio of output to input over a specific period. High productivity means doing more with less. <br><br>
+                    <span style="font-family: monospace; background: rgba(0,0,0,0.05); padding: 4px 8px; border-radius: 4px;">Productivity = Output / Input</span>
+                    </li>
+                </ul>
+
+                <h3 id="drucker">4.2 The Drucker Principle: Effectiveness vs. Efficiency</h3>
+                <p>Peter Drucker, the father of modern management, famously separated these two interconnected concepts: <em>"Efficiency is doing things right; effectiveness is doing the right things."</em></p>
+                
                 <table class="tutorial-table">
                     <tr>
-                        <th></th>
-                        <th>Low Efficiency</th>
-                        <th>High Efficiency</th>
+                        <th>Feature</th>
+                        <th>Effectiveness</th>
+                        <th>Efficiency</th>
                     </tr>
                     <tr>
-                        <td><strong>High Effectiveness</strong></td>
-                        <td>Goals achieved but with wastage of resources</td>
-                        <td>Goals achieved with optimum resource use (Ideal situation)</td>
+                        <td><strong>Meaning</strong></td>
+                        <td>Completing activities so that organizational goals are attained.</td>
+                        <td>Getting the most output from the least amount of inputs (resources).</td>
                     </tr>
                     <tr>
-                        <td><strong>Low Effectiveness</strong></td>
-                        <td>Resources wasted and goals not achieved (Worst situation)</td>
-                        <td>Resources well used but goals not achieved</td>
+                        <td><strong>Focus</strong></td>
+                        <td>End results / Outcomes / The "What".</td>
+                        <td>Means / Process / The "How".</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Metric</strong></td>
+                        <td>Timely achievement of targets (e.g., Did we launch the product?).</td>
+                        <td>Minimization of resource waste and cost (e.g., Did we stay under budget?).</td>
                     </tr>
                 </table>
-                <p><strong>Peter Drucker's View:</strong> "Efficiency is doing things right; effectiveness is doing the right things." A good manager must aim to be <strong>both effective and efficient</strong> — achieving the correct goals while making optimal use of resources.</p>
 
-                <h2 id="mintzberg">6. Mintzberg's Managerial Roles Approach</h2>
-                <p>Henry Mintzberg, through an empirical study of chief executives, concluded that managers perform ten different, highly interrelated roles, grouped into <strong>three categories</strong>:</p>
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 500 450" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Quadrant diagram plotting effectiveness against efficiency">
+                        <rect width="500" height="450" rx="14" class="svg-bg"/>
+                        <text x="250" y="30" text-anchor="middle" font-size="16" font-weight="600" class="svg-text">The Management Matrix</text>
 
-                <h3>6.1 Interpersonal Roles</h3>
-                <p>Arise from the manager's formal authority and status, and involve relationships with people:</p>
-                <ol class="custom-bullets">
-                    <li><strong>Figurehead</strong> – Performing ceremonial and symbolic duties (e.g., greeting visitors, signing documents)</li>
-                    <li><strong>Leader</strong> – Motivating, directing, and guiding subordinates</li>
-                    <li><strong>Liaison</strong> – Maintaining a network of contacts outside the vertical chain of command (with peers, external stakeholders)</li>
-                </ol>
+                        <!-- quadrants -->
+                        <rect x="80" y="60" width="180" height="160" class="svg-box-yellow"/>
+                        <rect x="260" y="60" width="180" height="160" class="svg-box-green"/>
+                        <rect x="80" y="220" width="180" height="160" class="svg-box-red"/>
+                        <rect x="260" y="220" width="180" height="160" class="svg-box-purple"/>
 
-                <h3>6.2 Informational Roles</h3>
-                <p>Involve receiving, collecting, and disseminating information:</p>
-                <ol class="custom-bullets" start="4">
-                    <li><strong>Monitor</strong> – Scanning the environment for information affecting the organization</li>
-                    <li><strong>Disseminator</strong> – Transmitting information received from outsiders/subordinates to members of the organization</li>
-                    <li><strong>Spokesperson</strong> – Transmitting information to outsiders about organizational plans, policies, and results</li>
-                </ol>
+                        <!-- axes -->
+                        <line x1="80" y1="380" x2="440" y2="380" stroke-width="3" marker-end="url(#arrHeadDashMgt)" class="svg-line"/>
+                        <line x1="80" y1="60" x2="80" y2="380" stroke-width="3" marker-start="url(#arrHeadDashMgt)" class="svg-line"/>
+                        <text x="260" y="415" text-anchor="middle" font-size="13" font-weight="600" class="svg-text">Efficiency (Resource Optimization) →</text>
+                        <text x="40" y="220" text-anchor="middle" font-size="13" font-weight="600" class="svg-text" transform="rotate(-90 40 220)">Effectiveness (Goal Attainment) →</text>
 
-                <h3>6.3 Decisional Roles</h3>
-                <p>Involve making significant decisions that affect the organization:</p>
-                <ol class="custom-bullets" start="7">
-                    <li><strong>Entrepreneur</strong> – Initiating change and innovation, identifying new opportunities</li>
-                    <li><strong>Disturbance Handler</strong> – Taking corrective action during unexpected crises/conflicts</li>
-                    <li><strong>Resource Allocator</strong> – Deciding where organizational resources will be applied</li>
-                    <li><strong>Negotiator</strong> – Representing the organization in major negotiations (with unions, suppliers, etc.)</li>
-                </ol>
+                        <!-- quadrant text -->
+                        <text x="170" y="115" text-anchor="middle" font-size="13" font-weight="700" class="svg-text-yellow">Effective, Inefficient</text>
+                        <text x="170" y="135" text-anchor="middle" font-size="10.5" class="svg-text-yellow">Goals met, but massive</text>
+                        <text x="170" y="150" text-anchor="middle" font-size="10.5" class="svg-text-yellow">resource waste. Firm survives</text>
+                        <text x="170" y="165" text-anchor="middle" font-size="10.5" class="svg-text-yellow">but profits suffer.</text>
 
-                <div class="concept-block">
-                    <strong>Diagram Summary:</strong><br>
-                    <pre style="background: none; border: none; padding: 0; font-family: monospace;">
-                    MANAGER
-                       |
-   -------------------------------------------
-   |                    |                     |
-Interpersonal       Informational          Decisional
-Roles                Roles                  Roles
-- Figurehead        - Monitor              - Entrepreneur
-- Leader            - Disseminator         - Disturbance Handler
-- Liaison           - Spokesperson         - Resource Allocator
-                                           - Negotiator
-                    </pre>
+                        <text x="350" y="115" text-anchor="middle" font-size="13" font-weight="700" class="svg-text-green">Ideal Management</text>
+                        <text x="350" y="135" text-anchor="middle" font-size="10.5" class="svg-text-green">Right goals achieved</text>
+                        <text x="350" y="150" text-anchor="middle" font-size="10.5" class="svg-text-green">with minimum waste.</text>
+                        <text x="350" y="165" text-anchor="middle" font-size="10.5" class="svg-text-green">High growth &amp; profit.</text>
+
+                        <text x="170" y="275" text-anchor="middle" font-size="13" font-weight="700" class="svg-text-red">Poor Management</text>
+                        <text x="170" y="295" text-anchor="middle" font-size="10.5" class="svg-text-red">Wrong goals pursued while</text>
+                        <text x="170" y="310" text-anchor="middle" font-size="10.5" class="svg-text-red">wasting resources.</text>
+                        <text x="170" y="325" text-anchor="middle" font-size="10.5" class="svg-text-red">Rapid bankruptcy.</text>
+
+                        <text x="350" y="275" text-anchor="middle" font-size="13" font-weight="700" class="svg-text-purple">Efficient, Ineffective</text>
+                        <text x="350" y="295" text-anchor="middle" font-size="10.5" class="svg-text-purple">Zero waste, but producing</text>
+                        <text x="350" y="310" text-anchor="middle" font-size="10.5" class="svg-text-purple">the wrong product (e.g. pagers).</text>
+                        <text x="350" y="325" text-anchor="middle" font-size="10.5" class="svg-text-purple">Ultimate failure.</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 3 — A manager's ultimate target is the top-right quadrant: highly effective and highly efficient.</p>
                 </div>
-                <p><strong>Significance:</strong> Mintzberg's approach challenged the traditional view (Fayol's) that management is simply planning, organizing, directing, and controlling. He argued that a manager's actual day-to-day work is fragmented, varied, and driven by these ten roles rather than neat sequential functions.</p>
 
-                <h2 id="process">7. Management Process or Operational Approach</h2>
-                <p>The <strong>Management Process (Operational) Approach</strong>, primarily associated with <strong>Henri Fayol</strong> and later developed by <strong>Harold Koontz and Cyril O'Donnell</strong>, views management as a <strong>universal process</strong> consisting of certain identifiable functions.</p>
+                <h2 id="mintzberg">5. Mintzberg’s Managerial Roles Approach</h2>
+                <p>Henry Mintzberg conducted observational studies on what managers <em>actually do</em> in practice. He challenged the Fayol view (that managers neatly plan, organize, and control in a quiet office). Mintzberg found managerial work to be fragmented, fast-paced, chaotic, and highly interpersonal. He identified <strong>10 Managerial Roles</strong> grouped into three main categories:</p>
 
-                <h3>7.1 Core Idea</h3>
-                <ul class="custom-bullets">
-                    <li>Management is a process of getting things done through and with people, performed by all managers regardless of enterprise or level.</li>
-                    <li>The process consists of primary functions — <strong>Planning, Organizing, Staffing, Directing, and Controlling</strong> — which are interrelated and universally applicable.</li>
-                    <li>Draws upon concepts, principles, and techniques from other fields (sociology, psychology, economics, etc.) but organizes them around the central core of management functions.</li>
-                </ul>
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 780 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tree diagram of Mintzberg's ten managerial roles under three categories">
+                        <rect width="780" height="340" rx="14" class="svg-bg"/>
+                        
+                        <!-- manager node -->
+                        <rect x="330" y="30" width="120" height="40" rx="8" class="svg-node-dark"/>
+                        <text x="390" y="55" text-anchor="middle" font-size="13" font-weight="600" fill="#fff">The Manager</text>
 
-                <h3>7.2 Key Features of the Operational Approach</h3>
-                <ol class="custom-bullets">
-                    <li>Management is viewed as a <strong>universal process</strong>, applicable to all kinds of organizations.</li>
-                    <li>It focuses on the <strong>functions performed by managers</strong>, rather than on the manager's personal traits.</li>
-                    <li>It develops a body of management theory built through observation, experience, and logic.</li>
-                    <li>It considers management as a science that draws on other disciplines while retaining its own core.</li>
-                    <li>Koontz called the vast, conflicting body of management theories the <strong>"Management Theory Jungle"</strong> and advocated the process approach as a way to synthesize them into a coherent framework.</li>
-                </ol>
+                        <!-- category nodes -->
+                        <rect x="70" y="110" width="150" height="40" rx="8" class="svg-solid-blue"/>
+                        <text x="145" y="135" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">Interpersonal</text>
 
-                <h3>7.3 Significance</h3>
-                <p>This approach is the most widely used in teaching management principles because it is practical, systematic, and provides a clear framework (planning → organizing → staffing → directing → controlling) applicable across industries and levels.</p>
+                        <rect x="315" y="110" width="150" height="40" rx="8" class="svg-solid-green"/>
+                        <text x="390" y="135" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">Informational</text>
 
-                <h2 id="development">8. Development of Management Thought</h2>
-                <p>Management thought has evolved through several overlapping phases:</p>
+                        <rect x="560" y="110" width="150" height="40" rx="8" class="svg-solid-purple"/>
+                        <text x="635" y="135" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">Decisional</text>
 
-                <h3>8.1 Pre-Scientific / Early Contributions</h3>
-                <p>Before the 20th century, management practices existed but were not systematized. Early influences came from military organizations, the church, and family-run enterprises. The Industrial Revolution (18th–19th century) created the need for systematic management as factories grew in size and complexity.</p>
+                        <!-- lines: manager to categories -->
+                        <line x1="390" y1="70" x2="145" y2="110" stroke-width="2" class="svg-line"/>
+                        <line x1="390" y1="70" x2="390" y2="110" stroke-width="2" class="svg-line"/>
+                        <line x1="390" y1="70" x2="635" y2="110" stroke-width="2" class="svg-line"/>
 
-                <h3>8.2 Classical Approach</h3>
-                <p>Focuses on structure, efficiency, and formal organization; treats workers largely as economic beings ("Economic Man" concept). It has three main branches:</p>
-                <ul class="custom-bullets">
-                    <li><strong>(a) Scientific Management (F.W. Taylor, early 1900s):</strong> Focuses on shop-floor/operational efficiency. Key Principles: Science, not rule of thumb; Harmony, not discord; Cooperation, not individualism; Development of each worker to their greatest efficiency. Techniques: Time and motion study, differential piece-rate system, functional foremanship, standardization of tools and methods.</li>
-                    <li><strong>(b) Administrative Management (Henri Fayol, 1916):</strong> Focuses on the organization as a whole, and the functions/principles applicable to top management.</li>
-                    <li><strong>(c) Bureaucratic Management (Max Weber):</strong> Focuses on an "ideal type" organization based on clear division of labor, hierarchy of authority, formal rules and procedures, impersonality (decisions based on rules, not personal relationships), and selection and promotion based on merit/qualification.</li>
-                </ul>
+                        <!-- interpersonal leaves -->
+                        <rect x="25" y="190" width="90" height="32" rx="6" class="svg-box-blue"/>
+                        <text x="70" y="211" text-anchor="middle" font-size="11" font-weight="600" class="svg-text-blue">Figurehead</text>
+                        
+                        <rect x="125" y="190" width="80" height="32" rx="6" class="svg-box-blue"/>
+                        <text x="165" y="211" text-anchor="middle" font-size="11" font-weight="600" class="svg-text-blue">Leader</text>
+                        
+                        <rect x="215" y="190" width="80" height="32" rx="6" class="svg-box-blue"/>
+                        <text x="255" y="211" text-anchor="middle" font-size="11" font-weight="600" class="svg-text-blue">Liaison</text>
+                        
+                        <line x1="145" y1="150" x2="70" y2="190" stroke-width="1.5" class="svg-line"/>
+                        <line x1="145" y1="150" x2="165" y2="190" stroke-width="1.5" class="svg-line"/>
+                        <line x1="145" y1="150" x2="255" y2="190" stroke-width="1.5" class="svg-line"/>
 
-                <h3>8.3 Neo-Classical Approach (Human Relations Approach)</h3>
-                <p>Emerged as a reaction to the classical approach's neglect of human/psychological factors. Focused on the <strong>"Social Man"</strong> concept — workers as social beings influenced by group norms, sentiments, and informal relationships.</p>
-                <ul class="custom-bullets">
-                    <li><strong>Elton Mayo and the Hawthorne Studies (1924–1932)</strong> at the Western Electric Company's Hawthorne Plant are the foundation of this approach. Key findings include the <strong>Hawthorne Effect</strong> (workers' productivity increased when they were given attention), the importance of <strong>informal groups</strong> and their norms, and that social and psychological factors affect productivity as much as physical/monetary factors.</li>
-                    <li>Behavioral scientists such as <strong>Abraham Maslow</strong> (Hierarchy of Needs), <strong>Douglas McGregor</strong> (Theory X and Theory Y), and <strong>Chris Argyris</strong> further developed this human-behavior focus into the broader <strong>Behavioral Science Approach</strong>.</li>
-                </ul>
+                        <!-- informational leaves -->
+                        <rect x="310" y="240" width="80" height="32" rx="6" class="svg-box-green"/>
+                        <text x="350" y="261" text-anchor="middle" font-size="11" font-weight="600" class="svg-text-green">Monitor</text>
+                        
+                        <rect x="340" y="190" width="100" height="32" rx="6" class="svg-box-green"/>
+                        <text x="390" y="211" text-anchor="middle" font-size="11" font-weight="600" class="svg-text-green">Disseminator</text>
+                        
+                        <rect x="400" y="240" width="105" height="32" rx="6" class="svg-box-green"/>
+                        <text x="452" y="261" text-anchor="middle" font-size="11" font-weight="600" class="svg-text-green">Spokesperson</text>
+                        
+                        <line x1="390" y1="150" x2="350" y2="240" stroke-width="1.5" class="svg-line"/>
+                        <line x1="390" y1="150" x2="390" y2="190" stroke-width="1.5" class="svg-line"/>
+                        <line x1="390" y1="150" x2="452" y2="240" stroke-width="1.5" class="svg-line"/>
 
-                <h3>8.4 Modern Approaches to Management</h3>
-                <p>Modern management thought moves beyond a single "best way," recognizing complexity and situational variation:</p>
-                <ol class="custom-bullets">
-                    <li><strong>Quantitative / Management Science Approach</strong> – Uses mathematical models, statistics, and operations research (e.g., linear programming, queuing theory) for decision-making, especially in planning and control.</li>
-                    <li><strong>Systems Approach</strong> – Views the organization as an <strong>open system</strong> composed of interrelated and interdependent sub-systems (input–process–output–feedback), interacting continuously with the external environment.</li>
-                    <li><strong>Contingency (Situational) Approach</strong> – Argues there is <strong>no single best way</strong> to manage; the appropriate management technique depends on the specific situation, environment, and circumstances faced by the organization ("it depends" approach).</li>
-                    <li><strong>Operational/Management Process Approach</strong> – Synthesizes elements of other approaches around the core functions of management.</li>
-                </ol>
+                        <!-- decisional leaves -->
+                        <rect x="525" y="190" width="100" height="32" rx="6" class="svg-box-purple"/>
+                        <text x="575" y="211" text-anchor="middle" font-size="11" font-weight="600" class="svg-text-purple">Entrepreneur</text>
+                        
+                        <rect x="525" y="240" width="140" height="32" rx="6" class="svg-box-purple"/>
+                        <text x="595" y="261" text-anchor="middle" font-size="11" font-weight="600" class="svg-text-purple">Disturbance Handler</text>
+                        
+                        <rect x="635" y="190" width="130" height="32" rx="6" class="svg-box-purple"/>
+                        <text x="700" y="211" text-anchor="middle" font-size="11" font-weight="600" class="svg-text-purple">Resource Allocator</text>
+                        
+                        <rect x="675" y="240" width="90" height="32" rx="6" class="svg-box-purple"/>
+                        <text x="720" y="261" text-anchor="middle" font-size="11" font-weight="600" class="svg-text-purple">Negotiator</text>
+                        
+                        <line x1="635" y1="150" x2="575" y2="190" stroke-width="1.5" class="svg-line"/>
+                        <line x1="635" y1="150" x2="595" y2="240" stroke-width="1.5" class="svg-line"/>
+                        <line x1="635" y1="150" x2="700" y2="190" stroke-width="1.5" class="svg-line"/>
+                        <line x1="635" y1="150" x2="720" y2="240" stroke-width="1.5" class="svg-line"/>
+                    </svg>
+                    <p class="diagram-caption">Fig. 4 — Mintzberg grouped a manager's chaotic day-to-day work into ten distinct roles.</p>
+                </div>
 
-                <h4>Comparative Summary</h4>
                 <table class="tutorial-table">
                     <tr>
-                        <th>Approach</th>
-                        <th>Focus</th>
-                        <th>Key Contributors</th>
-                        <th>View of Worker</th>
+                        <th colspan="2" style="background-color: var(--bg-color);">A. Interpersonal Roles (Arising from formal authority)</th>
                     </tr>
+                    <tr><td style="width: 25%;"><strong>1. Figurehead</strong></td><td>Performing symbolic, legal, or social duties (e.g., CEO cutting a ribbon, hosting a client dinner).</td></tr>
+                    <tr><td><strong>2. Leader</strong></td><td>Directing, motivating, and guiding subordinates. Includes hiring and training.</td></tr>
+                    <tr><td><strong>3. Liaison</strong></td><td>Maintaining internal and external networks of contacts to gather information and build alliances outside the vertical chain of command.</td></tr>
+                    
                     <tr>
-                        <td>Classical (Scientific)</td>
-                        <td>Task efficiency</td>
-                        <td>F.W. Taylor</td>
-                        <td>Economic man</td>
+                        <th colspan="2" style="background-color: var(--bg-color);">B. Informational Roles (Processing information)</th>
                     </tr>
+                    <tr><td><strong>4. Monitor</strong></td><td>Continuously scanning the environment to gather information about industry changes and internal operations.</td></tr>
+                    <tr><td><strong>5. Disseminator</strong></td><td>Transmitting privileged information internally to subordinates who lack access to the source.</td></tr>
+                    <tr><td><strong>6. Spokesperson</strong></td><td>Transmitting information externally to outsiders regarding plans, policies, and results (e.g., holding a press conference).</td></tr>
+
                     <tr>
-                        <td>Classical (Administrative)</td>
-                        <td>Organization-wide principles</td>
-                        <td>Henri Fayol</td>
-                        <td>Rational, ordered structure</td>
+                        <th colspan="2" style="background-color: var(--bg-color);">C. Decisional Roles (Making choices and committing resources)</th>
                     </tr>
-                    <tr>
-                        <td>Classical (Bureaucratic)</td>
-                        <td>Formal rules & hierarchy</td>
-                        <td>Max Weber</td>
-                        <td>Rule-following functionary</td>
-                    </tr>
-                    <tr>
-                        <td>Neo-Classical</td>
-                        <td>Human relations, informal groups</td>
-                        <td>Elton Mayo, Maslow, McGregor</td>
-                        <td>Social man</td>
-                    </tr>
-                    <tr>
-                        <td>Modern (Quantitative)</td>
-                        <td>Data-driven decisions</td>
-                        <td>Operations researchers</td>
-                        <td>Rational decision input</td>
-    </tr>
-                    <tr>
-                        <td>Modern (Systems)</td>
-                        <td>Interconnected sub-systems</td>
-                        <td>Contributors from systems theory</td>
-                        <td>Part of a larger system</td>
-                    </tr>
-                    <tr>
-                        <td>Modern (Contingency)</td>
-                        <td>Situational fit</td>
-                        <td>Fiedler and others</td>
-                        <td>Context-dependent</td>
-                    </tr>
+                    <tr><td><strong>7. Entrepreneur</strong></td><td>Initiating change, identifying new opportunities, and designing innovative projects. Taking calculated risks.</td></tr>
+                    <tr><td><strong>8. Disturbance Handler</strong></td><td>Taking corrective action during unexpected crises or conflicts (e.g., a sudden labor strike, PR disaster).</td></tr>
+                    <tr><td><strong>9. Resource Allocator</strong></td><td>Deciding who gets what—distributing budgets, time, equipment, and personnel across projects.</td></tr>
+                    <tr><td><strong>10. Negotiator</strong></td><td>Representing the organization in major negotiations (e.g., finalizing union contracts, major supplier deals).</td></tr>
                 </table>
 
-                <h2 id="fayol">9. Fayol's Management Theory</h2>
-                <p><strong>Henri Fayol</strong> (1841–1925), a French mining engineer and industrialist, is regarded as the <strong>"Father of Modern Management Theory"</strong> (as opposed to Taylor, who is the "Father of Scientific Management"). His theory, presented in <em>"General and Industrial Management"</em> (1916), focused on the <strong>administrative activities of top management</strong>.</p>
+                <h2 id="process">6. Management Process or Operational Approach</h2>
+                <p>Championed by theorists like Harold Koontz and Cyril O'Donnell, this approach attempts to draw together the pertinent knowledge of management by relating it to the managerial job.</p>
+                <ul class="custom-bullets">
+                    <li><strong>Core Premise:</strong> Management is a dynamic, continuous process of getting things done through people, centered entirely around the core functions (Planning, Organizing, Staffing, Directing, Controlling).</li>
+                    <li><strong>Eclectic Nature:</strong> It is a broad approach that freely borrows heavily from other disciplines (psychology, sociology, mathematics, economics) but integrates them specifically to solve operational management problems.</li>
+                    <li><strong>Input-Output System:</strong> It views the organization as an open system. The output of one managerial function becomes the direct input for the next (e.g., the output of strategic planning becomes the exact input for designing the organizational structure).</li>
+                </ul>
 
-                <h3>9.1 Fayol's Classification of Business Activities</h3>
-                <p>Fayol divided all industrial activities into six groups:</p>
-                <ol class="custom-bullets">
-                    <li>Technical (production)</li>
-                    <li>Commercial (buying, selling, exchange)</li>
-                    <li>Financial (search for and optimal use of capital)</li>
-                    <li>Security (protection of property and persons)</li>
-                    <li>Accounting (record-keeping, costing, statistics)</li>
-                    <li><strong>Managerial</strong> (planning, organizing, commanding, coordinating, controlling)</li>
-                </ol>
-                <p>Fayol emphasized that managerial ability becomes increasingly important as one moves up the organizational hierarchy.</p>
+                <h2 id="evolution">7. Development of Management Thought</h2>
+                <p>The evolution of management theory provides vital context for modern practices. It is divided into three main eras:</p>
 
-                <h3>9.2 Fayol's Five Elements/Functions of Management</h3>
-                <ol class="custom-bullets">
-                    <li><strong>Planning (Prevoyance)</strong> – Examining the future and drawing up a plan of action</li>
-                    <li><strong>Organizing</strong> – Building up the structure (material and human) of the undertaking</li>
-                    <li><strong>Commanding</strong> – Directing and leading personnel</li>
-                    <li><strong>Coordinating</strong> – Unifying and harmonizing all activities and efforts</li>
-                    <li><strong>Controlling</strong> – Ensuring everything occurs according to established rules and instructions</li>
-                </ol>
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 780 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Timeline showing the evolution of management thought">
+                        <rect width="780" height="220" rx="14" class="svg-bg"/>
 
-                <h3>9.3 Fayol's 14 Principles of Management</h3>
+                        <!-- Timeline base -->
+                        <line x1="50" y1="110" x2="730" y2="110" stroke-width="4" class="svg-line"/>
+
+                        <!-- Classical -->
+                        <circle cx="150" cy="110" r="12" class="svg-solid-blue"/>
+                        <text x="150" y="80" text-anchor="middle" font-size="13" font-weight="700" class="svg-text">Classical Approach</text>
+                        <text x="150" y="95" text-anchor="middle" font-size="10" class="svg-text-muted">Late 19th - Early 20th C</text>
+                        <text x="150" y="135" text-anchor="middle" font-size="11" font-weight="600" class="svg-text-blue">Taylor, Fayol, Weber</text>
+                        <text x="150" y="152" text-anchor="middle" font-size="10" class="svg-text-muted">Structure &amp; Efficiency</text>
+                        <text x="150" y="167" text-anchor="middle" font-size="10" class="svg-text-muted">"Economic Man"</text>
+
+                        <!-- Neo-Classical -->
+                        <circle cx="390" cy="110" r="12" class="svg-solid-green"/>
+                        <text x="390" y="80" text-anchor="middle" font-size="13" font-weight="700" class="svg-text">Neo-Classical Approach</text>
+                        <text x="390" y="95" text-anchor="middle" font-size="10" class="svg-text-muted">1920s - 1950s</text>
+                        <text x="390" y="135" text-anchor="middle" font-size="11" font-weight="600" class="svg-text-green">Mayo, Maslow, McGregor</text>
+                        <text x="390" y="152" text-anchor="middle" font-size="10" class="svg-text-muted">Psychology &amp; HR</text>
+                        <text x="390" y="167" text-anchor="middle" font-size="10" class="svg-text-muted">"Social Man"</text>
+
+                        <!-- Modern -->
+                        <circle cx="630" cy="110" r="12" class="svg-solid-purple"/>
+                        <text x="630" y="80" text-anchor="middle" font-size="13" font-weight="700" class="svg-text">Modern Approaches</text>
+                        <text x="630" y="95" text-anchor="middle" font-size="10" class="svg-text-muted">1950s - Present</text>
+                        <text x="630" y="135" text-anchor="middle" font-size="11" font-weight="600" class="svg-text-purple">Quantitative, Systems, Contingency</text>
+                        <text x="630" y="152" text-anchor="middle" font-size="10" class="svg-text-muted">Integration &amp; Data</text>
+                        <text x="630" y="167" text-anchor="middle" font-size="10" class="svg-text-muted">Environment Adaptation</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 5 — Management theory shifted from mechanical efficiency to human psychology, and finally to modern systems and data integration.</p>
+                </div>
+
+                <h3 id="classical">7.1 Classical Approach</h3>
+                <p>Focused on structure, economic rationality, and mechanical efficiency. It views the worker as an "Economic Man" (motivated purely by money).</p>
+                <ul class="custom-bullets">
+                    <li><strong>Scientific Management (F.W. Taylor):</strong> Focused on the "shop-floor." Replaced rule-of-thumb with scientific analysis. Introduced time and motion studies, standardized tools, and the differential piece-rate system.</li>
+                    <li><strong>Administrative Theory (Henri Fayol):</strong> Focused on the top-down, total organizational level. Developed universal principles of management.</li>
+                    <li><strong>Bureaucratic Theory (Max Weber):</strong> Emphasized strict rules, logical impersonality, clear vertical hierarchy, and promotion based strictly on technical merit to eliminate nepotism.</li>
+                </ul>
+
+                <h3 id="neoclassical">7.2 Neo-Classical Approach</h3>
+                <p>Focused on human relations, social systems, and psychology. Views the worker as a "Social Man" (motivated by belonging and recognition).</p>
+                <ul class="custom-bullets">
+                    <li><strong>Hawthorne Studies (Elton Mayo):</strong> Discovered the <strong>"Hawthorne Effect"</strong>—that social group dynamics, informal workplace relations, and psychological attention from supervisors impacted productivity far more than physical working conditions (like factory lighting).</li>
+                    <li><strong>Behavioral Sciences:</strong> Built on Mayo's work. Theorists like Abraham Maslow (Hierarchy of Needs) and Douglas McGregor (Theory X and Theory Y) shifted the focus to deep employee motivation.</li>
+                </ul>
+
+                <h3 id="modern-thought">7.3 Modern Approaches</h3>
+                <ul class="custom-bullets">
+                    <li><strong>Quantitative Approach (Management Science):</strong> Uses advanced statistics, linear programming, and computer modeling to aid complex decision-making (e.g., optimizing supply chain routes).</li>
+                    <li><strong>Systems Approach:</strong> Views the organization as a unified, purposeful "open system" composed of interrelated parts (subsystems) that heavily interacts with its external environment.</li>
+                    <li><strong>Contingency Approach (Situational Approach):</strong> The ultimate "It depends" theory. It suggests there is no single "best way" to manage. Managerial action depends on specific situational variables (e.g., firm size, rate of technological change).</li>
+                </ul>
+
+                <h2 id="fayol">8. Fayol’s Management Theory (14 Principles)</h2>
+                <p>Henri Fayol, known as the <em>Father of General Management</em>, published his administrative theory in 1916. While Taylor focused on the factory floor, Fayol focused on the C-Suite. He established 14 universal principles that guide managerial behavior:</p>
+
                 <table class="tutorial-table">
                     <tr>
-                        <th>No.</th>
-                        <th>Principle</th>
-                        <th>Explanation</th>
+                        <th style="width: 5%;">#</th>
+                        <th style="width: 25%;">Principle</th>
+                        <th>Explanation for MBA Students</th>
                     </tr>
-                    <tr><td>1</td><td><strong>Division of Work</strong></td><td>Specialization increases efficiency and output by dividing work among individuals according to expertise.</td></tr>
-                    <tr><td>2</td><td><strong>Authority and Responsibility</strong></td><td>Authority (the right to give orders) must be accompanied by corresponding responsibility (accountability).</td></tr>
-                    <tr><td>3</td><td><strong>Discipline</strong></td><td>Obedience, application, energy, and respect for agreements between the organization and its employees.</td></tr>
-                    <tr><td>4</td><td><strong>Unity of Command</strong></td><td>Each employee should receive orders from only one superior to avoid confusion.</td></tr>
-                    <tr><td>5</td><td><strong>Unity of Direction</strong></td><td>Each group of activities with the same objective should be directed by one manager using one plan.</td></tr>
-                    <tr><td>6</td><td><strong>Subordination of Individual Interest to General Interest</strong></td><td>The interests of the organization should prevail over individual/personal interests.</td></tr>
-                    <tr><td>7</td><td><strong>Remuneration</strong></td><td>Compensation should be fair, satisfactory, and rewarding to both employees and the organization.</td></tr>
-                    <tr><td>8</td><td><strong>Centralization</strong></td><td>The degree to which decision-making authority is concentrated at the top (vs. decentralized) should suit the situation.</td></tr>
-                    <tr><td>9</td><td><strong>Scalar Chain</strong></td><td>The formal line of authority/communication from the highest to the lowest rank ("Gang Plank" allows lateral communication in urgent cases).</td></tr>
-                    <tr><td>10</td><td><strong>Order</strong></td><td>A place for everything (and everyone) and everything (and everyone) in its place — material and social order.</td></tr>
-                    <tr><td>11</td><td><strong>Equity</strong></td><td>Managers should treat employees with kindness, fairness, and justice.</td></tr>
-                    <tr><td>12</td><td><strong>Stability of Tenure of Personnel</strong></td><td>High employee turnover is inefficient; management should provide job security to encourage loyalty and performance.</td></tr>
-                    <tr><td>13</td><td><strong>Initiative</strong></td><td>Employees should be encouraged to develop and carry out their own plans/ideas within limits of authority.</td></tr>
-                    <tr><td>14</td><td><strong>Esprit de Corps</strong></td><td>"Union is strength" — promoting team spirit and harmony builds a united organization.</td></tr>
+                    <tr><td>1</td><td><strong>Division of Work</strong></td><td>Breaking down work into smaller tasks and promoting specialization increases output and efficiency by making employees more skilled at their specific jobs.</td></tr>
+                    <tr><td>2</td><td><strong>Authority & Responsibility</strong></td><td>Managers must have the formal power (authority) to give orders, but this must be perfectly balanced with accountability (responsibility) for the outcomes.</td></tr>
+                    <tr><td>3</td><td><strong>Discipline</strong></td><td>Respect for agreements, obedience, and strict adherence to organizational rules are essential for smooth, predictable functioning.</td></tr>
+                    <tr><td>4</td><td><strong>Unity of Command</strong></td><td>An employee should receive orders from, and report to, <strong>only one superior</strong> to avoid conflicting instructions, confusion, and evasion of responsibility.</td></tr>
+                    <tr><td>5</td><td><strong>Unity of Direction</strong></td><td>One head and one plan for a group of activities having the same overarching objective to ensure coordination of effort across the enterprise.</td></tr>
+                    <tr><td>6</td><td><strong>Subordination of Individual Interest</strong></td><td>The goals of the organization must always take priority over the personal interests, egos, or financial ambitions of any single employee or group.</td></tr>
+                    <tr><td>7</td><td><strong>Remuneration</strong></td><td>Compensation for work must be fair, equitable, and satisfactory to both the employees and the organization's financial capacity.</td></tr>
+                    <tr><td>8</td><td><strong>Centralization vs Decentralization</strong></td><td>The appropriate balance between centralization (retention of decision-making authority at the top) and decentralization (delegation to lower levels) depends on the firm's size, environment, and capability of subordinates.</td></tr>
+                    <tr><td>9</td><td><strong>Scalar Chain</strong></td><td>The clear, unbroken line of formal authority from the highest to the lowest ranks. (Fayol also proposed the <em>'Gang Plank'</em>, allowing lateral communication between peers in emergencies to avoid delays).</td></tr>
+                    <tr><td>10</td><td><strong>Order</strong></td><td>"A place for everything, and everything in its place." Applies to both material order (minimizing wasted time finding tools) and social order (putting the right person in the right job).</td></tr>
+                    <tr><td>11</td><td><strong>Equity</strong></td><td>Managers should treat their subordinates with kindness, fairness, and justice to secure their devotion and loyalty.</td></tr>
+                    <tr><td>12</td><td><strong>Stability of Tenure</strong></td><td>High employee turnover is inefficient. Management should provide job security and orderly personnel planning to reduce training costs and anxiety.</td></tr>
+                    <tr><td>13</td><td><strong>Initiative</strong></td><td>Employees should be encouraged and allowed to originate and carry out plans, fostering zeal, energy, and innovation at all organizational levels.</td></tr>
+                    <tr><td>14</td><td><strong>Esprit de Corps</strong></td><td>"Union is strength." Promoting team spirit, harmony, and unity among personnel builds a stronger organization. Oral communication is recommended to resolve minor differences quickly.</td></tr>
                 </table>
 
-                <h3>9.4 Significance and Criticism of Fayol's Theory</h3>
-                <p><strong>Contributions:</strong></p>
-                <ul class="custom-bullets">
-                    <li>First systematic, comprehensive theory of general management applicable to all organizations.</li>
-                    <li>Laid the foundation for the functions of management taught today.</li>
-                    <li>Emphasized that management can be taught (management is a distinct skill, separate from technical skill).</li>
-                </ul>
-                <p><strong>Criticisms:</strong></p>
-                <ul class="custom-bullets">
-                    <li>Principles are based largely on Fayol's personal experience, lacking rigorous scientific validation.</li>
-                    <li>Some principles (e.g., unity of command) conflict with modern flexible/matrix organizational structures.</li>
-                    <li>Neglects the human/behavioral and informal aspects of organizations (later addressed by the Neo-Classical approach).</li>
-                    <li>Principles are sometimes too general/rigid for the complexity of modern dynamic organizations.</li>
-                </ul>
+                <h2 id="review">Review Questions</h2>
+                <h3>Short Answer Type</h3>
+                <ol class="custom-bullets">
+                    <li>Define management from the perspective of Mary Parker Follett and F.W. Taylor. Why is Follett's definition considered narrow today?</li>
+                    <li>Distinguish between effectiveness and efficiency using Peter Drucker's core philosophy.</li>
+                    <li>What is the fundamental difference between Top, Middle, and Lower level management regarding their time horizon and function focus?</li>
+                    <li>Explain the "Hawthorne Effect" and identify which school of management thought it belongs to.</li>
+                    <li>Define Fayol's concept of the "Scalar Chain" and the "Gang Plank."</li>
+                </ol>
 
-                <h2 id="summary">10. Quick Revision Summary</h2>
-                <ul class="custom-bullets">
-                    <li><strong>Management</strong> = getting work done through people; is a science, an art, and an emerging profession.</li>
-                    <li><strong>Functions</strong>: Planning, Organizing, Staffing, Directing, Controlling (POSDC).</li>
-                    <li><strong>Levels</strong>: Top (planning/organizing) → Middle (organizing/directing) → Lower (directing/controlling).</li>
-                    <li><strong>Katz's Skills</strong>: Conceptual (top) &gt; Human (all levels) &gt; Technical (lower level).</li>
-                    <li><strong>Efficiency</strong> = doing things right (input focus); <strong>Effectiveness</strong> = doing right things (output/goal focus).</li>
-                    <li><strong>Mintzberg's 10 Roles</strong> = Interpersonal (3) + Informational (3) + Decisional (4).</li>
-                    <li><strong>Operational Approach</strong> = universal process view of management (Fayol, Koontz).</li>
-                    <li><strong>Evolution</strong>: Classical (Taylor, Fayol, Weber) → Neo-Classical/Human Relations (Mayo, Maslow, McGregor) → Modern (Quantitative, Systems, Contingency).</li>
-                    <li><strong>Fayol</strong> = Father of Modern Management; 6 activities, 5 functions, 14 principles.</li>
-                </ul>
+                <h3>Long Answer / Essay Type</h3>
+                <ol class="custom-bullets">
+                    <li>"Management is both a science and an art." Discuss this statement in detail, providing examples to support your argument.</li>
+                    <li>Critically evaluate Robert Katz's approach to Managerial Skills. How does the required mix of conceptual, human, and technical skills change as a manager moves up the corporate hierarchy?</li>
+                    <li>Contrast the classical functions of management (POSDC) with Henry Mintzberg’s 10 Managerial Roles. Which approach provides a more realistic view of a modern CEO's daily life?</li>
+                    <li>Trace the development of management thought from the Classical Era (Taylor, Weber) through the Neo-Classical Era (Mayo, Maslow) to Modern Systems and Contingency approaches. How did the view of the worker change across these eras?</li>
+                    <li>Detail Henri Fayol's 14 Principles of Management. Are these principles still relevant in today's highly dynamic, agile tech companies? Discuss.</li>
+                </ol>
 
+                <h2 id="summary">Summary</h2>
+                <p>This comprehensive unit established the foundational framework for studying management at the MBA level. We explored the evolving concept of management, transitioning from a narrow focus on "handling people" to a multidimensional, dynamic process of optimizing organizational resources. We dissected the five core functions (Planning, Organizing, Staffing, Directing, Controlling) and analyzed how the focus on these functions—along with Katz's Conceptual, Human, and Technical skills—shifts dramatically across organizational hierarchies. We clarified the critical distinction between Drucker's concepts of Effectiveness (doing the right things) and Efficiency (doing things right). The unit also challenged the traditional functional view by introducing Mintzberg's 10 Managerial Roles, demonstrating</p>
+                
             </div>
-            
+
             <div class="completion-section">
                 <button id="markCompleteBtn" class="complete-btn">✔️ Mark as Complete</button>
             </div>
 
             <div class="pagination">
                 <button class="prev-btn hover-effect disabled">❮ Previous</button>
-                <a href="s1-mgt-u2.html" style="text-decoration: none;"><button class="next-btn hover-effect">Unit 2: Planning ❯</button></a>
+                <a href="s1-mgt-u2.html" style="text-decoration: none;"><button class="next-btn hover-effect">Unit 2: Planning & Strategy ❯</button></a>
             </div>
         </main>
 
@@ -543,20 +608,21 @@ Roles                Roles                  Roles
             <div class="widget sticky-widget premium-card">
                 <h3>Unit Contents</h3>
                 <ul class="toc-list">
-                    <li><a href="#concept">1. Concept & Nature</a></li>
+                    <li><a href="#concept">1. Concept, Nature, and Importance of Management</a></li>
                     <li><a href="#functions">2. Functions of Management</a></li>
-                    <li><a href="#levels">3. Management Levels</a></li>
-                    <li><a href="#skills">4. Managerial Skills</a></li>
-                    <li><a href="#goals">5. Goals & Productivity</a></li>
-                    <li><a href="#mintzberg">6. Mintzberg's Roles</a></li>
-                    <li><a href="#process">7. Management Process</a></li>
-                    <li><a href="#development">8. Management Thought</a></li>
-                    <li><a href="#fayol">9. Fayol's Theory</a></li>
-                    <li><a href="#summary">10. Revision Summary</a></li>
+                    <li><a href="#levels">3. Managerial Functions at Different Levels & Managerial Skills</a></li>
+                    <li><a href="#efficiency">4. Goals, Productivity, Effectiveness, and Efficiency</a></li>
+                    <li><a href="#mintzberg">5. Mintzberg’s Managerial Roles Approach</a></li>
+                    <li><a href="#process">6. Management Process or Operational Approach</a></li>
+                    <li><a href="#evolution">7. Development of Management Thought</a></li>
+                    <li><a href="#fayol">8. Fayol’s Management Theory (14 Principles)</a></li>
+                    <li><a href="#review">Review Questions</a></li>
+                    <li><a href="#summary">Summary</a></li>
                 </ul>
             </div>
         </aside>
     </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
