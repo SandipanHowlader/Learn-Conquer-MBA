@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Management Principles and Application - Unit-6</title>
+    
+    <!-- Apple Touch Icons (for iOS home screen) -->
+    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icon.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="icon.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon.png">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .diagram-wrap { margin: 35px 0; text-align: center; }
+        .diagram-wrap svg { max-width: 100%; height: auto; background: #ffffff; border-radius: 14px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: all 0.3s ease; border: 1px solid var(--border-color); }
+        .diagram-caption { font-size: 0.85rem; color: var(--text-light); margin-top: 12px; font-style: italic; }
+
+        /* Dark Mode Transitions for SVGs */
+        body.dark-mode .diagram-wrap svg { background: #1e293b; box-shadow: 0 4px 15px rgba(0,0,0,0.4); border-color: #334155; }
+        .svg-bg { fill: #ffffff; transition: fill 0.3s ease; }
+        body.dark-mode .svg-bg { fill: #1e293b; }
+        
+        .svg-text { fill: #1e293b; transition: fill 0.3s ease; }
+        body.dark-mode .svg-text { fill: #f8fafc; }
+        
+        .svg-text-muted { fill: #64748b; transition: fill 0.3s ease; }
+        body.dark-mode .svg-text-muted { fill: #94a3b8; }
+        
+        .svg-line { stroke: #94a3b8; transition: stroke 0.3s ease; }
+        body.dark-mode .svg-line { stroke: #475569; }
+        
+        .svg-marker { fill: #94a3b8; transition: fill 0.3s ease; }
+        body.dark-mode .svg-marker { fill: #475569; }
+
+        /* Specific Color Adaptations for Elements */
+        .svg-box-blue { fill: #eff6ff; stroke: #3b82f6; transition: all 0.3s ease; }
+        .svg-text-blue { fill: #1d4ed8; transition: fill 0.3s ease; }
+        body.dark-mode .svg-box-blue { fill: rgba(59, 130, 246, 0.15); stroke: #3b82f6; }
+        body.dark-mode .svg-text-blue { fill: #60a5fa; }
+
+        .svg-box-yellow { fill: #fffbeb; stroke: #f59e0b; transition: all 0.3s ease; }
+        .svg-text-yellow { fill: #b45309; transition: fill 0.3s ease; }
+        body.dark-mode .svg-box-yellow { fill: rgba(245, 158, 11, 0.15); stroke: #f59e0b; }
+        body.dark-mode .svg-text-yellow { fill: #fbbf24; }
+
+        .svg-box-green { fill: #f0fdf4; stroke: #10b981; transition: all 0.3s ease; }
+        .svg-text-green { fill: #047857; transition: fill 0.3s ease; }
+        body.dark-mode .svg-box-green { fill: rgba(16, 185, 129, 0.15); stroke: #10b981; }
+        body.dark-mode .svg-text-green { fill: #34d399; }
+
+        .svg-box-red { fill: #fef2f2; stroke: #ef4444; transition: all 0.3s ease; }
+        .svg-text-red { fill: #b91c1c; transition: fill 0.3s ease; }
+        body.dark-mode .svg-box-red { fill: rgba(239, 68, 68, 0.15); stroke: #ef4444; }
+        body.dark-mode .svg-text-red { fill: #f87171; }
+        
+        .svg-box-purple { fill: #faf5ff; stroke: #a855f7; transition: all 0.3s ease; }
+        .svg-text-purple { fill: #7e22ce; transition: fill 0.3s ease; }
+        body.dark-mode .svg-box-purple { fill: rgba(168, 85, 247, 0.15); stroke: #a855f7; }
+        body.dark-mode .svg-text-purple { fill: #c084fc; }
+        
+        .svg-node-dark { fill: #334155; transition: fill 0.3s ease; }
+        body.dark-mode .svg-node-dark { fill: #475569; }
+        
+        .svg-solid-blue { fill: #2b6cb0; transition: fill 0.3s ease; }
+        body.dark-mode .svg-solid-blue { fill: #3b82f6; }
+        
+        .svg-solid-green { fill: #2f855a; transition: fill 0.3s ease; }
+        body.dark-mode .svg-solid-green { fill: #10b981; }
+        
+        .svg-solid-yellow { fill: #b7791f; transition: fill 0.3s ease; }
+        body.dark-mode .svg-solid-yellow { fill: #f59e0b; }
+        
+        .svg-solid-red { fill: #c53030; transition: fill 0.3s ease; }
+        body.dark-mode .svg-solid-red { fill: #ef4444; }
+        
+        .svg-solid-purple { fill: #805ad5; transition: fill 0.3s ease; }
+        body.dark-mode .svg-solid-purple { fill: #9f7aea; }
+    </style>
+</head>
+<body data-current-topic="s1-mgt-u6">
+    <div class="progress-container"><div class="progress-bar" id="myBar"></div></div>
+
+    <header class="navbar glass-nav">
+        <div class="nav-left">
+            <button id="mobileMenuBtn" class="mobile-menu-btn">☰</button>
+            <div class="logo">Learn & Concure <span> MBA Tutorials</span></div>
+        </div>
+        <div class="nav-links">
+            <button id="focusModeBtn" class="theme-btn hover-effect" title="Focus Mode">📖</button>
+            <button id="darkModeToggle" class="theme-btn hover-effect" title="Dark Mode">🌙</button>
+            <a href="index.html" id="logoutBtn" class="logout-btn hover-effect">Sign Out</a>
+        </div>
+    </header>
+
+    <div class="main-wrapper" id="mainWrapper">
+        <aside class="sidebar" id="sidebar-container"></aside>
+
+        <main class="content premium-card" id="mainContent">
+            <div class="bread-crumbs">Semester-I / Management Principles and Application / Unit 6</div>
+
+            <div class="article-header-flex">
+                <div>
+                    <h1>Leading, Motivation, and Communication</h1>
+                    <div class="article-meta">
+                        <span>4 Credits | Read Time: 85 mins | Comprehensive MBA Edition</span>
+                    </div>
+                </div>
+                <div class="action-buttons">
+                    <!--button class="icon-btn hover-effect" onclick="window.print()" title="Print PDF">🖨️</button-->
+                </div>
+            </div>
+            <hr class="premium-hr">
+
+            <div class="article-body">
+                <div class="concept-block">
+                    <strong>Topics Covered in This Unit:</strong>
+                    <ul class="custom-bullets" style="margin-top: 10px;">
+                        <li>Leadership: Definition, Ingredients, and Principles</li>
+                        <li>Leadership Traits and Styles (Autocratic, Democratic, Laissez-faire)</li>
+                        <li>Behavioral & Contingency Theories (Managerial Grid, Fiedler, Hersey-Blanchard)</li>
+                        <li>Motivation: Concept, Intrinsic vs. Extrinsic</li>
+                        <li>Motivation Theories (Maslow, Herzberg, McGregor, McClelland, Vroom, Adams)</li>
+                        <li>Communication: Purpose, Process, and Flow</li>
+                        <li>Written, Oral, and Non-Verbal Communication</li>
+                        <li>Formal vs. Informal Communication (The Grapevine)</li>
+                        <li>Barriers to Effective Communication</li>
+                    </ul>
+                </div>
+
+                <h2 id="leadership">1. Leadership: The Art of Influence</h2>
+                
+                <h3 id="leadership-concept">1.1 Definition and Ingredients of Leadership</h3>
+                <p class="lead-text">Leadership is the interpersonal process of influencing, inspiring, and guiding others to enthusiastically and willingly achieve a common goal.</p>
+                <p>While a <em>manager</em> relies on formal, positional authority to command obedience, a <em>leader</em> relies on personal influence, vision, and psychological appeal to command followership. Management is about doing things right; leadership is about doing the right things.</p>
+                
+                <p><strong>The Core Ingredients of Leadership:</strong></p>
+                <ul class="custom-bullets">
+                    <li><strong>Power & Influence:</strong> The ability to use power effectively and responsibly (Coercive, Reward, Legitimate, Expert, and Referent power).</li>
+                    <li><strong>Comprehension of Human Behavior:</strong> A deep understanding that human beings have different motivating forces at different times and in different situations.</li>
+                    <li><strong>Inspiration:</strong> The rare ability to inspire followers to apply their full capabilities to a project, transcending their own self-interest.</li>
+                    <li><strong>Style & Climate:</strong> The ability to act in a manner that develops a climate highly conducive to responding to and arousing motivations.</li>
+                </ul>
+
+                <h3 id="traits">1.2 Leadership Traits (Trait Theory)</h3>
+                <p>Historically, the "Great Man" theory suggested leaders were born, not made. Modern Trait Theory suggests that while traits alone don't guarantee success, successful leaders frequently exhibit specific characteristics:</p>
+                <ul class="custom-bullets">
+                    <li><strong>Drive:</strong> High effort level, desire for achievement, ambition, and high energy.</li>
+                    <li><strong>Desire to Lead:</strong> A strong psychological desire to influence and lead others.</li>
+                    <li><strong>Honesty and Integrity:</strong> Building highly trusting relationships by being truthful and exhibiting high consistency between word and deed.</li>
+                    <li><strong>Self-Confidence:</strong> Absence of self-doubt to convince followers of the rightness of goals and decisions.</li>
+                    <li><strong>Emotional Intelligence (EQ):</strong> The ability to manage one's own emotions and read/empathize with the emotions of followers.</li>
+                </ul>
+
+                <h3 id="styles">1.3 Leadership Styles</h3>
+                <p>Leadership style refers to the consistent behavioral pattern a leader exhibits when directing and motivating subordinates.</p>
+
+                <table class="tutorial-table">
+                    <tr>
+                        <th style="width: 25%;">Leadership Style</th>
+                        <th>Characteristics</th>
+                        <th>Best Used When...</th>
+                    </tr>
+                    <tr>
+                        <td style="background-color: rgba(239, 68, 68, 0.05);"><strong>Autocratic (Dictatorial)</strong></td>
+                        <td>The leader centralizes all decision-making authority. They dictate methods and processes without consulting subordinates. Communication is strictly top-down. Motivation is often based on fear or strict rewards.</td>
+                        <td>In a severe crisis, during emergencies, or when dealing with highly unskilled/unmotivated workers who require strict, detailed instructions.</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: rgba(59, 130, 246, 0.05);"><strong>Democratic (Participative)</strong></td>
+                        <td>The leader involves subordinates in the decision-making process. While the leader retains ultimate authority, they actively seek input, encourage discussion, and foster a team environment. Two-way communication.</td>
+                        <td>The team consists of highly skilled, experienced professionals whose insights are valuable (e.g., a software engineering team, a hospital board).</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: rgba(245, 158, 11, 0.05);"><strong>Laissez-Faire (Free-Rein)</strong></td>
+                        <td>The leader completely abdicates responsibility and authority, providing minimum guidance. Subordinates are given massive autonomy to make their own decisions and solve their own problems.</td>
+                        <td>Managing highly creative, self-motivated experts (e.g., R&D scientists, artists, university professors). *Can be disastrous if the team is not self-driven.*</td>
+                    </tr>
+                </table>
+
+                <div class="concept-block">
+                    <strong>Modern Addition: Transactional vs. Transformational Leadership</strong><br><br>
+                    <strong>Transactional Leaders</strong> guide followers by clarifying roles and task requirements. They operate on a strict "exchange" basis (do this task well, get this bonus).<br><br>
+                    <strong>Transformational Leaders</strong> inspire followers to transcend their own self-interests for the good of the organization. They have profound, extraordinary effects on followers (e.g., Steve Jobs, Nelson Mandela) by providing intellectual stimulation and compelling visions.
+                </div>
+
+                <h2 id="adv-leadership">2. Advanced Leadership Theories: Behavioral & Contingency</h2>
+                
+                <h3 id="managerial-grid">2.1 The Managerial Grid (Blake & Mouton)</h3>
+                <p>Developed by Robert Blake and Jane Mouton, the Managerial Grid is a highly popular behavioral leadership model. It plots a manager's <strong>"Concern for Production"</strong> against their <strong>"Concern for People"</strong> on a 9x9 grid, identifying five major leadership styles.</p>
+
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 600 450" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The Managerial Grid by Blake and Mouton">
+                        <defs>
+                            <marker id="arrGrid" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                                <path d="M0,0L10,5L0,10z" class="svg-marker"/>
+                            </marker>
+                        </defs>
+                        <rect width="600" height="450" rx="14" class="svg-bg"/>
+                        
+                        <!-- Grid Lines -->
+                        <g stroke-opacity="0.2" class="svg-line" stroke-width="1">
+                            <!-- Verticals -->
+                            <line x1="120" y1="50" x2="120" y2="350"/>
+                            <line x1="160" y1="50" x2="160" y2="350"/>
+                            <line x1="200" y1="50" x2="200" y2="350"/>
+                            <line x1="240" y1="50" x2="240" y2="350"/>
+                            <line x1="280" y1="50" x2="280" y2="350"/>
+                            <line x1="320" y1="50" x2="320" y2="350"/>
+                            <line x1="360" y1="50" x2="360" y2="350"/>
+                            <line x1="400" y1="50" x2="400" y2="350"/>
+                            <line x1="440" y1="50" x2="440" y2="350"/>
+                            <line x1="480" y1="50" x2="480" y2="350"/>
+                            <!-- Horizontals -->
+                            <line x1="80" y1="90" x2="480" y2="90"/>
+                            <line x1="80" y1="130" x2="480" y2="130"/>
+                            <line x1="80" y1="170" x2="480" y2="170"/>
+                            <line x1="80" y1="210" x2="480" y2="210"/>
+                            <line x1="80" y1="250" x2="480" y2="250"/>
+                            <line x1="80" y1="290" x2="480" y2="290"/>
+                            <line x1="80" y1="330" x2="480" y2="330"/>
+                        </g>
+
+                        <!-- Axes -->
+                        <line x1="80" y1="350" x2="500" y2="350" stroke-width="3" marker-end="url(#arrGrid)" class="svg-line"/>
+                        <line x1="80" y1="350" x2="80" y2="30" stroke-width="3" marker-end="url(#arrGrid)" class="svg-line"/>
+                        
+                        <text x="280" y="390" text-anchor="middle" font-size="14" font-weight="700" class="svg-text">Concern for Production (Results) ➔</text>
+                        <text x="35" y="190" text-anchor="middle" font-size="14" font-weight="700" class="svg-text" transform="rotate(-90 35 190)">Concern for People ➔</text>
+
+                        <!-- Nodes and Labels -->
+                        <!-- (1,9) Country Club -->
+                        <circle cx="120" cy="90" r="12" class="svg-solid-blue"/>
+                        <rect x="140" y="70" width="120" height="40" rx="4" class="svg-box-blue"/>
+                        <text x="200" y="86" text-anchor="middle" font-size="12" font-weight="700" class="svg-text-blue">(1,9) Country Club</text>
+                        <text x="200" y="102" text-anchor="middle" font-size="10" class="svg-text-blue">High People, Low Task</text>
+
+                        <!-- (9,1) Produce or Perish -->
+                        <circle cx="440" cy="330" r="12" class="svg-solid-red"/>
+                        <rect x="290" y="310" width="135" height="40" rx="4" class="svg-box-red"/>
+                        <text x="357" y="326" text-anchor="middle" font-size="12" font-weight="700" class="svg-text-red">(9,1) Produce or Perish</text>
+                        <text x="357" y="342" text-anchor="middle" font-size="10" class="svg-text-red">High Task, Low People</text>
+
+                        <!-- (1,1) Impoverished -->
+                        <circle cx="120" cy="330" r="12" class="svg-node-dark"/>
+                        <rect x="140" y="310" width="120" height="40" rx="4" fill="var(--bg-color)" stroke="var(--border-color)"/>
+                        <text x="200" y="326" text-anchor="middle" font-size="12" font-weight="700" class="svg-text">(1,1) Impoverished</text>
+                        <text x="200" y="342" text-anchor="middle" font-size="10" class="svg-text-muted">Low Task, Low People</text>
+
+                        <!-- (9,9) Team Management -->
+                        <circle cx="440" cy="90" r="12" class="svg-solid-green"/>
+                        <rect x="420" y="35" width="140" height="40" rx="4" class="svg-box-green"/>
+                        <text x="490" y="51" text-anchor="middle" font-size="12" font-weight="700" class="svg-text-green">(9,9) Team Management</text>
+                        <text x="490" y="67" text-anchor="middle" font-size="10" class="svg-text-green">High Task, High People (Ideal)</text>
+
+                        <!-- (5,5) Middle of the Road -->
+                        <circle cx="280" cy="210" r="12" class="svg-solid-yellow"/>
+                        <rect x="295" y="190" width="130" height="40" rx="4" class="svg-box-yellow"/>
+                        <text x="360" y="206" text-anchor="middle" font-size="12" font-weight="700" class="svg-text-yellow">(5,5) Middle of Road</text>
+                        <text x="360" y="222" text-anchor="middle" font-size="10" class="svg-text-yellow">Compromise</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 1 — The Managerial Grid. The ultimate goal of leadership training is to move managers toward the (9,9) Team Management style.</p>
+                </div>
+
+                <ul class="custom-bullets">
+                    <li><strong>Impoverished Management (1,1):</strong> The manager exerts minimum effort just to keep their job. Apathy reigns.</li>
+                    <li><strong>Country Club Management (1,9):</strong> High concern for people, zero concern for output. Creates a highly comfortable, friendly atmosphere, but production suffers immensely.</li>
+                    <li><strong>Produce or Perish (9,1):</strong> Also known as Authority-Compliance. The manager is a harsh taskmaster. Efficiency is everything; human elements are viewed merely as cogs in the machine.</li>
+                    <li><strong>Middle-of-the-Road (5,5):</strong> A compromiser. Balances the necessity to get work out with maintaining satisfactory morale, but achieves excellence in neither.</li>
+                    <li><strong>Team Management (9,9):</strong> The ideal style. Work is accomplished by highly committed people with a common stake in the organization's purpose. It builds trust, high morale, and high production simultaneously.</li>
+                </ul>
+
+                <h3 id="fiedler">2.2 Fiedler’s Contingency Theory</h3>
+                <p>Fred Fiedler argued that a leader's style is relatively fixed (either predominantly task-oriented or relationship-oriented). Therefore, leadership effectiveness depends on matching the leader's inherent style to the right situation.</p>
+                <ul class="custom-bullets">
+                    <li><strong>Least Preferred Coworker (LPC) Scale:</strong> Fiedler used this survey to determine a leader's underlying style. High LPC = Relationship-oriented; Low LPC = Task-oriented.</li>
+                    <li><strong>Situational Control:</strong> The "favorableness" of the situation depends on three variables: <em>Leader-Member Relations</em> (trust in the leader), <em>Task Structure</em> (how clear the goals are), and <em>Position Power</em> (the leader's ability to hire/fire/reward).</li>
+                    <li><em>MBA Insight:</em> Fiedler found that Task-oriented leaders perform best in extreme situations (highly favorable or highly unfavorable). Relationship-oriented leaders perform best in moderately favorable situations.</li>
+                </ul>
+
+                <h3 id="hersey">2.3 Hersey and Blanchard’s Situational Leadership Model</h3>
+                <p>Unlike Fiedler, Paul Hersey and Ken Blanchard argued that effective leaders <em>can and should</em> dynamically adjust their style based on the <strong>readiness (maturity) of the followers</strong>. Readiness is defined by the followers' ability (competence) and willingness (confidence/motivation) to perform a specific task.</p>
+                <table class="tutorial-table">
+                    <tr>
+                        <th style="width: 35%;">Follower Readiness</th>
+                        <th>Recommended Leadership Style</th>
+                    </tr>
+                    <tr>
+                        <td style="background-color: rgba(239, 68, 68, 0.05);"><strong>R1: Unable and Unwilling</strong><br>(Low maturity)</td>
+                        <td><strong>Telling (S1):</strong> High task, low relationship behavior. The leader provides clear, specific, and detailed instructions and closely supervises.</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: rgba(245, 158, 11, 0.05);"><strong>R2: Unable but Willing</strong><br>(Moderate maturity)</td>
+                        <td><strong>Selling (S2):</strong> High task, high relationship. The leader still directs, but explains decisions, provides clarification, and coaches the follower to build skills.</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: rgba(59, 130, 246, 0.05);"><strong>R3: Able but Unwilling/Insecure</strong><br>(Moderate-High maturity)</td>
+                        <td><strong>Participating (S3):</strong> Low task, high relationship. The follower has the skills, so the leader shares ideas, facilitates decision-making, and acts as a supportive mentor to boost confidence.</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: rgba(16, 185, 129, 0.05);"><strong>R4: Able and Willing</strong><br>(High maturity)</td>
+                        <td><strong>Delegating (S4):</strong> Low task, low relationship. The follower is highly competent and motivated. The leader turns over responsibility for decisions and implementation entirely.</td>
+                    </tr>
+                </table>
+
+                <h2 id="motivation">3. Motivation: Concepts and Theories</h2>
+                <p>Motivation is the psychological process that initiates, guides, and maintains goal-oriented behaviors. It is what causes an employee to act. Motivation can be <strong>Intrinsic</strong> (driven by internal rewards like personal growth, satisfaction, or passion) or <strong>Extrinsic</strong> (driven by external rewards like money, bonuses, or fear of punishment).</p>
+
+                <h3 id="maslow">3.1 Maslow’s Hierarchy of Needs</h3>
+                <p>Abraham Maslow proposed that human motivation is based on a chronological hierarchy of five needs. A manager must understand what level an employee is currently on to motivate them; a satisfied need no longer motivates.</p>
+
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 600 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Maslow's Hierarchy of Needs Pyramid">
+                        <rect width="600" height="380" rx="14" class="svg-bg"/>
+                        
+                        <!-- Level 1: Physiological -->
+                        <polygon points="100,340 500,340 450,280 150,280" class="svg-solid-red" opacity="0.9"/>
+                        <text x="300" y="315" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">1. Physiological Needs</text>
+                        <text x="300" y="332" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.8)">Base Salary, Food, Water, Rest</text>
+                        
+                        <!-- Level 2: Safety -->
+                        <polygon points="155,275 445,275 395,215 205,215" class="svg-solid-yellow" opacity="0.9"/>
+                        <text x="300" y="250" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">2. Safety &amp; Security</text>
+                        <text x="300" y="267" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.8)">Job Security, Health Insurance, Safe Conditions</text>
+
+                        <!-- Level 3: Social -->
+                        <polygon points="210,210 390,210 340,150 260,150" class="svg-solid-green" opacity="0.9"/>
+                        <text x="300" y="185" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">3. Social (Belonging)</text>
+                        <text x="300" y="202" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.8)">Teamwork, Friendship, Inclusion</text>
+
+                        <!-- Level 4: Esteem -->
+                        <polygon points="265,145 335,145 305,95 295,95" class="svg-solid-blue" opacity="0.9"/>
+                        <polygon points="265,145 335,145 315,85 285,85" class="svg-solid-blue" opacity="0.9"/>
+                        <text x="300" y="120" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">4. Esteem</text>
+                        <text x="300" y="135" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.8)">Titles, Recognition, Status</text>
+
+                        <!-- Level 5: Self-Actualization -->
+                        <polygon points="290,80 310,80 300,30" class="svg-solid-purple" opacity="0.9"/>
+                        <text x="300" y="65" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">5. Self-Act.</text>
+                        
+                        <!-- Side annotation for Self-Actualization -->
+                        <line x1="320" y1="55" x2="400" y2="55" stroke-width="1.5" stroke-dasharray="3,3" class="svg-line"/>
+                        <text x="410" y="55" text-anchor="start" font-size="12" font-weight="600" class="svg-text-purple">Self-Actualization:</text>
+                        <text x="410" y="70" text-anchor="start" font-size="11" class="svg-text-muted">Achieving full potential,</text>
+                        <text x="410" y="85" text-anchor="start" font-size="11" class="svg-text-muted">creativity, challenging work.</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 2 — Maslow's Hierarchy of Needs. A person must fulfill lower-order needs before higher-order needs become motivating.</p>
+                </div>
+
+                <h3 id="herzberg">3.2 Herzberg’s Two-Factor (Motivation-Hygiene) Theory</h3>
+                <p>Frederick Herzberg revolutionized motivation theory by discovering that the opposite of "Satisfaction" is NOT "Dissatisfaction." There are two completely separate sets of factors at play in the workplace:</p>
+                <table class="tutorial-table">
+                    <tr>
+                        <th style="width: 50%;">Hygiene (Maintenance) Factors</th>
+                        <th>Motivators (Growth) Factors</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Function:</strong> Their presence prevents dissatisfaction, but they do <em>not</em> motivate. (They just keep employees from quitting).<br><br>
+                        <strong>Examples:</strong> Salary, company policies, physical working conditions, job security, status.</td>
+                        <td><strong>Function:</strong> Their presence actually motivates employees to perform better and yields deep satisfaction.<br><br>
+                        <strong>Examples:</strong> Achievement, recognition, challenging work, responsibility, promotion, personal growth.</td>
+                    </tr>
+                </table>
+                <p><em>MBA Insight:</em> If a manager doubles an employee's salary (a hygiene factor), the employee won't necessarily work twice as hard. But if the manager gives the employee ownership over a challenging new project (a motivator), performance skyrockets.</p>
+
+                <h3 id="mcgregor">3.3 McGregor’s Theory X and Theory Y</h3>
+                <p>Douglas McGregor proposed that a manager's leadership style is heavily dictated by their fundamental assumptions about human nature.</p>
+                <ul class="custom-bullets">
+                    <li><strong>Theory X (Traditional/Pessimistic):</strong> The manager assumes employees inherently dislike work, are lazy, avoid responsibility, and must be coerced, controlled, or threatened with punishment to achieve goals. (Leads to Autocratic management).</li>
+                    <li><strong>Theory Y (Modern/Optimistic):</strong> The manager assumes employees view work as natural as play or rest. They assume people are highly self-directed, seek responsibility, and possess creativity. (Leads to Democratic/Participative management).</li>
+                </ul>
+
+                <h3 id="mcclelland">3.4 McClelland’s Theory of Needs</h3>
+                <p>David McClelland proposed that human behavior in the workplace is primarily driven by three acquired (not innate) needs. An effective MBA manager must identify the dominant need in an employee to motivate them correctly:</p>
+                <ul class="custom-bullets">
+                    <li><strong>Need for Achievement (nAch):</strong> The drive to excel, overcome complex challenges, and succeed. <br><em>Motivated by:</em> Complex tasks, personal responsibility, and immediate, data-driven feedback. They prefer to work alone or with other high achievers.</li>
+                    <li><strong>Need for Affiliation (nAff):</strong> The desire for friendly, close interpersonal relationships. <br><em>Motivated by:</em> Teamwork, cooperative environments, and avoiding conflict. They excel in customer service or HR roles.</li>
+                    <li><strong>Need for Power (nPow):</strong> The need to make others behave in a way they wouldn't have otherwise (to influence, coach, or control). <br><em>Motivated by:</em> Status, authority, titles, and leading high-profile projects. Excellent for top-management roles.</li>
+                </ul>
+
+                <h3 id="vroom">3.5 Vroom’s Expectancy Theory</h3>
+                <p>Victor Vroom shifted the focus from analyzing <em>internal needs</em> to understanding the <em>cognitive process</em> of motivation. He argued that motivation is a rational calculation based on three factors. If any of these factors is zero, overall motivation is completely eliminated.</p>
+                <div class="concept-block" style="background: rgba(59, 130, 246, 0.05); border-left-color: #3b82f6;">
+                    <strong>Motivation = Expectancy × Instrumentality × Valence</strong><br><br>
+                    <strong>1. Expectancy (Effort ➔ Performance):</strong> The belief that putting in the effort will actually result in hitting the target. <em>"If I work hard, can I actually achieve this?"</em> (Requires training, resources, and realistic goals).<br>
+                    <strong>2. Instrumentality (Performance ➔ Reward):</strong> The belief that hitting the target will actually result in receiving the promised reward. <em>"If I hit the target, will management actually give me the bonus?"</em> (Requires absolute trust in management integrity).<br>
+                    <strong>3. Valence (Reward ➔ Value):</strong> The subjective value the employee places on the reward. <em>"Do I actually care about this reward?"</em> (A \$100 steakhouse gift card has zero valence to a vegan).
+                </div>
+
+                <h3 id="adams">3.6 Adams’ Equity Theory</h3>
+                <p>J. Stacy Adams introduced the concept of workplace fairness. Employees do not evaluate their rewards in a vacuum; they constantly compare their own <strong>Input/Output ratio</strong> to the ratio of their peers.</p>
+                <ul class="custom-bullets">
+                    <li><em>Inputs:</em> Effort, hours worked, education, experience, loyalty.</li>
+                    <li><em>Outputs:</em> Salary, bonuses, recognition, promotions, office space.</li>
+                </ul>
+                <p>If an employee perceives inequity (e.g., "I work much harder than John, but John gets paid the same as me"), they experience cognitive dissonance. To restore equity, they will: (a) Ask for a raise to increase outputs, (b) Reduce their effort to lower inputs ("quiet quitting"), or (c) Leave the organization.</p>
+
+                <h2 id="communication">4. Communication: Purpose and Process</h2>
+                <p>Communication is the lifeblood of an organization. It is the continuous process of transferring information, meaning, and understanding from a sender to a receiver.</p>
+
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 700 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The Communication Process Flowchart">
+                        <defs>
+                            <marker id="arrComm" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                                <path d="M0,0L10,5L0,10z" class="svg-marker"/>
+                            </marker>
+                        </defs>
+                        <rect width="700" height="240" rx="14" class="svg-bg"/>
+                        
+                        <!-- Top Flow -->
+                        <rect x="40" y="50" width="100" height="40" rx="6" class="svg-solid-blue"/>
+                        <text x="90" y="75" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">Sender</text>
+
+                        <rect x="180" y="50" width="100" height="40" rx="6" class="svg-box-blue"/>
+                        <text x="230" y="75" text-anchor="middle" font-size="12" font-weight="600" class="svg-text-blue">Encoding</text>
+
+                        <rect x="320" y="50" width="100" height="40" rx="6" class="svg-box-yellow"/>
+                        <text x="370" y="75" text-anchor="middle" font-size="12" font-weight="600" class="svg-text-yellow">Channel/Media</text>
+                        <text x="370" y="105" text-anchor="middle" font-size="10" class="svg-text-muted">(Email, Voice, etc.)</text>
+
+                        <rect x="460" y="50" width="100" height="40" rx="6" class="svg-box-green"/>
+                        <text x="510" y="75" text-anchor="middle" font-size="12" font-weight="600" class="svg-text-green">Decoding</text>
+
+                        <rect x="600" y="50" width="80" height="40" rx="6" class="svg-solid-green"/>
+                        <text x="640" y="75" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">Receiver</text>
+
+                        <!-- Top Arrows -->
+                        <line x1="140" y1="70" x2="175" y2="70" stroke-width="2" marker-end="url(#arrComm)" class="svg-line"/>
+                        <line x1="280" y1="70" x2="315" y2="70" stroke-width="2" marker-end="url(#arrComm)" class="svg-line"/>
+                        <line x1="420" y1="70" x2="455" y2="70" stroke-width="2" marker-end="url(#arrComm)" class="svg-line"/>
+                        <line x1="560" y1="70" x2="595" y2="70" stroke-width="2" marker-end="url(#arrComm)" class="svg-line"/>
+
+                        <!-- Noise -->
+                        <polygon points="370,120 380,140 360,140" class="svg-solid-red"/>
+                        <rect x="330" y="140" width="80" height="30" rx="4" class="svg-box-red"/>
+                        <text x="370" y="160" text-anchor="middle" font-size="12" font-weight="700" class="svg-text-red">NOISE</text>
+
+                        <!-- Feedback Loop -->
+                        <path d="M 640 90 L 640 200 L 90 200 L 90 90" fill="none" stroke-width="2.5" stroke-dasharray="6,4" marker-end="url(#arrComm)" class="svg-line"/>
+                        <rect x="310" y="185" width="120" height="30" rx="15" class="svg-box-purple"/>
+                        <text x="370" y="205" text-anchor="middle" font-size="12" font-weight="600" class="svg-text-purple">Feedback Loop</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 3 — The Communication Process. Noise can disrupt the message at any stage. Feedback is critical to ensure understanding.</p>
+                </div>
+
+                <h3 id="comm-types">4.1 Types of Communication</h3>
+                <ul class="custom-bullets">
+                    <li><strong>Written Communication:</strong> Memos, emails, reports. It provides a permanent record and allows for complex, detailed instruction. However, it lacks immediate feedback and tone can be misinterpreted.</li>
+                    <li><strong>Oral (Verbal) Communication:</strong> Meetings, phone calls, presentations. It allows for immediate feedback and clarification. However, there is no permanent record unless recorded.</li>
+                    <li><strong>Non-Verbal Communication:</strong> Often speaks louder than words. Includes:
+                        <ul style="list-style-type: circle; padding-left: 20px; margin-top: 5px;">
+                            <li><em>Kinesics:</em> Body language, facial expressions, eye contact.</li>
+                            <li><em>Paralanguage:</em> Tone of voice, pitch, pacing (how something is said).</li>
+                            <li><em>Proxemics:</em> The use of physical space (e.g., sitting at the head of the table vs. sitting closely together).</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3 id="networks">4.2 Formal vs. Informal Communication (The Grapevine)</h3>
+                <p><strong>Formal Communication</strong> flows strictly through the official organizational hierarchy (the Scalar Chain). It includes downward flow (CEO to workers), upward flow (reports to management), and horizontal flow (coordination between departments).</p>
+                
+                <p><strong>Informal Communication (The Grapevine):</strong> This is the unofficial social network of the organization. It operates outside formal channels. </p>
+                <div class="concept-block" style="background: rgba(16, 185, 129, 0.05); border-left-color: #10b981;">
+                    <strong>Managing the Grapevine:</strong><br>
+                    Many managers hate the grapevine because it spreads rumors. However, smart MBA managers use it to their advantage. The grapevine is incredibly fast. Managers can use it to gauge employee morale, test the waters for a new policy, or disseminate information rapidly. You cannot kill the grapevine; you must manage it.
+                </div>
+
+                <h3 id="barriers">4.3 Barriers to Effective Communication</h3>
+                <p>Information rarely reaches the receiver exactly as the sender intended. "Noise" acts as a barrier, categorized into:</p>
+                <table class="tutorial-table">
+                    <tr>
+                        <th style="width: 25%;">Barrier Type</th>
+                        <th>Explanation and Examples</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Semantic Barriers</strong></td>
+                        <td>Relates to the meaning of words. Using complex jargon (e.g., highly technical MBA terms spoken to a factory worker), faulty translations, or ambiguous words that have multiple meanings.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Psychological Barriers</strong></td>
+                        <td>Relates to the mental state of the sender/receiver. Includes premature evaluation (jumping to conclusions), poor listening skills, intense emotions (anger, fear), or distrust of the communicator.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Organizational Barriers</strong></td>
+                        <td>Relates to the corporate structure. A highly bureaucratic, tall structure with too many management layers causes message filtering/loss. Strict rules can also stifle open communication.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Personal Barriers</strong></td>
+                        <td>A manager's fear of having their authority challenged, or a subordinate's lack of confidence/fear of retribution, preventing them from reporting bad news.</td>
+                    </tr>
+                </table>
+
+                <div class="concept-block" style="background: rgba(168, 85, 247, 0.05); border-left-color: #a855f7;">
+                    <strong>Overcoming Communication Barriers:</strong><br>
+                    MBA managers must proactively employ several tactics to ensure effective transmission and reception of critical data:
+                    <ul class="custom-bullets" style="margin-top: 5px; margin-bottom: 0;">
+                        <li><strong>Active Listening:</strong> Listening to truly understand, not just waiting for a turn to reply. It involves maintaining eye contact, paraphrasing, and avoiding premature judgements.</li>
+                        <li><strong>Tailoring the Message:</strong> Adjusting the vocabulary, jargon, and medium to perfectly suit the receiver's educational and cultural background.</li>
+                        <li><strong>Encouraging Upward Feedback:</strong> Fostering a psychologically safe environment where subordinates can critique policies or deliver bad news without fear of retaliation or anger.</li>
+                    </ul>
+                </div>
+
+                <h2 id="review">Review Questions</h2>
+                <h3>Short Answer Type</h3>
+                <ol class="custom-bullets">
+                    <li>Differentiate between a manager and a leader.</li>
+                    <li>What are the characteristics of a Laissez-Faire leadership style?</li>
+                    <li>According to Blake and Mouton, what does a (1,9) leadership style represent?</li>
+                    <li>Identify the four readiness levels in the Hersey-Blanchard model.</li>
+                    <li>Distinguish between Intrinsic and Extrinsic motivation.</li>
+                    <li>Define "Valence" in the context of Vroom's Expectancy Theory.</li>
+                    <li>Identify the three components of non-verbal communication (Kinesics, Paralanguage, Proxemics).</li>
+                </ol>
+
+                <h3>Long Answer / Essay Type</h3>
+                <ol class="custom-bullets">
+                    <li>Critically evaluate the Trait Theory of leadership. What modern traits are considered essential for an MBA executive?</li>
+                    <li>Compare and contrast Fiedler's Contingency Theory with Hersey and Blanchard's Situational Leadership Model. How do their views on changing a leader's style differ?</li>
+                    <li>Explain the Managerial Grid. Why is the (9,9) Team Management style considered the ultimate goal of leadership development?</li>
+                    <li>Contrast Maslow's Hierarchy of Needs with Herzberg's Two-Factor Theory. How does Herzberg prove that salary is a "Hygiene" factor rather than a true motivator?</li>
+                    <li>Explain Vroom's Expectancy Theory. Using the formula, explain what happens to employee motivation if they are highly capable and desire the reward, but do not trust management to actually deliver the bonus.</li>
+                    <li>Describe the communication process using a flowchart. What role does "Feedback" play in mitigating "Noise"?</li>
+                    <li>Discuss the various barriers to effective organizational communication. How can a manager proactively overcome psychological and personal barriers?</li>
+                </ol>
+
+                <h2 id="summary">Summary</h2>
+                <p>This final unit explored the dynamic, human-centric functions of management: Leading and Communication. We defined leadership not just as formal authority, but as the art of interpersonal influence. We explored leadership traits and mapped behavioral styles conceptually onto Blake and Mouton's Managerial Grid. The unit then advanced to Contingency theories, comparing Fiedler's rigid style-matching with Hersey and Blanchard's highly adaptable situational readiness model. The unit delved deeply into Motivation, distinguishing between internal drive and external rewards, supported by foundational theories: Maslow's hierarchy, Herzberg's Hygiene factors, McGregor's Theory X and Y, McClelland's acquired needs, Vroom's cognitive expectancy calculation, and Adams' focus on workplace equity. Finally, we dissected the Communication process as the lifeblood of an organization. We explored written, oral, and non-verbal channels, contrasted the formal scalar chain with the incredibly fast informal "Grapevine", and categorized the semantic, psychological, and organizational barriers that managers must actively overcome to ensure their strategic intent is clearly executed across the enterprise.</p>
+
+            </div>
+
+            <div class="completion-section">
+                <button id="markCompleteBtn" class="complete-btn">✔️ Mark as Complete</button>
+            </div>
+
+            <div class="pagination">
+                <a href="s1-mgt-u5.html" style="text-decoration: none;"><button class="prev-btn hover-effect">❮ Unit 5: Controlling</button></a>
+                <button class="next-btn hover-effect" style="opacity: 0.5; cursor: not-allowed;" disabled>End of Module 🏁</button>
+            </div>
+        </main>
+
+        <aside class="right-sidebar" id="rightSidebar">
+            <div class="widget sticky-widget premium-card">
+                <h3>Unit Contents</h3>
+                <ul class="toc-list">
+                    <li><a href="#leadership">1. Leadership & Ingredients</a></li>
+                    <li><a href="#traits">1.2 Leadership Traits</a></li>
+                    <li><a href="#styles">1.3 Leadership Styles</a></li>
+                    <li><a href="#adv-leadership">2. Advanced Leadership</a></li>
+                    <li><a href="#managerial-grid">2.1 The Managerial Grid</a></li>
+                    <li><a href="#fiedler">2.2 Fiedler's Contingency</a></li>
+                    <li><a href="#hersey">2.3 Situational Leadership</a></li>
+                    <li><a href="#motivation">3. Motivation Concepts</a></li>
+                    <li><a href="#maslow">3.1 Maslow's Hierarchy</a></li>
+                    <li><a href="#herzberg">3.2 Herzberg & McGregor</a></li>
+                    <li><a href="#mcclelland">3.4 McClelland's Needs</a></li>
+                    <li><a href="#vroom">3.5 Expectancy Theory</a></li>
+                    <li><a href="#communication">4. Communication Process</a></li>
+                    <li><a href="#comm-types">4.1 Types of Communication</a></li>
+                    <li><a href="#networks">4.2 Formal vs. Informal</a></li>
+                    <li><a href="#barriers">4.3 Comm. Barriers</a></li>
+                    <li><a href="#review">Review Questions</a></li>
+                    <li><a href="#summary">Summary</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

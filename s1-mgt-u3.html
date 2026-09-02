@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Management Principles and Application - Unit-3</title>
+    <!-- Apple Touch Icons (for iOS home screen) -->
+    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icon.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="icon.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon.png">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .diagram-wrap { margin: 35px 0; text-align: center; }
+        .diagram-wrap svg { max-width: 100%; height: auto; background: #ffffff; border-radius: 14px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: all 0.3s ease; border: 1px solid var(--border-color); }
+        .diagram-caption { font-size: 0.85rem; color: var(--text-light); margin-top: 12px; font-style: italic; }
+
+        /* Dark Mode Transitions for SVGs */
+        body.dark-mode .diagram-wrap svg { background: #1e293b; box-shadow: 0 4px 15px rgba(0,0,0,0.4); border-color: #334155; }
+        .svg-bg { fill: #ffffff; transition: fill 0.3s ease; }
+        body.dark-mode .svg-bg { fill: #1e293b; }
+        
+        .svg-text { fill: #1e293b; transition: fill 0.3s ease; }
+        body.dark-mode .svg-text { fill: #f8fafc; }
+        
+        .svg-text-muted { fill: #64748b; transition: fill 0.3s ease; }
+        body.dark-mode .svg-text-muted { fill: #94a3b8; }
+        
+        .svg-line { stroke: #94a3b8; transition: stroke 0.3s ease; }
+        body.dark-mode .svg-line { stroke: #475569; }
+        
+        .svg-marker { fill: #94a3b8; transition: fill 0.3s ease; }
+        body.dark-mode .svg-marker { fill: #475569; }
+
+        /* Specific Color Adaptations for Elements */
+        .svg-box-blue { fill: #eff6ff; stroke: #3b82f6; transition: all 0.3s ease; }
+        .svg-text-blue { fill: #1d4ed8; transition: fill 0.3s ease; }
+        body.dark-mode .svg-box-blue { fill: rgba(59, 130, 246, 0.15); stroke: #3b82f6; }
+        body.dark-mode .svg-text-blue { fill: #60a5fa; }
+
+        .svg-box-yellow { fill: #fffbeb; stroke: #f59e0b; transition: all 0.3s ease; }
+        .svg-text-yellow { fill: #b45309; transition: fill 0.3s ease; }
+        body.dark-mode .svg-box-yellow { fill: rgba(245, 158, 11, 0.15); stroke: #f59e0b; }
+        body.dark-mode .svg-text-yellow { fill: #fbbf24; }
+
+        .svg-box-green { fill: #f0fdf4; stroke: #10b981; transition: all 0.3s ease; }
+        .svg-text-green { fill: #047857; transition: fill 0.3s ease; }
+        body.dark-mode .svg-box-green { fill: rgba(16, 185, 129, 0.15); stroke: #10b981; }
+        body.dark-mode .svg-text-green { fill: #34d399; }
+
+        .svg-box-red { fill: #fef2f2; stroke: #ef4444; transition: all 0.3s ease; }
+        .svg-text-red { fill: #b91c1c; transition: fill 0.3s ease; }
+        body.dark-mode .svg-box-red { fill: rgba(239, 68, 68, 0.15); stroke: #ef4444; }
+        body.dark-mode .svg-text-red { fill: #f87171; }
+        
+        .svg-box-purple { fill: #faf5ff; stroke: #a855f7; transition: all 0.3s ease; }
+        .svg-text-purple { fill: #7e22ce; transition: fill 0.3s ease; }
+        body.dark-mode .svg-box-purple { fill: rgba(168, 85, 247, 0.15); stroke: #a855f7; }
+        body.dark-mode .svg-text-purple { fill: #c084fc; }
+        
+        .svg-node-dark { fill: #334155; transition: fill 0.3s ease; }
+        body.dark-mode .svg-node-dark { fill: #475569; }
+        
+        .svg-solid-blue { fill: #2b6cb0; transition: fill 0.3s ease; }
+        body.dark-mode .svg-solid-blue { fill: #3b82f6; }
+        
+        .svg-solid-green { fill: #2f855a; transition: fill 0.3s ease; }
+        body.dark-mode .svg-solid-green { fill: #10b981; }
+        
+        .svg-solid-yellow { fill: #b7791f; transition: fill 0.3s ease; }
+        body.dark-mode .svg-solid-yellow { fill: #f59e0b; }
+        
+        .svg-solid-red { fill: #c53030; transition: fill 0.3s ease; }
+        body.dark-mode .svg-solid-red { fill: #ef4444; }
+    </style>
+</head>
+<body data-current-topic="s1-mgt-u3">
+    <div class="progress-container"><div class="progress-bar" id="myBar"></div></div>
+
+    <header class="navbar glass-nav">
+        <div class="nav-left">
+            <button id="mobileMenuBtn" class="mobile-menu-btn">☰</button>
+            <div class="logo">Learn & Concure <span> MBA Tutorials</span></div>
+        </div>
+        <div class="nav-links">
+            <button id="focusModeBtn" class="theme-btn hover-effect" title="Focus Mode">📖</button>
+            <button id="darkModeToggle" class="theme-btn hover-effect" title="Dark Mode">🌙</button>
+            <a href="index.html" id="logoutBtn" class="logout-btn hover-effect">Sign Out</a>
+        </div>
+    </header>
+
+    <div class="main-wrapper" id="mainWrapper">
+
+        <!-- JavaScript will automatically generate and inject the entire 4-Semester Sidebar here -->
+        <aside class="sidebar" id="sidebar-container"></aside>
+
+        <!-- Center Content: Tutorial -->
+        <main class="content premium-card" id="mainContent">
+            <div class="bread-crumbs">Semester-I / Management Principles and Application / Unit 3</div>
+
+            <div class="article-header-flex">
+                <div>
+                    <h1>Decision Making</h1>
+                    <div class="article-meta">
+                        <span>4 Credits | Read Time: 65 mins | Comprehensive MBA Edition</span>
+                    </div>
+                </div>
+                <div class="action-buttons">
+                    <!--button class="icon-btn hover-effect" onclick="window.print()" title="Print PDF">🖨️</button-->
+                </div>
+            </div>
+            <hr class="premium-hr">
+
+            <div class="article-body">
+                <div class="concept-block">
+                    <strong>Topics Covered in This Unit:</strong>
+                    <ul class="custom-bullets" style="margin-top: 10px;">
+                        <li>Rationality in Decision Making (Bounded Rationality & Satisficing)</li>
+                        <li>Selecting an Alternative (The Decision-Making Process)</li>
+                        <li>Programmed and Non-Programmed Decisions</li>
+                        <li>Decision-Making under Certainty, Uncertainty, and Risk</li>
+                        <li>Quantitative Techniques: Marginal Analysis & Cost-Effectiveness Analysis</li>
+                    </ul>
+                </div>
+
+                <h2 id="rationality">1. Rationality in Decision Making</h2>
+                
+                <h3 id="concept">1.1 What is Decision Making?</h3>
+                <p class="lead-text">Decision making is the core intellectual process of management. It is the act of consciously choosing a specific course of action from among two or more alternatives to achieve a desired result or solve a problem.</p>
+                <p>Because management is fundamentally about making choices allocating scarce resources (time, capital, manpower), Herbert Simon equated management *entirely* with decision making.</p>
+
+                <h3 id="perfect-rationality">1.2 The Concept of "Perfect Rationality" (Economic Man)</h3>
+                <p>Classical economic theory assumes that decision-makers are completely rational. A perfectly rational manager (the "Economic Man") is assumed to:</p>
+                <ul class="custom-bullets">
+                    <li>Have a perfectly clear, unambiguous goal.</li>
+                    <li>Have absolutely complete information about the problem.</li>
+                    <li>Be able to identify <em>every single possible alternative</em>.</li>
+                    <li>Have the cognitive capacity to accurately evaluate the outcomes of all alternatives without bias.</li>
+                    <li>Always select the alternative that purely <strong>maximizes</strong> economic value or utility.</li>
+                </ul>
+                <p>However, in real-world business environments, this level of perfect rationality is a myth. It is impossible to achieve.</p>
+
+                <h3 id="bounded-rationality">1.3 Herbert Simon's "Bounded Rationality"</h3>
+                <p>Nobel Laureate Herbert A. Simon criticized the classical model, introducing the concept of <strong>Bounded Rationality</strong>. He argued that managers are limited (bounded) in their ability to be perfectly rational due to several severe constraints:</p>
+                <div class="concept-block">
+                    <button class="copy-btn" onclick="copyText('bounded-text', this)">Copy</button>
+                    <div id="bounded-text">
+                        <strong>Constraints on Rationality:</strong><br>
+                        1. <strong>Cognitive limits:</strong> The human brain can only process so much information at once. We cannot evaluate infinite variables.<br>
+                        2. <strong>Information limits:</strong> Gathering perfect information is too costly and time-consuming. Information is often incomplete or inaccurate.<br>
+                        3. <strong>Time constraints:</strong> Managers often have to make decisions under strict deadlines, preventing exhaustive research.<br>
+                        4. <strong>Political/Emotional factors:</strong> Organizational politics, personal biases, and emotions heavily influence choices.
+                    </div>
+                </div>
+
+                <h3 id="satisficing">1.4 Satisficing vs. Maximizing</h3>
+                <p>Because managers operate under <em>Bounded Rationality</em>, they rarely "maximize" (find the absolute best solution). Instead, according to Simon, they <strong>"Satisfice"</strong>.</p>
+                <p><strong>Satisficing</strong> means accepting the first alternative that meets the minimum acceptable criteria (is "good enough"). Rather than searching endlessly for the perfect needle in a haystack, a manager will stop searching as soon as they find a needle sharp enough to sew with.</p>
+                <p><span style="color: var(--text-light); font-size: 0.9em;"><em>MBA Example:</em> A company looking for a new warehouse location won't evaluate every single building in the country (Maximizing). They will search until they find a warehouse that fits their budget, size requirement, and location needs, and sign the lease (Satisficing).</span></p>
+
+                <h3 id="heuristics">1.5 Heuristics and Cognitive Biases in Decision Making</h3>
+                <p>Because of bounded rationality, managers frequently rely on <strong>heuristics</strong> (mental shortcuts or "rules of thumb") to speed up complex decision-making. While efficient, heuristics can lead to severe, systematic errors known as cognitive biases. Key biases every manager must watch out for include:</p>
+                <ul class="custom-bullets">
+                    <li><strong>Anchoring Bias:</strong> Fixating on the first piece of information received (the "anchor") and failing to adequately adjust for subsequent information. <em>(e.g., Being overly influenced by an initial high asking price during a supplier negotiation).</em></li>
+                    <li><strong>Availability Heuristic:</strong> Basing decisions on information that is already in memory or emotionally recent, rather than objective, long-term data. <em>(e.g., A manager giving a poor annual review because the employee made a mistake yesterday, completely ignoring 11 months of stellar work).</em></li>
+                    <li><strong>Confirmation Bias:</strong> Seeking out information that reaffirms past choices and heavily discounting information that contradicts past judgments.</li>
+                    <li><strong>Sunk Cost Fallacy:</strong> The tendency to continue investing in a losing proposition because of what it has already cost (in time, money, or ego), rather than objectively evaluating its future value. <em>(e.g., Pouring more marketing funds into a dying product line because "we've already spent millions developing it").</em></li>
+                </ul>
+
+                <h2 id="types">2. Programmed and Non-Programmed Decisions</h2>
+                <p>Decisions vary drastically in their complexity and frequency. Herbert Simon classified them into two broad categories based on their structure.</p>
+
+                <h3 id="programmed">2.1 Programmed Decisions</h3>
+                <p>These are routine, repetitive, and well-structured decisions. Because they happen frequently, the organization has already developed standard operating procedures, policies, or rules to handle them. The manager does not need to treat the problem as a new one every time.</p>
+                <p><span style="color: var(--text-light); font-size: 0.9em;"><em>Example:</em> Approving a standard employee sick leave, processing a customer refund according to policy, or reordering inventory when stock falls below a specific threshold.</span></p>
+
+                <h3 id="non-programmed">2.2 Non-Programmed Decisions</h3>
+                <p>These are novel, unstructured, complex, and highly consequential decisions. There is no pre-existing rule or procedure to handle them because they have never occurred before or the environment has shifted drastically. They require high-level judgment, intuition, and creative problem-solving.</p>
+                <p><span style="color: var(--text-light); font-size: 0.9em;"><em>Example:</em> Deciding whether to acquire a massive competitor, responding to an unprecedented global pandemic, or launching a completely new product line in a foreign market.</span></p>
+
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 600 350" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Graph showing the inverse relationship between management level and types of decisions">
+                        <rect width="600" height="350" rx="14" class="svg-bg"/>
+                        <text x="300" y="30" text-anchor="middle" font-size="16" font-weight="600" class="svg-text">Types of Decisions Across Management Levels</text>
+                        
+                        <!-- Axes -->
+                        <line x1="80" y1="300" x2="520" y2="300" stroke-width="2" class="svg-line"/>
+                        <line x1="80" y1="60" x2="80" y2="300" stroke-width="2" class="svg-line"/>
+                        
+                        <text x="55" y="180" text-anchor="middle" font-size="13" font-weight="600" class="svg-text" transform="rotate(-90 55 180)">Management Hierarchy →</text>
+                        <text x="300" y="325" text-anchor="middle" font-size="13" font-weight="600" class="svg-text">Nature of Decisions</text>
+                        
+                        <!-- Y-axis labels -->
+                        <text x="70" y="90" text-anchor="end" font-size="12" font-weight="600" class="svg-text">Top</text>
+                        <text x="70" y="180" text-anchor="end" font-size="12" font-weight="600" class="svg-text">Middle</text>
+                        <text x="70" y="270" text-anchor="end" font-size="12" font-weight="600" class="svg-text">Lower</text>
+
+                        <!-- Areas -->
+                        <!-- Programmed (Bottom Heavy) -->
+                        <polygon points="80,300 80,240 280,240 450,300" class="svg-box-blue" fill-opacity="0.6"/>
+                        <text x="200" y="275" text-anchor="middle" font-size="13" font-weight="700" class="svg-text-blue">Programmed Decisions</text>
+                        <text x="200" y="290" text-anchor="middle" font-size="10" class="svg-text-blue">(Routine, Procedures, Rules)</text>
+                        
+                        <!-- Non-Programmed (Top Heavy) -->
+                        <polygon points="80,60 500,60 300,240 80,240" class="svg-box-purple" fill-opacity="0.6"/>
+                        <text x="250" y="130" text-anchor="middle" font-size="13" font-weight="700" class="svg-text-purple">Non-Programmed Decisions</text>
+                        <text x="250" y="145" text-anchor="middle" font-size="10" class="svg-text-purple">(Novel, Strategic, Unstructured)</text>
+
+                        <!-- Dotted division line -->
+                        <line x1="80" y1="240" x2="520" y2="240" stroke-width="2" stroke-dasharray="6,6" class="svg-line"/>
+                    </svg>
+                    <p class="diagram-caption">Fig. 1 — Lower-level managers handle mostly programmed decisions. Top-level executives deal almost exclusively with unstructured, non-programmed decisions.</p>
+                </div>
+
+                <h2 id="process">3. The Decision-Making Process (Selecting an Alternative)</h2>
+                <p>While programmed decisions happen automatically, non-programmed decisions require a rigorous, logical process. The steps for selecting a strategic alternative are:</p>
+
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 700 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Linear flowchart of the decision-making process">
+                        <defs>
+                            <marker id="arrFlow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                                <path d="M0,0L10,5L0,10z" class="svg-marker"/>
+                            </marker>
+                        </defs>
+                        <rect width="700" height="200" rx="14" class="svg-bg"/>
+                        
+                        <!-- Nodes -->
+                        <rect x="20" y="75" width="100" height="50" rx="6" class="svg-solid-blue"/>
+                        <text x="70" y="95" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">1. Identify</text>
+                        <text x="70" y="110" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">Problem</text>
+
+                        <rect x="150" y="75" width="100" height="50" rx="6" class="svg-box-blue"/>
+                        <text x="200" y="95" text-anchor="middle" font-size="11" font-weight="600" class="svg-text-blue">2. Develop</text>
+                        <text x="200" y="110" text-anchor="middle" font-size="11" font-weight="600" class="svg-text-blue">Alternatives</text>
+
+                        <rect x="280" y="75" width="100" height="50" rx="6" class="svg-box-yellow"/>
+                        <text x="330" y="95" text-anchor="middle" font-size="11" font-weight="600" class="svg-text-yellow">3. Evaluate</text>
+                        <text x="330" y="110" text-anchor="middle" font-size="11" font-weight="600" class="svg-text-yellow">Alternatives</text>
+
+                        <rect x="410" y="75" width="100" height="50" rx="6" class="svg-solid-green"/>
+                        <text x="460" y="95" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">4. Select</text>
+                        <text x="460" y="110" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">Best Alt.</text>
+
+                        <rect x="540" y="75" width="100" height="50" rx="6" class="svg-box-purple"/>
+                        <text x="590" y="95" text-anchor="middle" font-size="11" font-weight="600" class="svg-text-purple">5. Implement</text>
+                        <text x="590" y="110" text-anchor="middle" font-size="11" font-weight="600" class="svg-text-purple">&amp; Review</text>
+
+                        <!-- Arrows -->
+                        <line x1="120" y1="100" x2="145" y2="100" stroke-width="2" marker-end="url(#arrFlow)" class="svg-line"/>
+                        <line x1="250" y1="100" x2="275" y2="100" stroke-width="2" marker-end="url(#arrFlow)" class="svg-line"/>
+                        <line x1="380" y1="100" x2="405" y2="100" stroke-width="2" marker-end="url(#arrFlow)" class="svg-line"/>
+                        <line x1="510" y1="100" x2="535" y2="100" stroke-width="2" marker-end="url(#arrFlow)" class="svg-line"/>
+                    </svg>
+                    <p class="diagram-caption">Fig. 2 — The Rational Decision-Making Process</p>
+                </div>
+
+                <p>The detailed steps for making a structured decision involve:</p>
+                <ol class="custom-bullets" style="list-style-type: decimal; padding-left: 20px;">
+                    <li><strong>Identify and Define the Problem:</strong> A problem is a discrepancy between an existing state and a desired state. The manager must dig deep to find the root cause, not just treat symptoms (e.g., distinguishing between a "high turnover" symptom and a "toxic culture" root cause).</li>
+                    <li><strong>Identify Decision Criteria:</strong> What factors are relevant to solving this problem? If purchasing enterprise software, criteria might include <em>upfront price, scalability, user-friendliness, and customer support</em>.</li>
+                    <li><strong>Allocate Weights to Criteria:</strong> Not all criteria are equally important. A manager must prioritize them mathematically (e.g., Price gets a weight of 10, Scalability an 8, User-friendliness a 5).</li>
+                    <li><strong>Develop Alternatives:</strong> Brainstorming possible solutions. At this stage, no idea should be judged; the goal is to generate a wide pool of viable options.</li>
+                    <li><strong>Evaluate Alternatives:</strong> Each alternative is tested and scored against the weighted criteria developed in steps 2 and 3. <em>Is it feasible? Is it financially viable? What are the ethical risks?</em></li>
+                    <li><strong>Select the Best Alternative:</strong> Choosing the option that scores the highest based on the quantitative/qualitative evaluation (or satisficing, if under severe time constraints).</li>
+                    <li><strong>Implementation:</strong> Converting the decision into action by communicating it to stakeholders, allocating budgets, and assigning responsibilities. A brilliant decision on paper is useless if poorly executed.</li>
+                    <li><strong>Feedback and Review:</strong> Continuously measuring the actual results against expected results to see if the problem was actually solved. If not, the cycle restarts.</li>
+                </ol>
+
+                <h2 id="conditions">4. Decision-Making Under Certainty, Uncertainty, and Risk</h2>
+                <p>Managers never make decisions in a vacuum. The level of information available dictates the "environment" or condition under which the decision is made.</p>
+
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Spectrum from Certainty to Uncertainty">
+                        <defs>
+                            <linearGradient id="gradSpectrum" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#34d399; stop-opacity:1" /> <!-- Green -->
+                                <stop offset="50%" style="stop-color:#fbbf24; stop-opacity:1" /> <!-- Yellow -->
+                                <stop offset="100%" style="stop-color:#ef4444; stop-opacity:1" /> <!-- Red -->
+                            </linearGradient>
+                        </defs>
+                        <rect width="600" height="200" rx="14" class="svg-bg"/>
+                        
+                        <!-- Gradient Bar -->
+                        <rect x="50" y="80" width="500" height="20" rx="10" fill="url(#gradSpectrum)"/>
+                        
+                        <!-- Markers -->
+                        <circle cx="50" cy="90" r="8" class="svg-node-dark"/>
+                        <text x="50" y="65" text-anchor="middle" font-size="14" font-weight="700" class="svg-text">Certainty</text>
+                        <text x="50" y="130" text-anchor="middle" font-size="11" class="svg-text-muted">Outcomes known</text>
+                        <text x="50" y="145" text-anchor="middle" font-size="11" class="svg-text-muted">100% Probability</text>
+
+                        <circle cx="300" cy="90" r="8" class="svg-node-dark"/>
+                        <text x="300" y="65" text-anchor="middle" font-size="14" font-weight="700" class="svg-text">Risk</text>
+                        <text x="300" y="130" text-anchor="middle" font-size="11" class="svg-text-muted">Probabilities can</text>
+                        <text x="300" y="145" text-anchor="middle" font-size="11" class="svg-text-muted">be estimated (e.g., 60%)</text>
+
+                        <circle cx="550" cy="90" r="8" class="svg-node-dark"/>
+                        <text x="550" y="65" text-anchor="middle" font-size="14" font-weight="700" class="svg-text">Uncertainty</text>
+                        <text x="550" y="130" text-anchor="middle" font-size="11" class="svg-text-muted">No historical data</text>
+                        <text x="550" y="145" text-anchor="middle" font-size="11" class="svg-text-muted">Probabilities unknown</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 3 — The continuum of decision-making environments based on information availability.</p>
+                </div>
+
+                <table class="tutorial-table">
+                    <tr>
+                        <th style="width: 25%;">Condition</th>
+                        <th>Characteristics & MBA Examples</th>
+                    </tr>
+                    <tr>
+                        <td style="background-color: rgba(16, 185, 129, 0.05);"><strong>1. Certainty</strong></td>
+                        <td>The manager has perfect knowledge. They know exactly what the alternatives are and what the exact, guaranteed outcome of each alternative will be. <em>This is extremely rare in business.</em><br><br>
+                        <span style="font-size: 0.85rem; color: var(--text-light);"><em>Example:</em> Deciding between investing surplus corporate cash in a Government Treasury Bond (guaranteed 5% return) vs. a bank fixed deposit (guaranteed 4.5% return). The choice is mathematically obvious.</span></td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: rgba(245, 158, 11, 0.05);"><strong>2. Risk</strong></td>
+                        <td>The manager does not know the exact outcome, but has enough historical data or intelligence to assign <strong>mathematical probabilities</strong> to different outcomes. Most major business decisions fall here. Managers evaluate choices using <em>Expected Monetary Value (EMV)</em>.<br><br>
+                        <span style="font-size: 0.85rem; color: var(--text-light);"><em>Example:</em> An insurance company setting premiums. They don't know exactly who will crash a car, but actuarial tables give them precise probabilities.<br>
+                        <strong>EMV Calculation:</strong> If launching a product has a 60% chance of a $100,000 profit and a 40% chance of a $20,000 loss, the EMV is (0.60 × $100k) + (0.40 × -$20k) = $60,000 - $8,000 = <strong>$52,000</strong>.</span></td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: rgba(239, 68, 68, 0.05);"><strong>3. Uncertainty</strong></td>
+                        <td>The manager has virtually no information. Outcomes are unpredictable, and there is no historical data to even estimate probabilities. Decisions rely heavily on intuition, psychological tolerance for risk, and scenario planning.<br><br>
+                        <span style="font-size: 0.85rem; color: var(--text-light);"><em>Example:</em> Launching a totally unprecedented technology (like the first iPhone in 2007) or reacting to a sudden, unpredictable crisis (like a global pandemic).</span></td>
+                    </tr>
+                </table>
+
+                <h3 id="uncertainty-models">4.1 Strategies for Decision Making Under Pure Uncertainty</h3>
+                <p>When facing pure uncertainty (where no probabilities exist to calculate EMV), managers construct a <strong>Payoff Matrix</strong> and use psychological models to make choices based on their personal risk tolerance:</p>
+                <ul class="custom-bullets">
+                    <li><strong>Maximax (Optimistic / Aggressive):</strong> "Maximize the maximums." The manager looks at the absolute best possible outcome for every alternative and chooses the alternative offering the highest possible payoff. They completely ignore the downside risk. (High risk, high reward).</li>
+                    <li><strong>Maximin (Pessimistic / Defensive):</strong> "Maximize the minimums." The manager assumes the worst-case scenario will happen for every alternative. They evaluate the worst outcome for each option and choose the one with the "least bad" outcome. (Highly conservative).</li>
+                    <li><strong>Minimax Regret (Opportunity Loss):</strong> The manager chooses the option that minimizes the maximum "regret." Regret is the profit lost by not choosing the absolute best alternative in a given market condition.</li>
+                    <li><strong>Laplace (Equally Likely):</strong> If you have absolutely no idea what the probabilities are, the Principle of Insufficient Reason suggests you should assume they are all equal. Calculate the mathematical average payoff for each alternative and pick the highest.</li>
+                </ul>
+
+                <h2 id="quantitative">5. Quantitative Techniques for Decision Making</h2>
+
+                <h3 id="marginal">5.1 Marginal Analysis</h3>
+                <p>Borrowed from microeconomics, Marginal Analysis compares the <strong>extra (marginal) benefits</strong> of a decision against the <strong>extra (marginal) costs</strong> of that decision.</p>
+                <p>The core rule of marginal analysis: <strong>Continue to undertake an activity as long as the Marginal Revenue (MR) is greater than the Marginal Cost (MC). Stop exactly when MR = MC.</strong></p>
+                
+                <div class="concept-block">
+                    <strong>MBA Application of Marginal Analysis:</strong><br><br>
+                    An airline is about to fly a plane from NY to LA. The total cost to fly the plane is fixed (fuel, pilot salaries) at $50,000. There are 10 empty seats left right before takeoff. The *average* cost per seat is $500.<br><br>
+                    A standby passenger offers $100 for a seat. Should the manager accept?<br><br>
+                    <em>Traditional accounting:</em> No, $100 is less than the $500 average cost.<br>
+                    <em>Marginal Analysis:</em> YES. The marginal cost of adding one extra passenger to a flight that is already leaving is nearly zero (maybe a $5 bag of peanuts). The marginal revenue is $100. Since MR ($100) > MC ($5), accepting the offer increases overall profit.
+                </div>
+
+                <h3 id="cea">5.2 Cost-Effectiveness Analysis (CEA)</h3>
+                <p>Traditional Cost-Benefit Analysis requires putting a strict dollar value on everything. But what if the benefits cannot be easily quantified in money? This is where Cost-Effectiveness Analysis (CEA) comes in.</p>
+                <p>CEA is a technique used to evaluate and compare alternatives where the costs are measured in dollars, but the <strong>benefits are measured in non-financial, physical units</strong> (like lives saved, student test scores improved, or pollution reduced).</p>
+                
+                <p><strong>CEA is heavily used in:</strong></p>
+                <ul class="custom-bullets">
+                    <li><strong>Healthcare:</strong> Comparing two drugs. Drug A costs $5,000 and extends life by 2 years. Drug B costs $15,000 and extends life by 3 years. (Metric: Cost per life-year gained).</li>
+                    <li><strong>Public Policy / NGOs:</strong> Deciding whether to spend a budget on building a new school vs. buying laptops for an existing school. (Metric: Cost per student graduation rate).</li>
+                    <li><strong>Corporate IT/Security:</strong> Upgrading a server firewall. (Metric: Cost per unit of downtime prevented).</li>
+                </ul>
+                <p><em>The goal of CEA is to find the alternative that achieves the desired non-financial objective at the lowest possible financial cost.</em></p>
+
+                <h3 id="decision-trees">5.3 Decision Trees</h3>
+                <p>A Decision Tree is a highly visual, mathematical tool used for modeling sequential decision-making under conditions of risk. It maps out different decision paths, possible chance events, and final payoffs.</p>
+                <ul class="custom-bullets">
+                    <li><strong>Decision Nodes (represented by squares ◻️):</strong> Points where the manager has control and must make a strategic choice (e.g., "Build Large Plant" vs. "Build Small Plant").</li>
+                    <li><strong>Chance Nodes (represented by circles ⚪):</strong> Points where an uncertain external event occurs, with statistical probabilities attached to the branches (e.g., "High Market Demand: 70%" vs. "Low Market Demand: 30%").</li>
+                    <li><strong>Payoffs:</strong> The final financial outcome calculated at the end of each branch.</li>
+                </ul>
+                <p>By calculating the Expected Monetary Value (EMV) backward from the final payoffs to the initial decision node (a mathematical process called <em>"folding back the tree"</em>), managers can logically determine the most profitable sequence of decisions to make today.</p>
+
+                <h2 id="review">Review Questions</h2>
+                <h3>Short Answer Type</h3>
+                <ol class="custom-bullets">
+                    <li>What is meant by "Bounded Rationality" according to Herbert Simon?</li>
+                    <li>Differentiate between "Satisficing" and "Maximizing".</li>
+                    <li>Provide two business examples of a programmed decision and two of a non-programmed decision.</li>
+                    <li>Define decision-making under "Risk" and explain how it differs from "Uncertainty".</li>
+                    <li>What is the core rule of Marginal Analysis?</li>
+                </ol>
+
+                <h3>Long Answer / Essay Type</h3>
+                <ol class="custom-bullets">
+                    <li>"A perfectly rational decision-maker is a myth in the real corporate world." Discuss this statement in light of the constraints that bound a manager's rationality.</li>
+                    <li>Outline and explain the logical steps involved in the rational decision-making process. Why is the feedback/review step crucial?</li>
+                    <li>How does the nature of decision-making (programmed vs. non-programmed) shift as a manager moves from the supervisory level to the top executive level? Use diagrams to support your answer.</li>
+                    <li>Explain the strategies a manager might use when making decisions under pure uncertainty (Maximax, Maximin, Minimax Regret). How do psychological factors play a role here?</li>
+                    <li>Contrast Marginal Analysis with Cost-Effectiveness Analysis. In what scenarios would a manager prefer CEA over traditional financial cost-benefit analysis?</li>
+                </ol>
+
+                <h2 id="summary">Summary</h2>
+                <p>This unit explored the critical managerial function of decision making. We challenged the classical economic assumption of perfect rationality, highlighting Herbert Simon's concept of Bounded Rationality—recognizing that managers operate under severe cognitive, informational, and time constraints, leading them to "satisfice" rather than maximize. We also examined how mental shortcuts lead to dangerous cognitive biases like anchoring and the sunk cost fallacy. We classified decisions into programmed (routine) and non-programmed (novel) types. The rational decision-making process was broken down into a rigorous 8-step flowchart, from identifying criteria and mathematically allocating weights to final evaluation. We examined the environments in which decisions are made: Certainty (rare), Risk (where Expected Monetary Value / EMV models are utilized), and Uncertainty (where managers rely on psychological payoff models like Maximax, Maximin, and Minimax Regret). Finally, the unit introduced key quantitative tools: Marginal Analysis, Cost-Effectiveness Analysis (evaluating financial costs against non-financial benefits), and Decision Trees, equipping managers to make optimal resource allocations in complex, sequential scenarios.</p>
+
+            </div>
+
+            <div class="completion-section">
+                <button id="markCompleteBtn" class="complete-btn">✔️ Mark as Complete</button>
+            </div>
+
+            <div class="pagination">
+                <a href="s1-mgt-u2.html" style="text-decoration: none;"><button class="prev-btn hover-effect">❮ Unit 2: Planning & Strategy</button></a>
+                <a href="s1-mgt-u4.html" style="text-decoration: none;"><button class="next-btn hover-effect">Unit 4: Organizing ❯</button></a>
+            </div>
+        </main>
+
+        <aside class="right-sidebar" id="rightSidebar">
+            <div class="widget sticky-widget premium-card">
+                <h3>Unit Contents</h3>
+                <ul class="toc-list">
+                    <li><a href="#rationality">1. Rationality & Satisficing</a></li>
+                    <li><a href="#types">2. Programmed vs Non-Programmed</a></li>
+                    <li><a href="#process">3. Decision-Making Process</a></li>
+                    <li><a href="#conditions">4. Certainty, Risk, Uncertainty</a></li>
+                    <li><a href="#quantitative">5. Quantitative Techniques</a></li>
+                    <li><a href="#review">Review Questions</a></li>
+                    <li><a href="#summary">Summary</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
