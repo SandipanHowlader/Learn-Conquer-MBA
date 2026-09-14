@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accounting for Managers - Unit-6</title>
+        <!-- Apple Touch Icons (for iOS home screen) -->
+    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icon.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="icon.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .diagram-wrap { margin: 28px 0; text-align: center; }
+        .diagram-wrap svg { max-width: 100%; height: auto; background: #ffffff; border-radius: 14px; box-shadow: 0 1px 8px rgba(0,0,0,0.10); }
+        .diagram-caption { font-size: 0.85rem; color: #666; margin-top: 10px; font-style: italic; }
+    </style>
+</head>
+<body data-current-topic="s1-acc-u6">
+    <div class="progress-container"><div class="progress-bar" id="myBar"></div></div>
+
+    <header class="navbar glass-nav">
+        <div class="nav-left">
+            <button id="mobileMenuBtn" class="mobile-menu-btn">☰</button>
+            <div class="logo">Learn & Concure <span> MBA Tutorials</span></div>
+        </div>
+        <div class="nav-links">
+            <button id="focusModeBtn" class="theme-btn hover-effect" title="Focus Mode">📖</button>
+            <button id="darkModeToggle" class="theme-btn hover-effect" title="Dark Mode">🌙</button>
+            <a href="index.html" id="logoutBtn" class="logout-btn hover-effect">Sign Out</a>
+        </div>
+    </header>
+
+    <div class="main-wrapper" id="mainWrapper">
+
+        <!-- JavaScript will automatically generate and inject the entire 4-Semester Sidebar here -->
+        <aside class="sidebar" id="sidebar-container"></aside>
+
+        <!-- Center Content: Tutorial -->
+        <main class="content premium-card" id="mainContent">
+            <div class="bread-crumbs">Semester-I / Accounting for Managers / Unit 6</div>
+
+            <div class="article-header-flex">
+                <div>
+                    <h1>Marginal Costing, Cost-Volume-Profit Analysis, and Marginal Costing for Short-Term Decision Making</h1>
+                    <div class="article-meta">
+                        <span>Read Time: 60 mins</span>
+                    </div>
+                </div>
+                <div class="action-buttons">
+                    <!--button class="icon-btn hover-effect" onclick="window.print()" title="Print PDF">🖨️</button-->
+                </div>
+            </div>
+            <hr class="premium-hr">
+
+            <div class="article-body">
+                <div class="concept-block">
+                    <strong>Topics Covered in This Unit:</strong>
+                    <ul class="custom-bullets" style="margin-top: 10px;">
+                        <li>Marginal Costing — Meaning, Features and Comparison with Absorption Costing</li>
+                        <li>Contribution and P/V Ratio</li>
+                        <li>Cost-Volume-Profit (CVP) Analysis — Break-Even Point and Margin of Safety</li>
+                        <li>Marginal Costing and Short-Term Decision Making</li>
+                    </ul>
+                </div>
+
+                <h2 id="intro">0. Marginal Costing</h2>
+                <h3 id="marginalmeaning">0.1 Meaning and Concept</h3>
+                <p class="lead-text">Marginal costing is a costing technique in which only variable costs (Unit 5) are charged to products or cost units, while fixed costs of the period are treated as a lump-sum "period cost" and written off entirely against the total contribution earned during that period, rather than being spread over individual units. It is built on the insight that, in the short run, fixed costs typically do not change with the level of output, so they are irrelevant to per-unit product costing decisions.</p>
+                <div class="concept-block">
+                    <button class="copy-btn" onclick="copyText('def-text', this)">Copy</button>
+                    <div id="def-text">
+                        <strong>CIMA, London:</strong> Marginal costing is the ascertainment of marginal cost and of the effect on profit of changes in volume or type of output by differentiating between fixed and variable costs.
+                    </div>
+                </div>
+
+                <h3 id="marginalvsabsorption">0.2 Marginal Costing vs. Absorption Costing</h3>
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 560 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Comparison of absorption costing and marginal costing">
+                        <rect width="560" height="220" fill="#ffffff" rx="14"/>
+                        <text x="280" y="24" text-anchor="middle" font-size="15" font-weight="600" fill="#2d3748">Absorption Costing vs. Marginal Costing</text>
+
+                        <rect x="30" y="45" width="240" height="150" rx="8" fill="#b7791f"/>
+                        <text x="150" y="68" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">ABSORPTION COSTING</text>
+                        <text x="150" y="92" text-anchor="middle" font-size="9.5" fill="#fefcbf">Both fixed and variable</text>
+                        <text x="150" y="107" text-anchor="middle" font-size="9.5" fill="#fefcbf">overheads are charged</text>
+                        <text x="150" y="122" text-anchor="middle" font-size="9.5" fill="#fefcbf">to each unit of product</text>
+                        <text x="150" y="145" text-anchor="middle" font-size="9" fill="#fbd38d">Used for external financial</text>
+                        <text x="150" y="160" text-anchor="middle" font-size="9" fill="#fbd38d">reporting (Ind AS 2 / Unit 2)</text>
+
+                        <rect x="290" y="45" width="240" height="150" rx="8" fill="#2f855a"/>
+                        <text x="410" y="68" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">MARGINAL COSTING</text>
+                        <text x="410" y="92" text-anchor="middle" font-size="9.5" fill="#e2e8f0">Only variable costs are</text>
+                        <text x="410" y="107" text-anchor="middle" font-size="9.5" fill="#e2e8f0">charged to units; fixed</text>
+                        <text x="410" y="122" text-anchor="middle" font-size="9.5" fill="#e2e8f0">costs are a period charge</text>
+                        <text x="410" y="145" text-anchor="middle" font-size="9" fill="#c6f6d5">Used for internal short-term</text>
+                        <text x="410" y="160" text-anchor="middle" font-size="9" fill="#c6f6d5">managerial decision-making</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 1 — Absorption costing (Unit 5's cost sheet approach) values inventory to include a share of fixed overheads; marginal costing keeps fixed costs entirely out of the unit cost, treating them as a lump-sum deduction from total contribution.</p>
+                </div>
+
+                <table class="tutorial-table">
+                    <tr>
+                        <th>Basis</th>
+                        <th>Absorption Costing</th>
+                        <th>Marginal Costing</th>
+                    </tr>
+                    <tr><td>Treatment of fixed cost</td><td>Apportioned/absorbed into unit cost (Unit 5, Section 7)</td><td>Treated as a period cost, charged in full against contribution</td></tr>
+                    <tr><td>Inventory valuation</td><td>Includes a share of fixed overheads</td><td>Includes only variable costs</td></tr>
+                    <tr><td>Effect of changing inventory levels on profit</td><td>Profit affected by changes in closing stock, since fixed cost is carried forward in inventory</td><td>Profit moves in line with sales volume, since no fixed cost is carried forward in inventory</td></tr>
+                    <tr><td>Best suited for</td><td>External reporting requirements</td><td>Internal short-term decisions (Section 3)</td></tr>
+                </table>
+
+                <h3 id="marginalfeatures">0.3 Features of Marginal Costing</h3>
+                <ul class="custom-bullets">
+                    <li>Classifies all costs strictly into fixed and variable elements (as introduced in Unit 5, Section 2.3).</li>
+                    <li>Only variable cost is treated as the cost of the product; fixed cost is excluded from product cost.</li>
+                    <li>Profitability of products, departments, or processes is judged by their <strong>contribution</strong> (Section 1.2), not by their fully-absorbed profit.</li>
+                    <li>Provides the basis for Cost-Volume-Profit (CVP) analysis and a wide range of short-term managerial decisions.</li>
+                </ul>
+
+                <h3 id="marginaladvantages">0.4 Advantages and Limitations</h3>
+                <table class="tutorial-table">
+                    <tr><th>Advantages</th><th>Limitations</th></tr>
+                    <tr>
+                        <td>Simple to operate; avoids arbitrary apportionment of fixed overheads; highlights contribution, making it directly useful for pricing and product-mix decisions; profit is not distorted by inventory build-up or run-down.</td>
+                        <td>Not acceptable for external financial reporting/inventory valuation under Ind AS 2 (Unit 2); classifying costs as purely fixed or variable can be an oversimplification in the long run; ignores the fact that fixed costs are also incurred to generate revenue.</td>
+                    </tr>
+                </table>
+
+                <h2 id="contribution">1. Contribution and P/V Ratio</h2>
+                <h3 id="contributionmeaning">1.1 Contribution</h3>
+                <p class="lead-text">Contribution is the excess of sales revenue over variable cost. It represents the amount available, per unit or in total, first to cover fixed costs, and thereafter to provide profit. Contribution is the central building block of marginal costing and every technique in this unit.</p>
+                <div class="concept-block">
+                    <strong>Contribution = Sales − Variable Cost</strong><br>
+                    <strong>Profit = Contribution − Fixed Cost</strong>
+                </div>
+
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 560 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Waterfall diagram showing how sales less variable cost gives contribution, and contribution less fixed cost gives profit">
+                        <rect width="560" height="260" fill="#ffffff" rx="14"/>
+                        <text x="280" y="24" text-anchor="middle" font-size="15" font-weight="600" fill="#2d3748">From Sales to Profit via Contribution</text>
+
+                        <rect x="90" y="45" width="380" height="40" rx="6" fill="#2b6cb0"/>
+                        <text x="280" y="70" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">Sales</text>
+
+                        <rect x="120" y="95" width="320" height="36" rx="6" fill="#c53030"/>
+                        <text x="280" y="118" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">Less: Variable Cost</text>
+
+                        <rect x="150" y="141" width="260" height="42" rx="6" fill="#2f855a"/>
+                        <text x="280" y="167" text-anchor="middle" font-size="12.5" font-weight="700" fill="#fff">= Contribution</text>
+
+                        <rect x="180" y="193" width="200" height="36" rx="6" fill="#c53030"/>
+                        <text x="280" y="216" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff">Less: Fixed Cost</text>
+
+                        <rect x="210" y="239" width="140" height="42" rx="6" fill="#22543d"/>
+                        <text x="280" y="265" text-anchor="middle" font-size="12.5" font-weight="700" fill="#fff">= Profit</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 2 — Contribution first pays off fixed costs; only what remains after that becomes profit — which is exactly why a positive contribution matters even when a product or division is reporting an overall loss (see Section 3.4).</p>
+                </div>
+
+                <h3 id="pvratio">1.2 Profit-Volume (P/V) Ratio</h3>
+                <p>The P/V ratio expresses contribution as a percentage of sales, and measures the rate at which contribution (and hence profit) grows as sales increase. A higher P/V ratio means a larger share of every additional rupee of sales flows through to profit.</p>
+                <div class="concept-block">
+                    <strong>P/V Ratio = (Contribution ÷ Sales) × 100 = (Change in Profit ÷ Change in Sales) × 100</strong>
+                </div>
+                <p><strong>Worked Example:</strong> Radiant Products Ltd. sells a product at ₹100 per unit, with a variable cost of ₹60 per unit and annual fixed costs of ₹2,00,000. This example is used throughout the rest of this unit.</p>
+                <table class="tutorial-table">
+                    <tr><th>Particulars</th><th>Per Unit (₹)</th></tr>
+                    <tr><td>Selling Price</td><td>100</td></tr>
+                    <tr><td>Less: Variable Cost</td><td>60</td></tr>
+                    <tr><td><strong>Contribution</strong></td><td><strong>40</strong></td></tr>
+                    <tr><td><strong>P/V Ratio</strong> (40 ÷ 100 × 100)</td><td><strong>40%</strong></td></tr>
+                </table>
+
+                <h2 id="cvpanalysis">2. Cost-Volume-Profit (CVP) Analysis</h2>
+                <h3 id="cvpmeaning">2.1 Meaning and Assumptions</h3>
+                <p class="lead-text">CVP analysis studies the interrelationship between cost, sales volume and profit, helping managers understand how changes in volume, selling price, variable cost or fixed cost affect profit. It rests on a set of simplifying assumptions: costs can be classified strictly into fixed and variable elements; selling price per unit remains constant; variable cost per unit remains constant; and the analysis is confined to a "relevant range" of activity within which these relationships hold.</p>
+
+                <h3 id="bep">2.2 Break-Even Point (BEP)</h3>
+                <p>The break-even point is the level of sales (in units or in value) at which total revenue exactly equals total cost, so the business makes neither a profit nor a loss — the point at which total contribution exactly covers fixed costs.</p>
+                <div class="concept-block">
+                    <strong>BEP (in units) = Fixed Cost ÷ Contribution per Unit</strong><br>
+                    <strong>BEP (in ₹ Sales Value) = Fixed Cost ÷ P/V Ratio</strong>
+                </div>
+                <p><strong>Worked Example (continuing Radiant Products Ltd.):</strong><br>
+                BEP (units) = 2,00,000 ÷ 40 = <strong>5,000 units</strong><br>
+                BEP (value) = 2,00,000 ÷ 40% = <strong>₹5,00,000</strong></p>
+
+                <h3 id="mos">2.3 Margin of Safety (MOS)</h3>
+                <p>Margin of Safety is the excess of actual (or budgeted) sales over the break-even sales. It indicates how far sales can fall before the business starts making a loss, and is therefore a direct measure of the business's cushion against a downturn.</p>
+                <div class="concept-block">
+                    <strong>Margin of Safety = Actual Sales − Break-Even Sales</strong><br>
+                    <strong>Margin of Safety Ratio = (Margin of Safety ÷ Actual Sales) × 100</strong><br>
+                    <strong>Profit = Margin of Safety × P/V Ratio</strong>
+                </div>
+
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 560 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Break even chart showing fixed cost line, total cost line and sales revenue line, with the break even point and margin of safety marked">
+                        <rect width="560" height="340" fill="#ffffff" rx="14"/>
+                        <text x="280" y="22" text-anchor="middle" font-size="14.5" font-weight="600" fill="#2d3748">Break-Even Chart — Radiant Products Ltd.</text>
+
+                        <line x1="60" y1="300" x2="520" y2="300" stroke="#2d3748" stroke-width="1.6"/>
+                        <line x1="60" y1="300" x2="60" y2="40" stroke="#2d3748" stroke-width="1.6"/>
+                        <text x="290" y="322" text-anchor="middle" font-size="10" fill="#4a5568">Units Sold</text>
+                        <text x="24" y="170" text-anchor="middle" font-size="10" fill="#4a5568" transform="rotate(-90 24 170)">₹ (Cost / Revenue)</text>
+
+                        <text x="60" y="315" text-anchor="middle" font-size="8" fill="#718096">0</text>
+                        <text x="290" y="315" text-anchor="middle" font-size="8" fill="#718096">5,000</text>
+                        <text x="520" y="315" text-anchor="middle" font-size="8" fill="#718096">10,000</text>
+
+                        <polygon points="290,170 520,92 520,40 290,40" fill="#c6f6d5" opacity="0.6"/>
+                        <polygon points="60,248 290,170 60,170" fill="#fed7d7" opacity="0.5"/>
+
+                        <line x1="60" y1="248" x2="520" y2="248" stroke="#805ad5" stroke-width="2" stroke-dasharray="5,3"/>
+                        <text x="500" y="242" text-anchor="middle" font-size="8.5" fill="#553c9a">Fixed Cost</text>
+
+                        <line x1="60" y1="248" x2="520" y2="92" stroke="#c53030" stroke-width="2.4"/>
+                        <text x="500" y="86" text-anchor="middle" font-size="8.5" fill="#742a2a">Total Cost</text>
+
+                        <line x1="60" y1="300" x2="520" y2="40" stroke="#2b6cb0" stroke-width="2.4"/>
+                        <text x="500" y="52" text-anchor="middle" font-size="8.5" fill="#2c5282">Sales Revenue</text>
+
+                        <circle cx="290" cy="170" r="5" fill="#2d3748"/>
+                        <text x="290" y="155" text-anchor="middle" font-size="9" font-weight="600" fill="#2d3748">BEP: 5,000 units / ₹5,00,000</text>
+
+                        <line x1="428" y1="300" x2="428" y2="92" stroke="#dd6b20" stroke-width="1.6" stroke-dasharray="4,4"/>
+                        <circle cx="428" cy="92" r="4" fill="#dd6b20"/>
+                        <text x="428" y="315" text-anchor="middle" font-size="8" fill="#7b341e">8,000</text>
+
+                        <line x1="290" y1="290" x2="428" y2="290" stroke="#22543d" stroke-width="2.5"/>
+                        <text x="359" y="283" text-anchor="middle" font-size="8.5" font-weight="600" fill="#22543d">Margin of Safety = 3,000 units</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 3 — Below the BEP, total cost exceeds sales revenue (loss zone); above it, sales revenue exceeds total cost (profit zone). The margin of safety is the horizontal distance between the break-even point and actual sales.</p>
+                </div>
+
+                <p><strong>Worked Example:</strong> If Radiant Products Ltd. actually sells 8,000 units (₹8,00,000) in the year:</p>
+                <table class="tutorial-table">
+                    <tr><th>Particulars</th><th>Units</th><th>Value (₹)</th></tr>
+                    <tr><td>Actual Sales</td><td>8,000</td><td>8,00,000</td></tr>
+                    <tr><td>Less: Break-Even Sales</td><td>5,000</td><td>5,00,000</td></tr>
+                    <tr><td><strong>Margin of Safety</strong></td><td><strong>3,000</strong></td><td><strong>3,00,000</strong></td></tr>
+                    <tr><td>Margin of Safety Ratio (3,00,000 ÷ 8,00,000)</td><td colspan="2"><strong>37.5%</strong></td></tr>
+                    <tr><td>Profit (Margin of Safety × P/V Ratio = 3,00,000 × 40%)</td><td colspan="2"><strong>₹1,20,000</strong></td></tr>
+                </table>
+                <p><em>Verification:</em> Profit can also be checked directly — Total Contribution (8,000 × ₹40 = ₹3,20,000) less Fixed Cost (₹2,00,000) = <strong>₹1,20,000</strong>, exactly matching the Margin of Safety method above.</p>
+
+                <h2 id="shortterm">3. Marginal Costing and Short-Term Decision Making</h2>
+                <p class="lead-text">Because marginal costing isolates contribution from fixed cost, it is the standard technique used for a wide range of short-term (non-routine, "one-off") managerial decisions, where fixed costs are typically assumed to remain unchanged (i.e., irrelevant, per the relevant-costing principles from Unit 5, Section 3) regardless of which option is chosen.</p>
+
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 600 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Five common short-term decisions that use marginal costing and contribution analysis">
+                        <rect width="600" height="240" fill="#ffffff" rx="14"/>
+                        <text x="300" y="24" text-anchor="middle" font-size="15" font-weight="600" fill="#2d3748">Short-Term Decisions Using Contribution Analysis</text>
+
+                        <rect x="220" y="42" width="160" height="34" rx="6" fill="#2d3748"/>
+                        <text x="300" y="63" text-anchor="middle" font-size="10" font-weight="600" fill="#fff">MARGINAL COSTING</text>
+
+                        <line x1="245" y1="76" x2="85" y2="115" stroke="#a0aec0" stroke-width="1.3"/>
+                        <line x1="270" y1="76" x2="205" y2="115" stroke="#a0aec0" stroke-width="1.3"/>
+                        <line x1="300" y1="76" x2="300" y2="115" stroke="#a0aec0" stroke-width="1.3"/>
+                        <line x1="330" y1="76" x2="400" y2="115" stroke="#a0aec0" stroke-width="1.3"/>
+                        <line x1="355" y1="76" x2="510" y2="115" stroke="#a0aec0" stroke-width="1.3"/>
+
+                        <rect x="20" y="115" width="130" height="70" rx="6" fill="#2b6cb0"/>
+                        <text x="85" y="140" text-anchor="middle" font-size="8.5" font-weight="600" fill="#fff">Accept/Reject</text>
+                        <text x="85" y="153" text-anchor="middle" font-size="8.5" font-weight="600" fill="#fff">Special Order</text>
+
+                        <rect x="160" y="115" width="130" height="70" rx="6" fill="#2f855a"/>
+                        <text x="225" y="140" text-anchor="middle" font-size="8.5" font-weight="600" fill="#fff">Key/Limiting</text>
+                        <text x="225" y="153" text-anchor="middle" font-size="8.5" font-weight="600" fill="#fff">Factor (Product Mix)</text>
+
+                        <rect x="235" y="115" width="130" height="70" rx="6" fill="#b7791f"/>
+                        <text x="300" y="140" text-anchor="middle" font-size="8.5" font-weight="600" fill="#fff">Make-or-Buy</text>
+
+                        <rect x="350" y="115" width="130" height="70" rx="6" fill="#805ad5"/>
+                        <text x="415" y="140" text-anchor="middle" font-size="8.5" font-weight="600" fill="#fff">Shut-Down vs.</text>
+                        <text x="415" y="153" text-anchor="middle" font-size="8.5" font-weight="600" fill="#fff">Continue</text>
+
+                        <rect x="450" y="115" width="130" height="70" rx="6" fill="#c53030"/>
+                        <text x="515" y="140" text-anchor="middle" font-size="8.5" font-weight="600" fill="#fff">Add/Drop a</text>
+                        <text x="515" y="153" text-anchor="middle" font-size="8.5" font-weight="600" fill="#fff">Product Line</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 4 — In each of these decisions, the question ultimately comes down to whether an option adds or removes positive contribution — fixed costs, assumed unavoidable, are set aside.</p>
+                </div>
+
+                <h3 id="specialorder">3.1 Accept or Reject a Special Order</h3>
+                <p>When a business has idle/spare capacity, a one-off order at a price below the normal selling price may still be worth accepting, as long as the price offered exceeds the variable cost per unit — since fixed costs are already being covered by existing (normal) sales.</p>
+                <p><strong>Worked Example:</strong> Radiant Products Ltd. has a total capacity of 10,000 units and is currently producing and selling 8,000 units, leaving 2,000 units of spare capacity. A foreign buyer offers to purchase 1,500 units at a special price of ₹75 per unit (well below the normal ₹100 selling price).</p>
+                <table class="tutorial-table">
+                    <tr><th>Particulars</th><th>Per Unit (₹)</th><th>1,500 Units (₹)</th></tr>
+                    <tr><td>Special Order Price</td><td>75</td><td>1,12,500</td></tr>
+                    <tr><td>Less: Variable Cost</td><td>60</td><td>90,000</td></tr>
+                    <tr><td><strong>Contribution from Special Order</strong></td><td><strong>15</strong></td><td><strong>22,500</strong></td></tr>
+                </table>
+                <p><em>Decision:</em> Since spare capacity exists and fixed costs will not change, the ₹22,500 contribution flows straight through to additional profit — the order should be <strong>accepted</strong>, provided it does not disturb the existing market at the normal ₹100 price (e.g., by being sold in a separate geographic or customer segment).</p>
+
+                <h3 id="keyfactor">3.2 Key (Limiting) Factor Decisions — Product Mix</h3>
+                <p>When a scarce resource (machine hours, labour hours, or material) restricts how much a business can produce, the most profitable product mix is not the one with the highest contribution <em>per unit</em>, but the one with the highest contribution <em>per unit of the scarce resource</em>.</p>
+                <p><strong>Worked Example:</strong> A company produces two products, A and B, and is constrained by available machine hours.</p>
+                <table class="tutorial-table">
+                    <tr><th>Particulars</th><th>Product A</th><th>Product B</th></tr>
+                    <tr><td>Contribution per Unit</td><td>₹40</td><td>₹30</td></tr>
+                    <tr><td>Machine Hours Required per Unit</td><td>2 hours</td><td>1 hour</td></tr>
+                    <tr><td><strong>Contribution per Machine Hour</strong></td><td><strong>₹20</strong></td><td><strong>₹30</strong></td></tr>
+                    <tr><td><strong>Ranking</strong></td><td>2nd</td><td><strong>1st</strong></td></tr>
+                </table>
+                <p><em>Decision:</em> Although Product A earns a higher contribution per unit (₹40 vs. ₹30), Product B should be given production priority, because it generates more contribution (₹30 vs. ₹20) for every scarce machine hour used — the limiting factor, not the per-unit contribution, must drive the mix decision.</p>
+
+                <h3 id="makeorbuyref">3.3 Make-or-Buy Decisions</h3>
+                <p>This decision was already illustrated using relevant costing in Unit 5, Section 3.4. In marginal costing terms, the same logic applies directly: a component should generally continue to be made in-house as long as its variable (marginal) cost of manufacture is lower than the price at which it can be bought from an outside supplier, since fixed costs typically continue unaffected either way.</p>
+
+                <h3 id="shutdown">3.4 Shut-Down vs. Continue Operations</h3>
+                <p>A division, product, or factory reporting a net loss on a fully-absorbed basis may still be worth continuing in the short term, provided it earns a <strong>positive contribution</strong> — since that contribution helps cover fixed costs (Section 1.1) that will typically continue to be incurred whether or not the unit is shut down.</p>
+                <p><strong>Worked Example:</strong> A division reports the following results for the year:</p>
+                <table class="tutorial-table">
+                    <tr><th>Particulars</th><th>Amount (₹)</th></tr>
+                    <tr><td>Sales</td><td>5,00,000</td></tr>
+                    <tr><td>Less: Variable Cost</td><td>4,00,000</td></tr>
+                    <tr><td><strong>Contribution</strong></td><td><strong>1,00,000</strong></td></tr>
+                    <tr><td>Less: Fixed Cost (assumed unavoidable even if shut down)</td><td>1,50,000</td></tr>
+                    <tr><td><strong>Net Loss (as reported)</strong></td><td><strong>(50,000)</strong></td></tr>
+                </table>
+                <p><em>Decision:</em> Although the division shows a net loss of ₹50,000, its contribution is a positive ₹1,00,000. If the division is shut down, the unavoidable fixed cost of ₹1,50,000 must still be borne by the rest of the business, and the ₹1,00,000 contribution is lost entirely — making the overall loss to the company <strong>worse</strong> by ₹1,00,000. The division should therefore <strong>continue operating</strong> in the short term, unless the fixed costs can also be avoided by shutting down, or a more profitable use exists for the resources tied up in it.</p>
+
+                <h3 id="adddroplines">3.5 Add or Drop a Product Line</h3>
+                <p>Similarly, when deciding whether to discontinue a product line, the key question is whether that line's contribution is positive and whether the fixed costs attributed to it are genuinely avoidable if dropped. A product line with a positive contribution should generally not be dropped unless its capacity can be redeployed to a more profitable use, or the fixed costs specifically attributable to it can also be eliminated.</p>
+
+                <h2 id="review">Review Questions</h2>
+                <h3>Short Answer Type</h3>
+                <ol class="custom-bullets">
+                    <li>Define marginal costing. How does it differ from absorption costing?</li>
+                    <li>Define contribution and state its formula.</li>
+                    <li>What is the P/V ratio? What does a higher P/V ratio indicate?</li>
+                    <li>Define break-even point and state the formula for calculating it in units.</li>
+                    <li>What is margin of safety? How is it related to profit?</li>
+                    <li>On what basis should a company decide its product mix when a scarce resource limits production?</li>
+                    <li>Why might a business continue to operate a division that shows an accounting loss?</li>
+                </ol>
+                <h3>Long Answer / Essay Type</h3>
+                <ol class="custom-bullets">
+                    <li>Explain the meaning and features of marginal costing, and distinguish it from absorption costing.</li>
+                    <li>Explain the concepts of contribution and P/V ratio with a numerical example.</li>
+                    <li>Explain Cost-Volume-Profit analysis and its assumptions. Calculate the break-even point and margin of safety from given data, and illustrate with a break-even chart.</li>
+                    <li>Explain, with a numerical example, how marginal costing is used to decide whether to accept a special order at a price below the normal selling price.</li>
+                    <li>Explain the key (limiting) factor approach to product-mix decisions with a suitable example.</li>
+                    <li>Using contribution analysis, explain how a company should decide whether to shut down a loss-making division.</li>
+                    <li>Discuss the various short-term managerial decisions in which marginal costing techniques are applied.</li>
+                </ol>
+
+                <h2 id="summary">Summary</h2>
+                <p>This unit introduced marginal costing as a technique that charges only variable costs to products, treating fixed costs as a period charge against total contribution, in contrast to absorption costing (Unit 5), which spreads fixed overheads across units. It explained contribution (Sales − Variable Cost) as the foundation of marginal costing, and the P/V ratio as the rate at which contribution grows with sales. The unit then covered Cost-Volume-Profit (CVP) analysis in depth: the break-even point (Fixed Cost ÷ Contribution per Unit, or Fixed Cost ÷ P/V Ratio) and the margin of safety (Actual Sales − Break-Even Sales), illustrated through a complete break-even chart and a worked example for Radiant Products Ltd., where a BEP of 5,000 units and actual sales of 8,000 units produced a margin of safety of 3,000 units and a profit of ₹1,20,000. Finally, the unit applied contribution analysis to five classic short-term decisions: accepting a special order below normal price when spare capacity exists, choosing the optimal product mix under a key/limiting factor by ranking contribution per unit of the scarce resource (rather than per unit of product), make-or-buy decisions (building on Unit 5's relevant costing), deciding whether to shut down a loss-making division based on whether its contribution is positive, and deciding whether to add or drop a product line — in every case showing that decisions should be driven by contribution and avoidable costs, not by the fully-absorbed profit figure alone.</p>
+
+            </div>
+
+            <div class="completion-section">
+                <button id="markCompleteBtn" class="complete-btn">✔️ Mark as Complete</button>
+            </div>
+
+            <div class="pagination">
+                <a href="s1-acc-u5.html" style="text-decoration: none;"><button class="prev-btn hover-effect">❮ Unit 5: Cost Preparation & Accounting</button></a>
+                <button class="next-btn hover-effect" style="opacity: 0.5; cursor: not-allowed;" disabled>End of Module 🏁</button>
+            </div>
+        </main>
+
+        <aside class="right-sidebar" id="rightSidebar">
+            <div class="widget sticky-widget premium-card">
+                <h3>Unit Contents</h3>
+                <ul class="toc-list">
+                    <li><a href="#intro">0. Marginal Costing</a></li>
+                    <li><a href="#contribution">1. Contribution &amp; P/V Ratio</a></li>
+                    <li><a href="#cvpanalysis">2. Cost-Volume-Profit Analysis</a></li>
+                    <li><a href="#shortterm">3. Short-Term Decision Making</a></li>
+                    <li><a href="#review">Review Questions</a></li>
+                    <li><a href="#summary">Summary</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
