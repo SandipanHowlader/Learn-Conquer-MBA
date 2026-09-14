@@ -17,56 +17,10 @@
     
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    
     <style>
-        .diagram-wrap { margin: 35px 0; text-align: center; }
-        .diagram-wrap svg { max-width: 100%; height: auto; background: #ffffff; border-radius: 14px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: all 0.3s ease; border: 1px solid var(--border-color); }
-        .diagram-caption { font-size: 0.85rem; color: var(--text-light); margin-top: 12px; font-style: italic; }
-
-        body.dark-mode .diagram-wrap svg { background: #1e293b; box-shadow: 0 4px 15px rgba(0,0,0,0.4); border-color: #334155; }
-        .svg-bg { fill: #ffffff; transition: fill 0.3s ease; }
-        body.dark-mode .svg-bg { fill: #1e293b; }
-        
-        .svg-text { fill: #1e293b; transition: fill 0.3s ease; }
-        body.dark-mode .svg-text { fill: #f8fafc; }
-        
-        .svg-text-muted { fill: #64748b; transition: fill 0.3s ease; }
-        body.dark-mode .svg-text-muted { fill: #94a3b8; }
-        
-        .svg-line { stroke: #94a3b8; transition: stroke 0.3s ease; }
-        body.dark-mode .svg-line { stroke: #475569; }
-        
-        .svg-marker { fill: #94a3b8; transition: fill 0.3s ease; }
-        body.dark-mode .svg-marker { fill: #475569; }
-
-        /* Specific Color Adaptations for TOWS and ERRC Grids */
-        .svg-box-blue { fill: #eff6ff; stroke: #3b82f6; transition: all 0.3s ease; }
-        .svg-text-blue { fill: #1d4ed8; transition: fill 0.3s ease; }
-        body.dark-mode .svg-box-blue { fill: rgba(59, 130, 246, 0.15); stroke: #3b82f6; }
-        body.dark-mode .svg-text-blue { fill: #60a5fa; }
-
-        .svg-box-yellow { fill: #fffbeb; stroke: #f59e0b; transition: all 0.3s ease; }
-        .svg-text-yellow { fill: #b45309; transition: fill 0.3s ease; }
-        body.dark-mode .svg-box-yellow { fill: rgba(245, 158, 11, 0.15); stroke: #f59e0b; }
-        body.dark-mode .svg-text-yellow { fill: #fbbf24; }
-
-        .svg-box-green { fill: #f0fdf4; stroke: #10b981; transition: all 0.3s ease; }
-        .svg-text-green { fill: #047857; transition: fill 0.3s ease; }
-        body.dark-mode .svg-box-green { fill: rgba(16, 185, 129, 0.15); stroke: #10b981; }
-        body.dark-mode .svg-text-green { fill: #34d399; }
-
-        .svg-box-red { fill: #fef2f2; stroke: #ef4444; transition: all 0.3s ease; }
-        .svg-text-red { fill: #b91c1c; transition: fill 0.3s ease; }
-        body.dark-mode .svg-box-red { fill: rgba(239, 68, 68, 0.15); stroke: #ef4444; }
-        body.dark-mode .svg-text-red { fill: #f87171; }
-
-        .svg-box-purple { fill: #faf5ff; stroke: #a855f7; transition: all 0.3s ease; }
-        .svg-text-purple { fill: #7e22ce; transition: fill 0.3s ease; }
-        body.dark-mode .svg-box-purple { fill: rgba(168, 85, 247, 0.15); stroke: #a855f7; }
-        body.dark-mode .svg-text-purple { fill: #c084fc; }
-        
-        .svg-node-dark { fill: #334155; transition: fill 0.3s ease; }
-        body.dark-mode .svg-node-dark { fill: #475569; }
+        .diagram-wrap { margin: 28px 0; text-align: center; }
+        .diagram-wrap svg { max-width: 100%; height: auto; background: #ffffff; border-radius: 14px; box-shadow: 0 1px 8px rgba(0,0,0,0.10); }
+        .diagram-caption { font-size: 0.85rem; color: #666; margin-top: 10px; font-style: italic; }
     </style>
 </head>
 <body data-current-topic="s1-mgt-u2">
@@ -95,9 +49,9 @@
 
             <div class="article-header-flex">
                 <div>
-                    <h1>Planning and Strategic Management</h1>
+                    <h1>Planning: Types of Plans, MBO, Strategic Intent, TOWS Matrix and Blue Ocean Strategy</h1>
                     <div class="article-meta">
-                        <span>4 Credits | Read Time: 75 mins | Comprehensive MBA Edition</span>
+                        <span>Read Time: 55 mins</span>
                     </div>
                 </div>
                 <div class="action-buttons">
@@ -110,396 +64,462 @@
                 <div class="concept-block">
                     <strong>Topics Covered in This Unit:</strong>
                     <ul class="custom-bullets" style="margin-top: 10px;">
-                        <li>Concept, characteristics, and limitations of Planning</li>
-                        <li>Types of Plans (Standing vs. Single-Use, Missions, Objectives, Strategies, Policies, Procedures, Rules, Programs & Budgets)</li>
-                        <li>Hierarchy of Objectives & Management by Objectives (MBO)</li>
-                        <li>Verifiable & Non-verifiable objectives, Quantitative & Qualitative objectives</li>
-                        <li>Nature and purpose of strategies and policies</li>
-                        <li>Strategic Intent (Vision, Mission, Stretch & Leverage)</li>
-                        <li>TOWS Matrix (Action-oriented strategy generation)</li>
-                        <li>Blue Ocean Strategy (Value Innovation & the ERRC Grid)</li>
+                        <li>Types of Plans — Missions, Objectives, Strategies, Policies, Procedures, Rules, Programs and Budgets</li>
+                        <li>Hierarchy of Objectives</li>
+                        <li>Management by Objectives (MBO)</li>
+                        <li>Verifiable and Non-verifiable Objectives</li>
+                        <li>Quantitative and Qualitative Objectives</li>
+                        <li>Nature and Purpose of Strategies and Policies</li>
+                        <li>Strategic Intent</li>
+                        <li>TOWS Matrix</li>
+                        <li>Blue Ocean Strategy</li>
                     </ul>
                 </div>
 
-                <h2 id="planning-types">1. Planning and Types of Plans</h2>
-                
-                <h3 id="concept-planning">1.1 Concept, Characteristics, and Limitations of Planning</h3>
-                <p class="lead-text">Planning is the most fundamental and primary function of management. It is a highly intellectual process that bridges the gap from where an organization currently is to where it wants to be in the future.</p>
-                <p>Planning involves deciding in advance <em>what</em> to do, <em>how</em> to do it, <em>when</em> to do it, and <em>who</em> is to do it. Because the future is highly uncertain, planning requires foresight, forecasting, and rational decision-making based on "planning premises" (assumptions about the future environment).</p>
-                
-                <p><strong>Key Characteristics of Planning:</strong></p>
-                <ul class="custom-bullets">
-                    <li><strong>Primacy:</strong> It precedes all other managerial functions (Organizing, Staffing, Directing, Controlling). You cannot organize resources without a plan.</li>
-                    <li><strong>Pervasiveness:</strong> Planning is required at all levels of management, from the CEO (strategic planning) down to the shift supervisor (operational planning).</li>
-                    <li><strong>Forward-Looking:</strong> It is fundamentally about anticipating the future.</li>
-                    <li><strong>Decision-Making:</strong> Planning inherently involves making choices between alternative courses of action.</li>
-                </ul>
+                <h2 id="intro">0. Introduction to Planning</h2>
 
-                <p><strong>Limitations of Planning:</strong></p>
-                <ul class="custom-bullets">
-                    <li><strong>Creates Rigidity:</strong> Once a detailed plan is set, managers may blindly follow it even when the external environment changes drastically.</li>
-                    <li><strong>Time-Consuming & Costly:</strong> Gathering data, forecasting, and holding strategy meetings consume massive amounts of executive time and money.</li>
-                    <li><strong>False Sense of Security:</strong> A brilliant plan on paper does not guarantee success. Execution is paramount.</li>
-                </ul>
-
-                <h3 id="types-plans">1.2 Types of Plans (Standing vs. Single-Use)</h3>
-                <p>Plans are typically classified into a hierarchy. Broadly, they fall into two categories: <strong>Standing Plans</strong> (used repeatedly for recurring situations, like policies and rules) and <strong>Single-Use Plans</strong> (developed for a one-time project, like programs and budgets). The 8 primary types of plans are:</p>
-                
-                <div class="diagram-wrap">
-                    <svg viewBox="0 0 600 350" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Hierarchy of Plans Pyramid">
-                        <defs>
-                            <marker id="arrDown" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-                                <path d="M0,0L10,5L0,10z" class="svg-marker"/>
-                            </marker>
-                        </defs>
-                        <rect width="600" height="350" rx="14" class="svg-bg"/>
-                        <text x="300" y="30" text-anchor="middle" font-size="16" font-weight="600" class="svg-text">The Hierarchy of Plans</text>
-                        
-                        <polygon points="300,50 400,110 200,110" fill="#1e3a8a" />
-                        <text x="300" y="95" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">Missions / Purposes</text>
-                        
-                        <polygon points="200,115 400,115 440,165 160,165" fill="#2563eb" />
-                        <text x="300" y="145" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">Objectives (Goals)</text>
-                        
-                        <polygon points="160,170 440,170 480,220 120,220" fill="#3b82f6" />
-                        <text x="300" y="200" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">Strategies &amp; Policies</text>
-                        
-                        <polygon points="120,225 480,225 520,275 80,275" fill="#60a5fa" />
-                        <text x="300" y="255" text-anchor="middle" font-size="12" font-weight="600" fill="#1e3a8a">Procedures &amp; Rules</text>
-                        
-                        <polygon points="80,280 520,280 560,330 40,330" fill="#93c5fd" />
-                        <text x="300" y="310" text-anchor="middle" font-size="12" font-weight="600" fill="#1e3a8a">Programs &amp; Budgets</text>
-                        
-                        <path d="M 80 80 L 30 180" stroke-width="2" marker-end="url(#arrDown)" fill="none" class="svg-line"/>
-                        <text x="40" y="130" text-anchor="middle" font-size="10" transform="rotate(-65 40 130)" class="svg-text-muted">Increasing Specificity</text>
-                    </svg>
-                    <p class="diagram-caption">Fig. 1 — Plans cascade from broad, philosophical missions down to highly specific, single-use budgets.</p>
-                </div>
-
-                <ul class="custom-bullets">
-                    <li><strong>Missions (or Purposes):</strong> The fundamental, unique purpose that sets a business apart and identifies the scope of its operations. It answers the existential question, <em>"What business are we in?"</em><br>
-                    <span style="color: var(--text-light); font-size: 0.9em;"><em>Example:</em> Google’s mission is "to organize the world's information and make it universally accessible and useful."</span></li>
-                    
-                    <li><strong>Objectives (or Goals):</strong> The end points towards which all management activities are directed. They represent the "what" that needs to be achieved.<br>
-                    <span style="color: var(--text-light); font-size: 0.9em;"><em>Example:</em> "To increase market share in the APAC region by 15% by Q4 2026."</span></li>
-                    
-                    <li><strong>Strategies:</strong> Broad, long-term action plans designed to achieve objectives in a competitive environment. They dictate how resources will be deployed to gain a competitive advantage. (e.g., A cost-leadership strategy vs. a differentiation strategy).</li>
-                    
-                    <li><strong>Policies (Standing Plan):</strong> General statements or understandings that guide or channel thinking in decision-making. They establish boundaries within which managers can use their discretion.<br>
-                    <span style="color: var(--text-light); font-size: 0.9em;"><em>Example:</em> "We prefer to promote from within whenever possible" or "We match competitor pricing."</span></li>
-                    
-                    <li><strong>Procedures (Standing Plan):</strong> Customary, chronological methods of handling future activities. While policies guide thinking, procedures guide action.<br>
-                    <span style="color: var(--text-light); font-size: 0.9em;"><em>Example:</em> The step-by-step 5-stage process a customer service agent must follow to process a product refund.</span></li>
-                    
-                    <li><strong>Rules (Standing Plan):</strong> Specific, rigid dictates that require a specific action to be taken or not taken. They allow for <em>zero</em> managerial discretion.<br>
-                    <span style="color: var(--text-light); font-size: 0.9em;"><em>Example:</em> "Safety goggles must be worn at all times on the factory floor. No exceptions."</span></li>
-                    
-                    <li><strong>Programs (Single-Use Plan):</strong> A complex network of goals, policies, procedures, rules, task assignments, and resource allocations designed to carry out a major course of action.<br>
-                    <span style="color: var(--text-light); font-size: 0.9em;"><em>Example:</em> A comprehensive program to build and launch a new EV manufacturing plant in Texas over 3 years.</span></li>
-                    
-                    <li><strong>Budgets (Single-Use Plan):</strong> A statement of expected results expressed in numerical terms (financial or non-financial). It is a "quantified plan" that acts as both a planning and a controlling device. Note: Modern firms often use <em>Zero-Based Budgeting (ZBB)</em> where every expense must be justified for each new period, starting from zero.</li>
-                </ul>
-
-                <h3 id="plan-comparison">1.3 Comparison: Policies vs. Procedures vs. Rules</h3>
-                <table class="tutorial-table">
-                    <tr>
-                        <th>Feature</th>
-                        <th>Policy</th>
-                        <th>Procedure</th>
-                        <th>Rule</th>
-                    </tr>
-                    <tr>
-                        <td><strong>Nature</strong></td>
-                        <td>Guide to thinking and decision-making.</td>
-                        <td>Guide to action (chronological steps).</td>
-                        <td>Rigid instruction for a specific situation.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Flexibility</strong></td>
-                        <td>High (allows managerial discretion based on the situation).</td>
-                        <td>Low (must follow the specific sequence of steps).</td>
-                        <td>None (zero discretion allowed).</td>
-                    </tr>
-                    <tr>
-                        <td><strong>MBA Example</strong></td>
-                        <td>"We empower employees to ensure customer satisfaction."</td>
-                        <td>Step 1: Apologize. Step 2: Issue return label. Step 3: Refund card.</td>
-                        <td>"Transactions over $500 require a manager's override PIN."</td>
-                    </tr>
-                </table>
-
-                <h2 id="objectives-mbo">2. Objectives and Management by Objectives (MBO)</h2>
-
-                <h3 id="hierarchy-objectives">2.1 Hierarchy of Objectives</h3>
-                <p>Objectives form a <strong>Means-Ends Chain</strong>, cascading down from top to bottom. Achievement of lower-level objectives provides the <em>means</em> to achieve higher-level <em>ends</em>. This hierarchy ensures organizational alignment.</p>
-                <ol class="custom-bullets" style="list-style-type: decimal; padding-left: 30px;">
-                    <li><strong>Socio-Economic Purpose:</strong> Broadest aim (e.g., societal contribution, sustainability).</li>
-                    <li><strong>Mission:</strong> The organization's specific purpose and business scope.</li>
-                    <li><strong>Overall Strategic Objectives:</strong> Long-term C-Suite goals (e.g., massive ROI, global market dominance).</li>
-                    <li><strong>Divisional Objectives:</strong> Medium-term goals (e.g., "European division to increase sales by 10%").</li>
-                    <li><strong>Departmental Objectives:</strong> Short-term goals (e.g., "Marketing to lower customer acquisition cost").</li>
-                    <li><strong>Individual Objectives:</strong> Performance targets for individual employees.</li>
-                </ol>
-
-                <h3 id="types-objectives">2.2 Types of Objectives</h3>
+                <h3 id="meaning">0.1 Meaning and Definition of Planning</h3>
+                <p class="lead-text">Planning is the primary and most fundamental function of management. It is the conscious, systematic process of deciding in advance what is to be done, how it is to be done, when it is to be done, and who is to do it, so that the gap between where an organization stands today and where it wants to be tomorrow is bridged in the most efficient way.</p>
+                <p>Planning is essentially a decision-making activity — it involves selecting the best course of action from among several alternatives, in the light of the objectives to be achieved.</p>
                 <div class="concept-block">
-                    <button class="copy-btn" onclick="copyText('verifiable-text', this)">Copy</button>
-                    <div id="verifiable-text">
-                        <strong>Verifiable vs. Non-Verifiable Objectives</strong><br><br>
-                        <strong>Verifiable Objectives:</strong> Expressed in a way that allows objective determination of achievement at the end of the period. They leave no room for debate and heavily rely on <strong>SMART</strong> criteria (Specific, Measurable, Achievable, Relevant, Time-bound).<br><em>Example: "Reduce production waste to exactly 10% by Dec 31st, 2026."</em><br><br>
-                        <strong>Non-Verifiable Objectives:</strong> Broad, subjective statements of intent, highly difficult to measure or use in performance appraisals.<br><em>Example: "Improve employee morale." (An MBA manager must translate this into a verifiable metric, like raising the Employee Net Promoter Score from 40 to 60, to be useful).</em>
+                    <button class="copy-btn" onclick="copyText('def-text', this)">Copy</button>
+                    <div id="def-text">
+                        <strong>Koontz and O'Donnell:</strong> Planning is deciding in advance what to do, how to do it, when to do it, and who is to do it.<br><br>
+                        <strong>Henri Fayol:</strong> Planning is one of the elements of management concerned with "prevoyance" — examining the future and drawing up a plan of action.<br><br>
+                        <strong>George R. Terry:</strong> Planning is the selection and relating of facts, and the making and use of assumptions regarding the future, in the visualization and formulation of proposed activities believed necessary to achieve desired results.
                     </div>
                 </div>
 
-                <p><strong>Quantitative vs. Qualitative Objectives:</strong></p>
+                <h3 id="nature">0.2 Nature / Characteristics of Planning</h3>
                 <ul class="custom-bullets">
-                    <li><strong>Quantitative:</strong> Expressed in absolute numbers, percentages, or financial figures (e.g., $10M revenue, 5,000 units produced).</li>
-                    <li><strong>Qualitative:</strong> Intangible goals related to capability, quality, or reputation (e.g., fostering an innovative corporate culture, improving brand equity).</li>
+                    <li><strong>Goal-oriented</strong> — every plan spells out the organization's objectives and the steps needed to reach them.</li>
+                    <li><strong>Primary function</strong> — planning precedes all other management functions; organizing, staffing, directing and controlling all follow from a plan.</li>
+                    <li><strong>Pervasive</strong> — planning is done at every level of management, though its scope and detail vary by level.</li>
+                    <li><strong>Continuous process</strong> — plans are never final; they are reviewed and revised as circumstances change.</li>
+                    <li><strong>Futuristic</strong> — planning always looks ahead and involves forecasting.</li>
+                    <li><strong>Involves choice/decision-making</strong> — planning is meaningless unless there are alternatives to choose from.</li>
+                    <li><strong>Intellectual process</strong> — it requires imagination, foresight and sound judgement rather than guesswork.</li>
+                    <li><strong>Flexible</strong> — a good plan should be capable of adjustment to unforeseen changes without losing its basic character.</li>
                 </ul>
 
-                <h3 id="mbo">2.3 Management by Objectives (MBO)</h3>
-                <p>Coined by Peter Drucker in his 1954 book <em>The Practice of Management</em>, MBO represents a massive paradigm shift from traditional top-down, autocratic goal setting to a <strong>participative, democratic approach</strong>.</p>
-                <p><strong>The Core Philosophy:</strong> Instead of goals being dictated to employees, superiors and subordinates collaborate to jointly define goals and areas of responsibility. This shifts the focus from managing <em>activities</em> to managing <em>results</em>, creating massive psychological buy-in and ownership among employees.</p>
-                
+                <h3 id="steps">0.3 Steps in the Planning Process</h3>
+                <ol class="custom-bullets">
+                    <li>Being aware of opportunities (in the market, competition, customer needs).</li>
+                    <li>Setting objectives / goals for the enterprise and each subordinate unit.</li>
+                    <li>Developing planning premises — the assumptions about the future environment in which the plan will operate.</li>
+                    <li>Identifying alternative courses of action.</li>
+                    <li>Evaluating the alternatives in the light of the goals sought.</li>
+                    <li>Selecting the best alternative (the actual point of decision-making).</li>
+                    <li>Formulating derivative/supporting plans (budgets, schedules, sub-plans).</li>
+                    <li>Numbering the plan by converting it into a budget (quantifying the plan in figures).</li>
+                </ol>
+
+                <h3 id="importance">0.4 Importance of Planning</h3>
+                <ul class="custom-bullets">
+                    <li>Provides direction and reduces uncertainty by anticipating change.</li>
+                    <li>Minimizes wasteful and overlapping activities by coordinating effort in advance.</li>
+                    <li>Sets the standards that make effective control possible — without a plan there is nothing to control against.</li>
+                    <li>Encourages innovation and creative thinking about the future.</li>
+                    <li>Facilitates decision-making by narrowing choices in advance.</li>
+                </ul>
+
+                <h2 id="types">1. Types of Plans</h2>
+                <p class="lead-text">Plans exist in a hierarchy, ranging from very broad, long-term statements of purpose down to highly specific, short-term numerical statements. The eight major types recognized in management literature are Missions, Objectives, Strategies, Policies, Procedures, Rules, Programs and Budgets.</p>
+
                 <div class="diagram-wrap">
-                    <svg viewBox="0 0 600 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The MBO Process Cycle">
+                    <svg viewBox="0 0 600 460" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Hierarchy of plans from broad mission down to specific budgets">
+                        <rect width="600" height="460" fill="#ffffff" rx="14"/>
+                        <text x="300" y="26" text-anchor="middle" font-size="15" font-weight="600" fill="#2d3748">Hierarchy of Plans — Broad to Specific</text>
+
+                        <rect x="100" y="45" width="400" height="42" rx="8" fill="#2b6cb0"/>
+                        <text x="300" y="71" text-anchor="middle" font-size="13" font-weight="600" fill="#fff">1. Mission — why the organization exists</text>
+
+                        <rect x="130" y="97" width="340" height="42" rx="8" fill="#2f855a"/>
+                        <text x="300" y="123" text-anchor="middle" font-size="12.5" font-weight="600" fill="#fff">2. Objectives — end results to be achieved</text>
+
+                        <rect x="150" y="149" width="300" height="42" rx="8" fill="#4299e1"/>
+                        <text x="300" y="175" text-anchor="middle" font-size="12.5" font-weight="600" fill="#fff">3. Strategies — broad approach to achieve objectives</text>
+
+                        <rect x="170" y="201" width="260" height="42" rx="8" fill="#b7791f"/>
+                        <text x="300" y="227" text-anchor="middle" font-size="12.5" font-weight="600" fill="#fff">4. Policies — guides to thinking &amp; decisions</text>
+
+                        <rect x="190" y="253" width="220" height="42" rx="8" fill="#805ad5"/>
+                        <text x="300" y="279" text-anchor="middle" font-size="12.5" font-weight="600" fill="#fff">5. Procedures — sequence of steps</text>
+
+                        <rect x="210" y="305" width="180" height="42" rx="8" fill="#c53030"/>
+                        <text x="300" y="331" text-anchor="middle" font-size="12.5" font-weight="600" fill="#fff">6. Rules — required specific actions</text>
+
+                        <rect x="225" y="357" width="150" height="42" rx="8" fill="#b83280"/>
+                        <text x="300" y="383" text-anchor="middle" font-size="12.5" font-weight="600" fill="#fff">7. Programs — action packages</text>
+
+                        <rect x="240" y="409" width="120" height="42" rx="8" fill="#718096"/>
+                        <text x="300" y="435" text-anchor="middle" font-size="12.5" font-weight="600" fill="#fff">8. Budgets — numbered plan</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 1 — Plans narrow in scope as they move from the broad mission at the top toward the highly specific, numerical budget at the bottom; each level operationalizes the one above it.</p>
+                </div>
+
+                <h3 id="mission">1.1 Mission</h3>
+                <p>The mission (or purpose) is the fundamental reason for an organization's existence — what it does, for whom, and why. It identifies the basic function or task of an enterprise in society: for example, the mission of a business enterprise is generally the production and distribution of goods and services, while a university's mission is teaching, research and community service.</p>
+
+                <h3 id="objectives">1.2 Objectives (Goals)</h3>
+                <p>Objectives are the specific end points toward which all managerial activity — planning, organizing, staffing, directing and controlling — is aimed. They define what is to be accomplished, by when, and are often expressed in measurable terms (e.g., "increase market share by 5% in the next fiscal year").</p>
+
+                <h3 id="strategies">1.3 Strategies</h3>
+                <p>A strategy is the determination of the basic long-term objectives of an enterprise, together with the adoption of courses of action and the allocation of resources necessary to achieve those objectives. It answers the question, "How do we get from where we are to where we want to be?"</p>
+
+                <h3 id="policies">1.4 Policies</h3>
+                <p>Policies are general statements or understandings that guide managerial thinking and decision-making in recurring situations. They channel decisions along a particular line without dictating exact action, giving subordinates room for judgement within defined limits (e.g., "we promote from within wherever possible").</p>
+
+                <h3 id="procedures">1.5 Procedures</h3>
+                <p>Procedures are plans that establish a required, chronological sequence of actions for handling recurring activities. Unlike policies, which guide thinking, procedures prescribe the exact manner in which a task must be carried out (e.g., the step-by-step process for processing a purchase order).</p>
+
+                <h3 id="rules">1.6 Rules</h3>
+                <p>Rules spell out specific, required actions or non-actions, leaving no room for discretion (e.g., "no smoking in the factory premises"). A rule may or may not be part of a procedure; it is the simplest type of plan.</p>
+
+                <h3 id="programs">1.7 Programs</h3>
+                <p>Programs are a complex set of goals, policies, procedures, rules, task assignments, resources to be employed, and other elements necessary to carry out a given course of action (e.g., a company's annual "Employee Wellness Program" or a "New Product Launch Program").</p>
+
+                <h3 id="budgets">1.8 Budgets</h3>
+                <p>A budget is a statement of expected results expressed in numerical terms — a "numberized" plan. Because it converts a plan into figures (rupees, hours, units of product), it becomes both a planning tool and a fundamental control device.</p>
+
+                <table class="tutorial-table">
+                    <tr>
+                        <th>Type of Plan</th>
+                        <th>Nature</th>
+                        <th>Time Frame</th>
+                        <th>Example</th>
+                    </tr>
+                    <tr><td>Mission</td><td>Broadest; states purpose of existence</td><td>Permanent / very long-term</td><td>"To provide affordable healthcare to all"</td></tr>
+                    <tr><td>Objectives</td><td>Specific end results</td><td>Long to medium-term</td><td>"Achieve 15% revenue growth this year"</td></tr>
+                    <tr><td>Strategies</td><td>Broad course of action and resource allocation</td><td>Long-term</td><td>Entering a new international market</td></tr>
+                    <tr><td>Policies</td><td>General guide to decision-making</td><td>Standing / ongoing</td><td>"Prefer local suppliers where quality is equal"</td></tr>
+                    <tr><td>Procedures</td><td>Chronological steps for a task</td><td>Standing / ongoing</td><td>Steps to process an employee's leave request</td></tr>
+                    <tr><td>Rules</td><td>Specific required action, no discretion</td><td>Standing / ongoing</td><td>"Helmets compulsory on the shop floor"</td></tr>
+                    <tr><td>Programs</td><td>Complex bundle of goals, policies, tasks and resources</td><td>Single-use, project-based</td><td>A plant-expansion program</td></tr>
+                    <tr><td>Budgets</td><td>Plan expressed in numbers</td><td>Usually annual / periodic</td><td>The annual sales budget</td></tr>
+                </table>
+
+                <h2 id="hierarchy">2. Hierarchy of Objectives</h2>
+                <p class="lead-text">Objectives in an organization form a hierarchy — a "means-end chain" — running from the broad overall purpose of the enterprise down to the specific objective of each individual employee. The achievement of lower-level objectives is the means by which higher-level objectives are achieved.</p>
+                <ul class="custom-bullets">
+                    <li><strong>Overall Purpose / Mission</strong> — the broadest statement of why the organization exists.</li>
+                    <li><strong>Overall Organizational Objectives (long-term / strategic)</strong> — set by top management, covering the whole enterprise.</li>
+                    <li><strong>Divisional / Departmental Objectives</strong> — set by middle management to support the organizational objectives.</li>
+                    <li><strong>Individual Objectives (goals and targets)</strong> — set for each employee, so that everyone's daily work contributes upward through the chain.</li>
+                </ul>
+                <p>This chain ensures that a clerk's daily target, a department's quarterly target, and the company's five-year target are all logically linked — achieving the smaller, near-term objective is the means to achieving the larger, longer-term one.</p>
+
+                <h2 id="mbo">3. Management by Objectives (MBO)</h2>
+
+                <h3 id="mbomeaning">3.1 Concept and Definition</h3>
+                <p class="lead-text">Management by Objectives (MBO) is a comprehensive managerial system that integrates many key management activities in a systematic manner, consciously directed toward the effective and efficient achievement of organizational and individual objectives. The term was popularized by <strong>Peter F. Drucker</strong> in his 1954 book <em>The Practice of Management</em>, and later developed further by George Odiorne.</p>
+                <div class="concept-block">
+                    <strong>Peter Drucker:</strong> MBO is a process whereby the superior and subordinate managers of an organization jointly identify its common goals, define each individual's major areas of responsibility in terms of results expected, and use these measures as guides for operating the unit and assessing the contribution of each of its members.
+                </div>
+
+                <h3 id="mboprocess">3.2 Process of MBO</h3>
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The five stages of the MBO process shown as a continuous cycle">
+                        <rect width="600" height="400" fill="#ffffff" rx="14"/>
                         <defs>
-                            <marker id="arrHeadDashMBO" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-                                <path d="M0,0L10,5L0,10z" class="svg-marker"/>
+                            <marker id="arrHead2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                                <path d="M0,0L10,5L0,10z" fill="#4a5568"/>
+                            </marker>
+                            <marker id="arrHeadDash2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                                <path d="M0,0L10,5L0,10z" fill="#a0aec0"/>
                             </marker>
                         </defs>
-                        <rect width="600" height="280" rx="14" class="svg-bg"/>
-                        <text x="300" y="26" text-anchor="middle" font-size="15" font-weight="600" class="svg-text">The MBO Process Cycle</text>
-                        
-                        <!-- Arrows -->
-                        <path d="M 170 80 L 260 80" stroke-width="2" marker-end="url(#arrHeadDashMBO)" class="svg-line"/>
-                        <path d="M 340 80 L 430 80" stroke-width="2" marker-end="url(#arrHeadDashMBO)" class="svg-line"/>
-                        <path d="M 470 120 L 470 180 L 340 180" stroke-width="2" fill="none" marker-end="url(#arrHeadDashMBO)" class="svg-line"/>
-                        <path d="M 260 180 L 130 180 L 130 120" stroke-width="2" fill="none" marker-end="url(#arrHeadDashMBO)" class="svg-line"/>
+                        <text x="300" y="26" text-anchor="middle" font-size="15" font-weight="600" fill="#2d3748">The MBO Process — A Continuous Cycle</text>
 
-                        <!-- Nodes -->
-                        <rect x="90" y="50" width="80" height="60" rx="8" fill="#2b6cb0" />
-                        <text x="130" y="78" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">1. Set</text>
-                        <text x="130" y="93" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">Org Goals</text>
+                        <line x1="345" y1="91" x2="385" y2="119" stroke="#4a5568" stroke-width="2.5" marker-end="url(#arrHead2)"/>
+                        <line x1="413" y1="202" x2="397" y2="248" stroke="#4a5568" stroke-width="2.5" marker-end="url(#arrHead2)"/>
+                        <line x1="325" y1="300" x2="275" y2="300" stroke="#4a5568" stroke-width="2.5" marker-end="url(#arrHead2)"/>
+                        <line x1="203" y1="248" x2="187" y2="202" stroke="#4a5568" stroke-width="2.5" marker-end="url(#arrHead2)"/>
+                        <path d="M215,119 Q120,20 255,91" fill="none" stroke="#a0aec0" stroke-width="2" stroke-dasharray="5,4" marker-end="url(#arrHeadDash2)"/>
+                        <text x="185" y="55" text-anchor="middle" font-size="10.5" fill="#a0aec0">next cycle</text>
 
-                        <rect x="260" y="50" width="80" height="60" rx="8" fill="#2f855a" />
-                        <text x="300" y="78" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">2. Joint Goal</text>
-                        <text x="300" y="93" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">Setting</text>
+                        <circle cx="300" cy="60" r="55" fill="#2b6cb0"/>
+                        <text x="300" y="55" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">1. Set Org.</text>
+                        <text x="300" y="70" text-anchor="middle" font-size="10.5" fill="#e2e8f0">Objectives</text>
 
-                        <rect x="430" y="50" width="80" height="60" rx="8" fill="#b7791f" />
-                        <text x="470" y="78" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">3. Action</text>
-                        <text x="470" y="93" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">Planning</text>
+                        <circle cx="430" cy="150" r="55" fill="#2f855a"/>
+                        <text x="430" y="140" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">2. Joint Goal</text>
+                        <text x="430" y="155" text-anchor="middle" font-size="10.5" fill="#e2e8f0">Setting</text>
+                        <text x="430" y="169" text-anchor="middle" font-size="9" fill="#e2e8f0">(superior + subordinate)</text>
 
-                        <rect x="260" y="150" width="80" height="60" rx="8" fill="#b83280" />
-                        <text x="300" y="178" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">4. Periodic</text>
-                        <text x="300" y="193" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">Reviews</text>
+                        <circle cx="380" cy="300" r="55" fill="#b7791f"/>
+                        <text x="380" y="295" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">3. Action</text>
+                        <text x="380" y="310" text-anchor="middle" font-size="10.5" fill="#fefcbf">Planning</text>
 
-                        <rect x="200" y="225" width="200" height="40" rx="8" fill="#e53e3e" />
-                        <text x="300" y="250" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">5. Final Performance Appraisal</text>
-                        <path d="M 300 210 L 300 225" stroke-width="2" marker-end="url(#arrHeadDashMBO)" class="svg-line"/>
+                        <circle cx="220" cy="300" r="55" fill="#b83280"/>
+                        <text x="220" y="290" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">4. Self-Control &amp;</text>
+                        <text x="220" y="305" text-anchor="middle" font-size="10.5" fill="#fed7e2">Periodic Review</text>
 
+                        <circle cx="170" cy="150" r="55" fill="#c53030"/>
+                        <text x="170" y="140" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">5. Performance</text>
+                        <text x="170" y="155" text-anchor="middle" font-size="10.5" fill="#fed7d7">Appraisal</text>
+                        <text x="170" y="169" text-anchor="middle" font-size="9" fill="#fed7d7">&amp; feedback</text>
                     </svg>
-                    <p class="diagram-caption">Fig. 2 — MBO is a continuous, collaborative loop rather than a top-down directive.</p>
+                    <p class="diagram-caption">Fig. 2 — MBO is not a one-time goal-setting exercise but a repeating cycle in which appraisal results feed directly into the next round of objective setting.</p>
                 </div>
 
-                <p><strong>Advantages of MBO:</strong></p>
+                <h3 id="mbofeatures">3.3 Key Features of MBO</h3>
                 <ul class="custom-bullets">
-                    <li>Better and more precise planning due to verifiable goals.</li>
-                    <li>Highly motivating because employees feel ownership of goals they helped create.</li>
-                    <li>Provides purely objective, results-based criteria for performance appraisal, removing manager bias.</li>
+                    <li>Objectives are set <strong>jointly</strong> by superior and subordinate, not imposed unilaterally.</li>
+                    <li>Objectives are specific, time-bound and, wherever possible, quantified.</li>
+                    <li>Emphasis is on results/output rather than on activities or personal traits.</li>
+                    <li>Provides for periodic review of progress and self-control by the individual.</li>
+                    <li>Performance appraisal is based on actual achievement against agreed objectives.</li>
                 </ul>
 
-                <p><strong>Limitations of MBO:</strong></p>
+                <h3 id="mbobenefits">3.4 Benefits of MBO</h3>
                 <ul class="custom-bullets">
-                    <li><strong>Short-Termism:</strong> Can lead to an over-focus on short-term, quantifiable goals at the expense of long-term qualitative health (e.g., cutting R&D to hit this quarter's profit target).</li>
-                    <li><strong>Cultural Resistance:</strong> Requires a massive cultural shift towards trust. It fails utterly in highly autocratic corporate cultures.</li>
-                    <li><strong>Paperwork Heavy:</strong> Can devolve into a bureaucratic exercise of filling out forms rather than genuine strategic alignment.</li>
+                    <li>Improves the quality of planning by forcing managers to set clear, verifiable targets.</li>
+                    <li>Clarifies organizational roles and structure, since objectives cascade down the hierarchy.</li>
+                    <li>Encourages employee commitment through participation in goal-setting.</li>
+                    <li>Provides objective standards for performance appraisal, reducing bias.</li>
+                    <li>Improves communication between superiors and subordinates.</li>
                 </ul>
 
-                <h2 id="strategic-intent">3. Nature and Purpose of Strategies & Strategic Intent</h2>
-
-                <h3 id="nature-strategy">3.1 Strategies vs. Policies</h3>
+                <h3 id="mbolimitations">3.5 Limitations of MBO</h3>
                 <ul class="custom-bullets">
-                    <li><strong>Strategies</strong> are dynamic, long-term, and forward-looking action plans concerned with the external competitive environment. Their core purpose is to deploy resources to build a sustainable <em>competitive advantage</em> over rivals.</li>
-                    <li><strong>Policies</strong> are tactical, internal, standing plans. Their purpose is to ensure consistency in decision-making and act as time-savers (so a manager doesn't have to rethink a problem from scratch every time it occurs).</li>
+                    <li>Time-consuming; setting and reviewing objectives for every individual takes considerable managerial time.</li>
+                    <li>Overemphasis on quantifiable objectives may lead to the neglect of qualitative but important goals.</li>
+                    <li>Can encourage a rigid, short-term focus at the expense of long-term thinking.</li>
+                    <li>Requires genuine top-management commitment and a participative culture to succeed; imposed "pseudo-MBO" often fails.</li>
                 </ul>
 
-                <h3 id="intent">3.2 Strategic Intent</h3>
-                <p>Popularized by Gary Hamel and C.K. Prahalad, <strong>Strategic Intent</strong> is a firm’s long-term, borderline unrealistic obsession with winning at all levels of the organization. It purposefully outpaces the firm's current resources and capabilities, forcing the company to heavily innovate to close the gap.</p>
-                
-                <p>Hamel and Prahalad used two key concepts here: <strong>"Stretch"</strong> (the massive gap between current resources and the strategic intent) and <strong>"Leverage"</strong> (innovatively concentrating those limited resources to achieve the impossible). A classic example was Komatsu’s strategic intent to "Encircle Caterpillar" when Caterpillar was massively larger.</p>
+                <h2 id="verifiable">4. Verifiable and Non-verifiable Objectives</h2>
+                <h3 id="verifiabledef">4.1 Verifiable Objectives</h3>
+                <p>A verifiable objective is one that is stated clearly enough, and usually in measurable/quantifiable terms, that at the end of the period a manager and a subordinate can both objectively determine whether or not it was achieved. Example: "reduce customer complaints by 20% within six months."</p>
 
-                <p>Strategic intent forms a hierarchy:</p>
-                <ul class="custom-bullets">
-                    <li><strong>Vision:</strong> The highly aspirational "guiding star" (e.g., Microsoft’s original vision: "A computer on every desk and in every home").</li>
-                    <li><strong>Mission:</strong> The current business scope driving toward the vision.</li>
-                    <li><strong>Business Definition:</strong> Defining the specific customer groups being satisfied, the needs being met, and the technologies/competencies being used.</li>
-                    <li><strong>Goals and Objectives:</strong> The concrete, time-bound stepping stones to achieve the above.</li>
-                </ul>
+                <h3 id="nonverifiabledef">4.2 Non-verifiable Objectives</h3>
+                <p>A non-verifiable objective is stated in vague, general, or qualitative terms that cannot be objectively measured, making it difficult to judge with certainty whether it has been achieved. Example: "improve employee morale" or "become a more customer-friendly organization."</p>
+                <p>Good MBO practice pushes managers to convert as many non-verifiable objectives as possible into verifiable ones — e.g., "improve employee morale" could be restated as "increase the employee engagement survey score from 68% to 80% within the year."</p>
 
-                <h2 id="tows">4. The TOWS Matrix</h2>
-                <p>While most undergraduate students learn SWOT analysis (a simple list of Strengths, Weaknesses, Opportunities, and Threats), the <strong>TOWS Matrix</strong> (developed by Heinz Weihrich) goes a critical step further. It is a <strong>strategy generation tool</strong>, not just an analytical list. It forces managers to match internal capabilities with external realities to create actionable business plans.</p>
-                
-                <div class="diagram-wrap">
-                    <svg viewBox="0 0 600 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="TOWS Strategy Generation Concept">
-                        <rect width="600" height="250" rx="14" class="svg-bg"/>
-                        <text x="300" y="26" text-anchor="middle" font-size="15" font-weight="600" class="svg-text">TOWS: Matching Internal &amp; External Factors</text>
-                        
-                        <rect x="100" y="60" width="140" height="50" rx="8" stroke-width="2" class="svg-box-blue"/>
-                        <text x="170" y="89" text-anchor="middle" font-size="12" font-weight="600" class="svg-text-blue">Internal Strengths (S)</text>
-                        
-                        <rect x="100" y="140" width="140" height="50" rx="8" stroke-width="2" class="svg-box-yellow"/>
-                        <text x="170" y="169" text-anchor="middle" font-size="12" font-weight="600" class="svg-text-yellow">Internal Weaknesses (W)</text>
-                        
-                        <rect x="360" y="60" width="140" height="50" rx="8" stroke-width="2" class="svg-box-green"/>
-                        <text x="430" y="89" text-anchor="middle" font-size="12" font-weight="600" class="svg-text-green">Ext. Opportunities (O)</text>
-                        
-                        <rect x="360" y="140" width="140" height="50" rx="8" stroke-width="2" class="svg-box-red"/>
-                        <text x="430" y="169" text-anchor="middle" font-size="12" font-weight="600" class="svg-text-red">External Threats (T)</text>
-
-                        <!-- Arrows -->
-                        <path d="M 250 85 L 350 85" stroke-width="2" stroke-dasharray="5,5" class="svg-line"/>
-                        <path d="M 250 165 L 350 165" stroke-width="2" stroke-dasharray="5,5" class="svg-line"/>
-                        <path d="M 250 85 L 350 165" stroke-width="2" stroke-dasharray="5,5" class="svg-line"/>
-                        <path d="M 250 165 L 350 85" stroke-width="2" stroke-dasharray="5,5" class="svg-line"/>
-
-                        <circle cx="300" cy="125" r="28" class="svg-node-dark"/>
-                        <text x="300" y="129" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">MATCH</text>
-                    </svg>
-                    <p class="diagram-caption">Fig. 3 — TOWS takes the 4 SWOT elements and forces them to intersect, proactively generating actionable strategies.</p>
-                </div>
-
+                <h2 id="quantqual">5. Quantitative and Qualitative Objectives</h2>
                 <table class="tutorial-table">
                     <tr>
-                        <th style="width:20%; background-color: var(--bg-color);"></th>
-                        <th style="width:40%; background-color: rgba(16, 185, 129, 0.05);">External Opportunities (O)</th>
-                        <th style="width:40%; background-color: rgba(239, 68, 68, 0.05);">External Threats (T)</th>
+                        <th>Basis</th>
+                        <th>Quantitative Objectives</th>
+                        <th>Qualitative Objectives</th>
                     </tr>
                     <tr>
-                        <td style="background-color: rgba(59, 130, 246, 0.05);"><strong>Internal Strengths (S)</strong></td>
-                        <td><strong>SO Strategies (Maxi-Maxi)</strong><br>The most desirable position. Aggressively use massive internal strengths to capitalize on new external opportunities.<br><br><span style="font-size: 0.85rem; color: var(--text-light);"><em>MBA Case:</em> Apple using its massive cash reserves and brand loyalty (S) to acquire AI startups in a booming AI tech market (O).</span></td>
-                        <td><strong>ST Strategies (Maxi-Mini)</strong><br>Use internal strengths to avoid, mitigate, or confront external threats.<br><br><span style="font-size: 0.85rem; color: var(--text-light);"><em>MBA Case:</em> A dominant legacy bank using its immense regulatory experience and capital (S) to fend off agile new FinTech startup competitors (T).</span></td>
+                        <td><strong>Meaning</strong></td>
+                        <td>Objectives expressed in numerical/measurable terms.</td>
+                        <td>Objectives concerned with quality, attitudes or perceptions, not directly numerical.</td>
                     </tr>
                     <tr>
-                        <td style="background-color: rgba(245, 158, 11, 0.05);"><strong>Internal Weaknesses (W)</strong></td>
-                        <td><strong>WO Strategies (Mini-Maxi)</strong><br>Improve or overcome internal weaknesses by taking advantage of external opportunities.<br><br><span style="font-size: 0.85rem; color: var(--text-light);"><em>MBA Case:</em> A traditional automaker with weak software skills (W) forming a joint venture with Google (O) to build autonomous self-driving cars.</span></td>
-                        <td><strong>WT Strategies (Mini-Mini)</strong><br>Defensive tactics aimed at reducing internal weaknesses and avoiding external threats. This is pure survival mode.<br><br><span style="font-size: 0.85rem; color: var(--text-light);"><em>MBA Case:</em> A struggling airline with high debt and aging planes (W) liquidating an unprofitable division and freezing hiring during a global economic recession (T).</span></td>
+                        <td><strong>Measurability</strong></td>
+                        <td>Easily measured and verified (units, rupees, percentages, time).</td>
+                        <td>Difficult to measure directly; often assessed through surveys, ratings or judgement.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Example</strong></td>
+                        <td>"Increase production by 10,000 units this quarter."</td>
+                        <td>"Enhance the brand's reputation for innovation."</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Use in MBO</strong></td>
+                        <td>Preferred, as they make appraisal objective and unambiguous.</td>
+                        <td>Necessary but should be converted into as many verifiable proxies as possible.</td>
                     </tr>
                 </table>
 
-                <h2 id="blue-ocean">5. Blue Ocean Strategy</h2>
-                <p>Coined by W. Chan Kim and Renée Mauborgne in 2005, the Blue Ocean Strategy is a massive paradigm shift. It challenges traditional competitive models (like Michael Porter’s Five Forces) by stating that instead of battling competitors in an existing, blood-red, saturated market, companies should innovate to create new, uncontested market space.</p>
+                <h2 id="strategiespolicies">6. Nature and Purpose of Strategies and Policies</h2>
 
-                <h3 id="red-vs-blue">5.1 Red Oceans vs. Blue Oceans</h3>
+                <h3 id="naturestrategy">6.1 Nature of Strategy</h3>
+                <ul class="custom-bullets">
+                    <li>Deals with the fundamental, long-term direction of the enterprise.</li>
+                    <li>Involves the allocation of significant resources (capital, people, time) toward chosen objectives.</li>
+                    <li>Is formulated primarily by top management, since it affects the whole organization.</li>
+                    <li>Requires analysis of both the external environment (opportunities/threats) and internal capability (strengths/weaknesses).</li>
+                </ul>
+
+                <h3 id="purposestrategy">6.2 Purpose of Strategy</h3>
+                <p>Strategy exists to give the enterprise a unified sense of direction, to guide the allocation of scarce resources to the areas of greatest opportunity, to create a sustainable competitive advantage over rivals, and to provide a framework within which more detailed plans (policies, procedures, programs) can be developed consistently.</p>
+
+                <h3 id="naturepolicy">6.3 Nature of Policy</h3>
+                <ul class="custom-bullets">
+                    <li>General in nature; guides thinking without dictating a single course of action.</li>
+                    <li>Provides discretion and flexibility for managers to interpret and apply it to specific situations.</li>
+                    <li>Derived from and subordinate to strategy — a policy operationalizes a strategic choice into a standing guideline.</li>
+                    <li>Relatively stable over time compared to day-to-day operating decisions.</li>
+                </ul>
+
+                <h3 id="purposepolicy">6.4 Purpose of Policy</h3>
+                <p>Policies exist to ensure consistency of decision-making across the organization, to delegate decision authority without losing overall direction, to save management time by pre-deciding the general approach to recurring situations, and to communicate the organization's values and priorities to employees at every level.</p>
+
+                <h3 id="strategyvpolicy">6.5 Strategy vs. Policy — Key Distinctions</h3>
                 <table class="tutorial-table">
                     <tr>
-                        <th>Red Ocean Strategy (Traditional)</th>
-                        <th>Blue Ocean Strategy (Innovative)</th>
+                        <th>Basis</th>
+                        <th>Strategy</th>
+                        <th>Policy</th>
                     </tr>
-                    <tr>
-                        <td>Compete in existing market space.</td>
-                        <td>Create uncontested market space.</td>
-                    </tr>
-                    <tr>
-                        <td>Beat the competition.</td>
-                        <td>Make the competition completely irrelevant.</td>
-                    </tr>
-                    <tr>
-                        <td>Exploit existing demand.</td>
-                        <td>Create and capture <em>new</em> demand.</td>
-                    </tr>
-                    <tr>
-                        <td>Make the <strong>value-cost trade-off</strong> (Choose between being a premium/high-value brand OR a low-cost brand).</td>
-                        <td><strong>Break</strong> the value-cost trade-off (Simultaneously achieve high differentiation AND low cost via Value Innovation).</td>
-                    </tr>
+                    <tr><td>Meaning</td><td>Course of action to achieve long-term objectives</td><td>General guideline for decision-making</td></tr>
+                    <tr><td>Scope</td><td>Broad, organization-wide, external-facing</td><td>Narrower, guides specific recurring decisions</td></tr>
+                    <tr><td>Formulated by</td><td>Top management</td><td>Top and middle management</td></tr>
+                    <tr><td>Nature</td><td>Action-oriented; concerned with "what to do"</td><td>Thought-oriented; concerned with "how to think about it"</td></tr>
+                    <tr><td>Time frame</td><td>Long-term, situation-specific</td><td>Standing / ongoing until revised</td></tr>
                 </table>
 
-                <h3 id="errc">5.2 The Four Actions Framework (ERRC Grid) & Value Innovation</h3>
-                <p>The cornerstone of Blue Ocean Strategy is <strong>Value Innovation</strong>. To achieve this and map out a new "Strategy Canvas," companies must ask four critical questions about the industry's historical logic using the ERRC Grid:</p>
-                
-                <div class="diagram-wrap">
-                    <svg viewBox="0 0 600 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ERRC Grid Four Actions Framework">
-                        <rect width="600" height="320" rx="14" class="svg-bg"/>
-                        <text x="300" y="30" text-anchor="middle" font-size="16" font-weight="600" class="svg-text">The ERRC Grid (Four Actions Framework)</text>
-                        
-                        <!-- Central Value Innovation -->
-                        <circle cx="300" cy="170" r="50" stroke-width="3" class="svg-box-blue"/>
-                        <text x="300" y="165" text-anchor="middle" font-size="13" font-weight="600" class="svg-text-blue">Value</text>
-                        <text x="300" y="182" text-anchor="middle" font-size="13" font-weight="600" class="svg-text-blue">Innovation</text>
-
-                        <!-- 4 Quadrants connected -->
-                        <rect x="80" y="60" width="150" height="70" rx="8" stroke-width="2" class="svg-box-red"/>
-                        <text x="155" y="90" text-anchor="middle" font-size="13" font-weight="700" class="svg-text-red">ELIMINATE</text>
-                        <text x="155" y="110" text-anchor="middle" font-size="10" class="svg-text-red">Industry standards</text>
-                        <path d="M 230 110 L 260 135" stroke-width="2" class="svg-line"/>
-
-                        <rect x="370" y="60" width="150" height="70" rx="8" stroke-width="2" class="svg-box-green"/>
-                        <text x="445" y="90" text-anchor="middle" font-size="13" font-weight="700" class="svg-text-green">RAISE</text>
-                        <text x="445" y="110" text-anchor="middle" font-size="10" class="svg-text-green">Well above standard</text>
-                        <path d="M 370 110 L 340 135" stroke-width="2" class="svg-line"/>
-
-                        <rect x="80" y="210" width="150" height="70" rx="8" stroke-width="2" class="svg-box-yellow"/>
-                        <text x="155" y="240" text-anchor="middle" font-size="13" font-weight="700" class="svg-text-yellow">REDUCE</text>
-                        <text x="155" y="260" text-anchor="middle" font-size="10" class="svg-text-yellow">Below standard</text>
-                        <path d="M 230 230 L 260 205" stroke-width="2" class="svg-line"/>
-
-                        <rect x="370" y="210" width="150" height="70" rx="8" stroke-width="2" class="svg-box-purple"/>
-                        <text x="445" y="240" text-anchor="middle" font-size="13" font-weight="700" class="svg-text-purple">CREATE</text>
-                        <text x="445" y="260" text-anchor="middle" font-size="10" class="svg-text-purple">Never offered before</text>
-                        <path d="M 370 230 L 340 205" stroke-width="2" class="svg-line"/>
-
-                    </svg>
-                    <p class="diagram-caption">Fig. 4 — The ERRC grid forces companies to simultaneously break the value-cost trade-off by raising/creating value while eliminating/reducing costs.</p>
-                </div>
-
-                <div class="concept-block">
-                    <ul class="custom-bullets" style="margin-top: 10px;">
-                        <li><strong>Eliminate:</strong> Which factors that the industry has long competed on (and cost money) should be completely eliminated because they no longer provide real value?</li>
-                        <li><strong>Reduce:</strong> Which factors should be reduced well below the industry standard?</li>
-                        <li><strong>Raise:</strong> Which factors should be raised well above the industry standard?</li>
-                        <li><strong>Create:</strong> Which factors should be created that the industry has never offered before?</li>
-                    </ul>
-                </div>
-
-                <h3 id="cases">5.3 Classic MBA Case Studies</h3>
+                <h2 id="strategicintent">7. Strategic Intent</h2>
+                <p class="lead-text">The concept of strategic intent was introduced by <strong>Gary Hamel and C.K. Prahalad</strong> in their influential 1989 article in the <em>Harvard Business Review</em>. It refers to an ambitious and compelling long-term vision or goal that stretches an organization far beyond its current resources and capabilities, energizing employees to achieve what might otherwise seem impossible.</p>
+                <h3 id="siCharacteristics">7.1 Characteristics of Strategic Intent</h3>
                 <ul class="custom-bullets">
-                    <li><strong>Cirque du Soleil:</strong> 
-                        <em>Eliminated</em> costly animal acts, multi-ring stages, and star performers (drastically cutting operational costs). 
-                        <em>Created</em> artistic original music, professional dance, a cohesive storyline, and upscale theater environments (drastically raising value). 
-                        <strong>Result:</strong> They stopped competing with traditional circuses for children. They created a massive new market of high-end, theatre-going adults willing to pay Broadway-level prices.
-                    </li>
-                    <li style="margin-top: 15px;"><strong>Nintendo Wii:</strong> 
-                        <em>Reduced</em> cutting-edge, expensive graphics processors and complex controllers that Sony (PlayStation) and Microsoft (Xbox) were bleeding money fighting over. 
-                        <em>Created</em> simple motion-control and family-friendly party games. 
-                        <strong>Result:</strong> They stopped competing for hardcore gamers and captured an uncontested non-gamer market (grandparents, young children, fitness enthusiasts).
-                    </li>
-                    <li style="margin-top: 15px;"><strong>Yellow Tail Wine:</strong> 
-                        <em>Eliminated</em> aging qualities, complex wine terminology, and elite vineyard prestige. 
-                        <em>Created</em> approachability, ease of selection (only two types initially: a red and a white), and fun, vibrant branding (a kangaroo). 
-                        <strong>Result:</strong> They bypassed the snobby, crowded wine market and targeted beer and cocktail drinkers, becoming the fastest-growing imported wine in US history.
-                    </li>
+                    <li><strong>Sense of direction</strong> — provides a clear, long-term competitive target (e.g., "become the global leader" rather than a vague aspiration).</li>
+                    <li><strong>Sense of discovery</strong> — pushes the organization to explore new competitive territory rather than merely extrapolate the present.</li>
+                    <li><strong>Sense of destiny</strong> — creates an emotionally compelling goal that employees find worthwhile and motivating.</li>
+                    <li><strong>Stability over time</strong> — while the tactics to achieve it may change, the intent itself remains fixed over a long horizon.</li>
+                    <li><strong>Stretch</strong> — deliberately exceeds the organization's current resources, forcing creativity and resourcefulness rather than merely fitting strategy to existing means.</li>
+                </ul>
+                <h3 id="siimportance">7.2 Importance of Strategic Intent</h3>
+                <p>Strategic intent differs from conventional strategic planning, which typically fits the organization's ambition to its current resources. Strategic intent instead creates an extreme misfit between resources and ambitions deliberately, and challenges the organization to close that gap through innovation, leveraging resources cleverly, and building new capabilities — it is less about the "fit" and more about "stretch and leverage."</p>
+
+                <h2 id="tows">8. TOWS Matrix</h2>
+                <p class="lead-text">The TOWS Matrix, developed by <strong>Heinz Weihrich</strong>, is a conceptual framework for systematically identifying strategic options by matching an organization's internal Strengths and Weaknesses with external Opportunities and Threats. (It is the same underlying analysis as a SWOT analysis, but "TOWS" emphasizes moving from the external environment inward to generate concrete strategy options.)</p>
+
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 560 460" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="TOWS matrix showing SO, WO, ST and WT strategy quadrants">
+                        <rect width="560" height="460" fill="#ffffff" rx="14"/>
+                        <text x="280" y="26" text-anchor="middle" font-size="15" font-weight="600" fill="#2d3748">TOWS Matrix — Generating Strategy Options</text>
+
+                        <!-- column headers -->
+                        <rect x="150" y="50" width="185" height="36" fill="#2b6cb0" rx="6"/>
+                        <text x="242" y="73" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">Strengths (S)</text>
+                        <rect x="345" y="50" width="185" height="36" fill="#c53030" rx="6"/>
+                        <text x="437" y="73" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">Weaknesses (W)</text>
+
+                        <!-- row headers -->
+                        <rect x="30" y="96" width="110" height="170" fill="#2f855a" rx="6"/>
+                        <text x="85" y="181" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" transform="rotate(-90 85 181)">Opportunities (O)</text>
+                        <rect x="30" y="276" width="110" height="170" fill="#b7791f" rx="6"/>
+                        <text x="85" y="361" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" transform="rotate(-90 85 361)">Threats (T)</text>
+
+                        <!-- quadrants -->
+                        <rect x="150" y="96" width="185" height="170" fill="#f0fff4" stroke="#2f855a" stroke-width="1.5"/>
+                        <text x="242" y="130" text-anchor="middle" font-size="12.5" font-weight="700" fill="#22543d">SO Strategy</text>
+                        <text x="242" y="150" text-anchor="middle" font-size="10" fill="#276749">Use strengths to</text>
+                        <text x="242" y="164" text-anchor="middle" font-size="10" fill="#276749">exploit opportunities</text>
+                        <text x="242" y="184" text-anchor="middle" font-size="9.5" fill="#4a5568">(Maxi-Maxi — aggressive growth)</text>
+
+                        <rect x="345" y="96" width="185" height="170" fill="#fff5f5" stroke="#c53030" stroke-width="1.5"/>
+                        <text x="437" y="130" text-anchor="middle" font-size="12.5" font-weight="700" fill="#742a2a">WO Strategy</text>
+                        <text x="437" y="150" text-anchor="middle" font-size="10" fill="#9b2c2c">Overcome weaknesses</text>
+                        <text x="437" y="164" text-anchor="middle" font-size="10" fill="#9b2c2c">by exploiting opportunities</text>
+                        <text x="437" y="184" text-anchor="middle" font-size="9.5" fill="#4a5568">(Mini-Maxi — turnaround)</text>
+
+                        <rect x="150" y="276" width="185" height="170" fill="#fffaf0" stroke="#b7791f" stroke-width="1.5"/>
+                        <text x="242" y="310" text-anchor="middle" font-size="12.5" font-weight="700" fill="#7b341e">ST Strategy</text>
+                        <text x="242" y="330" text-anchor="middle" font-size="10" fill="#9c4221">Use strengths to</text>
+                        <text x="242" y="344" text-anchor="middle" font-size="10" fill="#9c4221">avoid / counter threats</text>
+                        <text x="242" y="364" text-anchor="middle" font-size="9.5" fill="#4a5568">(Maxi-Mini — diversification)</text>
+
+                        <rect x="345" y="276" width="185" height="170" fill="#faf5ff" stroke="#805ad5" stroke-width="1.5"/>
+                        <text x="437" y="310" text-anchor="middle" font-size="12.5" font-weight="700" fill="#553c9a">WT Strategy</text>
+                        <text x="437" y="330" text-anchor="middle" font-size="10" fill="#6b46c1">Minimize weaknesses</text>
+                        <text x="437" y="344" text-anchor="middle" font-size="10" fill="#6b46c1">and avoid threats</text>
+                        <text x="437" y="364" text-anchor="middle" font-size="9.5" fill="#4a5568">(Mini-Mini — defensive / retrenchment)</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 3 — The TOWS Matrix pairs each internal factor (Strengths/Weaknesses) with each external factor (Opportunities/Threats) to generate four distinct families of strategy.</p>
+                </div>
+
+                <h3 id="towsstrategies">8.1 The Four TOWS Strategy Types</h3>
+                <ul class="custom-bullets">
+                    <li><strong>SO (Maxi-Maxi):</strong> Use internal strengths to take maximum advantage of external opportunities — an aggressive, growth-oriented strategy.</li>
+                    <li><strong>WO (Mini-Maxi):</strong> Overcome internal weaknesses by exploiting external opportunities — often a turnaround strategy.</li>
+                    <li><strong>ST (Maxi-Mini):</strong> Use internal strengths to minimize or avoid the impact of external threats — a diversification-type strategy.</li>
+                    <li><strong>WT (Mini-Mini):</strong> Minimize both internal weaknesses and external threats simultaneously — typically a defensive, retrenchment, or divestment strategy.</li>
+                </ul>
+
+                <h2 id="blueocean">9. Blue Ocean Strategy</h2>
+                <p class="lead-text">Blue Ocean Strategy is a concept developed by <strong>W. Chan Kim and Renée Mauborgne</strong> in their book of the same name (2005). It argues that lasting success comes not from fighting competitors within existing, overcrowded markets ("red oceans"), but from creating new, uncontested market space ("blue oceans") where competition is rendered irrelevant.</p>
+
+                <h3 id="redvsblue">9.1 Red Ocean vs. Blue Ocean</h3>
+                <table class="tutorial-table">
+                    <tr>
+                        <th>Basis</th>
+                        <th>Red Ocean Strategy</th>
+                        <th>Blue Ocean Strategy</th>
+                    </tr>
+                    <tr><td>Market space</td><td>Compete in existing market space</td><td>Create uncontested market space</td></tr>
+                    <tr><td>Competition</td><td>Beat the competition</td><td>Make competition irrelevant</td></tr>
+                    <tr><td>Demand</td><td>Exploit existing demand</td><td>Create and capture new demand</td></tr>
+                    <tr><td>Value-cost trade-off</td><td>Choose between differentiation OR low cost</td><td>Pursue differentiation AND low cost together (value innovation)</td></tr>
+                    <tr><td>Strategic focus</td><td>Align activities with the choice of differentiation or low cost</td><td>Align the whole system of activities around value innovation</td></tr>
+                </table>
+
+                <h3 id="errc">9.2 The Four Actions Framework (ERRC Grid)</h3>
+                <p>To break the value-cost trade-off and create a blue ocean, Kim and Mauborgne propose asking four key questions of the existing factors an industry competes on:</p>
+
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 560 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ERRC grid: Eliminate, Reduce, Raise, Create framework for Blue Ocean Strategy">
+                        <rect width="560" height="400" fill="#ffffff" rx="14"/>
+                        <text x="280" y="26" text-anchor="middle" font-size="15" font-weight="600" fill="#2d3748">Four Actions Framework (ERRC Grid)</text>
+
+                        <rect x="40" y="55" width="230" height="150" fill="#fff5f5" stroke="#c53030" stroke-width="1.5" rx="6"/>
+                        <text x="155" y="90" text-anchor="middle" font-size="13" font-weight="700" fill="#742a2a">ELIMINATE</text>
+                        <text x="155" y="115" text-anchor="middle" font-size="10" fill="#4a5568">Which factors that the</text>
+                        <text x="155" y="130" text-anchor="middle" font-size="10" fill="#4a5568">industry takes for granted</text>
+                        <text x="155" y="145" text-anchor="middle" font-size="10" fill="#4a5568">should be eliminated?</text>
+
+                        <rect x="290" y="55" width="230" height="150" fill="#fffaf0" stroke="#b7791f" stroke-width="1.5" rx="6"/>
+                        <text x="405" y="90" text-anchor="middle" font-size="13" font-weight="700" fill="#7b341e">REDUCE</text>
+                        <text x="405" y="115" text-anchor="middle" font-size="10" fill="#4a5568">Which factors should be</text>
+                        <text x="405" y="130" text-anchor="middle" font-size="10" fill="#4a5568">reduced well below the</text>
+                        <text x="405" y="145" text-anchor="middle" font-size="10" fill="#4a5568">industry's standard?</text>
+
+                        <rect x="40" y="220" width="230" height="150" fill="#f0fff4" stroke="#2f855a" stroke-width="1.5" rx="6"/>
+                        <text x="155" y="255" text-anchor="middle" font-size="13" font-weight="700" fill="#22543d">RAISE</text>
+                        <text x="155" y="280" text-anchor="middle" font-size="10" fill="#4a5568">Which factors should be</text>
+                        <text x="155" y="295" text-anchor="middle" font-size="10" fill="#4a5568">raised well above the</text>
+                        <text x="155" y="310" text-anchor="middle" font-size="10" fill="#4a5568">industry's standard?</text>
+
+                        <rect x="290" y="220" width="230" height="150" fill="#ebf8ff" stroke="#2b6cb0" stroke-width="1.5" rx="6"/>
+                        <text x="405" y="255" text-anchor="middle" font-size="13" font-weight="700" fill="#2c5282">CREATE</text>
+                        <text x="405" y="280" text-anchor="middle" font-size="10" fill="#4a5568">Which factors should be</text>
+                        <text x="405" y="295" text-anchor="middle" font-size="10" fill="#4a5568">created that the industry</text>
+                        <text x="405" y="310" text-anchor="middle" font-size="10" fill="#4a5568">has never offered?</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 4 — The ERRC Grid forces a simultaneous pursuit of differentiation and low cost, the combination that defines "value innovation" at the heart of Blue Ocean Strategy.</p>
+                </div>
+
+                <h3 id="boprinciples">9.3 Key Principles of Blue Ocean Strategy</h3>
+                <ul class="custom-bullets">
+                    <li><strong>Value Innovation</strong> — the cornerstone of blue ocean strategy: simultaneously pursuing differentiation and low cost, rather than trading one off against the other.</li>
+                    <li><strong>Reconstruct market boundaries</strong> — look across alternative industries, strategic groups, buyer chains, and complementary products to find new market space.</li>
+                    <li><strong>Focus on the big picture, not the numbers</strong> — use visual strategy tools (like the Strategy Canvas) rather than getting lost in data alone.</li>
+                    <li><strong>Reach beyond existing demand</strong> — target non-customers of the industry, not just existing customers.</li>
+                    <li><strong>Get the strategic sequence right</strong> — buyer utility, then price, then cost, then adoption.</li>
                 </ul>
 
                 <h2 id="review">Review Questions</h2>
                 <h3>Short Answer Type</h3>
                 <ol class="custom-bullets">
-                    <li>Distinguish between policies, procedures, and rules with suitable business examples.</li>
-                    <li>What is the fundamental difference between a verifiable and a non-verifiable objective?</li>
-                    <li>Define Strategic Intent. What do Hamel and Prahalad mean by "stretch" and "leverage"?</li>
-                    <li>How does a TOWS Matrix differ from a standard SWOT analysis?</li>
-                    <li>Define "Value Innovation" in the context of Blue Ocean Strategy.</li>
+                    <li>Define planning. State any two definitions given by well-known management thinkers.</li>
+                    <li>List the eight major types of plans in their hierarchical order.</li>
+                    <li>Distinguish between a policy and a procedure with an example.</li>
+                    <li>What is a verifiable objective? Give an example of converting a non-verifiable objective into a verifiable one.</li>
+                    <li>Distinguish between quantitative and qualitative objectives.</li>
+                    <li>Define strategic intent. Name the authors who introduced this concept.</li>
+                    <li>What do the letters in the TOWS Matrix stand for?</li>
+                    <li>What is meant by "value innovation" in Blue Ocean Strategy?</li>
                 </ol>
 
                 <h3>Long Answer / Essay Type</h3>
                 <ol class="custom-bullets">
-                    <li>"Planning is the most fundamental of all management functions, yet it has severe limitations." Discuss this statement and classify the various types of standing and single-use plans.</li>
-                    <li>Critically evaluate Peter Drucker's concept of Management by Objectives (MBO). What is the process, and why does it sometimes fail in highly autocratic corporate cultures?</li>
-                    <li>Using the TOWS matrix, explain how a company can match its internal capabilities with external realities to generate actionable strategies. Provide real-world examples for the SO, ST, WO, and WT quadrants.</li>
-                    <li>Contrast Red Ocean Strategy with Blue Ocean Strategy. Using the ERRC Four Actions Framework, analyze a real-world case study (like Cirque du Soleil, Nintendo, or Yellow Tail) to explain how uncontested market space is created.</li>
+                    <li>Explain, with examples, the eight major types of plans and how they relate to one another in a hierarchy.</li>
+                    <li>What is Management by Objectives (MBO)? Discuss its process, benefits and limitations.</li>
+                    <li>Explain the hierarchy of objectives in an organization with a suitable diagram.</li>
+                    <li>Discuss the nature and purpose of strategies and policies, bringing out the key differences between them.</li>
+                    <li>Explain the concept of strategic intent and its key characteristics.</li>
+                    <li>Explain the TOWS Matrix and the four types of strategies it generates, with examples.</li>
+                    <li>What is Blue Ocean Strategy? Distinguish it from Red Ocean Strategy and explain the Four Actions Framework.</li>
                 </ol>
 
                 <h2 id="summary">Summary</h2>
-                <p>This unit explored the critical forward-looking function of planning and strategic formulation. It detailed the hierarchy of plans, distinguishing between standing plans (policies, rules) and single-use plans (programs, budgets). We examined the paradigm shift from traditional goal setting to Peter Drucker's collaborative Management by Objectives (MBO). The unit then transitioned to advanced strategic frameworks, defining Strategic Intent as a firm's long-term, resource-stretching obsession with winning. We saw how the TOWS Matrix acts as a powerful strategy-generation tool by forcing managers to cross-reference internal factors (strengths/weaknesses) with external factors (opportunities/threats) to create actionable SO, ST, WO, and WT strategies. Finally, the unit challenged traditional competitive models via the Blue Ocean Strategy, demonstrating how companies can use the ERRC grid (Eliminate, Reduce, Raise, Create) to achieve Value Innovation—breaking the value-cost trade-off to make the competition irrelevant and open up entirely new market spaces.</p>
+                <p>This unit examined planning as the primary function of management. It began with the meaning, nature, steps and importance of planning, and then explored the hierarchy of plans — mission, objectives, strategies, policies, procedures, rules, programs and budgets — each narrowing in scope as it moves from broad organizational purpose toward specific numerical detail. The hierarchy of objectives showed how individual, departmental and organizational goals form a connected means-end chain. The unit then covered Management by Objectives (MBO) as a systematic process of joint goal-setting, action planning, self-control and appraisal, along with its benefits and limitations, and distinguished verifiable from non-verifiable objectives and quantitative from qualitative objectives. It examined the nature and purpose of strategies and policies and how they differ, introduced Hamel and Prahalad's concept of strategic intent, and explained two widely used strategic-analysis tools: the TOWS Matrix, which generates SO, WO, ST and WT strategy options by matching internal strengths/weaknesses with external opportunities/threats, and Blue Ocean Strategy, which uses value innovation and the ERRC (Eliminate-Reduce-Raise-Create) framework to help organizations create uncontested market space rather than compete head-on in existing, crowded markets.</p>
 
             </div>
 
@@ -517,18 +537,22 @@
             <div class="widget sticky-widget premium-card">
                 <h3>Unit Contents</h3>
                 <ul class="toc-list">
-                    <li><a href="#planning-types">1. Concept & Types of Plans</a></li>
-                    <li><a href="#objectives-mbo">2. Objectives & MBO</a></li>
-                    <li><a href="#strategic-intent">3. Strategic Intent</a></li>
-                    <li><a href="#tows">4. The TOWS Matrix</a></li>
-                    <li><a href="#blue-ocean">5. Blue Ocean Strategy</a></li>
+                    <li><a href="#intro">0. Introduction to Planning</a></li>
+                    <li><a href="#types">1. Types of Plans</a></li>
+                    <li><a href="#hierarchy">2. Hierarchy of Objectives</a></li>
+                    <li><a href="#mbo">3. Management by Objectives</a></li>
+                    <li><a href="#verifiable">4. Verifiable / Non-verifiable Objectives</a></li>
+                    <li><a href="#quantqual">5. Quantitative / Qualitative Objectives</a></li>
+                    <li><a href="#strategiespolicies">6. Nature &amp; Purpose of Strategy and Policy</a></li>
+                    <li><a href="#strategicintent">7. Strategic Intent</a></li>
+                    <li><a href="#tows">8. TOWS Matrix</a></li>
+                    <li><a href="#blueocean">9. Blue Ocean Strategy</a></li>
                     <li><a href="#review">Review Questions</a></li>
                     <li><a href="#summary">Summary</a></li>
                 </ul>
             </div>
         </aside>
     </div>
-    
     <script src="script.js"></script>
 </body>
 </html>
