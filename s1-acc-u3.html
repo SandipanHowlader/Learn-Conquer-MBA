@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accounting for Managers - Unit-3</title>
+        <!-- Apple Touch Icons (for iOS home screen) -->
+    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icon.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="icon.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .diagram-wrap { margin: 28px 0; text-align: center; }
+        .diagram-wrap svg { max-width: 100%; height: auto; background: #ffffff; border-radius: 14px; box-shadow: 0 1px 8px rgba(0,0,0,0.10); }
+        .diagram-caption { font-size: 0.85rem; color: #666; margin-top: 10px; font-style: italic; }
+    </style>
+</head>
+<body data-current-topic="s1-acc-u3">
+    <div class="progress-container"><div class="progress-bar" id="myBar"></div></div>
+
+    <header class="navbar glass-nav">
+        <div class="nav-left">
+            <button id="mobileMenuBtn" class="mobile-menu-btn">☰</button>
+            <div class="logo">Learn & Concure <span> MBA Tutorials</span></div>
+        </div>
+        <div class="nav-links">
+            <button id="focusModeBtn" class="theme-btn hover-effect" title="Focus Mode">📖</button>
+            <button id="darkModeToggle" class="theme-btn hover-effect" title="Dark Mode">🌙</button>
+            <a href="index.html" id="logoutBtn" class="logout-btn hover-effect">Sign Out</a>
+        </div>
+    </header>
+
+    <div class="main-wrapper" id="mainWrapper">
+
+        <!-- JavaScript will automatically generate and inject the entire 4-Semester Sidebar here -->
+        <aside class="sidebar" id="sidebar-container"></aside>
+
+        <!-- Center Content: Tutorial -->
+        <main class="content premium-card" id="mainContent">
+            <div class="bread-crumbs">Semester-I / Accounting for Managers / Unit 3</div>
+
+            <div class="article-header-flex">
+                <div>
+                    <h1>Corporate Financial Reporting Statements, Including the Statement of Cash Flows</h1>
+                    <div class="article-meta">
+                        <span>Read Time: 55 mins</span>
+                    </div>
+                </div>
+                <div class="action-buttons">
+                    <!--button class="icon-btn hover-effect" onclick="window.print()" title="Print PDF">🖨️</button-->
+                </div>
+            </div>
+            <hr class="premium-hr">
+
+            <div class="article-body">
+                <div class="concept-block">
+                    <strong>Topics Covered in This Unit:</strong>
+                    <ul class="custom-bullets" style="margin-top: 10px;">
+                        <li>Corporate Financial Reporting — Meaning, Objectives and Regulatory Framework</li>
+                        <li>Components of Corporate Financial Statements</li>
+                        <li>Statement of Cash Flows — Meaning, Importance and Classification of Activities</li>
+                        <li>Methods of Preparing the Cash Flow Statement (Direct and Indirect)</li>
+                        <li>Format, Preparation and a Worked Example of the Cash Flow Statement</li>
+                        <li>Uses and Limitations of the Cash Flow Statement</li>
+                    </ul>
+                </div>
+
+                <h2 id="intro">0. Corporate Financial Reporting</h2>
+                <h3 id="meaning">0.1 Meaning and Objectives</h3>
+                <p class="lead-text">Corporate financial reporting refers to the process by which a company communicates its financial performance, financial position, and cash flows to shareholders, regulators, lenders and the public, primarily through a set of formal financial statements published as part of its Annual Report. Unlike a sole proprietorship or partnership (Unit 1), a company is legally required to prepare and disclose its financial statements in a prescribed format, since ownership (shareholders) is separated from day-to-day management.</p>
+                <ul class="custom-bullets">
+                    <li>To provide information useful to existing and potential investors, lenders and other creditors in making decisions about providing resources to the company.</li>
+                    <li>To report on management's stewardship of the resources entrusted to it by shareholders.</li>
+                    <li>To disclose the company's financial performance, financial position, and cash flow during the reporting period.</li>
+                    <li>To ensure statutory compliance with company law, securities regulations and tax laws.</li>
+                </ul>
+
+                <h3 id="framework">0.2 Regulatory Framework in India</h3>
+                <ul class="custom-bullets">
+                    <li><strong>Companies Act, 2013</strong> — Section 129 requires every company to prepare financial statements that give a true and fair view, in the format prescribed under <strong>Schedule III</strong> of the Act.</li>
+                    <li><strong>Indian Accounting Standards (Ind AS)</strong> — issued by the ICAI's Accounting Standards Board and notified by the Ministry of Corporate Affairs, prescribing the recognition, measurement, presentation and disclosure requirements for specific items (introduced in Unit 1).</li>
+                    <li><strong>SEBI (Listing Obligations and Disclosure Requirements) Regulations</strong> — impose additional periodic financial-reporting and disclosure requirements on companies listed on a stock exchange.</li>
+                    <li><strong>Statutory Audit</strong> — an independent auditor must examine and report on whether the financial statements give a true and fair view, in accordance with the Companies Act and applicable auditing standards.</li>
+                </ul>
+
+                <h3 id="qualities">0.3 Qualitative Characteristics of Good Financial Reporting</h3>
+                <ul class="custom-bullets">
+                    <li><strong>Relevance</strong> — information must be capable of influencing the economic decisions of users.</li>
+                    <li><strong>Faithful Representation</strong> — information must completely, neutrally, and accurately represent what it purports to represent.</li>
+                    <li><strong>Comparability</strong> — statements should be comparable across companies and over time (linked to the Convention of Consistency, Unit 1).</li>
+                    <li><strong>Verifiability</strong> — independent observers should be able to reach a broad consensus that the information is faithfully represented.</li>
+                    <li><strong>Timeliness</strong> — information must be available to decision-makers before it loses its capacity to influence decisions.</li>
+                    <li><strong>Understandability</strong> — information should be presented clearly and concisely for users with a reasonable knowledge of business and accounting.</li>
+                </ul>
+
+                <h2 id="components">1. Components of Corporate Financial Statements</h2>
+                <p class="lead-text">Under Ind AS 1 and Schedule III of the Companies Act, a complete set of corporate financial statements consists of five components, each providing a different, complementary view of the company.</p>
+
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 600 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The five components of a complete set of corporate financial statements">
+                        <rect width="600" height="240" fill="#ffffff" rx="14"/>
+                        <text x="300" y="24" text-anchor="middle" font-size="15" font-weight="600" fill="#2d3748">A Complete Set of Corporate Financial Statements</text>
+
+                        <rect x="220" y="45" width="160" height="36" rx="6" fill="#2d3748"/>
+                        <text x="300" y="68" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff">FINANCIAL STATEMENTS</text>
+
+                        <line x1="250" y1="81" x2="60" y2="120" stroke="#a0aec0" stroke-width="1.4"/>
+                        <line x1="280" y1="81" x2="180" y2="120" stroke="#a0aec0" stroke-width="1.4"/>
+                        <line x1="300" y1="81" x2="300" y2="120" stroke="#a0aec0" stroke-width="1.4"/>
+                        <line x1="320" y1="81" x2="420" y2="120" stroke="#a0aec0" stroke-width="1.4"/>
+                        <line x1="350" y1="81" x2="540" y2="120" stroke="#a0aec0" stroke-width="1.4"/>
+
+                        <rect x="15" y="120" width="90" height="60" rx="6" fill="#2b6cb0"/>
+                        <text x="60" y="145" text-anchor="middle" font-size="9" font-weight="600" fill="#fff">Balance</text>
+                        <text x="60" y="158" text-anchor="middle" font-size="9" font-weight="600" fill="#fff">Sheet</text>
+
+                        <rect x="135" y="120" width="90" height="60" rx="6" fill="#2f855a"/>
+                        <text x="180" y="140" text-anchor="middle" font-size="8.5" font-weight="600" fill="#fff">Statement of</text>
+                        <text x="180" y="152" text-anchor="middle" font-size="8.5" font-weight="600" fill="#fff">Profit &amp; Loss</text>
+
+                        <rect x="255" y="120" width="90" height="60" rx="6" fill="#b7791f"/>
+                        <text x="300" y="140" text-anchor="middle" font-size="8.5" font-weight="600" fill="#fff">Cash Flow</text>
+                        <text x="300" y="152" text-anchor="middle" font-size="8.5" font-weight="600" fill="#fff">Statement</text>
+
+                        <rect x="375" y="120" width="90" height="60" rx="6" fill="#b83280"/>
+                        <text x="420" y="138" text-anchor="middle" font-size="8" font-weight="600" fill="#fff">Statement of</text>
+                        <text x="420" y="150" text-anchor="middle" font-size="8" font-weight="600" fill="#fff">Changes in</text>
+                        <text x="420" y="162" text-anchor="middle" font-size="8" font-weight="600" fill="#fff">Equity</text>
+
+                        <rect x="495" y="120" width="90" height="60" rx="6" fill="#805ad5"/>
+                        <text x="540" y="140" text-anchor="middle" font-size="8.5" font-weight="600" fill="#fff">Notes to</text>
+                        <text x="540" y="152" text-anchor="middle" font-size="8.5" font-weight="600" fill="#fff">Accounts</text>
+
+                        <text x="300" y="215" text-anchor="middle" font-size="9.5" fill="#718096">Together, these five statements give a complete picture of performance, position, equity movement and liquidity.</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 1 — Each statement answers a different question: what the company owns and owes, how it performed, how cash moved, how shareholders' equity changed, and the detailed notes behind the numbers.</p>
+                </div>
+
+                <h3 id="balancesheetrecap">1.1 Balance Sheet</h3>
+                <p>As explained in Unit 2, the Balance Sheet shows the company's assets, liabilities and equity as on the last day of the reporting period. In the corporate (Schedule III) format, it is presented in a vertical layout, with Equity and Liabilities listed first, followed by Assets, each further sub-classified into current and non-current items.</p>
+
+                <h3 id="plstatement">1.2 Statement of Profit and Loss</h3>
+                <p>The corporate equivalent of the Trading and Profit &amp; Loss Account (Unit 2), presented in the Schedule III format, showing Revenue from Operations, Other Income, Total Expenses (by nature — cost of materials, employee benefit expense, finance costs, depreciation, other expenses), and arriving at Profit Before Tax, Tax Expense, and Profit for the Period.</p>
+
+                <h3 id="changesinequity">1.3 Statement of Changes in Equity</h3>
+                <p>This statement reconciles the opening and closing balances of each component of equity (share capital, securities premium, retained earnings/reserves) during the period, showing the effect of profit for the period, dividends declared, and any new share capital issued.</p>
+
+                <h3 id="cashflowintro">1.4 Cash Flow Statement</h3>
+                <p>The Cash Flow Statement reports the inflows and outflows of cash and cash equivalents during the period, classified into operating, investing and financing activities. Because profit reported under the accrual concept (Unit 1) does not necessarily equal cash generated, this statement is essential to assess a company's liquidity — and is examined in detail in Sections 2 to 6 below.</p>
+
+                <h3 id="notes">1.5 Notes to Accounts</h3>
+                <p>The notes disclose the significant accounting policies followed (e.g., the method of depreciation or inventory valuation chosen — Unit 2) and provide detailed breakdowns and explanations supporting the figures shown in the main statements, ensuring the Convention of Full Disclosure (Unit 1) is met.</p>
+
+                <h2 id="cashflowmeaning">2. Statement of Cash Flows — Meaning, Importance and Classification</h2>
+                <h3 id="cfmeaning">2.1 Meaning and Objective</h3>
+                <div class="concept-block">
+                    <button class="copy-btn" onclick="copyText('def-text', this)">Copy</button>
+                    <div id="def-text">
+                        <strong>Ind AS 7 (Statement of Cash Flows):</strong> An entity shall prepare a statement of cash flows in accordance with the requirements of this Standard and shall present it as an integral part of its financial statements for each period for which financial statements are presented, classifying cash flows during the period into operating, investing and financing activities.
+                    </div>
+                </div>
+                <p>The Cash Flow Statement's core objective is to provide information about the historical changes in cash and cash equivalents of an entity during a period, showing separately the cash generated from/used in operating, investing and financing activities.</p>
+
+                <h3 id="cfimportance">2.2 Importance of the Cash Flow Statement</h3>
+                <ul class="custom-bullets">
+                    <li>Helps assess the company's ability to generate cash and cash equivalents, and its timing and certainty.</li>
+                    <li>Explains the difference between reported Net Profit (accrual-based, Unit 1) and the actual movement in cash — a profitable company can still run short of cash.</li>
+                    <li>Helps assess a company's liquidity, solvency and financial flexibility — its ability to pay dividends, service debt, and fund new investments.</li>
+                    <li>Assists investors, lenders and management in evaluating changes in net assets and the underlying quality of reported profit.</li>
+                    <li>Provides a basis for comparing the operating performance of different companies, since it eliminates the effect of using different accounting treatments (e.g., different depreciation methods) for the same underlying transactions.</li>
+                </ul>
+
+                <h3 id="cfclassification">2.3 Classification of Cash Flows</h3>
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagram showing operating, investing and financing activities flowing into net change in cash">
+                        <rect width="600" height="300" fill="#ffffff" rx="14"/>
+                        <text x="300" y="24" text-anchor="middle" font-size="15" font-weight="600" fill="#2d3748">The Three Categories of Cash Flow Activities</text>
+
+                        <rect x="30" y="50" width="165" height="70" rx="8" fill="#2b6cb0"/>
+                        <text x="112" y="78" text-anchor="middle" font-size="11.5" font-weight="600" fill="#fff">Operating</text>
+                        <text x="112" y="94" text-anchor="middle" font-size="9" fill="#e2e8f0">Cash from core</text>
+                        <text x="112" y="108" text-anchor="middle" font-size="9" fill="#e2e8f0">business operations</text>
+
+                        <rect x="217" y="50" width="165" height="70" rx="8" fill="#2f855a"/>
+                        <text x="300" y="78" text-anchor="middle" font-size="11.5" font-weight="600" fill="#fff">Investing</text>
+                        <text x="300" y="94" text-anchor="middle" font-size="9" fill="#e2e8f0">Cash from buying/selling</text>
+                        <text x="300" y="108" text-anchor="middle" font-size="9" fill="#e2e8f0">long-term assets</text>
+
+                        <rect x="405" y="50" width="165" height="70" rx="8" fill="#b7791f"/>
+                        <text x="487" y="78" text-anchor="middle" font-size="11.5" font-weight="600" fill="#fff">Financing</text>
+                        <text x="487" y="94" text-anchor="middle" font-size="9" fill="#fefcbf">Cash from raising/repaying</text>
+                        <text x="487" y="108" text-anchor="middle" font-size="9" fill="#fefcbf">capital &amp; debt</text>
+
+                        <defs>
+                            <marker id="arrHeadFig2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                                <path d="M0,0L10,5L0,10z" fill="#a0aec0"/>
+                            </marker>
+                        </defs>
+                        <line x1="112" y1="120" x2="230" y2="185" stroke="#a0aec0" stroke-width="1.8" marker-end="url(#arrHeadFig2)"/>
+                        <line x1="300" y1="120" x2="300" y2="185" stroke="#a0aec0" stroke-width="1.8" marker-end="url(#arrHeadFig2)"/>
+                        <line x1="487" y1="120" x2="370" y2="185" stroke="#a0aec0" stroke-width="1.8" marker-end="url(#arrHeadFig2)"/>
+
+                        <rect x="200" y="195" width="200" height="55" rx="8" fill="#2d3748"/>
+                        <text x="300" y="218" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">Net Change in Cash</text>
+                        <text x="300" y="234" text-anchor="middle" font-size="8.5" fill="#e2e8f0">&amp; Cash Equivalents</text>
+
+                        <text x="300" y="280" text-anchor="middle" font-size="9.5" fill="#718096">Opening Cash Balance + Net Change = Closing Cash Balance</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 2 — Every individual cash inflow or outflow during the period is classified under exactly one of these three categories before being combined into the net change in cash.</p>
+                </div>
+
+                <table class="tutorial-table">
+                    <tr>
+                        <th>Category</th>
+                        <th>Meaning</th>
+                        <th>Typical Inflows</th>
+                        <th>Typical Outflows</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Operating Activities</strong></td>
+                        <td>Cash flows from the principal revenue-generating activities of the business</td>
+                        <td>Cash received from customers; interest and dividends received (in some formats)</td>
+                        <td>Cash paid to suppliers and employees; taxes paid; other operating expenses</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Investing Activities</strong></td>
+                        <td>Cash flows from the acquisition and disposal of long-term assets and other investments</td>
+                        <td>Sale of fixed assets or investments; interest/dividends received on investments</td>
+                        <td>Purchase of fixed assets, machinery or investments; loans made to others</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Financing Activities</strong></td>
+                        <td>Cash flows that result in changes to the size and composition of equity and borrowings</td>
+                        <td>Issue of shares or debentures; proceeds from long-term/short-term borrowings</td>
+                        <td>Repayment of loans; buy-back of shares; dividends paid; interest paid on borrowings</td>
+                    </tr>
+                </table>
+
+                <h2 id="methods">3. Methods of Preparing the Cash Flow Statement</h2>
+                <p class="lead-text">Ind AS 7 permits two alternative methods of presenting cash flows from operating activities (investing and financing activities are always presented the same way, listing major classes of gross receipts and payments).</p>
+
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 560 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagram comparing the direct method and indirect method of computing cash flow from operating activities">
+                        <rect width="560" height="260" fill="#ffffff" rx="14"/>
+                        <text x="280" y="24" text-anchor="middle" font-size="15" font-weight="600" fill="#2d3748">Two Methods for Operating Cash Flows</text>
+
+                        <rect x="190" y="45" width="180" height="40" rx="8" fill="#2d3748"/>
+                        <text x="280" y="70" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">Cash Flow from Operations</text>
+
+                        <line x1="240" y1="85" x2="150" y2="120" stroke="#a0aec0" stroke-width="1.6"/>
+                        <line x1="320" y1="85" x2="410" y2="120" stroke="#a0aec0" stroke-width="1.6"/>
+
+                        <rect x="55" y="120" width="190" height="100" rx="8" fill="#2b6cb0"/>
+                        <text x="150" y="145" text-anchor="middle" font-size="11.5" font-weight="600" fill="#fff">Direct Method</text>
+                        <text x="150" y="165" text-anchor="middle" font-size="8.5" fill="#e2e8f0">Lists actual gross cash</text>
+                        <text x="150" y="178" text-anchor="middle" font-size="8.5" fill="#e2e8f0">receipts and payments</text>
+                        <text x="150" y="196" text-anchor="middle" font-size="8.5" fill="#e2e8f0">(e.g., cash from customers</text>
+                        <text x="150" y="209" text-anchor="middle" font-size="8.5" fill="#e2e8f0">less cash paid to suppliers)</text>
+
+                        <rect x="315" y="120" width="190" height="100" rx="8" fill="#2f855a"/>
+                        <text x="410" y="145" text-anchor="middle" font-size="11.5" font-weight="600" fill="#fff">Indirect Method</text>
+                        <text x="410" y="165" text-anchor="middle" font-size="8.5" fill="#e2e8f0">Starts with Net Profit and</text>
+                        <text x="410" y="178" text-anchor="middle" font-size="8.5" fill="#e2e8f0">adjusts for non-cash items</text>
+                        <text x="410" y="196" text-anchor="middle" font-size="8.5" fill="#e2e8f0">and changes in working</text>
+                        <text x="410" y="209" text-anchor="middle" font-size="8.5" fill="#e2e8f0">capital</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 3 — Both methods must arrive at the same final figure for net cash from operating activities; they differ only in how that figure is presented and derived.</p>
+                </div>
+
+                <h3 id="directmethod">3.1 Direct Method</h3>
+                <p>Under the direct method, major classes of gross cash receipts (e.g., cash received from customers) and gross cash payments (e.g., cash paid to suppliers and employees) are disclosed directly. It gives a clearer picture of actual cash movements but requires re-analyzing accounting records, so it is used less often in practice.</p>
+
+                <h3 id="indirectmethod">3.2 Indirect Method</h3>
+                <p>Under the indirect method — the method used by the overwhelming majority of companies in practice — net profit (or loss) before tax is adjusted for the effects of non-cash transactions (such as depreciation), any deferrals or accruals of past or future operating cash receipts/payments, and items of income or expense associated with investing or financing cash flows, to arrive at cash generated from operations.</p>
+
+                <table class="tutorial-table">
+                    <tr>
+                        <th>Basis</th>
+                        <th>Direct Method</th>
+                        <th>Indirect Method</th>
+                    </tr>
+                    <tr><td>Starting point</td><td>Actual cash receipts and payments</td><td>Net Profit before Tax (from the Statement of Profit and Loss)</td></tr>
+                    <tr><td>Ease of preparation</td><td>More time-consuming; needs detailed cash records</td><td>Easier; uses figures already available from the P&amp;L and Balance Sheet</td></tr>
+                    <tr><td>Insight provided</td><td>Shows actual operating cash inflows/outflows clearly</td><td>Shows the reconciliation between profit and operating cash flow</td></tr>
+                    <tr><td>Popularity</td><td>Recommended by standards, but rarely used</td><td>Used by the vast majority of companies in practice</td></tr>
+                </table>
+
+                <h2 id="preparation">4. Format and Preparation of the Cash Flow Statement</h2>
+                <h3 id="cfformat">4.1 Overall Structure</h3>
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 560 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Waterfall diagram showing how opening cash plus operating, investing and financing cash flows lead to closing cash balance">
+                        <rect width="560" height="340" fill="#ffffff" rx="14"/>
+                        <text x="280" y="24" text-anchor="middle" font-size="15" font-weight="600" fill="#2d3748">From Opening to Closing Cash Balance</text>
+
+                        <rect x="90" y="45" width="380" height="38" rx="6" fill="#2d3748"/>
+                        <text x="280" y="69" text-anchor="middle" font-size="11.5" font-weight="600" fill="#fff">Opening Balance of Cash &amp; Cash Equivalents</text>
+
+                        <rect x="120" y="93" width="320" height="38" rx="6" fill="#2b6cb0"/>
+                        <text x="280" y="117" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">± Net Cash from Operating Activities</text>
+
+                        <rect x="150" y="141" width="260" height="38" rx="6" fill="#2f855a"/>
+                        <text x="280" y="165" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">± Net Cash from Investing Activities</text>
+
+                        <rect x="180" y="189" width="200" height="38" rx="6" fill="#b7791f"/>
+                        <text x="280" y="213" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">± Net Cash from Financing Activities</text>
+
+                        <rect x="140" y="245" width="280" height="42" rx="8" fill="#22543d"/>
+                        <text x="280" y="271" text-anchor="middle" font-size="12.5" font-weight="700" fill="#fff">= Closing Balance of Cash &amp; Cash Equivalents</text>
+
+                        <text x="280" y="315" text-anchor="middle" font-size="9.5" fill="#718096">This closing figure must exactly match the cash &amp; bank balance shown in the Balance Sheet.</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 4 — Every Cash Flow Statement follows this same basic structure, regardless of whether the operating section uses the direct or indirect method.</p>
+                </div>
+
+                <h3 id="cfsteps">4.2 Steps to Prepare a Cash Flow Statement (Indirect Method)</h3>
+                <ol class="custom-bullets">
+                    <li>Start with Net Profit before Tax, taken from the Statement of Profit and Loss.</li>
+                    <li>Add back non-cash and non-operating expenses (e.g., depreciation, loss on sale of assets, interest expense) and deduct non-operating incomes (e.g., interest/dividend received, profit on sale of assets) to arrive at Operating Profit before Working Capital Changes.</li>
+                    <li>Adjust for changes in working capital — add a decrease (or deduct an increase) in current assets such as debtors and stock; add an increase (or deduct a decrease) in current liabilities such as creditors — to arrive at Cash Generated from Operations.</li>
+                    <li>Deduct tax paid during the year to arrive at Net Cash from Operating Activities.</li>
+                    <li>List individual investing inflows and outflows (sale/purchase of fixed assets and investments) to arrive at Net Cash from/used in Investing Activities.</li>
+                    <li>List individual financing inflows and outflows (issue of shares, loans raised/repaid, dividends paid) to arrive at Net Cash from/used in Financing Activities.</li>
+                    <li>Add the three net cash flow figures to get the Net Increase/Decrease in Cash for the period, then add the Opening Cash Balance to arrive at the Closing Cash Balance.</li>
+                </ol>
+
+                <h2 id="workedexample">5. Worked Example: Preparing a Cash Flow Statement</h2>
+                <p class="lead-text">Vasundhara Ltd. provides the following information for the year ended 31 March 2026:</p>
+                <table class="tutorial-table">
+                    <tr><th>Particulars</th><th>Amount (₹)</th></tr>
+                    <tr><td>Net Profit before Tax</td><td>1,50,000</td></tr>
+                    <tr><td>Add: Depreciation</td><td>30,000</td></tr>
+                    <tr><td>Less: Increase in Debtors</td><td>(20,000)</td></tr>
+                    <tr><td>Add: Increase in Creditors</td><td>15,000</td></tr>
+                    <tr><td>Less: Increase in Stock</td><td>(10,000)</td></tr>
+                    <tr><td><strong>Cash Generated from Operations</strong></td><td><strong>1,65,000</strong></td></tr>
+                    <tr><td>Less: Tax Paid</td><td>(25,000)</td></tr>
+                    <tr><td><strong>Net Cash from Operating Activities</strong></td><td><strong>1,40,000</strong></td></tr>
+                </table>
+                <table class="tutorial-table">
+                    <tr><th colspan="2">Investing Activities</th></tr>
+                    <tr><td>Purchase of Machinery</td><td>(80,000)</td></tr>
+                    <tr><td>Sale of Old Furniture</td><td>10,000</td></tr>
+                    <tr><td><strong>Net Cash used in Investing Activities</strong></td><td><strong>(70,000)</strong></td></tr>
+                </table>
+                <table class="tutorial-table">
+                    <tr><th colspan="2">Financing Activities</th></tr>
+                    <tr><td>Proceeds from Long-Term Loan</td><td>50,000</td></tr>
+                    <tr><td>Dividend Paid</td><td>(40,000)</td></tr>
+                    <tr><td><strong>Net Cash from Financing Activities</strong></td><td><strong>10,000</strong></td></tr>
+                </table>
+                <table class="tutorial-table">
+                    <tr><td>Net Increase in Cash (1,40,000 − 70,000 + 10,000)</td><td>80,000</td></tr>
+                    <tr><td>Add: Opening Cash &amp; Bank Balance</td><td>60,000</td></tr>
+                    <tr><td><strong>Closing Cash &amp; Bank Balance</strong></td><td><strong>1,40,000</strong></td></tr>
+                </table>
+                <p><em>Interpretation:</em> Although the profit figure was ₹1,50,000, the actual cash generated from operations was higher, at ₹1,65,000, mainly because a large non-cash expense (depreciation of ₹30,000) had reduced profit without any cash actually leaving the business. After funding machinery purchases and repaying obligations, the company still finished the year with cash up by ₹80,000 — confirming that its increase in cash (from ₹60,000 to ₹1,40,000) must exactly match the change in the Cash &amp; Bank Balance line of its Balance Sheet.</p>
+
+                <h2 id="usesandlimitations">6. Uses and Limitations of the Cash Flow Statement</h2>
+                <h3 id="cfuses">6.1 Uses</h3>
+                <ul class="custom-bullets">
+                    <li>Helps management plan and manage short-term liquidity and working capital needs.</li>
+                    <li>Enables investors and analysts to assess the quality of reported earnings (a company with high profit but weak operating cash flow warrants closer scrutiny).</li>
+                    <li>Assists lenders in assessing a company's capacity to service debt from operating cash flows.</li>
+                    <li>Helps evaluate a company's investing and financing decisions, such as its capital expenditure pattern and reliance on external borrowing.</li>
+                </ul>
+                <h3 id="cflimitations">6.2 Limitations</h3>
+                <ul class="custom-bullets">
+                    <li>Being historical, it does not necessarily predict future cash flows.</li>
+                    <li>It does not show the true profitability of the business (a company can show a strong cash inflow from selling off assets even while operating at a loss).</li>
+                    <li>Cannot be used entirely in isolation — should be read alongside the Balance Sheet and Statement of Profit and Loss for a complete picture.</li>
+                    <li>Non-cash transactions (e.g., issue of shares for the acquisition of an asset) are excluded from the statement, even though they can be significant.</li>
+                </ul>
+
+                <h2 id="cfvsfundflow">7. Cash Flow Statement vs. Fund Flow Statement vs. Income Statement</h2>
+                <table class="tutorial-table">
+                    <tr>
+                        <th>Basis</th>
+                        <th>Income Statement</th>
+                        <th>Fund Flow Statement</th>
+                        <th>Cash Flow Statement</th>
+                    </tr>
+                    <tr><td>Basis of preparation</td><td>Accrual concept</td><td>Working capital concept</td><td>Cash concept</td></tr>
+                    <tr><td>Shows</td><td>Profit or loss for the period</td><td>Sources and uses of working capital</td><td>Sources and uses of actual cash</td></tr>
+                    <tr><td>Mandatory under Ind AS/Schedule III</td><td>Yes</td><td>No (not a required statement)</td><td>Yes</td></tr>
+                    <tr><td>Focus</td><td>Performance/profitability</td><td>Change in working capital position</td><td>Liquidity and cash management</td></tr>
+                </table>
+
+                <h2 id="review">Review Questions</h2>
+                <h3>Short Answer Type</h3>
+                <ol class="custom-bullets">
+                    <li>List the five components of a complete set of corporate financial statements.</li>
+                    <li>Define the Cash Flow Statement as per Ind AS 7.</li>
+                    <li>Name the three categories into which cash flows are classified.</li>
+                    <li>Give two examples each of cash inflows and outflows under investing activities.</li>
+                    <li>Distinguish between the direct and indirect methods of preparing the Cash Flow Statement.</li>
+                    <li>Why might a profitable company still show a net decrease in cash for the year?</li>
+                    <li>State any two limitations of the Cash Flow Statement.</li>
+                </ol>
+                <h3>Long Answer / Essay Type</h3>
+                <ol class="custom-bullets">
+                    <li>Explain the meaning, objectives and regulatory framework of corporate financial reporting in India.</li>
+                    <li>Describe the five components of corporate financial statements prescribed under Ind AS 1 / Schedule III.</li>
+                    <li>Explain the meaning, importance and classification of activities in a Cash Flow Statement.</li>
+                    <li>Distinguish between the direct and indirect methods of preparing a Cash Flow Statement, and explain why the indirect method is more commonly used.</li>
+                    <li>Explain the steps involved in preparing a Cash Flow Statement using the indirect method.</li>
+                    <li>From the given financial data of a hypothetical company, prepare a Cash Flow Statement using the indirect method.</li>
+                    <li>Discuss the uses and limitations of the Cash Flow Statement, and distinguish it from the Income Statement and Fund Flow Statement.</li>
+                </ol>
+
+                <h2 id="summary">Summary</h2>
+                <p>This unit examined corporate financial reporting — the formal, regulated process by which companies communicate financial performance, position and cash flows to shareholders and other stakeholders under the Companies Act, 2013 (Schedule III), Ind AS, and SEBI regulations, guided by qualitative characteristics such as relevance, faithful representation and comparability. It explained the five components of a complete set of corporate financial statements: the Balance Sheet, the Statement of Profit and Loss, the Statement of Changes in Equity, the Cash Flow Statement, and the Notes to Accounts. The unit then focused on the Statement of Cash Flows in detail — its meaning and importance in explaining why reported profit and actual cash movement can differ, and its classification of all cash flows into operating, investing and financing activities. It compared the direct method (which lists actual gross cash receipts and payments) with the far more commonly used indirect method (which starts from net profit and adjusts for non-cash items and working capital changes), explained the step-by-step process of preparing a Cash Flow Statement, and worked through a complete numerical example that reconciled an opening cash balance of ₹60,000 to a closing balance of ₹1,40,000. Finally, it discussed the uses and limitations of the Cash Flow Statement and distinguished it from the Income Statement and the Fund Flow Statement.</p>
+
+            </div>
+
+            <div class="completion-section">
+                <button id="markCompleteBtn" class="complete-btn">✔️ Mark as Complete</button>
+            </div>
+
+            <div class="pagination">
+                <a href="s1-acc-u2.html" style="text-decoration: none;"><button class="prev-btn hover-effect">❮ Unit 2: Accounting Cycle</button></a>
+                <a href="s1-acc-u4.html" style="text-decoration: none;"><button class="next-btn hover-effect">Unit 4: Financial Statement Analysis ❯</button></a>
+            </div>
+        </main>
+
+        <aside class="right-sidebar" id="rightSidebar">
+            <div class="widget sticky-widget premium-card">
+                <h3>Unit Contents</h3>
+                <ul class="toc-list">
+                    <li><a href="#intro">0. Corporate Financial Reporting</a></li>
+                    <li><a href="#components">1. Components of Financial Statements</a></li>
+                    <li><a href="#cashflowmeaning">2. Cash Flows — Meaning &amp; Classification</a></li>
+                    <li><a href="#methods">3. Direct &amp; Indirect Methods</a></li>
+                    <li><a href="#preparation">4. Format &amp; Preparation</a></li>
+                    <li><a href="#workedexample">5. Worked Example</a></li>
+                    <li><a href="#usesandlimitations">6. Uses &amp; Limitations</a></li>
+                    <li><a href="#cfvsfundflow">7. Cash Flow vs. Fund Flow vs. Income Statement</a></li>
+                    <li><a href="#review">Review Questions</a></li>
+                    <li><a href="#summary">Summary</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
