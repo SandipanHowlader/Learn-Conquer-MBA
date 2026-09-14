@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accounting for Managers - WBSU MBA</title>
+    <title>Accounting for Managers - Unit-2</title>
         <!-- Apple Touch Icons (for iOS home screen) -->
     <link rel="apple-touch-icon" href="icon.png">
     <link rel="apple-touch-icon" sizes="152x152" href="icon.png">
@@ -16,6 +16,11 @@
     <link rel="icon" type="image/png" sizes="16x16" href="icon.png">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <style>
+        .diagram-wrap { margin: 28px 0; text-align: center; }
+        .diagram-wrap svg { max-width: 100%; height: auto; background: #ffffff; border-radius: 14px; box-shadow: 0 1px 8px rgba(0,0,0,0.10); }
+        .diagram-caption { font-size: 0.85rem; color: #666; margin-top: 10px; font-style: italic; }
+    </style>
 </head>
 <body data-current-topic="s1-acc-u2">
     <div class="progress-container"><div class="progress-bar" id="myBar"></div></div>
@@ -33,18 +38,19 @@
     </header>
 
     <div class="main-wrapper" id="mainWrapper">
-        
+
+        <!-- JavaScript will automatically generate and inject the entire 4-Semester Sidebar here -->
         <aside class="sidebar" id="sidebar-container"></aside>
 
         <!-- Center Content: Tutorial -->
         <main class="content premium-card" id="mainContent">
             <div class="bread-crumbs">Semester-I / Accounting for Managers / Unit 2</div>
-            
+
             <div class="article-header-flex">
                 <div>
-                    <h1>Accounting Cycle and Preparation of Financial Statements</h1>
+                    <h1>Accounting Cycle and Preparation of Financial Statements: Balance Sheet, Income Statement, Inventory Valuation and Depreciation</h1>
                     <div class="article-meta">
-                        <span>4 Credits | Detailed Study Notes</span>
+                        <span>Read Time: 55 mins</span>
                     </div>
                 </div>
                 <div class="action-buttons">
@@ -52,334 +58,490 @@
                 </div>
             </div>
             <hr class="premium-hr">
-            
+
             <div class="article-body">
                 <div class="concept-block">
                     <strong>Topics Covered in This Unit:</strong>
                     <ul class="custom-bullets" style="margin-top: 10px;">
-                        <li>Accounting Cycle[cite: 6]</li>
-                        <li>Preparation of Financial Statements: Balance Sheet and Income Statement[cite: 6]</li>
-                        <li>Inventory Valuation[cite: 6]</li>
-                        <li>Accounting for Depreciation[cite: 6]</li>
+                        <li>The Accounting Cycle</li>
+                        <li>Preparation of Financial Statements — Income Statement</li>
+                        <li>Preparation of Financial Statements — Balance Sheet</li>
+                        <li>Inventory Valuation</li>
+                        <li>Accounting for Depreciation</li>
                     </ul>
                 </div>
 
-                <h2 id="cycle">1. Accounting Cycle</h2>
-                
-                <h3 id="cycle-meaning">1.1 Meaning</h3>
-                <p class="lead-text">The Accounting Cycle refers to the complete sequence of accounting procedures that are performed in each accounting period, starting from the identification and recording of a transaction and ending with the preparation of final accounts and the closing of books, ready for the next period[cite: 6].</p>
-                <p>It is called a "cycle" because the same sequence of steps is repeated in each subsequent accounting period[cite: 6]. Understanding the accounting cycle is fundamental for managers because every figure presented in the Balance Sheet or Income Statement is the end-result of this systematic process — appreciating the cycle helps a manager understand the reliability, timing and limitations of the numbers they use for decision-making[cite: 6].</p>
+                <h2 id="intro">0. Introduction</h2>
+                <p class="lead-text">Unit 1 introduced the concepts, conventions and standards that underlie accounting. This unit puts those ideas into practice: it traces the sequence of steps — the accounting cycle — through which a business converts raw transaction data into finished financial statements, and then examines four topics central to preparing those statements accurately: the Income Statement, the Balance Sheet, inventory valuation, and depreciation accounting.</p>
 
-                <h3 id="cycle-steps">1.2 Steps in the Accounting Cycle</h3>
-                <ul class="custom-bullets">
-                    <li><strong>Identifying and Analysing Transactions:</strong> Every business event is examined to determine whether it is a financial transaction (i.e., measurable in money) and, if so, which two or more accounts it affects[cite: 6].</li>
-                    <li><strong>Recording in the Journal (Journalising):</strong> The transaction is recorded in the Journal, the book of original/prime entry, in chronological order, applying the rules of debit and credit[cite: 6].</li>
-                    <li><strong>Posting to the Ledger:</strong> Journal entries are transferred (posted) to the relevant accounts in the Ledger, the book of final entry that groups all transactions relating to a particular account at one place[cite: 6].</li>
-                    <li><strong>Balancing the Ledger Accounts:</strong> At the end of the period, each ledger account is totalled and balanced to find its net debit or credit balance[cite: 6].</li>
-                    <li><strong>Preparing the Trial Balance:</strong> A statement listing all ledger account balances (debit and credit) is prepared to check the arithmetical accuracy of the double-entry records — total debits must equal total credits[cite: 6].</li>
-                    <li><strong>Passing Adjusting Entries:</strong> Entries are passed for accrued/outstanding expenses, prepaid expenses, accrued/unearned income, depreciation, closing stock, provisions for bad debts, etc., so that revenues and expenses are correctly matched to the period (matching concept)[cite: 6].</li>
-                    <li><strong>Preparing the Adjusted Trial Balance (optional worksheet step):</strong> Incorporates the effect of adjusting entries before final accounts are drawn up; often done informally through a worksheet[cite: 6].</li>
-                    <li><strong>Preparing the Final Accounts / Financial Statements:</strong> The Trading Account, Profit and Loss Account (Income Statement) and Balance Sheet are prepared from the (adjusted) trial balance to show the results of operations and the financial position[cite: 6].</li>
-                    <li><strong>Passing Closing Entries:</strong> All nominal accounts (expenses and revenues) are closed by transferring their balances to the Trading and Profit & Loss Account, so that they start the next period with a zero balance[cite: 6].</li>
-                    <li><strong>Preparing the Post-Closing Trial Balance:</strong> A trial balance consisting only of balance sheet accounts (assets, liabilities, capital) is prepared to confirm the books are still in balance and ready for the next accounting period[cite: 6].</li>
-                    <li><strong>Passing Reversing Entries (optional):</strong> Certain adjusting entries (e.g., for accrued expenses/income) may be reversed at the start of the next period to simplify subsequent routine recording[cite: 6].</li>
-                </ul>
+                <h2 id="cycle">1. The Accounting Cycle</h2>
+                <h3 id="cyclemeaning">1.1 Meaning and Steps</h3>
+                <p class="lead-text">The accounting cycle is the complete, repeating sequence of steps followed in a given accounting period — from the initial recording of a transaction to the preparation of final financial statements and the closing of the books, ready for the next period to begin.</p>
 
-                <h3 id="cycle-flow">1.3 Diagrammatic Flow of the Accounting Cycle</h3>
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 600 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The eight steps of the accounting cycle shown as a continuous cycle">
+                        <rect width="600" height="380" fill="#ffffff" rx="14"/>
+                        <defs>
+                            <marker id="arrHeadA" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                                <path d="M0,0L10,5L0,10z" fill="#4a5568"/>
+                            </marker>
+                            <marker id="arrHeadDashA" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                                <path d="M0,0L10,5L0,10z" fill="#a0aec0"/>
+                            </marker>
+                        </defs>
+                        <text x="300" y="22" text-anchor="middle" font-size="15" font-weight="600" fill="#2d3748">The Accounting Cycle</text>
+
+                        <line x1="338.8" y1="56.1" x2="367.2" y2="67.9" stroke="#4a5568" stroke-width="2.2" marker-end="url(#arrHeadA)"/>
+                        <line x1="422.1" y1="122.8" x2="433.9" y2="151.2" stroke="#4a5568" stroke-width="2.2" marker-end="url(#arrHeadA)"/>
+                        <line x1="433.9" y1="228.8" x2="422.1" y2="257.2" stroke="#4a5568" stroke-width="2.2" marker-end="url(#arrHeadA)"/>
+                        <line x1="367.2" y1="312.1" x2="338.8" y2="323.9" stroke="#4a5568" stroke-width="2.2" marker-end="url(#arrHeadA)"/>
+                        <line x1="261.2" y1="323.9" x2="232.8" y2="312.1" stroke="#4a5568" stroke-width="2.2" marker-end="url(#arrHeadA)"/>
+                        <line x1="177.9" y1="257.2" x2="166.1" y2="228.8" stroke="#4a5568" stroke-width="2.2" marker-end="url(#arrHeadA)"/>
+                        <line x1="166.1" y1="151.2" x2="177.9" y2="122.8" stroke="#4a5568" stroke-width="2.2" marker-end="url(#arrHeadA)"/>
+                        <path d="M232.8,67.9 Q300,-20 338.8,56.1" fill="none" stroke="#a0aec0" stroke-width="2" stroke-dasharray="5,4" marker-end="url(#arrHeadDashA)"/>
+
+                        <circle cx="300" cy="40" r="42" fill="#2b6cb0"/>
+                        <text x="300" y="35" text-anchor="middle" font-size="8.5" font-weight="600" fill="#fff">1. Identify</text>
+                        <text x="300" y="46" text-anchor="middle" font-size="8.5" font-weight="600" fill="#fff">Transactions</text>
+
+                        <circle cx="406" cy="84" r="42" fill="#2f855a"/>
+                        <text x="406" y="88" text-anchor="middle" font-size="9" font-weight="600" fill="#fff">2. Journalize</text>
+
+                        <circle cx="450" cy="190" r="42" fill="#b7791f"/>
+                        <text x="450" y="185" text-anchor="middle" font-size="8.5" font-weight="600" fill="#fff">3. Post to</text>
+                        <text x="450" y="196" text-anchor="middle" font-size="8.5" font-weight="600" fill="#fff">Ledger</text>
+
+                        <circle cx="406" cy="296" r="42" fill="#b83280"/>
+                        <text x="406" y="291" text-anchor="middle" font-size="8.5" font-weight="600" fill="#fff">4. Trial</text>
+                        <text x="406" y="302" text-anchor="middle" font-size="8.5" font-weight="600" fill="#fff">Balance</text>
+
+                        <circle cx="300" cy="340" r="42" fill="#c53030"/>
+                        <text x="300" y="335" text-anchor="middle" font-size="8.5" font-weight="600" fill="#fff">5. Adjusting</text>
+                        <text x="300" y="346" text-anchor="middle" font-size="8.5" font-weight="600" fill="#fff">Entries</text>
+
+                        <circle cx="194" cy="296" r="42" fill="#805ad5"/>
+                        <text x="194" y="291" text-anchor="middle" font-size="8.5" font-weight="600" fill="#fff">6. Financial</text>
+                        <text x="194" y="302" text-anchor="middle" font-size="8.5" font-weight="600" fill="#fff">Statements</text>
+
+                        <circle cx="150" cy="190" r="42" fill="#3182ce"/>
+                        <text x="150" y="185" text-anchor="middle" font-size="8.5" font-weight="600" fill="#fff">7. Closing</text>
+                        <text x="150" y="196" text-anchor="middle" font-size="8.5" font-weight="600" fill="#fff">Entries</text>
+
+                        <circle cx="194" cy="84" r="42" fill="#718096"/>
+                        <text x="194" y="79" text-anchor="middle" font-size="8" font-weight="600" fill="#fff">8. Post-Closing</text>
+                        <text x="194" y="90" text-anchor="middle" font-size="8" font-weight="600" fill="#fff">Trial Balance</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 1 — The cycle repeats every accounting period: once the books are closed, the next period's transactions start the sequence again.</p>
+                </div>
+
+                <h3 id="journal">1.2 Journal</h3>
+                <p>The journal is the "book of original entry" in which every transaction is first recorded, in chronological order, showing the accounts to be debited and credited along with a brief explanation (narration), following the rule that every debit must have an equal and corresponding credit (the Dual Aspect Concept from Unit 1).</p>
+
+                <div class="concept-block">
+                    <button class="copy-btn" onclick="copyText('journal-example', this)">Copy</button>
+                    <div id="journal-example">
+                        <strong>Worked Example:</strong> Rohan starts a stationery business on 1 April 2025.<br><br>
+                        <strong>(a)</strong> He invests ₹2,00,000 cash as capital.<br>
+                        Cash A/c &nbsp;Dr. &nbsp;₹2,00,000<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;To Capital A/c &nbsp;&nbsp;&nbsp;&nbsp;₹2,00,000<br>
+                        <em>(Being cash brought in by the owner as capital)</em><br><br>
+                        <strong>(b)</strong> He purchases goods worth ₹60,000 on credit from Mehta &amp; Sons.<br>
+                        Purchases A/c &nbsp;Dr. &nbsp;₹60,000<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;To Mehta &amp; Sons A/c &nbsp;&nbsp;&nbsp;&nbsp;₹60,000<br>
+                        <em>(Being goods purchased on credit)</em><br><br>
+                        <strong>(c)</strong> He sells goods for ₹35,000 cash.<br>
+                        Cash A/c &nbsp;Dr. &nbsp;₹35,000<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;To Sales A/c &nbsp;&nbsp;&nbsp;&nbsp;₹35,000<br>
+                        <em>(Being goods sold for cash)</em>
+                    </div>
+                </div>
+
+                <h3 id="ledger">1.3 Ledger</h3>
+                <p>The ledger is the "book of final entry" — a set of individual accounts (e.g., Cash Account, Sales Account, a specific debtor's account) to which every journal entry is subsequently posted, so that the net effect of all transactions on each individual account can be seen at a glance.</p>
+
+                <h3 id="trialbalance">1.4 Trial Balance</h3>
+                <p>A trial balance is a statement listing the closing balances of all ledger accounts at a given date, with debit balances in one column and credit balances in another. Because of the dual aspect concept, the two column totals should always be equal; if they are not, it signals that an error has occurred somewhere in the recording or posting process. A trial balance is a check on the arithmetical accuracy of the books, not a guarantee that every entry is substantively correct.</p>
+
+                <p><strong>Worked Example:</strong> Continuing Rohan's stationery business, the ledger balances as on 31 March 2026 are as follows:</p>
                 <table class="tutorial-table">
-                    <tr>
-                        <th>Stage[cite: 6]</th>
-                        <th>Books / Statements Involved[cite: 6]</th>
-                    </tr>
-                    <tr><td>1. Source Documents</td><td>Invoices, receipts, vouchers, cheques[cite: 6]</td></tr>
-                    <tr><td>2. Journal</td><td>Journal / Subsidiary books (Purchases Book, Sales Book, Cash Book, etc.)[cite: 6]</td></tr>
-                    <tr><td>3. Ledger</td><td>Ledger accounts (personal, real, nominal)[cite: 6]</td></tr>
-                    <tr><td>4. Trial Balance</td><td>List of ledger balances — checks arithmetical accuracy[cite: 6]</td></tr>
-                    <tr><td>5. Adjustments</td><td>Adjusting journal entries for accruals, prepayments, depreciation, closing stock, etc.[cite: 6]</td></tr>
-                    <tr><td>6. Final Accounts</td><td>Trading A/c, Profit & Loss A/c (Income Statement), Balance Sheet[cite: 6]</td></tr>
-                    <tr><td>7. Closing Entries</td><td>Nominal accounts closed to Trading/P&L Account[cite: 6]</td></tr>
-                    <tr><td>8. Post-Closing Trial Balance</td><td>Confirms books are balanced for the next period[cite: 6]</td></tr>
+                    <tr><th>Account</th><th>Debit (₹)</th><th>Credit (₹)</th></tr>
+                    <tr><td>Capital</td><td></td><td>2,00,000</td></tr>
+                    <tr><td>Cash</td><td>1,85,000</td><td></td></tr>
+                    <tr><td>Purchases</td><td>60,000</td><td></td></tr>
+                    <tr><td>Mehta &amp; Sons (Creditor)</td><td></td><td>25,000</td></tr>
+                    <tr><td>Sales</td><td></td><td>35,000</td></tr>
+                    <tr><td>Furniture</td><td>15,000</td><td></td></tr>
+                    <tr><td><strong>Total</strong></td><td><strong>2,60,000</strong></td><td><strong>2,60,000</strong></td></tr>
                 </table>
+                <p>Since the debit and credit columns total to the same figure (₹2,60,000), the books are arithmetically in balance and ready for the next steps — adjusting entries and the preparation of financial statements.</p>
 
-                <h3 id="cycle-recap">1.4 Journal, Ledger and Trial Balance — A Quick Recap</h3>
-                <p><strong>(a) Journal:</strong> The Journal is the book of original entry in which transactions are first recorded in chronological order, in the form of a journal entry, applying the rule "Debit what comes in / Credit what goes out" (Real Accounts); "Debit the receiver / Credit the giver" (Personal Accounts); and "Debit all expenses and losses / Credit all incomes and gains" (Nominal Accounts)[cite: 6]. Each entry also carries a brief explanation known as a narration[cite: 6].</p>
-                <p><strong>(b) Ledger:</strong> The Ledger is the principal book of accounts, containing all accounts (assets, liabilities, capital, revenues, expenses) in a classified form[cite: 6]. Entries from the journal (and subsidiary books) are posted to the respective ledger accounts, which are periodically balanced to find the net position of each account[cite: 6].</p>
-                <p><strong>(c) Trial Balance:</strong> A Trial Balance is a statement showing the debit and credit balances of all ledger accounts as on a particular date[cite: 6]. Since every transaction affects at least two accounts with equal debit and credit amounts (dual aspect concept), the total of the debit column of the trial balance must equal the total of the credit column, if postings and balancing have been done correctly (Total Debit Balances = Total Credit Balances)[cite: 6]. Note: A tallied trial balance confirms only the arithmetical accuracy of postings — it does not guarantee that no errors exist[cite: 6].</p>
+                <h3 id="adjustingentries">1.5 Adjusting Entries</h3>
+                <p>Adjusting entries are made at the end of an accounting period to ensure that revenues and expenses are recorded in the period to which they actually relate (per the Matching and Accrual concepts from Unit 1), even if cash has not yet changed hands. Common adjustments include accrued expenses/income, prepaid expenses/unearned income, and depreciation (Section 4).</p>
 
-                <h3 id="adjusting-entries">1.5 Adjusting Entries — Common Types</h3>
-                <ul class="custom-bullets">
-                    <li><strong>Outstanding/Accrued Expenses:</strong> Expenses incurred but not yet paid, e.g., outstanding salary — added to the relevant expense and shown as a current liability[cite: 6].</li>
-                    <li><strong>Prepaid Expenses:</strong> Expenses paid in advance for a future period, e.g., prepaid insurance — deducted from the expense and shown as a current asset[cite: 6].</li>
-                    <li><strong>Accrued Income:</strong> Income earned but not yet received, e.g., accrued interest — added to income and shown as a current asset[cite: 6].</li>
-                    <li><strong>Income Received in Advance (Unearned Income):</strong> Income received but not yet earned, e.g., rent received in advance — deducted from income and shown as a current liability[cite: 6].</li>
-                    <li><strong>Depreciation:</strong> The fall in value of fixed assets due to use, wear and tear or passage of time — charged as an expense and deducted from the asset in the Balance Sheet[cite: 6].</li>
-                    <li><strong>Closing Stock:</strong> Value of unsold inventory at the end of the period — credited to the Trading Account and shown as a current asset in the Balance Sheet[cite: 6].</li>
-                    <li><strong>Bad Debts and Provision for Doubtful Debts:</strong> Amounts owed by customers that are irrecoverable, or estimated to be doubtful, are written off/provided for, reducing debtors and profit[cite: 6].</li>
-                    <li><strong>Provision for Discount on Debtors/Creditors:</strong> An estimated allowance for cash discount likely to be given to debtors or received from creditors on prompt settlement[cite: 6].</li>
-                </ul>
-
-                <h3 id="cycle-importance">1.6 Importance of the Accounting Cycle</h3>
-                <ul class="custom-bullets">
-                    <li>Ensures that all transactions are recorded systematically and none are omitted[cite: 6].</li>
-                    <li>Provides a logical, verifiable trail from source document to final financial statement (an "audit trail")[cite: 6].</li>
-                    <li>Helps detect errors through the trial balance before financial statements are finalised[cite: 6].</li>
-                    <li>Ensures that financial statements reflect the true profit/loss and financial position, since adjustments correctly match revenues and expenses to the period[cite: 6].</li>
-                    <li>Provides a uniform, repeatable process, enabling consistent and comparable financial reporting period after period[cite: 6].</li>
-                </ul>
-
-                <h3 id="closing-entries">1.7 Illustrative Closing Entries</h3>
-                <table class="tutorial-table">
-                    <tr>
-                        <th>Purpose[cite: 6]</th>
-                        <th>Journal Entry (Dr. / Cr.)[cite: 6]</th>
-                    </tr>
-                    <tr><td>Transfer opening stock, purchases and direct expenses to Trading A/c</td><td>Trading A/c ...Dr.; To Opening Stock A/c, Purchases A/c, Direct Expenses A/c[cite: 6]</td></tr>
-                    <tr><td>Transfer sales and closing stock to Trading A/c</td><td>Sales A/c ...Dr.; Closing Stock A/c ...Dr.; To Trading A/c[cite: 6]</td></tr>
-                    <tr><td>Transfer Gross Profit to P&L A/c</td><td>Trading A/c ...Dr.; To Profit & Loss A/c[cite: 6]</td></tr>
-                    <tr><td>Transfer indirect expenses to P&L A/c</td><td>Profit & Loss A/c ...Dr.; To Salaries A/c, Rent A/c, etc.[cite: 6]</td></tr>
-                    <tr><td>Transfer other income to P&L A/c</td><td>Interest Received A/c ...Dr.; To Profit & Loss A/c[cite: 6]</td></tr>
-                    <tr><td>Transfer Net Profit to Capital A/c</td><td>Profit & Loss A/c ...Dr.; To Capital A/c[cite: 6]</td></tr>
-                </table>
-                <p>Note: If the result is a Net Loss instead of Net Profit, the entry is reversed: Capital A/c ...Dr., To Profit & Loss A/c — since a loss reduces the owner's capital[cite: 6].</p>
-
-                <h3 id="subsidiary">1.8 Subsidiary Books (Special Purpose Journals)</h3>
-                <table class="tutorial-table">
-                    <tr>
-                        <th>Subsidiary Book[cite: 6]</th>
-                        <th>Transactions Recorded[cite: 6]</th>
-                    </tr>
-                    <tr><td>Purchases Book</td><td>Credit purchases of goods (trading goods only, not assets)[cite: 6]</td></tr>
-                    <tr><td>Sales Book</td><td>Credit sales of goods[cite: 6]</td></tr>
-                    <tr><td>Purchases Return Book (Returns Outward Book)</td><td>Goods returned to suppliers[cite: 6]</td></tr>
-                    <tr><td>Sales Return Book (Returns Inward Book)</td><td>Goods returned by customers[cite: 6]</td></tr>
-                    <tr><td>Cash Book</td><td>All cash and bank receipts and payments (also serves as a ledger account for cash/bank)[cite: 6]</td></tr>
-                    <tr><td>Bills Receivable Book</td><td>Bills of exchange/promissory notes received from debtors[cite: 6]</td></tr>
-                    <tr><td>Bills Payable Book</td><td>Bills of exchange/promissory notes accepted in favour of creditors[cite: 6]</td></tr>
-                    <tr><td>Journal Proper</td><td>Residual transactions not covered by any other subsidiary book, e.g., opening entries, adjusting entries, closing entries, rectification entries[cite: 6]</td></tr>
-                </table>
-
-                <h3 id="errors">1.9 Errors and Their Rectification</h3>
-                <ul class="custom-bullets">
-                    <li><strong>Errors of Omission:</strong> A transaction is completely omitted from the books, e.g., a credit sale not recorded at all[cite: 6]. Since neither a debit nor a credit is posted, the trial balance still agrees[cite: 6].</li>
-                    <li><strong>Errors of Commission:</strong> A transaction is recorded but with a wrong amount, in the wrong account of the correct class, or wrongly posted/totalled, e.g., posting ₹5,000 as ₹500, or debiting the wrong debtor's account[cite: 6].</li>
-                    <li><strong>Errors of Principle:</strong> A transaction is recorded by violating a fundamental accounting principle, e.g., treating a capital expenditure (purchase of machinery) as a revenue expenditure (repairs)[cite: 6].</li>
-                    <li><strong>Compensating Errors:</strong> Two or more errors that cancel out each other's effect on the trial balance totals, e.g., an overcasting of the Purchases Book by ₹1,000 combined with an undercasting of the Sales Book by ₹1,000[cite: 6].</li>
-                </ul>
-
-                <table class="tutorial-table">
-                    <tr>
-                        <th>Disclosed by Trial Balance[cite: 6]</th>
-                        <th>Not Disclosed by Trial Balance[cite: 6]</th>
-                    </tr>
-                    <tr><td>One-sided posting errors (posting only a debit or only a credit)[cite: 6]</td><td>Errors of complete omission (transaction not recorded at all)[cite: 6]</td></tr>
-                    <tr><td>Errors in totalling of subsidiary books or the trial balance itself[cite: 6]</td><td>Errors of principle (e.g., capital expenditure treated as revenue expenditure)[cite: 6]</td></tr>
-                    <tr><td>Posting an amount twice to the same account, or an incorrect amount on one side only[cite: 6]</td><td>Compensating errors (which cancel each other out)[cite: 6]</td></tr>
-                    <tr><td>Omission of an account balance from the trial balance[cite: 6]</td><td>Recording a transaction in the correct amount but in the wrong account of the same class (e.g., wrong debtor)[cite: 6]</td></tr>
-                </table>
-
-                <p><strong>(c) Suspense Account:</strong> When the trial balance does not agree and the errors causing the difference cannot be located immediately, a Suspense Account is opened and the difference is posted to it temporarily, so that the final accounts can be prepared without delay[cite: 6]. As and when errors are located, they are rectified through the Suspense Account, which should show a nil balance once all errors are corrected[cite: 6].</p>
+                <h3 id="closingentries">1.6 Closing Entries</h3>
+                <p>Closing entries transfer the balances of all temporary (nominal) accounts — revenues and expenses — into the Profit &amp; Loss Account, and ultimately into the Capital account, reducing their balances to zero so that the next accounting period can start afresh. Only permanent (real and personal) accounts — assets, liabilities, and capital — carry a balance forward into the next period, appearing in the post-closing trial balance.</p>
 
                 <h2 id="statements">2. Preparation of Financial Statements</h2>
-                
-                <h3 id="statements-meaning">2.1 Meaning and Objective</h3>
-                <p>Financial statements are the formal, structured reports prepared at the end of an accounting period that summarise the financial performance and position of a business[cite: 6]. The two principal financial statements covered in this unit are the Income Statement (Trading and Profit & Loss Account) and the Balance Sheet[cite: 6].</p>
+                <p class="lead-text">The accounting cycle culminates in two central financial statements: the Income Statement, which measures performance (profit or loss) over a period, and the Balance Sheet, which shows financial position at a single point in time.</p>
 
-                <h3 id="income-statement">2.2 The Income Statement (Trading and Profit & Loss Account)</h3>
-                <p>The Income Statement measures the financial performance of a business over a period of time by matching revenues earned against expenses incurred, to arrive at the net profit or net loss for that period[cite: 6].</p>
-                <p><strong>(a) Trading Account:</strong> Prepared first to ascertain the Gross Profit or Gross Loss made on buying and selling of goods[cite: 6]. Gross Profit = Net Sales − Cost of Goods Sold[cite: 6]. Cost of Goods Sold = Opening Stock + Net Purchases + Direct Expenses − Closing Stock[cite: 6].</p>
+                <h3 id="incomestatement">2.1 Income Statement (Trading and Profit &amp; Loss Account)</h3>
+                <p><strong>Meaning and Purpose:</strong> The Income Statement measures the profit or loss earned by a business over an accounting period, by matching the revenue earned against the expenses incurred in earning it. In traditional format, it is prepared in two parts: the <strong>Trading Account</strong>, which calculates Gross Profit, and the <strong>Profit &amp; Loss Account</strong>, which calculates Net Profit.</p>
+
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 560 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Waterfall diagram showing how sales revenue is reduced by cost of goods sold and operating expenses to arrive at net profit">
+                        <rect width="560" height="380" fill="#ffffff" rx="14"/>
+                        <text x="280" y="24" text-anchor="middle" font-size="15" font-weight="600" fill="#2d3748">From Sales Revenue to Net Profit</text>
+
+                        <rect x="90" y="45" width="380" height="42" rx="6" fill="#2b6cb0"/>
+                        <text x="280" y="71" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">Sales Revenue</text>
+
+                        <rect x="120" y="97" width="320" height="38" rx="6" fill="#c53030"/>
+                        <text x="280" y="121" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">Less: Cost of Goods Sold (COGS)</text>
+
+                        <rect x="150" y="145" width="260" height="42" rx="6" fill="#2f855a"/>
+                        <text x="280" y="171" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">= Gross Profit</text>
+
+                        <rect x="180" y="197" width="200" height="38" rx="6" fill="#c53030"/>
+                        <text x="280" y="221" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff">Less: Operating Expenses</text>
+
+                        <rect x="210" y="245" width="140" height="42" rx="6" fill="#22543d"/>
+                        <text x="280" y="271" text-anchor="middle" font-size="12.5" font-weight="700" fill="#fff">= Net Profit</text>
+
+                        <text x="280" y="320" text-anchor="middle" font-size="9.5" fill="#718096">Cost of Goods Sold = Opening Stock + Purchases − Closing Stock</text>
+                        <text x="280" y="338" text-anchor="middle" font-size="9.5" fill="#718096">Operating Expenses = Selling, Administrative &amp; Financial Expenses</text>
+                        <text x="280" y="356" text-anchor="middle" font-size="9.5" fill="#718096">Net Profit ultimately increases the owner's Capital on the Balance Sheet.</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 2 — The Income Statement narrows step by step from total revenue down to the final net profit figure.</p>
+                </div>
+
                 <table class="tutorial-table">
-                    <tr><th>Dr. Trading Account for the year ended 31st March ____[cite: 6]</th><th>₹[cite: 6]</th><th>Cr. Trading Account[cite: 6]</th><th>₹[cite: 6]</th></tr>
-                    <tr><td>To Opening Stock[cite: 6]</td><td>XXX[cite: 6]</td><td>By Sales[cite: 6]</td><td>XXX[cite: 6]</td></tr>
-                    <tr><td>To Purchases (Net)[cite: 6]</td><td>XXX[cite: 6]</td><td>Less: Sales Returns[cite: 6]</td><td>(XXX)[cite: 6]</td></tr>
-                    <tr><td>To Direct Expenses (wages, carriage inwards, freight, etc.)[cite: 6]</td><td>XXX[cite: 6]</td><td>By Closing Stock[cite: 6]</td><td>XXX[cite: 6]</td></tr>
-                    <tr><td>To Gross Profit c/d (balancing figure)[cite: 6]</td><td>XXX[cite: 6]</td><td></td><td></td></tr>
-                    <tr><td><strong>Total</strong>[cite: 6]</td><td><strong>XXX</strong>[cite: 6]</td><td><strong>Total</strong>[cite: 6]</td><td><strong>XXX</strong>[cite: 6]</td></tr>
+                    <tr><th colspan="2">Trading Account (for the year ended ...)</th></tr>
+                    <tr><td>To Opening Stock</td><td>By Sales (less Returns)</td></tr>
+                    <tr><td>To Purchases (less Returns)</td><td>By Closing Stock</td></tr>
+                    <tr><td>To Direct Expenses (carriage, wages, etc.)</td><td></td></tr>
+                    <tr><td><strong>To Gross Profit c/d</strong> (balancing figure)</td><td></td></tr>
+                </table>
+                <table class="tutorial-table">
+                    <tr><th colspan="2">Profit &amp; Loss Account (for the year ended ...)</th></tr>
+                    <tr><td>To Operating Expenses (salaries, rent, depreciation, etc.)</td><td>By Gross Profit b/d</td></tr>
+                    <tr><td>To Non-operating/Financial Expenses (interest, etc.)</td><td>By Other Income (e.g., interest received)</td></tr>
+                    <tr><td><strong>To Net Profit</strong> (transferred to Capital A/c)</td><td></td></tr>
                 </table>
 
-                <p><strong>(b) Profit and Loss Account:</strong> Prepared next, starting with the Gross Profit (or Gross Loss) brought down from the Trading Account, to ascertain the Net Profit or Net Loss after accounting for all indirect (operating and non-operating) expenses and incomes[cite: 6]. Net Profit = Gross Profit + Other Income − Indirect Expenses[cite: 6].</p>
+                <p><strong>Worked Example:</strong> Sagar Enterprises reports the following for the year ended 31 March 2026: Opening Stock ₹40,000; Purchases ₹3,60,000; Direct Wages ₹20,000; Sales ₹6,00,000; Closing Stock ₹80,000; Salaries ₹65,000; Rent ₹36,000; Depreciation ₹12,000; Interest Received ₹5,000.</p>
                 <table class="tutorial-table">
-                    <tr><th>Dr. Profit & Loss Account for the year ended 31st March ____[cite: 6]</th><th>₹[cite: 6]</th><th>Cr. Profit & Loss Account[cite: 6]</th><th>₹[cite: 6]</th></tr>
-                    <tr><td>To Office & Administrative Expenses (salaries, rent, printing, etc.)[cite: 6]</td><td>XXX[cite: 6]</td><td>By Gross Profit b/d[cite: 6]</td><td>XXX[cite: 6]</td></tr>
-                    <tr><td>To Selling & Distribution Expenses (advertising, commission, carriage outwards)[cite: 6]</td><td>XXX[cite: 6]</td><td>By Interest Received[cite: 6]</td><td>XXX[cite: 6]</td></tr>
-                    <tr><td>To Financial Expenses (interest on loan, bank charges)[cite: 6]</td><td>XXX[cite: 6]</td><td>By Discount Received[cite: 6]</td><td>XXX[cite: 6]</td></tr>
-                    <tr><td>To Depreciation[cite: 6]</td><td>XXX[cite: 6]</td><td>By Other Income[cite: 6]</td><td>XXX[cite: 6]</td></tr>
-                    <tr><td>To Net Profit transferred to Capital A/c (balancing figure)[cite: 6]</td><td>XXX[cite: 6]</td><td></td><td></td></tr>
-                    <tr><td><strong>Total</strong>[cite: 6]</td><td><strong>XXX</strong>[cite: 6]</td><td><strong>Total</strong>[cite: 6]</td><td><strong>XXX</strong>[cite: 6]</td></tr>
+                    <tr><th colspan="2">Trading Account for the year ended 31 March 2026</th></tr>
+                    <tr><td>To Opening Stock</td><td>40,000</td></tr>
+                    <tr><td>To Purchases</td><td>3,60,000</td></tr>
+                    <tr><td>To Direct Wages</td><td>20,000</td></tr>
+                    <tr><td><strong>To Gross Profit c/d</strong></td><td><strong>2,60,000</strong></td></tr>
+                    <tr><td><strong>Total</strong></td><td><strong>6,80,000</strong></td></tr>
                 </table>
-
-                <h3 id="balance-sheet">2.3 The Balance Sheet</h3>
-                <p>The Balance Sheet is a statement of the financial position of a business as on a particular date, showing its Assets, Liabilities and Capital (Owner's Equity)[cite: 6]. Assets = Liabilities + Capital (Owner's Equity)[cite: 6].</p>
                 <table class="tutorial-table">
-                    <tr><th>Liabilities[cite: 6]</th><th>₹[cite: 6]</th><th>Assets[cite: 6]</th><th>₹[cite: 6]</th></tr>
-                    <tr><td>Capital[cite: 6]</td><td>XXX[cite: 6]</td><td>Fixed Assets (Land, Building, Plant, Machinery, Furniture)[cite: 6]</td><td>XXX[cite: 6]</td></tr>
-                    <tr><td>Add: Net Profit[cite: 6]</td><td>XXX[cite: 6]</td><td>Less: Depreciation[cite: 6]</td><td>(XXX)[cite: 6]</td></tr>
-                    <tr><td>Less: Drawings[cite: 6]</td><td>(XXX)[cite: 6]</td><td>Investments[cite: 6]</td><td>XXX[cite: 6]</td></tr>
-                    <tr><td>Long-term Liabilities (Loans, Debentures)[cite: 6]</td><td>XXX[cite: 6]</td><td>Current Assets (Closing Stock, Debtors, Bills Receivable, Cash & Bank, Prepaid Expenses)[cite: 6]</td><td>XXX[cite: 6]</td></tr>
-                    <tr><td>Current Liabilities (Creditors, Bills Payable, Outstanding Expenses, Bank Overdraft)[cite: 6]</td><td>XXX[cite: 6]</td><td></td><td></td></tr>
-                    <tr><td><strong>Total</strong>[cite: 6]</td><td><strong>XXX</strong>[cite: 6]</td><td><strong>Total</strong>[cite: 6]</td><td><strong>XXX</strong>[cite: 6]</td></tr>
+                    <tr><th>By Sales</th><th>6,00,000</th></tr>
+                    <tr><td>By Closing Stock</td><td>80,000</td></tr>
+                    <tr><td><strong>Total</strong></td><td><strong>6,80,000</strong></td></tr>
                 </table>
+                <table class="tutorial-table">
+                    <tr><th colspan="2">Profit &amp; Loss Account for the year ended 31 March 2026</th></tr>
+                    <tr><td>To Salaries</td><td>65,000</td></tr>
+                    <tr><td>To Rent</td><td>36,000</td></tr>
+                    <tr><td>To Depreciation</td><td>12,000</td></tr>
+                    <tr><td><strong>To Net Profit</strong> (transferred to Capital A/c)</td><td><strong>1,52,000</strong></td></tr>
+                    <tr><td><strong>Total</strong></td><td><strong>2,65,000</strong></td></tr>
+                </table>
+                <table class="tutorial-table">
+                    <tr><th>By Gross Profit b/d</th><th>2,60,000</th></tr>
+                    <tr><td>By Interest Received</td><td>5,000</td></tr>
+                    <tr><td><strong>Total</strong></td><td><strong>2,65,000</strong></td></tr>
+                </table>
+                <p><em>Calculation check:</em> Gross Profit = Sales (6,00,000) + Closing Stock (80,000) − Opening Stock (40,000) − Purchases (3,60,000) − Direct Wages (20,000) = ₹2,60,000. Net Profit = Gross Profit (2,60,000) + Interest Received (5,000) − Salaries (65,000) − Rent (36,000) − Depreciation (12,000) = <strong>₹1,52,000</strong>.</p>
 
-                <p><strong>(c) Classification of Assets & (d) Classification of Liabilities:</strong></p>
+                <h3 id="balancesheet">2.2 Balance Sheet</h3>
+                <p><strong>Meaning and Purpose:</strong> The Balance Sheet is a statement of the financial position of a business as on a specific date, showing what it owns (Assets) and how those assets are financed — through outsiders' claims (Liabilities) and the owner's claim (Capital) — in accordance with the fundamental accounting equation from Unit 1.</p>
+
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Structure of a balance sheet showing equity and liabilities on one side matching assets on the other">
+                        <rect width="600" height="400" fill="#ffffff" rx="14"/>
+                        <text x="300" y="24" text-anchor="middle" font-size="15" font-weight="600" fill="#2d3748">Structure of the Balance Sheet</text>
+
+                        <rect x="40" y="45" width="250" height="34" rx="6" fill="#2d3748"/>
+                        <text x="165" y="67" text-anchor="middle" font-size="11.5" font-weight="600" fill="#fff">EQUITY &amp; LIABILITIES</text>
+
+                        <rect x="60" y="90" width="210" height="40" rx="6" fill="#2b6cb0"/>
+                        <text x="165" y="113" text-anchor="middle" font-size="10.5" fill="#fff">Owner's Capital / Equity</text>
+
+                        <rect x="60" y="140" width="210" height="60" rx="6" fill="#2f855a"/>
+                        <text x="165" y="163" text-anchor="middle" font-size="10.5" fill="#fff">Non-Current Liabilities</text>
+                        <text x="165" y="180" text-anchor="middle" font-size="9" fill="#e2e8f0">(long-term loans, debentures)</text>
+
+                        <rect x="60" y="210" width="210" height="60" rx="6" fill="#b7791f"/>
+                        <text x="165" y="233" text-anchor="middle" font-size="10.5" fill="#fff">Current Liabilities</text>
+                        <text x="165" y="250" text-anchor="middle" font-size="9" fill="#fefcbf">(creditors, short-term loans, outstanding expenses)</text>
+
+                        <rect x="310" y="45" width="250" height="34" rx="6" fill="#2d3748"/>
+                        <text x="435" y="67" text-anchor="middle" font-size="13" font-weight="600" fill="#fff">ASSETS</text>
+
+                        <rect x="330" y="90" width="210" height="80" rx="6" fill="#805ad5"/>
+                        <text x="435" y="113" text-anchor="middle" font-size="10.5" fill="#fff">Non-Current Assets</text>
+                        <text x="435" y="130" text-anchor="middle" font-size="9" fill="#e9d8fd">(land, buildings, plant &amp;</text>
+                        <text x="435" y="145" text-anchor="middle" font-size="9" fill="#e9d8fd">machinery — net of depreciation)</text>
+
+                        <rect x="330" y="180" width="210" height="90" rx="6" fill="#c53030"/>
+                        <text x="435" y="203" text-anchor="middle" font-size="10.5" fill="#fff">Current Assets</text>
+                        <text x="435" y="220" text-anchor="middle" font-size="9" fill="#fed7d7">(cash, bank, debtors,</text>
+                        <text x="435" y="235" text-anchor="middle" font-size="9" fill="#fed7d7">closing inventory,</text>
+                        <text x="435" y="250" text-anchor="middle" font-size="9" fill="#fed7d7">prepaid expenses)</text>
+
+                        <line x1="290" y1="45" x2="290" y2="270" stroke="#cbd5e0" stroke-width="1.5" stroke-dasharray="4,4"/>
+                        <text x="290" y="300" text-anchor="middle" font-size="18" font-weight="700" fill="#2d3748">=</text>
+
+                        <rect x="150" y="335" width="300" height="42" rx="8" fill="#f7fafc" stroke="#2d3748" stroke-width="1.5"/>
+                        <text x="300" y="360" text-anchor="middle" font-size="11" font-weight="600" fill="#2d3748">Total Equity &amp; Liabilities = Total Assets</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 3 — Both sides of the Balance Sheet must always total the same figure — a direct application of the accounting equation from Unit 1.</p>
+                </div>
+
+                <p><strong>Worked Example:</strong> Continuing Sagar Enterprises, suppose the Capital at the start of the year was ₹3,00,000 and Drawings during the year were ₹22,000. Other balances as on 31 March 2026: Machinery ₹1,50,000; Debtors ₹90,000; Closing Stock ₹80,000; Cash &amp; Bank ₹2,86,000; Creditors ₹56,000; Bank Loan (long-term) ₹1,20,000.</p>
+                <table class="tutorial-table">
+                    <tr><th colspan="2">Balance Sheet of Sagar Enterprises as on 31 March 2026</th></tr>
+                    <tr><th>Equity &amp; Liabilities</th><th>Amount (₹)</th></tr>
+                    <tr><td>Capital (3,00,000 + Net Profit 1,52,000 − Drawings 22,000)</td><td>4,30,000</td></tr>
+                    <tr><td>Bank Loan (Non-Current Liability)</td><td>1,20,000</td></tr>
+                    <tr><td>Creditors (Current Liability)</td><td>56,000</td></tr>
+                    <tr><td><strong>Total</strong></td><td><strong>6,06,000</strong></td></tr>
+                </table>
+                <table class="tutorial-table">
+                    <tr><th>Assets</th><th>Amount (₹)</th></tr>
+                    <tr><td>Machinery (Non-Current Asset)</td><td>1,50,000</td></tr>
+                    <tr><td>Closing Stock</td><td>80,000</td></tr>
+                    <tr><td>Debtors</td><td>90,000</td></tr>
+                    <tr><td>Cash &amp; Bank</td><td>2,86,000</td></tr>
+                    <tr><td><strong>Total</strong></td><td><strong>6,06,000</strong></td></tr>
+                </table>
+                <p><em>Notice that both sides total exactly ₹6,06,000</em> — confirming the accounting equation (Assets = Liabilities + Capital) holds true, and that the Net Profit of ₹1,52,000 carried over from the Profit &amp; Loss Account (Section 2.1) has correctly increased the owner's Capital.</p>
+
+                <h3 id="classification">2.3 Classification of Assets and Liabilities</h3>
                 <ul class="custom-bullets">
-                    <li><strong>Fixed (Non-Current) Assets:</strong> Land, Building, Plant & Machinery, Furniture, Vehicles, Goodwill, Patents[cite: 6].</li>
-                    <li><strong>Current Assets:</strong> Cash in hand, Cash at bank, Debtors, Bills Receivable, Closing Stock, Prepaid Expenses[cite: 6].</li>
-                    <li><strong>Fictitious Assets:</strong> Preliminary expenses, discount on issue of shares/debentures — not real assets but carried forward for write-off[cite: 6].</li>
-                    <li><strong>Owner's Funds / Capital:</strong> Capital introduced by owner(s), Reserves and Surplus[cite: 6].</li>
-                    <li><strong>Long-term (Non-Current) Liabilities:</strong> Bank loans (long-term), Debentures, Long-term borrowings[cite: 6].</li>
-                    <li><strong>Current Liabilities:</strong> Creditors, Bills Payable, Outstanding Expenses, Bank Overdraft, Short-term provisions[cite: 6].</li>
-                    <li><strong>Contingent Liabilities:</strong> Not shown in the Balance Sheet itself but disclosed by way of a note, e.g., guarantees given, disputed tax demand[cite: 6].</li>
+                    <li><strong>Non-Current (Fixed) Assets</strong> — assets held for long-term use in the business rather than for resale, such as land, buildings, plant and machinery (shown net of accumulated depreciation — see Section 4).</li>
+                    <li><strong>Current Assets</strong> — assets expected to be converted into cash, sold, or consumed within one operating cycle/year, such as cash, bank balances, debtors, and closing inventory (see Section 3).</li>
+                    <li><strong>Non-Current Liabilities</strong> — obligations not due for settlement within the next year, such as long-term bank loans and debentures.</li>
+                    <li><strong>Current Liabilities</strong> — obligations due for settlement within the next year, such as creditors, short-term loans, and outstanding expenses.</li>
                 </ul>
 
-                <h3 id="distinction">2.5 Distinction between Income Statement and Balance Sheet</h3>
-                <table class="tutorial-table">
-                    <tr>
-                        <th>Basis[cite: 6]</th>
-                        <th>Income Statement (Trading & P&L A/c)[cite: 6]</th>
-                        <th>Balance Sheet[cite: 6]</th>
-                    </tr>
-                    <tr><td>Nature</td><td>A flow statement — measures performance over a period[cite: 6]</td><td>A stock statement — shows position as on a date[cite: 6]</td></tr>
-                    <tr><td>Purpose</td><td>To ascertain Gross Profit and Net Profit/Loss[cite: 6]</td><td>To ascertain the financial position (assets, liabilities, capital)[cite: 6]</td></tr>
-                    <tr><td>Time Frame</td><td>Covers a period, e.g., "for the year ended 31st March"[cite: 6]</td><td>As on a specific date, e.g., "as at 31st March"[cite: 6]</td></tr>
-                    <tr><td>Accounts Involved</td><td>Nominal accounts (revenues and expenses)[cite: 6]</td><td>Real and personal accounts (assets, liabilities, capital)[cite: 6]</td></tr>
-                    <tr><td>Sequence</td><td>Prepared first[cite: 6]</td><td>Prepared after the Income Statement, using its net profit/loss figure[cite: 6]</td></tr>
-                </table>
-
-                <h3 id="vertical">2.6 Vertical Format of Financial Statements (as per Schedule III, Companies Act, 2013)</h3>
-                <p>While sole proprietorships and partnerships commonly use the traditional horizontal (T-shape) format shown above, companies in India are required to present financial statements in a vertical (statement) form as prescribed in Schedule III of the Companies Act, 2013[cite: 6].</p>
-                <table class="tutorial-table">
-                    <tr><th>(a) Statement of Profit and Loss — Broad Structure[cite: 6]</th><th>₹[cite: 6]</th></tr>
-                    <tr><td>I. Revenue from Operations[cite: 6]</td><td>XXX[cite: 6]</td></tr>
-                    <tr><td>II. Other Income[cite: 6]</td><td>XXX[cite: 6]</td></tr>
-                    <tr><td>III. Total Income (I + II)[cite: 6]</td><td>XXX[cite: 6]</td></tr>
-                    <tr><td>IV. Expenses: Cost of Materials Consumed, Purchases, Changes in Inventory, Employee Benefit Expense, Finance Costs, Depreciation and Amortisation, Other Expenses[cite: 6]</td><td>XXX[cite: 6]</td></tr>
-                    <tr><td>V. Profit Before Tax (III − IV)[cite: 6]</td><td>XXX[cite: 6]</td></tr>
-                    <tr><td>VI. Less: Tax Expense[cite: 6]</td><td>(XXX)[cite: 6]</td></tr>
-                    <tr><td>VII. Profit for the Period (V − VI)[cite: 6]</td><td>XXX[cite: 6]</td></tr>
-                </table>
-
-                <h3 id="working-capital">2.7 Working Capital</h3>
-                <p>An important figure derived from the Balance Sheet, useful to managers for assessing short-term financial health, is Working Capital — the excess of Current Assets over Current Liabilities, representing the funds available for day-to-day operations[cite: 6]. Working Capital = Current Assets − Current Liabilities[cite: 6].</p>
+                <h3 id="linkage">2.4 How the Income Statement and Balance Sheet Are Linked</h3>
+                <p>The two statements are not independent — the Net Profit calculated in the Income Statement (Section 2.1) is added to (or a Net Loss subtracted from) the owner's Capital shown in the Balance Sheet, directly connecting the period's operating performance to the closing financial position. Similarly, the Closing Stock figure used to calculate Gross Profit in the Trading Account (Section 3) is the same figure that appears as inventory under Current Assets in the Balance Sheet.</p>
 
                 <h2 id="inventory">3. Inventory Valuation</h2>
-                
-                <h3 id="inventory-meaning">3.1 Meaning and Importance</h3>
-                <p>Inventory (stock) refers to goods held by a business for the purpose of resale (in a trading concern) or for use in production (raw materials, work-in-progress, finished goods, in a manufacturing concern)[cite: 6]. The value assigned to closing stock directly affects both the Income Statement (through Cost of Goods Sold and Gross Profit) and the Balance Sheet (as a current asset)[cite: 6].</p>
+                <h3 id="inventorymeaning">3.1 Meaning and Importance</h3>
+                <p class="lead-text">Inventory (stock) valuation is the process of assigning a monetary value to the goods a business holds unsold at the end of an accounting period. Because closing stock appears in both the Trading Account (reducing Cost of Goods Sold and thereby increasing Gross Profit) and the Balance Sheet (as a Current Asset), the method chosen to value inventory directly affects both reported profit and financial position.</p>
 
-                <h3 id="inventory-principle">3.2 The Basic Valuation Principle</h3>
-                <p>As per the convention of conservatism and Accounting Standard AS 2 (Valuation of Inventories) / Ind AS 2, inventory is valued at the lower of cost and net realisable value (NRV), so that unrealised profits are not anticipated and inventories are not overstated[cite: 6].</p>
+                <h3 id="inventorymethods">3.2 Methods of Inventory Valuation</h3>
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 600 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagram comparing FIFO and LIFO methods of inventory valuation">
+                        <rect width="600" height="260" fill="#ffffff" rx="14"/>
+                        <text x="300" y="24" text-anchor="middle" font-size="15" font-weight="600" fill="#2d3748">FIFO vs. LIFO — Which Unit Leaves First?</text>
 
-                <h3 id="inventory-components">3.3 Components of Cost of Inventory</h3>
+                        <text x="300" y="55" text-anchor="middle" font-size="10.5" fill="#4a5568">Inventory purchased over time (oldest → newest)</text>
+                        <rect x="70" y="70" width="90" height="50" fill="#c53030" rx="6"/>
+                        <text x="115" y="92" text-anchor="middle" font-size="9.5" fill="#fff">Batch 1</text>
+                        <text x="115" y="108" text-anchor="middle" font-size="8.5" fill="#fed7d7">(oldest)</text>
+
+                        <rect x="175" y="70" width="90" height="50" fill="#b7791f" rx="6"/>
+                        <text x="220" y="99" text-anchor="middle" font-size="9.5" fill="#fff">Batch 2</text>
+
+                        <rect x="280" y="70" width="90" height="50" fill="#2f855a" rx="6"/>
+                        <text x="325" y="99" text-anchor="middle" font-size="9.5" fill="#fff">Batch 3</text>
+
+                        <rect x="385" y="70" width="90" height="50" fill="#2b6cb0" rx="6"/>
+                        <text x="430" y="92" text-anchor="middle" font-size="9.5" fill="#fff">Batch 4</text>
+                        <text x="430" y="108" text-anchor="middle" font-size="8.5" fill="#ebf8ff">(newest)</text>
+
+                        <path d="M115,120 L115,150" stroke="#c53030" stroke-width="2" marker-end="url(#arrHeadA)"/>
+                        <text x="115" y="168" text-anchor="middle" font-size="10" font-weight="600" fill="#742a2a">FIFO</text>
+                        <text x="115" y="182" text-anchor="middle" font-size="8.5" fill="#4a5568">oldest cost sold first</text>
+
+                        <path d="M430,120 L430,150" stroke="#2b6cb0" stroke-width="2" marker-end="url(#arrHeadA)"/>
+                        <text x="430" y="168" text-anchor="middle" font-size="10" font-weight="600" fill="#2c5282">LIFO</text>
+                        <text x="430" y="182" text-anchor="middle" font-size="8.5" fill="#4a5568">newest cost sold first</text>
+
+                        <text x="300" y="220" text-anchor="middle" font-size="9.5" fill="#718096">Under FIFO, closing stock is valued at the most recent (newest) costs.</text>
+                        <text x="300" y="236" text-anchor="middle" font-size="9.5" fill="#718096">Under LIFO, closing stock is valued at the oldest costs — LIFO is not permitted under Ind AS/IFRS.</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 4 — FIFO and LIFO make different assumptions about the flow of costs, which — especially in periods of changing prices — leads to different reported profit and closing stock values.</p>
+                </div>
+
                 <ul class="custom-bullets">
-                    <li><strong>Cost of Purchase:</strong> Purchase price, plus import duties and other non-refundable taxes, plus freight, carriage inwards and other costs directly attributable to acquisition, less trade discounts and rebates[cite: 6].</li>
-                    <li><strong>Cost of Conversion:</strong> Costs directly related to units of production, such as direct labour, plus a systematic allocation of fixed and variable production overheads[cite: 6].</li>
-                    <li><strong>Other Costs:</strong> Only those costs incurred in bringing the inventory to its present location and condition, e.g., specific design costs for a customer's order[cite: 6].</li>
-                    <li><strong>Costs excluded from inventory:</strong> Abnormal wastage, storage costs (unless necessary for production), administrative overheads unrelated to production, and selling and distribution costs — all of these are expensed, not included in inventory cost[cite: 6].</li>
+                    <li><strong>FIFO (First-In, First-Out)</strong> — assumes the earliest (oldest) purchased units are sold first, so closing stock is valued at the most recent purchase prices. In a period of rising prices, FIFO results in a lower Cost of Goods Sold and a higher reported profit.</li>
+                    <li><strong>LIFO (Last-In, First-Out)</strong> — assumes the most recently purchased units are sold first, so closing stock is valued at older (often lower) prices. In a period of rising prices, LIFO results in a higher Cost of Goods Sold and lower reported profit. LIFO is not permitted under Ind AS or IFRS, though it remains permitted in some jurisdictions (e.g., under US GAAP).</li>
+                    <li><strong>Weighted Average Cost Method</strong> — values both cost of goods sold and closing stock at the weighted average cost of all units available for sale during the period, smoothing out the effect of price fluctuations.</li>
+                    <li><strong>Specific Identification Method</strong> — each individual unit of inventory is tracked and valued at its own actual, specific cost; practical mainly for businesses dealing in high-value, easily distinguishable items (e.g., automobiles, jewellery).</li>
                 </ul>
 
-                <h3 id="inventory-methods">3.4 Methods of Inventory Valuation</h3>
-                <ul class="custom-bullets">
-                    <li><strong>(a) First-In-First-Out (FIFO) Method:</strong> It is assumed that the goods purchased first are sold first; therefore, the closing stock is valued at the cost of the most recently purchased units[cite: 6]. During periods of rising prices, FIFO results in a lower cost of goods sold and consequently a higher reported profit[cite: 6].</li>
-                    <li><strong>(b) Last-In-First-Out (LIFO) Method:</strong> It is assumed that the goods purchased last are sold first; therefore, the closing stock is valued at the cost of the earliest purchased units[cite: 6]. Not permitted under current Indian and international accounting standards for external financial reporting[cite: 6].</li>
-                    <li><strong>(c) Weighted Average Cost Method:</strong> The cost of each unit is determined from the weighted average of the cost of similar items at the beginning of the period and the cost of similar items purchased during the period[cite: 6]. Smoothens out the effect of price fluctuations[cite: 6].</li>
-                </ul>
+                <p><strong>Worked Example:</strong> A trader's purchase and sale record for a single product during March 2026 is as follows:</p>
+                <table class="tutorial-table">
+                    <tr><th>Date</th><th>Transaction</th><th>Units</th><th>Cost per Unit (₹)</th></tr>
+                    <tr><td>1 Mar</td><td>Opening Stock</td><td>100</td><td>20</td></tr>
+                    <tr><td>10 Mar</td><td>Purchase</td><td>150</td><td>22</td></tr>
+                    <tr><td>20 Mar</td><td>Purchase</td><td>100</td><td>25</td></tr>
+                    <tr><td>25 Mar</td><td>Sale</td><td>250</td><td>(sold — value not relevant here)</td></tr>
+                </table>
+                <p>Total units available for sale = 100 + 150 + 100 = 350; units sold = 250, leaving a closing stock of 100 units. The value assigned to that closing stock differs sharply by method:</p>
+                <table class="tutorial-table">
+                    <tr><th>Method</th><th>Which 100 Units Remain in Stock</th><th>Value of Closing Stock</th></tr>
+                    <tr><td><strong>FIFO</strong></td><td>The 100 most recently purchased units (20 Mar batch, @ ₹25)</td><td>100 × 25 = <strong>₹2,500</strong></td></tr>
+                    <tr><td><strong>LIFO</strong></td><td>The 100 oldest units (Opening Stock, @ ₹20)</td><td>100 × 20 = <strong>₹2,000</strong></td></tr>
+                    <tr><td><strong>Weighted Average</strong></td><td>Average cost = (100×20 + 150×22 + 100×25) ÷ 350 = ₹22.14</td><td>100 × 22.14 = <strong>₹2,214</strong> (rounded)</td></tr>
+                </table>
+                <p>Because prices were rising through the month, FIFO — which assumes the oldest, cheapest units were sold first — leaves the most expensive units in closing stock, giving the highest stock value and (through a lower Cost of Goods Sold) the highest reported Gross Profit. LIFO produces the opposite result, and the Weighted Average method falls in between.</p>
 
-                <h3 id="inventory-effect">3.6 Effect of Inventory Valuation Method on Financial Statements</h3>
+                <h3 id="lcnrv">3.3 Lower of Cost or Net Realisable Value (LCNRV)</h3>
+                <p>Under the Convention of Conservatism (Unit 1), accounting standards require inventory to be valued at whichever is lower: its historical cost, or its Net Realisable Value (NRV — the estimated selling price less estimated costs to complete and sell). This prevents a business from overstating the value of inventory that has fallen in value or become obsolete or damaged.</p>
+
+                <h3 id="inventoryimpact">3.4 Impact of Inventory Valuation on Financial Statements</h3>
                 <table class="tutorial-table">
                     <tr>
-                        <th>Effect (Rising Price Scenario)[cite: 6]</th>
-                        <th>FIFO[cite: 6]</th>
-                        <th>Weighted Average[cite: 6]</th>
-                        <th>LIFO[cite: 6]</th>
+                        <th>Effect</th>
+                        <th>If Closing Stock is Overvalued</th>
+                        <th>If Closing Stock is Undervalued</th>
                     </tr>
-                    <tr><td>Cost of Goods Sold</td><td>Lowest[cite: 6]</td><td>Moderate[cite: 6]</td><td>Highest[cite: 6]</td></tr>
-                    <tr><td>Gross/Net Profit</td><td>Highest[cite: 6]</td><td>Moderate[cite: 6]</td><td>Lowest[cite: 6]</td></tr>
-                    <tr><td>Closing Stock Value (Balance Sheet)</td><td>Highest (closer to current cost)[cite: 6]</td><td>Moderate[cite: 6]</td><td>Lowest (based on old costs)[cite: 6]</td></tr>
-                    <tr><td>Tax Liability</td><td>Highest (due to higher profit)[cite: 6]</td><td>Moderate[cite: 6]</td><td>Lowest (due to lower profit)[cite: 6]</td></tr>
+                    <tr><td>Cost of Goods Sold</td><td>Understated</td><td>Overstated</td></tr>
+                    <tr><td>Gross &amp; Net Profit</td><td>Overstated</td><td>Understated</td></tr>
+                    <tr><td>Balance Sheet (Current Assets)</td><td>Overstated</td><td>Understated</td></tr>
+                    <tr><td>Owner's Capital</td><td>Overstated</td><td>Understated</td></tr>
                 </table>
-
-                <h3 id="inventory-systems">3.7 Periodic vs Perpetual Inventory Systems</h3>
-                <p><strong>Periodic Inventory System:</strong> Inventory records are updated only at the end of the accounting period, based on a physical stock count; the Cost of Goods Sold is derived as a balancing figure (Opening Stock + Purchases − Closing Stock)[cite: 6].</p>
-                <p><strong>Perpetual Inventory System:</strong> A continuous, running record of each inventory item is maintained through stores ledger/bin cards, updated after every purchase and sale, so that the balance of stock is known at any time without a physical count[cite: 6].</p>
-
-                <h3 id="inventory-ratio">3.8 Inventory Turnover Ratio</h3>
-                <p>Inventory Turnover Ratio = Cost of Goods Sold ÷ Average Inventory[cite: 6]. Average Inventory = (Opening Stock + Closing Stock) ÷ 2[cite: 6].</p>
 
                 <h2 id="depreciation">4. Accounting for Depreciation</h2>
-                
-                <h3 id="dep-meaning">4.1 Meaning and Definition</h3>
-                <p>Depreciation is the systematic allocation of the depreciable cost of a fixed (tangible) asset over its useful life, representing the gradual, permanent and continuing reduction in the value of the asset due to use, wear and tear, effluxion of time, or obsolescence[cite: 6]. As per AS 6 / Ind AS 16, depreciation is an expense that must be charged to the Profit & Loss Account each year the asset is used, in accordance with the matching concept[cite: 6].</p>
+                <h3 id="depreciationmeaning">4.1 Meaning and Need</h3>
+                <p class="lead-text">Depreciation is the systematic allocation of the cost of a tangible fixed asset over its useful life, reflecting the gradual reduction in the asset's value as it is used to generate revenue. Charging depreciation follows directly from the Matching Concept (Unit 1) — since a fixed asset helps generate revenue over several years, a fair share of its cost must be charged as an expense in each of those years, not entirely in the year it was purchased.</p>
 
-                <h3 id="dep-causes">4.2 Causes of Depreciation</h3>
+                <h3 id="depreciationcauses">4.2 Causes of Depreciation</h3>
                 <ul class="custom-bullets">
-                    <li><strong>Wear and Tear:</strong> Physical deterioration of an asset due to its regular use in business operations[cite: 6].</li>
-                    <li><strong>Efflux of Time:</strong> Certain assets (e.g., leasehold property, patents) lose value merely with the passage of time, regardless of use[cite: 6].</li>
-                    <li><strong>Obsolescence:</strong> An asset becomes outdated due to new inventions, technological advancement, or changes in fashion/demand, even if it is still physically usable[cite: 6].</li>
-                    <li><strong>Depletion:</strong> Reduction in the physical quantity of a wasting asset, such as a mine or oil well, as it is extracted/used up[cite: 6].</li>
+                    <li><strong>Wear and tear</strong> from regular use of the asset.</li>
+                    <li><strong>Effluxion of time</strong> — the mere passage of time can reduce an asset's useful economic life, even without use.</li>
+                    <li><strong>Obsolescence</strong> — the asset becomes outdated due to new technology or changes in methods/fashion.</li>
+                    <li><strong>Depletion</strong> — the physical exhaustion of a wasting natural resource (e.g., a mine or oil well).</li>
+                    <li><strong>Accidents</strong> — sudden physical damage that reduces the asset's usefulness.</li>
                 </ul>
 
-                <h3 id="dep-need">4.3 Need for Providing Depreciation</h3>
-                <ul class="custom-bullets">
-                    <li><strong>To ascertain true profit or loss:</strong> By matching the cost of using an asset against the revenue it helps generate in each period[cite: 6].</li>
-                    <li><strong>To show the true financial position:</strong> The Balance Sheet should reflect the asset at its reasonable written-down value, not its original cost, once it has been in use[cite: 6].</li>
-                    <li><strong>To provide funds for replacement:</strong> Charging depreciation retains profits within the business (since depreciation is a non-cash expense) that can eventually be used towards replacing the asset[cite: 6].</li>
-                    <li><strong>To comply with legal requirements:</strong> The Companies Act, 2013 and Income Tax Act require depreciation to be charged/allowed in a prescribed manner[cite: 6].</li>
-                </ul>
+                <h3 id="depreciationmethods">4.3 Methods of Depreciation</h3>
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 560 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Line chart comparing the book value of an asset over five years under the straight line method and the written down value method">
+                        <rect width="560" height="340" fill="#ffffff" rx="14"/>
+                        <text x="280" y="24" text-anchor="middle" font-size="14.5" font-weight="600" fill="#2d3748">Straight Line vs. Written Down Value Method</text>
+                        <text x="280" y="40" text-anchor="middle" font-size="9.5" fill="#718096">Asset cost ₹1,00,000 — SLM @ 20% of cost p.a. vs. WDV @ 40% of book value p.a.</text>
 
-                <h3 id="dep-methods">4.5 Methods of Providing Depreciation</h3>
-                <ul class="custom-bullets">
-                    <li><strong>(a) Straight Line Method (SLM) / Fixed Instalment Method:</strong> A fixed and equal amount of depreciation is charged every year over the useful life of the asset, calculated on the original cost[cite: 6]. Annual Depreciation = (Cost of Asset − Estimated Residual Value) ÷ Estimated Useful Life (in years)[cite: 6].</li>
-                    <li><strong>(b) Written Down Value (WDV) Method / Diminishing Balance Method:</strong> Depreciation is charged at a fixed percentage each year, but the percentage is applied to the reducing book value (original cost less depreciation already charged) rather than to the original cost[cite: 6].</li>
-                </ul>
+                        <line x1="60" y1="300" x2="520" y2="300" stroke="#2d3748" stroke-width="1.6"/>
+                        <line x1="60" y1="300" x2="60" y2="45" stroke="#2d3748" stroke-width="1.6"/>
+                        <text x="290" y="322" text-anchor="middle" font-size="10" fill="#4a5568">Year</text>
+                        <text x="22" y="175" text-anchor="middle" font-size="10" fill="#4a5568" transform="rotate(-90 22 175)">Book Value (₹)</text>
 
-                <h3 id="dep-compare">4.6 Straight Line Method vs Written Down Value Method</h3>
+                        <text x="60" y="315" text-anchor="middle" font-size="8.5" fill="#718096">0</text>
+                        <text x="152" y="315" text-anchor="middle" font-size="8.5" fill="#718096">1</text>
+                        <text x="244" y="315" text-anchor="middle" font-size="8.5" fill="#718096">2</text>
+                        <text x="336" y="315" text-anchor="middle" font-size="8.5" fill="#718096">3</text>
+                        <text x="428" y="315" text-anchor="middle" font-size="8.5" fill="#718096">4</text>
+                        <text x="520" y="315" text-anchor="middle" font-size="8.5" fill="#718096">5</text>
+
+                        <polyline points="60,40 152,92 244,144 336,196 428,248 520,300" fill="none" stroke="#2b6cb0" stroke-width="2.6"/>
+                        <polyline points="60,40 152,144 244,206.4 336,243.8 428,266.3 520,279.8" fill="none" stroke="#c53030" stroke-width="2.6"/>
+
+                        <circle cx="60" cy="40" r="3.5" fill="#2b6cb0"/><circle cx="152" cy="92" r="3.5" fill="#2b6cb0"/><circle cx="244" cy="144" r="3.5" fill="#2b6cb0"/><circle cx="336" cy="196" r="3.5" fill="#2b6cb0"/><circle cx="428" cy="248" r="3.5" fill="#2b6cb0"/><circle cx="520" cy="300" r="3.5" fill="#2b6cb0"/>
+                        <circle cx="152" cy="144" r="3.5" fill="#c53030"/><circle cx="244" cy="206.4" r="3.5" fill="#c53030"/><circle cx="336" cy="243.8" r="3.5" fill="#c53030"/><circle cx="428" cy="266.3" r="3.5" fill="#c53030"/><circle cx="520" cy="279.8" r="3.5" fill="#c53030"/>
+
+                        <line x1="380" y1="55" x2="405" y2="55" stroke="#2b6cb0" stroke-width="2.6"/>
+                        <text x="410" y="59" font-size="9.5" fill="#2d3748">Straight Line (SLM) — falls to zero evenly</text>
+                        <line x1="380" y1="72" x2="405" y2="72" stroke="#c53030" stroke-width="2.6"/>
+                        <text x="410" y="76" font-size="9.5" fill="#2d3748">Written Down Value (WDV) — falls fast, then slows</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 5 — SLM charges an equal amount of depreciation every year, while WDV charges a fixed percentage of the reducing book value, so the annual charge is highest in the earliest years.</p>
+                </div>
+
                 <table class="tutorial-table">
                     <tr>
-                        <th>Basis[cite: 6]</th>
-                        <th>Straight Line Method (SLM)[cite: 6]</th>
-                        <th>Written Down Value Method (WDV)[cite: 6]</th>
+                        <th>Method</th>
+                        <th>Basis of Calculation</th>
+                        <th>Pattern of Charge</th>
+                        <th>Typical Use</th>
                     </tr>
-                    <tr><td>Basis of Calculation</td><td>Original cost of the asset[cite: 6]</td><td>Book value (original cost less accumulated depreciation)[cite: 6]</td></tr>
-                    <tr><td>Annual Depreciation Amount</td><td>Fixed / equal every year[cite: 6]</td><td>Decreases every year[cite: 6]</td></tr>
-                    <tr><td>Book Value at End of Life</td><td>Reduces to nil or residual value[cite: 6]</td><td>Never reduces to exactly zero (only approaches it)[cite: 6]</td></tr>
-                    <tr><td>Suitability</td><td>Assets with uniform benefit each year, e.g., leasehold property, patents[cite: 6]</td><td>Assets that lose more value/efficiency in earlier years, e.g., plant, machinery, vehicles[cite: 6]</td></tr>
+                    <tr><td><strong>Straight Line Method (SLM)</strong></td><td>(Cost − Residual Value) ÷ Useful Life, i.e. a fixed amount each year</td><td>Equal depreciation charge every year</td><td>Assets that lose value uniformly (e.g., furniture, buildings)</td></tr>
+                    <tr><td><strong>Written Down Value (WDV) / Diminishing Balance Method</strong></td><td>A fixed percentage applied to the reducing book value each year</td><td>Higher charge in early years, tapering off later</td><td>Assets that lose efficiency/value faster when new (e.g., vehicles, machinery, technology)</td></tr>
+                    <tr><td><strong>Units of Production Method</strong></td><td>Depreciation per unit produced/used × actual units produced in the year</td><td>Varies directly with actual usage</td><td>Assets whose wear depends on usage rather than time (e.g., production machinery)</td></tr>
+                    <tr><td><strong>Sum-of-the-Years'-Digits Method</strong></td><td>Cost (less residual value) × a declining fraction based on remaining useful life</td><td>Accelerated — higher in early years, similar in spirit to WDV</td><td>Assets expected to be more productive when new</td></tr>
                 </table>
 
-                <h3 id="dep-distinction">4.9 Depreciation, Amortisation and Depletion — Distinction</h3>
+                <p><strong>Worked Example:</strong> A machine costing ₹1,00,000 is expected to have a useful life of 5 years and a nil residual value. Under SLM, the annual charge is a fixed 20% of cost (₹1,00,000 ÷ 5); under WDV, the annual charge is 40% of the reducing book value.</p>
                 <table class="tutorial-table">
-                    <tr>
-                        <th>Term[cite: 6]</th>
-                        <th>Applies To[cite: 6]</th>
-                        <th>Meaning[cite: 6]</th>
-                    </tr>
-                    <tr><td>Depreciation</td><td>Tangible fixed assets (machinery, building, furniture, vehicles)[cite: 6]</td><td>Systematic allocation of cost over useful life due to wear and tear, time, or obsolescence[cite: 6]</td></tr>
-                    <tr><td>Amortisation</td><td>Intangible assets (patents, copyrights, goodwill, leasehold rights)[cite: 6]</td><td>Systematic write-off of the cost of an intangible asset over its useful/legal life[cite: 6]</td></tr>
-                    <tr><td>Depletion</td><td>Natural/wasting resources (mines, quarries, oil wells, forests)[cite: 6]</td><td>Systematic allocation of cost based on the physical extraction/exhaustion of the resource[cite: 6]</td></tr>
+                    <tr><th>Year</th><th>SLM — Depreciation (₹)</th><th>SLM — Book Value at Year End (₹)</th><th>WDV — Depreciation (₹)</th><th>WDV — Book Value at Year End (₹)</th></tr>
+                    <tr><td>1</td><td>20,000</td><td>80,000</td><td>40,000 (40% of 1,00,000)</td><td>60,000</td></tr>
+                    <tr><td>2</td><td>20,000</td><td>60,000</td><td>24,000 (40% of 60,000)</td><td>36,000</td></tr>
+                    <tr><td>3</td><td>20,000</td><td>40,000</td><td>14,400 (40% of 36,000)</td><td>21,600</td></tr>
+                    <tr><td>4</td><td>20,000</td><td>20,000</td><td>8,640 (40% of 21,600)</td><td>12,960</td></tr>
+                    <tr><td>5</td><td>20,000</td><td>0</td><td>5,184 (40% of 12,960)</td><td>7,776</td></tr>
                 </table>
+                <p>Notice that SLM charges the same ₹20,000 every year and reduces the asset to a nil book value exactly at the end of its useful life, while WDV charges more in the early years (₹40,000 in Year 1 alone) but, mathematically, never reduces the book value all the way to zero — in practice, businesses using WDV either write off the small remaining balance at the end of the useful life or use a residual value to stop the calculation.</p>
 
-                <h3 id="dep-disposal">4.10 Profit or Loss on Sale/Disposal of an Asset</h3>
-                <p>When a depreciable asset is sold, discarded, or exchanged, the difference between its sale proceeds (if any) and its book value (written down value) at the time of disposal is recognised as a profit or loss on disposal, transferred to the Profit and Loss Account[cite: 6]. Profit/(Loss) on Sale = Sale Proceeds − Book Value at the Date of Sale[cite: 6].</p>
+                <h3 id="depreciationjournal">4.4 Journal Entries for Depreciation</h3>
+                <div class="concept-block">
+                    <strong>To record depreciation:</strong><br>
+                    Depreciation A/c &nbsp;Dr.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;To Asset A/c (or Accumulated Depreciation A/c)<br><br>
+                    <strong>To transfer depreciation to Profit &amp; Loss Account:</strong><br>
+                    Profit &amp; Loss A/c &nbsp;Dr.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;To Depreciation A/c<br><br>
+                    <strong>Worked Example (Year 1, Straight Line Method, from Section 4.3):</strong><br>
+                    Depreciation A/c &nbsp;Dr. &nbsp;₹20,000<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;To Machinery A/c &nbsp;&nbsp;&nbsp;&nbsp;₹20,000<br>
+                    <em>(Being depreciation charged on machinery for the year)</em><br><br>
+                    Profit &amp; Loss A/c &nbsp;Dr. &nbsp;₹20,000<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;To Depreciation A/c &nbsp;&nbsp;&nbsp;&nbsp;₹20,000<br>
+                    <em>(Being depreciation transferred to the Profit &amp; Loss Account)</em>
+                </div>
+                <p>In the Balance Sheet, the asset is generally shown at its original cost less accumulated depreciation to date (i.e., at its "net book value" or "written down value"), so that the Balance Sheet reflects the asset's remaining, undepreciated value.</p>
 
-                <h2 id="review">Review Questions & Summary</h2>
+                <h3 id="depreciationfactors">4.5 Factors Affecting the Amount of Depreciation</h3>
+                <ul class="custom-bullets">
+                    <li><strong>Original cost of the asset</strong>, including all costs necessary to bring it to working condition.</li>
+                    <li><strong>Estimated useful life</strong> of the asset — the period over which it is expected to be used.</li>
+                    <li><strong>Estimated residual (scrap) value</strong> — the expected value of the asset at the end of its useful life.</li>
+                    <li><strong>Method of depreciation adopted</strong>, and the consistency with which it is applied (Convention of Consistency, Unit 1).</li>
+                </ul>
+
+                <h2 id="review">Review Questions</h2>
                 <h3>Short Answer Type</h3>
-                <ul class="custom-bullets">
-                    <li>What is meant by the accounting cycle? List its main steps[cite: 6].</li>
-                    <li>Distinguish between the Journal and the Ledger[cite: 6].</li>
-                    <li>What is a Trial Balance? What are its objectives and limitations?[cite: 6]</li>
-                    <li>Distinguish between the Income Statement and the Balance Sheet[cite: 6].</li>
-                </ul>
+                <ol class="custom-bullets">
+                    <li>List the eight steps of the accounting cycle in order.</li>
+                    <li>Distinguish between a journal and a ledger.</li>
+                    <li>What is the purpose of a trial balance? Can it detect every type of error?</li>
+                    <li>Distinguish between a Trading Account and a Profit &amp; Loss Account.</li>
+                    <li>State the accounting equation reflected in the Balance Sheet.</li>
+                    <li>Distinguish between FIFO and LIFO methods of inventory valuation.</li>
+                    <li>What is meant by "Lower of Cost or Net Realisable Value"?</li>
+                    <li>Distinguish between the Straight Line Method and the Written Down Value Method of depreciation.</li>
+                </ol>
+                <h3>Long Answer / Essay Type</h3>
+                <ol class="custom-bullets">
+                    <li>Explain the accounting cycle with a suitable diagram, describing each step briefly.</li>
+                    <li>Explain the meaning, purpose and format of the Income Statement (Trading and Profit &amp; Loss Account).</li>
+                    <li>Explain the meaning, purpose, structure and classification of items in a Balance Sheet.</li>
+                    <li>How are the Income Statement and Balance Sheet linked to each other?</li>
+                    <li>Discuss the various methods of inventory valuation, and explain their impact on reported profit during a period of rising prices.</li>
+                    <li>What is depreciation? Explain its causes and the factors affecting the amount of depreciation charged.</li>
+                    <li>Explain the Straight Line Method and the Written Down Value Method of depreciation with a suitable illustration.</li>
+                </ol>
 
-                <h3>Summary</h3>
-                <p>This unit traced the complete accounting cycle — from the identification and recording of transactions in the journal and subsidiary books, through posting to the ledger, preparation of the trial balance, passing of adjusting entries, and finally the preparation and closing of the final accounts — highlighting how this repeating sequence ensures systematic and reliable financial reporting each period[cite: 6]. It also covered the types of errors that may occur (omission, commission, principle, and compensating errors), which of these are disclosed by the trial balance, and the role of the Suspense Account in rectification[cite: 6]. It then examined the preparation of the two principal financial statements: the Income Statement (Trading and Profit & Loss Account), which measures performance by matching revenues against expenses to determine gross and net profit, and the Balance Sheet, which presents the financial position of the business in terms of assets, liabilities and capital as on a given date[cite: 6]. The unit then addressed inventory valuation, explaining why closing stock must be valued at the lower of cost and net realisable value, comparing the FIFO, LIFO and Weighted Average methods[cite: 6]. Finally, it covered accounting for depreciation — its meaning, causes, and need — along with a detailed comparison of the Straight Line and Written Down Value methods[cite: 6].</p>
+                <h2 id="summary">Summary</h2>
+                <p>This unit traced the accounting cycle — the sequence of identifying transactions, journalizing, posting to the ledger, preparing a trial balance, making adjusting entries, preparing financial statements, passing closing entries, and preparing a post-closing trial balance — that repeats every accounting period. It then examined the preparation of the two principal financial statements: the Income Statement, prepared as a Trading Account (to calculate Gross Profit) followed by a Profit &amp; Loss Account (to calculate Net Profit), and the Balance Sheet, which shows Equity and Liabilities balanced against Assets, classified into current and non-current categories, and linked to the Income Statement through the Net Profit and Closing Stock figures. The unit covered inventory valuation — the FIFO, LIFO, Weighted Average and Specific Identification methods, the Lower of Cost or Net Realisable Value rule, and the effect of over- or under-valuing stock on reported profit and financial position. Finally, it explained accounting for depreciation — its meaning, causes, and the Straight Line, Written Down Value, Units of Production and Sum-of-the-Years'-Digits methods, along with the relevant journal entries and the key factors (cost, useful life, residual value and method) that determine the amount of depreciation charged each year.</p>
 
             </div>
-            
+
             <div class="completion-section">
                 <button id="markCompleteBtn" class="complete-btn">✔️ Mark as Complete</button>
             </div>
 
             <div class="pagination">
-                <a href="s1-acc-u1.html" style="text-decoration: none;"><button class="prev-btn hover-effect">❮ Unit 1</button></a>
-                <a href="s1-acc-u3.html" style="text-decoration: none;"><button class="next-btn hover-effect">Unit 3 ❯</button></a>
+                <a href="s1-acc-u1.html" style="text-decoration: none;"><button class="prev-btn hover-effect">❮ Unit 1: Introduction to Accounting</button></a>
+                <a href="s1-acc-u3.html" style="text-decoration: none;"><button class="next-btn hover-effect">Unit 3: Corporate Financial Reporting ❯</button></a>
             </div>
         </main>
 
@@ -387,11 +549,15 @@
             <div class="widget sticky-widget premium-card">
                 <h3>Unit Contents</h3>
                 <ul class="toc-list">
-                    <li><a href="#cycle">1. Accounting Cycle</a></li>
+                    <li><a href="#intro">0. Introduction</a></li>
+                    <li><a href="#cycle">1. The Accounting Cycle</a></li>
                     <li><a href="#statements">2. Financial Statements</a></li>
+                    <li><a href="#incomestatement">&nbsp;&nbsp;2.1 Income Statement</a></li>
+                    <li><a href="#balancesheet">&nbsp;&nbsp;2.2 Balance Sheet</a></li>
                     <li><a href="#inventory">3. Inventory Valuation</a></li>
                     <li><a href="#depreciation">4. Accounting for Depreciation</a></li>
-                    <li><a href="#review">Review Questions & Summary</a></li>
+                    <li><a href="#review">Review Questions</a></li>
+                    <li><a href="#summary">Summary</a></li>
                 </ul>
             </div>
         </aside>
