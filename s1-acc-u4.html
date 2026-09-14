@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accounting for Managers - Unit-4</title>
+        <!-- Apple Touch Icons (for iOS home screen) -->
+    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icon.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="icon.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .diagram-wrap { margin: 28px 0; text-align: center; }
+        .diagram-wrap svg { max-width: 100%; height: auto; background: #ffffff; border-radius: 14px; box-shadow: 0 1px 8px rgba(0,0,0,0.10); }
+        .diagram-caption { font-size: 0.85rem; color: #666; margin-top: 10px; font-style: italic; }
+    </style>
+</head>
+<body data-current-topic="s1-acc-u4">
+    <div class="progress-container"><div class="progress-bar" id="myBar"></div></div>
+
+    <header class="navbar glass-nav">
+        <div class="nav-left">
+            <button id="mobileMenuBtn" class="mobile-menu-btn">☰</button>
+            <div class="logo">Learn & Concure <span> MBA Tutorials</span></div>
+        </div>
+        <div class="nav-links">
+            <button id="focusModeBtn" class="theme-btn hover-effect" title="Focus Mode">📖</button>
+            <button id="darkModeToggle" class="theme-btn hover-effect" title="Dark Mode">🌙</button>
+            <a href="index.html" id="logoutBtn" class="logout-btn hover-effect">Sign Out</a>
+        </div>
+    </header>
+
+    <div class="main-wrapper" id="mainWrapper">
+
+        <!-- JavaScript will automatically generate and inject the entire 4-Semester Sidebar here -->
+        <aside class="sidebar" id="sidebar-container"></aside>
+
+        <!-- Center Content: Tutorial -->
+        <main class="content premium-card" id="mainContent">
+            <div class="bread-crumbs">Semester-I / Accounting for Managers / Unit 4</div>
+
+            <div class="article-header-flex">
+                <div>
+                    <h1>Financial Statement Analysis: Ratio Analysis, DuPont Analysis, Common Size Analysis and Trend Analysis</h1>
+                    <div class="article-meta">
+                        <span>Read Time: 60 mins</span>
+                    </div>
+                </div>
+                <div class="action-buttons">
+                    <!--button class="icon-btn hover-effect" onclick="window.print()" title="Print PDF">🖨️</button-->
+                </div>
+            </div>
+            <hr class="premium-hr">
+
+            <div class="article-body">
+                <div class="concept-block">
+                    <strong>Topics Covered in This Unit:</strong>
+                    <ul class="custom-bullets" style="margin-top: 10px;">
+                        <li>Ratio Analysis</li>
+                        <li>DuPont Analysis</li>
+                        <li>Common Size Analysis</li>
+                        <li>Trend Analysis</li>
+                    </ul>
+                </div>
+
+                <h2 id="intro">0. Introduction to Financial Statement Analysis</h2>
+                <h3 id="meaning">0.1 Meaning and Objectives</h3>
+                <p class="lead-text">Financial statement analysis is the process of critically examining the relationships between different items in a company's financial statements (Unit 3) — the Balance Sheet and Statement of Profit and Loss — to understand the company's profitability, liquidity, solvency and efficiency, and to support informed decision-making by managers, investors and lenders.</p>
+                <ul class="custom-bullets">
+                    <li>To assess the profitability and operating efficiency of the business.</li>
+                    <li>To assess short-term liquidity and long-term solvency.</li>
+                    <li>To evaluate the trend of performance over time and compare it against competitors or industry benchmarks.</li>
+                    <li>To assist in forecasting and planning future performance.</li>
+                    <li>To support credit, investment and management decisions.</li>
+                </ul>
+
+                <h3 id="tools">0.2 Tools of Financial Statement Analysis</h3>
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 560 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The four main tools of financial statement analysis">
+                        <rect width="560" height="220" fill="#ffffff" rx="14"/>
+                        <defs>
+                            <marker id="arrHeadF" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                                <path d="M0,0L10,5L0,10z" fill="#4a5568"/>
+                            </marker>
+                        </defs>
+                        <text x="280" y="24" text-anchor="middle" font-size="15" font-weight="600" fill="#2d3748">Tools of Financial Statement Analysis</text>
+
+                        <rect x="200" y="45" width="160" height="36" rx="6" fill="#2d3748"/>
+                        <text x="280" y="68" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff">FSA TOOLS</text>
+
+                        <line x1="220" y1="81" x2="90" y2="120" stroke="#a0aec0" stroke-width="1.4"/>
+                        <line x1="255" y1="81" x2="230" y2="120" stroke="#a0aec0" stroke-width="1.4"/>
+                        <line x1="305" y1="81" x2="330" y2="120" stroke="#a0aec0" stroke-width="1.4"/>
+                        <line x1="340" y1="81" x2="470" y2="120" stroke="#a0aec0" stroke-width="1.4"/>
+
+                        <rect x="30" y="120" width="120" height="50" rx="6" fill="#2b6cb0"/>
+                        <text x="90" y="140" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff">Ratio</text>
+                        <text x="90" y="153" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff">Analysis</text>
+
+                        <rect x="170" y="120" width="120" height="50" rx="6" fill="#2f855a"/>
+                        <text x="230" y="140" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff">DuPont</text>
+                        <text x="230" y="153" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff">Analysis</text>
+
+                        <rect x="270" y="120" width="120" height="50" rx="6" fill="#b7791f"/>
+                        <text x="330" y="136" text-anchor="middle" font-size="9" font-weight="600" fill="#fff">Common Size</text>
+                        <text x="330" y="150" text-anchor="middle" font-size="9" font-weight="600" fill="#fff">Analysis</text>
+
+                        <rect x="410" y="120" width="120" height="50" rx="6" fill="#b83280"/>
+                        <text x="470" y="140" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff">Trend</text>
+                        <text x="470" y="153" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff">Analysis</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 1 — The four techniques covered in this unit each analyze the same underlying financial statements from a different angle.</p>
+                </div>
+
+                <h3 id="users">0.3 Users of Financial Statement Analysis</h3>
+                <p>Management uses it for planning and control; investors and shareholders use it to assess returns and risk; lenders and creditors use it to assess creditworthiness and repayment capacity; and employees, regulators and researchers use it for a variety of assessment and compliance purposes.</p>
+
+                <h3 id="limitations">0.4 Limitations of Financial Statement Analysis</h3>
+                <ul class="custom-bullets">
+                    <li>Based on historical data, which may not indicate future performance.</li>
+                    <li>Affected by the accounting policies chosen by the company (e.g., inventory valuation or depreciation method — Unit 2), limiting comparability.</li>
+                    <li>Ignores qualitative factors such as management quality, brand reputation, and employee morale.</li>
+                    <li>Price-level (inflation) changes are usually ignored, since figures are stated at historical cost (Unit 1).</li>
+                </ul>
+
+                <h2 id="ratioanalysis">1. Ratio Analysis</h2>
+                <h3 id="ratiomeaning">1.1 Meaning and Significance</h3>
+                <p class="lead-text">A ratio expresses the mathematical relationship between two related figures drawn from the financial statements. Ratio analysis converts raw, absolute figures into relative, comparable measures, making it possible to compare a company's performance across time periods, against competitors, and against industry norms.</p>
+
+                <h3 id="ratioclassification">1.2 Classification of Ratios</h3>
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 600 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Grid classifying accounting ratios into liquidity, solvency, profitability and activity ratios">
+                        <rect width="600" height="320" fill="#ffffff" rx="14"/>
+                        <text x="300" y="24" text-anchor="middle" font-size="15" font-weight="600" fill="#2d3748">Classification of Accounting Ratios</text>
+
+                        <rect x="30" y="45" width="260" height="110" rx="8" fill="#2b6cb0"/>
+                        <text x="160" y="68" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">Liquidity Ratios</text>
+                        <text x="160" y="88" text-anchor="middle" font-size="9" fill="#e2e8f0">Current Ratio</text>
+                        <text x="160" y="103" text-anchor="middle" font-size="9" fill="#e2e8f0">Quick (Acid-Test) Ratio</text>
+                        <text x="160" y="118" text-anchor="middle" font-size="9" fill="#e2e8f0">Cash Ratio</text>
+                        <text x="160" y="138" text-anchor="middle" font-size="8.5" fill="#bee3f8">Measures short-term solvency</text>
+
+                        <rect x="310" y="45" width="260" height="110" rx="8" fill="#c53030"/>
+                        <text x="440" y="68" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">Solvency / Leverage Ratios</text>
+                        <text x="440" y="88" text-anchor="middle" font-size="9" fill="#fed7d7">Debt-Equity Ratio</text>
+                        <text x="440" y="103" text-anchor="middle" font-size="9" fill="#fed7d7">Debt to Total Assets Ratio</text>
+                        <text x="440" y="118" text-anchor="middle" font-size="9" fill="#fed7d7">Interest Coverage Ratio</text>
+                        <text x="440" y="138" text-anchor="middle" font-size="8.5" fill="#feb2b2">Measures long-term financial risk</text>
+
+                        <rect x="30" y="170" width="260" height="110" rx="8" fill="#2f855a"/>
+                        <text x="160" y="193" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">Profitability Ratios</text>
+                        <text x="160" y="213" text-anchor="middle" font-size="9" fill="#e2e8f0">Gross &amp; Net Profit Ratio</text>
+                        <text x="160" y="228" text-anchor="middle" font-size="9" fill="#e2e8f0">Return on Equity (ROE)</text>
+                        <text x="160" y="243" text-anchor="middle" font-size="9" fill="#e2e8f0">Return on Assets (ROA)</text>
+                        <text x="160" y="263" text-anchor="middle" font-size="8.5" fill="#c6f6d5">Measures overall earning power</text>
+
+                        <rect x="310" y="170" width="260" height="110" rx="8" fill="#b7791f"/>
+                        <text x="440" y="193" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">Activity / Efficiency Ratios</text>
+                        <text x="440" y="213" text-anchor="middle" font-size="9" fill="#fefcbf">Inventory Turnover Ratio</text>
+                        <text x="440" y="228" text-anchor="middle" font-size="9" fill="#fefcbf">Debtors Turnover Ratio</text>
+                        <text x="440" y="243" text-anchor="middle" font-size="9" fill="#fefcbf">Total Asset Turnover Ratio</text>
+                        <text x="440" y="263" text-anchor="middle" font-size="8.5" fill="#fbd38d">Measures how efficiently assets are used</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 2 — The four major families of ratios together give a rounded view of a company's short-term liquidity, long-term solvency, profitability and operational efficiency.</p>
+                </div>
+
+                <p><strong>Worked Example:</strong> The following figures are taken from the financial statements of Vivan Industries Ltd. for the year ended 31 March 2026, and are used throughout this unit:</p>
+                <table class="tutorial-table">
+                    <tr><th>Statement of Profit &amp; Loss</th><th>₹</th><th>Balance Sheet</th><th>₹</th></tr>
+                    <tr><td>Sales (Revenue from Operations)</td><td>10,00,000</td><td>Non-Current (Fixed) Assets</td><td>6,00,000</td></tr>
+                    <tr><td>Cost of Goods Sold (COGS)</td><td>6,00,000</td><td>Current Assets (Inventory 1,00,000; Debtors 1,00,000; Cash 1,00,000)</td><td>3,00,000</td></tr>
+                    <tr><td>Gross Profit</td><td>4,00,000</td><td><strong>Total Assets</strong></td><td><strong>9,00,000</strong></td></tr>
+                    <tr><td>Operating Expenses</td><td>1,50,000</td><td>Shareholders' Equity</td><td>6,00,000</td></tr>
+                    <tr><td>Operating Profit (EBIT)</td><td>2,50,000</td><td>Long-Term Debt</td><td>2,00,000</td></tr>
+                    <tr><td>Interest</td><td>30,000</td><td>Current Liabilities</td><td>1,00,000</td></tr>
+                    <tr><td>Profit Before Tax</td><td>2,20,000</td><td><strong>Total Equity &amp; Liabilities</strong></td><td><strong>9,00,000</strong></td></tr>
+                    <tr><td>Tax</td><td>70,000</td><td></td><td></td></tr>
+                    <tr><td><strong>Net Profit (after tax)</strong></td><td><strong>1,50,000</strong></td><td></td><td></td></tr>
+                </table>
+
+                <h3 id="liquidityratios">1.3 Liquidity Ratios</h3>
+                <ul class="custom-bullets">
+                    <li><strong>Current Ratio</strong> = Current Assets ÷ Current Liabilities = 3,00,000 ÷ 1,00,000 = <strong>3 : 1</strong> — for every ₹1 of current liabilities, the company holds ₹3 of current assets, indicating strong short-term liquidity.</li>
+                    <li><strong>Quick (Acid-Test) Ratio</strong> = (Current Assets − Inventory) ÷ Current Liabilities = (3,00,000 − 1,00,000) ÷ 1,00,000 = <strong>2 : 1</strong> — even excluding the least liquid current asset (inventory), the company can comfortably cover its current liabilities.</li>
+                </ul>
+
+                <h3 id="solvencyratios">1.4 Solvency (Leverage) Ratios</h3>
+                <ul class="custom-bullets">
+                    <li><strong>Debt-Equity Ratio</strong> = Long-Term Debt ÷ Shareholders' Equity = 2,00,000 ÷ 6,00,000 = <strong>0.33 : 1</strong> — a low ratio, showing the company relies mostly on equity rather than borrowed funds.</li>
+                    <li><strong>Debt to Total Assets Ratio</strong> = (Long-Term Debt + Current Liabilities) ÷ Total Assets = 3,00,000 ÷ 9,00,000 = <strong>33.3%</strong> — about a third of total assets are financed by outside liabilities.</li>
+                    <li><strong>Interest Coverage Ratio</strong> = EBIT ÷ Interest = 2,50,000 ÷ 30,000 = <strong>8.3 times</strong> — operating profit is more than eight times the interest obligation, indicating a comfortable margin of safety for lenders.</li>
+                </ul>
+
+                <h3 id="profitabilityratios">1.5 Profitability Ratios</h3>
+                <ul class="custom-bullets">
+                    <li><strong>Gross Profit Ratio</strong> = Gross Profit ÷ Sales × 100 = 4,00,000 ÷ 10,00,000 × 100 = <strong>40%</strong>.</li>
+                    <li><strong>Net Profit Ratio</strong> = Net Profit ÷ Sales × 100 = 1,50,000 ÷ 10,00,000 × 100 = <strong>15%</strong>.</li>
+                    <li><strong>Return on Equity (ROE)</strong> = Net Profit ÷ Shareholders' Equity × 100 = 1,50,000 ÷ 6,00,000 × 100 = <strong>25%</strong>.</li>
+                    <li><strong>Return on Assets (ROA)</strong> = Net Profit ÷ Total Assets × 100 = 1,50,000 ÷ 9,00,000 × 100 = <strong>16.67%</strong>.</li>
+                </ul>
+
+                <h3 id="activityratios">1.6 Activity (Efficiency / Turnover) Ratios</h3>
+                <ul class="custom-bullets">
+                    <li><strong>Inventory Turnover Ratio</strong> = COGS ÷ Average Inventory = 6,00,000 ÷ 1,00,000 = <strong>6 times</strong> (Inventory Holding Period ≈ 365 ÷ 6 ≈ <strong>61 days</strong>).</li>
+                    <li><strong>Debtors Turnover Ratio</strong> = Net Credit Sales ÷ Average Debtors = 8,00,000 ÷ 1,00,000 = <strong>8 times</strong> (Average Collection Period ≈ 365 ÷ 8 ≈ <strong>46 days</strong>).</li>
+                    <li><strong>Total Asset Turnover Ratio</strong> = Sales ÷ Total Assets = 10,00,000 ÷ 9,00,000 = <strong>1.11 times</strong> — every ₹1 invested in total assets generates ₹1.11 of sales.</li>
+                </ul>
+
+                <h2 id="dupont">2. DuPont Analysis</h2>
+                <h3 id="dupontmeaning">2.1 Meaning and Concept</h3>
+                <p class="lead-text">DuPont Analysis, first developed by the DuPont Corporation, breaks down Return on Equity (ROE) — the single most important measure of shareholder return — into three underlying components, revealing exactly which lever (profitability, efficiency, or leverage) is driving a company's ROE, rather than simply reporting the final percentage.</p>
+
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 620 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="DuPont decomposition of return on equity into net profit margin, asset turnover and equity multiplier">
+                        <rect width="620" height="300" fill="#ffffff" rx="14"/>
+                        <text x="310" y="24" text-anchor="middle" font-size="15" font-weight="600" fill="#2d3748">The DuPont Decomposition of ROE</text>
+
+                        <rect x="255" y="45" width="110" height="42" rx="8" fill="#2d3748"/>
+                        <text x="310" y="70" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">ROE</text>
+
+                        <line x1="270" y1="87" x2="140" y2="130" stroke="#a0aec0" stroke-width="1.6"/>
+                        <line x1="310" y1="87" x2="310" y2="130" stroke="#a0aec0" stroke-width="1.6"/>
+                        <line x1="350" y1="87" x2="480" y2="130" stroke="#a0aec0" stroke-width="1.6"/>
+
+                        <rect x="45" y="130" width="190" height="70" rx="8" fill="#2b6cb0"/>
+                        <text x="140" y="153" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">Net Profit Margin</text>
+                        <text x="140" y="170" text-anchor="middle" font-size="8.5" fill="#e2e8f0">Net Profit ÷ Sales</text>
+                        <text x="140" y="185" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff">= 15%</text>
+
+                        <rect x="215" y="130" width="190" height="70" rx="8" fill="#2f855a"/>
+                        <text x="310" y="153" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">Asset Turnover</text>
+                        <text x="310" y="170" text-anchor="middle" font-size="8.5" fill="#e2e8f0">Sales ÷ Total Assets</text>
+                        <text x="310" y="185" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff">= 1.11×</text>
+
+                        <rect x="385" y="130" width="190" height="70" rx="8" fill="#b7791f"/>
+                        <text x="480" y="153" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">Equity Multiplier</text>
+                        <text x="480" y="170" text-anchor="middle" font-size="8.5" fill="#fefcbf">Total Assets ÷ Equity</text>
+                        <text x="480" y="185" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff">= 1.5×</text>
+
+                        <text x="310" y="230" text-anchor="middle" font-size="13" font-weight="700" fill="#2d3748">15% × 1.11 × 1.5 = 25%</text>
+                        <text x="310" y="252" text-anchor="middle" font-size="9.5" fill="#718096">(Profitability) × (Efficiency) × (Leverage) = Return on Equity</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 3 — The same 25% ROE calculated directly in Section 1.5 is now decomposed to show it is driven by a 15% profit margin, assets being turned over 1.11 times, and moderate financial leverage of 1.5×.</p>
+                </div>
+
+                <h3 id="dupontformula">2.2 The Three-Step DuPont Formula</h3>
+                <div class="concept-block">
+                    <strong>Return on Equity (ROE) = Net Profit Margin × Asset Turnover × Equity Multiplier</strong><br><br>
+                    where:<br>
+                    Net Profit Margin = Net Profit ÷ Sales<br>
+                    Asset Turnover = Sales ÷ Total Assets<br>
+                    Equity Multiplier = Total Assets ÷ Shareholders' Equity
+                </div>
+                <p><strong>Worked Example (continuing Vivan Industries Ltd.):</strong> Net Profit Margin = 15% (Section 1.5); Asset Turnover = 1.11× (Section 1.6); Equity Multiplier = Total Assets ÷ Equity = 9,00,000 ÷ 6,00,000 = 1.5×.<br>
+                ROE = 15% × 1.11 × 1.5 = <strong>25%</strong> — exactly matching the ROE calculated directly in Section 1.5, confirming the decomposition.</p>
+
+                <h3 id="dupontinsight">2.3 Why DuPont Analysis is Useful</h3>
+                <p>Two companies can report the identical 25% ROE for entirely different reasons — one through a high profit margin on modest sales volume, another through thin margins on high sales volume with heavy borrowing. DuPont analysis lets a manager or investor see which of the three levers (margin, turnover, or leverage) is really driving returns, and whether that return is being achieved through healthy operating performance or through added financial risk.</p>
+
+                <h3 id="dupontextended">2.4 The Extended (Five-Step) DuPont Model</h3>
+                <p>A more detailed, five-step version further splits Net Profit Margin into the effects of tax burden (Net Profit ÷ Pre-Tax Profit), interest burden (Pre-Tax Profit ÷ EBIT), and operating margin (EBIT ÷ Sales), isolating the precise impact of a company's tax position and interest costs on its overall ROE.</p>
+
+                <h2 id="commonsize">3. Common Size Analysis</h2>
+                <h3 id="commonsizemeaning">3.1 Meaning (Vertical Analysis)</h3>
+                <p class="lead-text">Common size analysis (also called vertical analysis) restates every line item of a financial statement as a percentage of one common base figure — total Sales for the Statement of Profit and Loss, and Total Assets for the Balance Sheet — making it possible to compare companies of very different sizes, or the same company's structure across different years, on a like-for-like basis.</p>
+
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 560 180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Stacked bar showing a common size income statement as percentages of sales">
+                        <rect width="560" height="180" fill="#ffffff" rx="14"/>
+                        <text x="280" y="24" text-anchor="middle" font-size="15" font-weight="600" fill="#2d3748">Common Size Income Statement (% of Sales)</text>
+
+                        <rect x="80" y="55" width="400" height="50" fill="#f7fafc" stroke="#cbd5e0"/>
+                        <rect x="80" y="55" width="240" height="50" fill="#c53030"/>
+                        <text x="200" y="85" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff">COGS — 60%</text>
+                        <rect x="320" y="55" width="60" height="50" fill="#b7791f"/>
+                        <text x="350" y="85" text-anchor="middle" font-size="9" font-weight="600" fill="#fff">Opex 15%</text>
+                        <rect x="380" y="55" width="40" height="50" fill="#805ad5"/>
+                        <text x="400" y="72" text-anchor="middle" font-size="8" font-weight="600" fill="#fff">Int. 3%</text>
+                        <text x="400" y="84" text-anchor="middle" font-size="8" font-weight="600" fill="#fff">+Tax 7%</text>
+                        <rect x="420" y="55" width="60" height="50" fill="#2f855a"/>
+                        <text x="450" y="85" text-anchor="middle" font-size="9" font-weight="600" fill="#fff">Net Profit 15%</text>
+
+                        <text x="280" y="140" text-anchor="middle" font-size="9.5" fill="#718096">Sales are always the 100% base line, so every cost and profit figure is read as a slice of each sales rupee.</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 4 — Of every ₹100 of sales Vivan Industries earns, ₹60 goes to cost of goods sold, ₹15 to operating expenses, ₹10 to interest and tax combined, leaving ₹15 as net profit.</p>
+                </div>
+
+                <h3 id="commonsizeincome">3.2 Common Size Income Statement — Worked Example</h3>
+                <table class="tutorial-table">
+                    <tr><th>Particulars</th><th>Amount (₹)</th><th>% of Sales</th></tr>
+                    <tr><td>Sales</td><td>10,00,000</td><td>100.0%</td></tr>
+                    <tr><td>Less: Cost of Goods Sold</td><td>6,00,000</td><td>60.0%</td></tr>
+                    <tr><td><strong>Gross Profit</strong></td><td><strong>4,00,000</strong></td><td><strong>40.0%</strong></td></tr>
+                    <tr><td>Less: Operating Expenses</td><td>1,50,000</td><td>15.0%</td></tr>
+                    <tr><td><strong>Operating Profit (EBIT)</strong></td><td><strong>2,50,000</strong></td><td><strong>25.0%</strong></td></tr>
+                    <tr><td>Less: Interest</td><td>30,000</td><td>3.0%</td></tr>
+                    <tr><td>Less: Tax</td><td>70,000</td><td>7.0%</td></tr>
+                    <tr><td><strong>Net Profit</strong></td><td><strong>1,50,000</strong></td><td><strong>15.0%</strong></td></tr>
+                </table>
+
+                <h3 id="commonsizebalance">3.3 Common Size Balance Sheet — Worked Example</h3>
+                <table class="tutorial-table">
+                    <tr><th>Particulars</th><th>Amount (₹)</th><th>% of Total Assets</th></tr>
+                    <tr><td>Non-Current Assets</td><td>6,00,000</td><td>66.7%</td></tr>
+                    <tr><td>Current Assets</td><td>3,00,000</td><td>33.3%</td></tr>
+                    <tr><td><strong>Total Assets</strong></td><td><strong>9,00,000</strong></td><td><strong>100.0%</strong></td></tr>
+                    <tr><td>Shareholders' Equity</td><td>6,00,000</td><td>66.7%</td></tr>
+                    <tr><td>Long-Term Debt</td><td>2,00,000</td><td>22.2%</td></tr>
+                    <tr><td>Current Liabilities</td><td>1,00,000</td><td>11.1%</td></tr>
+                    <tr><td><strong>Total Equity &amp; Liabilities</strong></td><td><strong>9,00,000</strong></td><td><strong>100.0%</strong></td></tr>
+                </table>
+                <p>A common size Balance Sheet immediately reveals the company's capital structure and asset mix in relative terms — here, two-thirds of assets are non-current (fixed) and about two-thirds of financing comes from shareholders' equity — regardless of the company's absolute size.</p>
+
+                <h2 id="trendanalysis">4. Trend Analysis</h2>
+                <h3 id="trendmeaning">4.1 Meaning (Horizontal Analysis)</h3>
+                <p class="lead-text">Trend analysis (also called horizontal analysis) studies the direction of change in financial statement items over a series of accounting periods, by expressing each year's figure as a percentage of the figure in a selected base year (which is set to 100). This reveals growth or decline trends that a single year's figures cannot show.</p>
+
+                <h3 id="trendsteps">4.2 Steps in Preparing a Trend Analysis</h3>
+                <ol class="custom-bullets">
+                    <li>Select an appropriate base year (usually the earliest year in the series, or a "normal" representative year) and set its value to 100.</li>
+                    <li>Express every subsequent year's figure for the same item as a percentage of the base year: Trend % = (Current Year Figure ÷ Base Year Figure) × 100.</li>
+                    <li>Compute trend percentages for all relevant items (e.g., Sales, Net Profit, Total Assets) across all the years being studied.</li>
+                    <li>Analyze the resulting trend percentages to identify the direction, consistency and rate of growth or decline.</li>
+                </ol>
+
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 560 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Line chart showing the trend of sales indexed to a base year of 100 over five years">
+                        <rect width="560" height="320" fill="#ffffff" rx="14"/>
+                        <text x="280" y="24" text-anchor="middle" font-size="15" font-weight="600" fill="#2d3748">Trend Analysis — Sales Index (Base Year 2022 = 100)</text>
+
+                        <line x1="60" y1="270" x2="520" y2="270" stroke="#2d3748" stroke-width="1.6"/>
+                        <line x1="60" y1="270" x2="60" y2="50" stroke="#2d3748" stroke-width="1.6"/>
+                        <text x="290" y="295" text-anchor="middle" font-size="10" fill="#4a5568">Year</text>
+                        <text x="25" y="160" text-anchor="middle" font-size="10" fill="#4a5568" transform="rotate(-90 25 160)">Trend Index</text>
+
+                        <text x="60" y="285" text-anchor="middle" font-size="8.5" fill="#718096">2022</text>
+                        <text x="152" y="285" text-anchor="middle" font-size="8.5" fill="#718096">2023</text>
+                        <text x="244" y="285" text-anchor="middle" font-size="8.5" fill="#718096">2024</text>
+                        <text x="336" y="285" text-anchor="middle" font-size="8.5" fill="#718096">2025</text>
+                        <text x="428" y="285" text-anchor="middle" font-size="8.5" fill="#718096">2026</text>
+
+                        <polyline points="60,240 152,208 244,182 336,156 428,102" fill="none" stroke="#2b6cb0" stroke-width="2.6"/>
+                        <circle cx="60" cy="240" r="4" fill="#2b6cb0"/>
+                        <circle cx="152" cy="208" r="4" fill="#2b6cb0"/>
+                        <circle cx="244" cy="182" r="4" fill="#2b6cb0"/>
+                        <circle cx="336" cy="156" r="4" fill="#2b6cb0"/>
+                        <circle cx="428" cy="102" r="4" fill="#2b6cb0"/>
+
+                        <text x="60" y="228" text-anchor="middle" font-size="9" font-weight="600" fill="#2c5282">100</text>
+                        <text x="152" y="196" text-anchor="middle" font-size="9" font-weight="600" fill="#2c5282">120</text>
+                        <text x="244" y="170" text-anchor="middle" font-size="9" font-weight="600" fill="#2c5282">135</text>
+                        <text x="336" y="144" text-anchor="middle" font-size="9" font-weight="600" fill="#2c5282">150</text>
+                        <text x="428" y="90" text-anchor="middle" font-size="9" font-weight="600" fill="#2c5282">167</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 5 — Expressed as an index, Vivan Industries' sales have grown steadily from a base of 100 in 2022 to 167 in 2026 — a 67% increase over five years.</p>
+                </div>
+
+                <h3 id="trendworked">4.3 Worked Example</h3>
+                <table class="tutorial-table">
+                    <tr><th>Year</th><th>Sales (₹)</th><th>Trend % (2022 = 100)</th></tr>
+                    <tr><td>2022 (Base Year)</td><td>6,00,000</td><td>100.0%</td></tr>
+                    <tr><td>2023</td><td>7,20,000</td><td>120.0%</td></tr>
+                    <tr><td>2024</td><td>8,10,000</td><td>135.0%</td></tr>
+                    <tr><td>2025</td><td>9,00,000</td><td>150.0%</td></tr>
+                    <tr><td>2026</td><td>10,00,000</td><td>166.7%</td></tr>
+                </table>
+                <p><em>Calculation check (2026):</em> Trend % = (10,00,000 ÷ 6,00,000) × 100 = <strong>166.7%</strong>, meaning sales have grown by 66.7% since the 2022 base year. Trend analysis would typically be prepared this way for several key items (Sales, Net Profit, Total Assets) simultaneously, so that a manager can see, for example, whether profit is growing faster or slower than sales — a sign of improving or deteriorating cost control.</p>
+
+                <h2 id="review">Review Questions</h2>
+                <h3>Short Answer Type</h3>
+                <ol class="custom-bullets">
+                    <li>What is financial statement analysis? State any two of its objectives.</li>
+                    <li>Name the four broad classifications of accounting ratios.</li>
+                    <li>Calculate the Current Ratio if Current Assets are ₹4,00,000 and Current Liabilities are ₹2,00,000.</li>
+                    <li>State the three-step DuPont formula for Return on Equity.</li>
+                    <li>What is the base figure used in a common size Income Statement? And in a common size Balance Sheet?</li>
+                    <li>Distinguish between common size analysis and trend analysis.</li>
+                    <li>What is meant by "base year" in trend analysis?</li>
+                </ol>
+                <h3>Long Answer / Essay Type</h3>
+                <ol class="custom-bullets">
+                    <li>Explain the meaning, objectives, tools and limitations of financial statement analysis.</li>
+                    <li>Discuss the classification of accounting ratios, giving the formula and significance of at least two ratios from each category.</li>
+                    <li>Explain DuPont Analysis and show, with a numerical example, how Return on Equity can be decomposed into its three components.</li>
+                    <li>What is common size analysis? Prepare a common size Income Statement and Balance Sheet from given figures, and interpret the results.</li>
+                    <li>What is trend analysis? Explain the steps involved in preparing it, with a suitable numerical illustration.</li>
+                    <li>Using the financial data of a hypothetical company, calculate its key liquidity, solvency, profitability and activity ratios, and comment on its financial health.</li>
+                </ol>
+
+                <h2 id="summary">Summary</h2>
+                <p>This unit covered four complementary tools of financial statement analysis. Ratio analysis expresses relationships between financial statement items as liquidity ratios (Current, Quick), solvency ratios (Debt-Equity, Interest Coverage), profitability ratios (Gross Profit, Net Profit, ROE, ROA) and activity ratios (Inventory Turnover, Debtors Turnover, Total Asset Turnover), each illustrated with figures from Vivan Industries Ltd. DuPont Analysis decomposed the company's 25% Return on Equity into Net Profit Margin (15%) × Asset Turnover (1.11×) × Equity Multiplier (1.5×), showing which specific driver — profitability, efficiency, or leverage — is generating the overall return. Common size analysis (vertical analysis) restated every item of the Income Statement as a percentage of Sales and every item of the Balance Sheet as a percentage of Total Assets, enabling comparison regardless of company size. Finally, trend analysis (horizontal analysis) indexed a company's Sales figures to a base year of 100, revealing a steady growth trend to 166.7% over five years — illustrating how the same underlying financial statements can be examined from four distinct, mutually reinforcing angles to build a complete picture of a company's financial health.</p>
+
+            </div>
+
+            <div class="completion-section">
+                <button id="markCompleteBtn" class="complete-btn">✔️ Mark as Complete</button>
+            </div>
+
+            <div class="pagination">
+                <a href="s1-acc-u3.html" style="text-decoration: none;"><button class="prev-btn hover-effect">❮ Unit 3: Corporate Financial Reporting</button></a>
+                <a href="s1-acc-u5.html" style="text-decoration: none;"><button class="next-btn hover-effect">Unit 5: Cost Preparation & Accounting ❯</button></a>
+            </div>
+        </main>
+
+        <aside class="right-sidebar" id="rightSidebar">
+            <div class="widget sticky-widget premium-card">
+                <h3>Unit Contents</h3>
+                <ul class="toc-list">
+                    <li><a href="#intro">0. Introduction to FSA</a></li>
+                    <li><a href="#ratioanalysis">1. Ratio Analysis</a></li>
+                    <li><a href="#dupont">2. DuPont Analysis</a></li>
+                    <li><a href="#commonsize">3. Common Size Analysis</a></li>
+                    <li><a href="#trendanalysis">4. Trend Analysis</a></li>
+                    <li><a href="#review">Review Questions</a></li>
+                    <li><a href="#summary">Summary</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
