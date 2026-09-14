@@ -18,69 +18,10 @@
     
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    
     <style>
-        .diagram-wrap { margin: 35px 0; text-align: center; }
-        .diagram-wrap svg { max-width: 100%; height: auto; background: #ffffff; border-radius: 14px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: all 0.3s ease; border: 1px solid var(--border-color); }
-        .diagram-caption { font-size: 0.85rem; color: var(--text-light); margin-top: 12px; font-style: italic; }
-
-        /* Dark Mode Transitions for SVGs */
-        body.dark-mode .diagram-wrap svg { background: #1e293b; box-shadow: 0 4px 15px rgba(0,0,0,0.4); border-color: #334155; }
-        .svg-bg { fill: #ffffff; transition: fill 0.3s ease; }
-        body.dark-mode .svg-bg { fill: #1e293b; }
-        
-        .svg-text { fill: #1e293b; transition: fill 0.3s ease; }
-        body.dark-mode .svg-text { fill: #f8fafc; }
-        
-        .svg-text-muted { fill: #64748b; transition: fill 0.3s ease; }
-        body.dark-mode .svg-text-muted { fill: #94a3b8; }
-        
-        .svg-line { stroke: #94a3b8; transition: stroke 0.3s ease; }
-        body.dark-mode .svg-line { stroke: #475569; }
-        
-        .svg-marker { fill: #94a3b8; transition: fill 0.3s ease; }
-        body.dark-mode .svg-marker { fill: #475569; }
-
-        /* Specific Color Adaptations for Elements */
-        .svg-box-blue { fill: #eff6ff; stroke: #3b82f6; transition: all 0.3s ease; }
-        .svg-text-blue { fill: #1d4ed8; transition: fill 0.3s ease; }
-        body.dark-mode .svg-box-blue { fill: rgba(59, 130, 246, 0.15); stroke: #3b82f6; }
-        body.dark-mode .svg-text-blue { fill: #60a5fa; }
-
-        .svg-box-yellow { fill: #fffbeb; stroke: #f59e0b; transition: all 0.3s ease; }
-        .svg-text-yellow { fill: #b45309; transition: fill 0.3s ease; }
-        body.dark-mode .svg-box-yellow { fill: rgba(245, 158, 11, 0.15); stroke: #f59e0b; }
-        body.dark-mode .svg-text-yellow { fill: #fbbf24; }
-
-        .svg-box-green { fill: #f0fdf4; stroke: #10b981; transition: all 0.3s ease; }
-        .svg-text-green { fill: #047857; transition: fill 0.3s ease; }
-        body.dark-mode .svg-box-green { fill: rgba(16, 185, 129, 0.15); stroke: #10b981; }
-        body.dark-mode .svg-text-green { fill: #34d399; }
-
-        .svg-box-red { fill: #fef2f2; stroke: #ef4444; transition: all 0.3s ease; }
-        .svg-text-red { fill: #b91c1c; transition: fill 0.3s ease; }
-        body.dark-mode .svg-box-red { fill: rgba(239, 68, 68, 0.15); stroke: #ef4444; }
-        body.dark-mode .svg-text-red { fill: #f87171; }
-        
-        .svg-box-purple { fill: #faf5ff; stroke: #a855f7; transition: all 0.3s ease; }
-        .svg-text-purple { fill: #7e22ce; transition: fill 0.3s ease; }
-        body.dark-mode .svg-box-purple { fill: rgba(168, 85, 247, 0.15); stroke: #a855f7; }
-        body.dark-mode .svg-text-purple { fill: #c084fc; }
-        
-        .svg-node-dark { fill: #334155; transition: fill 0.3s ease; }
-        body.dark-mode .svg-node-dark { fill: #475569; }
-        
-        .svg-solid-blue { fill: #2b6cb0; transition: fill 0.3s ease; }
-        body.dark-mode .svg-solid-blue { fill: #3b82f6; }
-        
-        .svg-solid-green { fill: #2f855a; transition: fill 0.3s ease; }
-        body.dark-mode .svg-solid-green { fill: #10b981; }
-        
-        .svg-solid-yellow { fill: #b7791f; transition: fill 0.3s ease; }
-        body.dark-mode .svg-solid-yellow { fill: #f59e0b; }
-        
-        .svg-solid-red { fill: #c53030; transition: fill 0.3s ease; }
-        body.dark-mode .svg-solid-red { fill: #ef4444; }
+        .diagram-wrap { margin: 28px 0; text-align: center; }
+        .diagram-wrap svg { max-width: 100%; height: auto; background: #ffffff; border-radius: 14px; box-shadow: 0 1px 8px rgba(0,0,0,0.10); }
+        .diagram-caption { font-size: 0.85rem; color: #666; margin-top: 10px; font-style: italic; }
     </style>
 </head>
 <body data-current-topic="s1-mgt-u5">
@@ -99,16 +40,19 @@
     </header>
 
     <div class="main-wrapper" id="mainWrapper">
+
+        <!-- JavaScript will automatically generate and inject the entire 4-Semester Sidebar here -->
         <aside class="sidebar" id="sidebar-container"></aside>
 
+        <!-- Center Content: Tutorial -->
         <main class="content premium-card" id="mainContent">
             <div class="bread-crumbs">Semester-I / Management Principles and Application / Unit 5</div>
 
             <div class="article-header-flex">
                 <div>
-                    <h1>Controlling and Modern Analytical Techniques</h1>
+                    <h1>Controlling: Control Process, Planning-Control Linkage, Types of Control, Techniques, Business Analytics and Benchmarking</h1>
                     <div class="article-meta">
-                        <span>4 Credits | Read Time: 80 mins | Comprehensive MBA Edition</span>
+                        <span>Read Time: 50 mins</span>
                     </div>
                 </div>
                 <div class="action-buttons">
@@ -121,333 +65,348 @@
                 <div class="concept-block">
                     <strong>Topics Covered in This Unit:</strong>
                     <ul class="custom-bullets" style="margin-top: 10px;">
-                        <li>Nature, Purpose, and Importance of Organisational Control</li>
-                        <li>Areas of Control (Finance, Production, HR, Marketing)</li>
-                        <li>Organisational Control vs. Operation Control</li>
-                        <li>The Planning-Control Linkage (Siamese Twins)</li>
-                        <li>The 4-Step Control Process & Management by Exception (MBE)</li>
-                        <li>Types of Control: Feedforward, Concurrent, and Feedback</li>
-                        <li>Characteristics of an Effective Control System</li>
-                        <li>Techniques of Control (Traditional and Modern)</li>
-                        <li>Benchmarking and Business Analytics</li>
+                        <li>Control Process</li>
+                        <li>Planning-Control Linkage</li>
+                        <li>Types of Control</li>
+                        <li>Effective Control System</li>
+                        <li>Techniques of Control</li>
+                        <li>Business Analytics</li>
+                        <li>Benchmarking</li>
+                        <li>Feed Forward vs. Feedback Control</li>
                     </ul>
                 </div>
 
-                <h2 id="nature">1. Nature, Purpose, and Importance of Control</h2>
-                
-                <h3 id="concept">1.1 Concept and Nature of Control</h3>
-                <p class="lead-text">Controlling is the final, indispensable function of management. It is the process of monitoring activities to ensure they are being accomplished as planned and correcting any significant deviations.</p>
-                <p>A brilliant strategy and a perfectly designed organizational structure mean nothing if management does not measure whether the organization is actually hitting its targets. Controlling acts as the corporate "thermostat" that keeps operations aligned with strategic goals.</p>
-                
-                <p><strong>Nature (Characteristics) of Control:</strong></p>
-                <ul class="custom-bullets">
-                    <li><strong>Pervasive Function:</strong> Every manager, from the CEO to the shop-floor supervisor, performs control functions within their respective jurisdiction.</li>
-                    <li><strong>Continuous Process:</strong> Control is not a one-time post-mortem. It is an ongoing cycle of measurement, comparison, and correction.</li>
-                    <li><strong>Forward-Looking (but Backward-Glancing):</strong> Control inherently looks at past data (feedback), but its primary objective is to correct future actions. You cannot change the past, only use it to guide the future.</li>
-                    <li><strong>Dynamic:</strong> An effective control system adapts to changing environments. If a pandemic hits, the control system must allow for revised, realistic targets.</li>
-                </ul>
-
-                <h3 id="purpose">1.2 Purpose and Importance of Control</h3>
-                <p>Why do organizations invest millions in enterprise resource planning (ERP) systems and dashboards? Because unchecked operations naturally drift into chaos (entropy).</p>
-                <ul class="custom-bullets">
-                    <li><strong>Judging Accuracy of Standards:</strong> A good control system helps management verify if the standards set during the planning phase are still accurate or if they need revision due to environmental shifts.</li>
-                    <li><strong>Minimizing Errors and Waste:</strong> Continuous monitoring catches defects on an assembly line or budget overruns before they compound into massive losses.</li>
-                    <li><strong>Facilitating Coordination:</strong> Control ensures that various departments (which often have conflicting goals) stay synchronized. (e.g., Ensuring Production doesn't manufacture more than Sales can sell).</li>
-                    <li><strong>Employee Motivation:</strong> When employees know exactly what standards they are being judged against and how performance is measured, it creates psychological safety and clarifies expectations.</li>
-                    <li><strong>Ensuring Order and Discipline:</strong> Strict control systems prevent fraud, theft, and unauthorized behavior, ensuring compliance with corporate policies.</li>
-                </ul>
-
-                <h2 id="areas">2. Areas of Control and Organizational Levels</h2>
-
-                <h3 id="control-areas">2.1 Key Areas of Control</h3>
-                <p>Control is exercised over every functional domain of an enterprise. The primary areas include:</p>
-                <table class="tutorial-table">
-                    <tr>
-                        <th style="width: 25%;">Area</th>
-                        <th>Control Focus & Metrics</th>
-                    </tr>
-                    <tr>
-                        <td><strong>Financial Control</strong></td>
-                        <td>The most critical area. Focuses on ensuring adequate liquidity, profitability, and proper utilization of capital. Metrics include Cash Flow, ROI, Budget Variances, and Debt-to-Equity ratios.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Production/Operations Control</strong></td>
-                        <td>Focuses on efficiency on the factory floor or service delivery. Metrics include Quality defect rates, Machine downtime, Inventory turnover, and Cycle times.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Human Resource Control</strong></td>
-                        <td>Focuses on employee productivity, compliance, and morale. Metrics include Absenteeism rates, Employee turnover, Training ROI, and Performance appraisal scores.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Marketing/Sales Control</strong></td>
-                        <td>Focuses on revenue generation and market penetration. Metrics include Market share, Customer Acquisition Cost (CAC), Sales quotas, and Customer retention rates.</td>
-                    </tr>
-                </table>
-
-                <h3 id="org-vs-op">2.2 Organisational Control vs. Operation Control</h3>
-                <p>Just as planning is divided into strategic and operational levels, controlling must be tailored to the hierarchical level of the organization.</p>
-                
+                <h2 id="intro">0. Introduction to Controlling</h2>
+                <h3 id="meaning">0.1 Meaning and Definition of Controlling</h3>
+                <p class="lead-text">Controlling is the final function in the management process — the process of measuring actual performance against planned standards, identifying deviations, analyzing their causes, and taking corrective action so that organizational objectives are achieved as planned. Controlling closes the loop that planning opens: without control, there is no way of knowing whether a plan actually worked.</p>
                 <div class="concept-block">
-                    <strong>Organisational (Strategic) Control:</strong><br>
-                    Exercised by Top Management (CEO, Board of Directors). It is broad, long-term, and focuses on the holistic performance of the entire enterprise. It questions whether the fundamental strategy is working. Are we in the right markets? Is our overall Return on Investment (ROI) acceptable? Tools used here include the <strong>Balanced Scorecard</strong> and high-level financial audits.<br><br>
-                    <strong>Operational (Task) Control:</strong><br>
-                    Exercised by Lower and Middle Management (Supervisors, Plant Managers). It is narrow, short-term (daily/weekly), and highly specific. It focuses on executing specific tasks efficiently. Tools used here include daily production schedules, quality control charts, and real-time machine sensors.
+                    <button class="copy-btn" onclick="copyText('def-text', this)">Copy</button>
+                    <div id="def-text">
+                        <strong>Koontz and O'Donnell:</strong> Controlling is the measurement and correction of the performance of activities of subordinates in order to make sure that enterprise objectives and the plans devised to attain them are being accomplished.<br><br>
+                        <strong>Henri Fayol:</strong> Control consists of verifying whether everything occurs in conformity with the plan adopted, the instructions issued, and the principles established.<br><br>
+                        <strong>E.F.L. Brech:</strong> Control is checking current performance against predetermined standards contained in the plans, with a view to ensuring adequate progress and satisfactory performance.
+                    </div>
                 </div>
 
-                <h2 id="linkage">3. The Planning-Control Linkage (Siamese Twins)</h2>
-                <p>Harold Koontz famously referred to Planning and Controlling as the <strong>"Siamese Twins of Management."</strong> They are inseparable.</p>
+                <h3 id="nature">0.2 Nature and Importance of Controlling</h3>
                 <ul class="custom-bullets">
-                    <li><strong>Planning without Controlling is useless:</strong> A plan is just a wish until it is enforced. Without control, managers have no idea if their plans are succeeding.</li>
-                    <li><strong>Controlling without Planning is impossible:</strong> Control requires a benchmark (a standard) to measure against. These standards are created during planning. You cannot measure a deviation if you don't know the target.</li>
+                    <li><strong>Goal-oriented</strong> — control has meaning only in relation to the standards derived from the organization's plans and objectives.</li>
+                    <li><strong>Forward-looking as well as backward-looking</strong> — control is most useful when it prevents future deviations, not merely records past ones.</li>
+                    <li><strong>Continuous process</strong> — control is exercised at every stage, not just at the end of an activity.</li>
+                    <li><strong>Pervasive</strong> — every manager, at every level, performs some degree of control.</li>
+                    <li>Ensures accomplishment of organizational objectives by keeping performance on track.</li>
+                    <li>Facilitates judicious use of resources by promptly highlighting waste or inefficiency.</li>
+                    <li>Improves employee motivation by clarifying what is expected and how performance will be judged.</li>
+                    <li>Helps cope with uncertainty and change by continually monitoring the environment.</li>
                 </ul>
 
+                <h2 id="process">1. Control Process</h2>
+                <p class="lead-text">Controlling is carried out through a logical, sequential process that applies to virtually any activity, from a factory's production line to a firm's overall financial performance.</p>
+
                 <div class="diagram-wrap">
-                    <svg viewBox="0 0 600 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Planning and Control cyclical linkage diagram">
+                    <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The four steps of the control process shown as a continuous cycle">
+                        <rect width="600" height="400" fill="#ffffff" rx="14"/>
                         <defs>
-                            <marker id="arrTwin" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-                                <path d="M0,0L10,5L0,10z" class="svg-marker"/>
+                            <marker id="arrHeadC" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                                <path d="M0,0L10,5L0,10z" fill="#4a5568"/>
+                            </marker>
+                            <marker id="arrHeadDashC" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                                <path d="M0,0L10,5L0,10z" fill="#a0aec0"/>
                             </marker>
                         </defs>
-                        <rect width="600" height="220" rx="14" class="svg-bg"/>
-                        
-                        <rect x="80" y="80" width="120" height="60" rx="8" class="svg-solid-blue"/>
-                        <text x="140" y="108" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">Planning</text>
-                        <text x="140" y="125" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.8)">(Sets Standards)</text>
+                        <text x="300" y="26" text-anchor="middle" font-size="15" font-weight="600" fill="#2d3748">The Control Process</text>
 
-                        <rect x="400" y="80" width="120" height="60" rx="8" class="svg-solid-red"/>
-                        <text x="460" y="108" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">Controlling</text>
-                        <text x="460" y="125" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.8)">(Measures Results)</text>
+                        <line x1="368" y1="93" x2="432" y2="147" stroke="#4a5568" stroke-width="2.5" marker-end="url(#arrHeadC)"/>
+                        <line x1="432" y1="253" x2="368" y2="307" stroke="#4a5568" stroke-width="2.5" marker-end="url(#arrHeadC)"/>
+                        <line x1="232" y1="307" x2="168" y2="253" stroke="#4a5568" stroke-width="2.5" marker-end="url(#arrHeadC)"/>
+                        <path d="M168,147 Q120,60 232,93" fill="none" stroke="#a0aec0" stroke-width="2" stroke-dasharray="5,4" marker-end="url(#arrHeadDashC)"/>
+                        <text x="150" y="70" text-anchor="middle" font-size="10" fill="#a0aec0">standards revised next cycle</text>
 
-                        <!-- Top Arrow -->
-                        <path d="M 140 80 Q 300 10 460 80" fill="none" stroke-width="2.5" marker-end="url(#arrTwin)" class="svg-line"/>
-                        <text x="300" y="35" text-anchor="middle" font-size="11" font-weight="600" class="svg-text">Provides targets &amp; benchmarks</text>
+                        <circle cx="300" cy="70" r="60" fill="#2b6cb0"/>
+                        <text x="300" y="65" text-anchor="middle" font-size="12.5" font-weight="600" fill="#fff">1. Establish</text>
+                        <text x="300" y="80" text-anchor="middle" font-size="12.5" font-weight="600" fill="#fff">Standards</text>
 
-                        <!-- Bottom Arrow -->
-                        <path d="M 460 140 Q 300 210 140 140" fill="none" stroke-width="2.5" marker-end="url(#arrTwin)" class="svg-line"/>
-                        <text x="300" y="195" text-anchor="middle" font-size="11" font-weight="600" class="svg-text">Provides feedback for future plans</text>
+                        <circle cx="470" cy="200" r="60" fill="#2f855a"/>
+                        <text x="470" y="195" text-anchor="middle" font-size="12.5" font-weight="600" fill="#fff">2. Measure</text>
+                        <text x="470" y="210" text-anchor="middle" font-size="12.5" font-weight="600" fill="#fff">Performance</text>
+
+                        <circle cx="300" cy="330" r="60" fill="#b7791f"/>
+                        <text x="300" y="320" text-anchor="middle" font-size="12.5" font-weight="600" fill="#fff">3. Compare with</text>
+                        <text x="300" y="335" text-anchor="middle" font-size="12.5" font-weight="600" fill="#fff">Standards &amp; Find</text>
+                        <text x="300" y="350" text-anchor="middle" font-size="12.5" font-weight="600" fill="#fff">Deviations</text>
+
+                        <circle cx="130" cy="200" r="60" fill="#c53030"/>
+                        <text x="130" y="195" text-anchor="middle" font-size="12.5" font-weight="600" fill="#fff">4. Take</text>
+                        <text x="130" y="210" text-anchor="middle" font-size="12.5" font-weight="600" fill="#fff">Corrective Action</text>
                     </svg>
-                    <p class="diagram-caption">Fig. 1 — The Siamese Twins: Planning looks ahead, while Controlling looks back to adjust future planning.</p>
+                    <p class="diagram-caption">Fig. 1 — Control is a repeating cycle: the corrective action taken (or the standards themselves) may be revised before the next round of measurement begins.</p>
                 </div>
 
-                <h2 id="process">4. The Control Process</h2>
-                <p>Regardless of what is being controlled (finances, operations, or HR), the fundamental process involves four rigorous steps:</p>
+                <h3 id="processsteps">1.1 The Four Steps Explained</h3>
+                <ul class="custom-bullets">
+                    <li><strong>Establishing Standards</strong> — deriving criteria of performance from the organization's plans and objectives; standards may be quantitative (e.g., cost per unit, sales targets) or qualitative (e.g., customer satisfaction).</li>
+                    <li><strong>Measuring Performance</strong> — assessing actual performance, ideally in the same units as the standard, so that a meaningful comparison can be made.</li>
+                    <li><strong>Comparing Performance with Standards and Identifying Deviations</strong> — determining the extent to which actual performance meets, exceeds, or falls short of the standard, and analyzing the significance and cause of any deviation.</li>
+                    <li><strong>Taking Corrective Action</strong> — where deviations are significant, deciding what remedial steps to take: this could mean changing the way an activity is being performed, or, if the standard itself was unrealistic, revising the standard.</li>
+                </ul>
+
+                <h2 id="linkage">2. Planning-Control Linkage</h2>
+                <p class="lead-text">Planning and controlling are often described as the "Siamese twins" of management — inseparable and mutually dependent. Planning provides the standards against which control measures performance, while control provides the feedback that tells managers whether their plans are working, information which then feeds into the next round of planning.</p>
 
                 <div class="diagram-wrap">
-                    <svg viewBox="0 0 700 180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="4-Step Control Process Flowchart">
-                        <defs>
-                            <marker id="arrProcess" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-                                <path d="M0,0L10,5L0,10z" class="svg-marker"/>
-                            </marker>
-                        </defs>
-                        <rect width="700" height="180" rx="14" class="svg-bg"/>
-                        
-                        <!-- Nodes -->
-                        <rect x="20" y="60" width="130" height="60" rx="6" class="svg-box-blue"/>
-                        <text x="85" y="88" text-anchor="middle" font-size="12" font-weight="600" class="svg-text-blue">1. Establish</text>
-                        <text x="85" y="105" text-anchor="middle" font-size="12" font-weight="600" class="svg-text-blue">Standards</text>
+                    <svg viewBox="0 0 560 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagram showing the two-way linkage between planning and control">
+                        <rect width="560" height="260" fill="#ffffff" rx="14"/>
+                        <text x="280" y="24" text-anchor="middle" font-size="15" font-weight="600" fill="#2d3748">The Planning–Control Linkage</text>
 
-                        <rect x="190" y="60" width="130" height="60" rx="6" class="svg-box-yellow"/>
-                        <text x="255" y="88" text-anchor="middle" font-size="12" font-weight="600" class="svg-text-yellow">2. Measure</text>
-                        <text x="255" y="105" text-anchor="middle" font-size="12" font-weight="600" class="svg-text-yellow">Performance</text>
+                        <rect x="60" y="80" width="180" height="80" rx="10" fill="#2b6cb0"/>
+                        <text x="150" y="115" text-anchor="middle" font-size="14" font-weight="600" fill="#fff">PLANNING</text>
+                        <text x="150" y="135" text-anchor="middle" font-size="10" fill="#e2e8f0">Sets goals &amp; standards</text>
 
-                        <rect x="360" y="60" width="130" height="60" rx="6" class="svg-box-purple"/>
-                        <text x="425" y="88" text-anchor="middle" font-size="12" font-weight="600" class="svg-text-purple">3. Compare &amp;</text>
-                        <text x="425" y="105" text-anchor="middle" font-size="12" font-weight="600" class="svg-text-purple">Find Deviations</text>
+                        <rect x="320" y="80" width="180" height="80" rx="10" fill="#c53030"/>
+                        <text x="410" y="115" text-anchor="middle" font-size="14" font-weight="600" fill="#fff">CONTROLLING</text>
+                        <text x="410" y="135" text-anchor="middle" font-size="10" fill="#fed7d7">Measures against standards</text>
 
-                        <rect x="530" y="60" width="130" height="60" rx="6" class="svg-solid-green"/>
-                        <text x="595" y="88" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">4. Take</text>
-                        <text x="595" y="105" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">Corrective Action</text>
+                        <line x1="240" y1="105" x2="320" y2="105" stroke="#4a5568" stroke-width="2.2" marker-end="url(#arrHeadC)"/>
+                        <text x="280" y="98" text-anchor="middle" font-size="9.5" fill="#4a5568">provides standards</text>
 
-                        <!-- Arrows -->
-                        <line x1="150" y1="90" x2="180" y2="90" stroke-width="2" marker-end="url(#arrProcess)" class="svg-line"/>
-                        <line x1="320" y1="90" x2="350" y2="90" stroke-width="2" marker-end="url(#arrProcess)" class="svg-line"/>
-                        <line x1="490" y1="90" x2="520" y2="90" stroke-width="2" marker-end="url(#arrProcess)" class="svg-line"/>
-                        
-                        <!-- Feedback loop -->
-                        <path d="M 595 120 L 595 150 L 85 150 L 85 120" fill="none" stroke-width="2" stroke-dasharray="4,4" marker-end="url(#arrProcess)" class="svg-line"/>
-                        <text x="340" y="145" text-anchor="middle" font-size="10" class="svg-text-muted">Feedback to adjust future standards</text>
+                        <line x1="320" y1="150" x2="240" y2="150" stroke="#4a5568" stroke-width="2.2" marker-end="url(#arrHeadC)"/>
+                        <text x="280" y="168" text-anchor="middle" font-size="9.5" fill="#4a5568">provides feedback</text>
+
+                        <text x="280" y="215" text-anchor="middle" font-size="10.5" fill="#718096">Without plans, control has no standard to measure against;</text>
+                        <text x="280" y="232" text-anchor="middle" font-size="10.5" fill="#718096">without control, planning has no way of knowing what worked.</text>
                     </svg>
+                    <p class="diagram-caption">Fig. 2 — Planning and controlling are two sides of the same coin: each is meaningless without the other.</p>
                 </div>
 
-                <ol class="custom-bullets" style="list-style-type: decimal; padding-left: 20px;">
-                    <li><strong>Establishing Standards (The Baseline):</strong> Standards are the criteria against which performance is measured. They can be <em>Quantitative</em> (e.g., 500 units per shift, 10% ROI) or <em>Qualitative</em> (e.g., improving brand reputation). MBA managers prefer quantitative standards because they are verifiable.</li>
-                    
-                    <li><strong>Measuring Actual Performance:</strong> The gathering of reliable, objective data. Techniques include personal observation, statistical sampling, and automated digital dashboards (ERP systems).</li>
-                    
-                    <li><strong>Comparing Performance with Standards:</strong> Determining the variance between what was planned and what actually happened.
-                        <div class="concept-block" style="background: rgba(245, 158, 11, 0.05); border-left-color: #f59e0b;">
-                            <strong>Management by Exception (MBE):</strong><br>
-                            A core MBA principle. Managers cannot look at every single data point; attempting to do so causes "analysis paralysis." MBE dictates that managers should only be alerted to <em>significant, exceptional deviations</em> from the standard. <br><br>
-                            <em>Example:</em> If a budget allows a 2% variance, and the actual variance is 1.5%, the manager ignores it. If the variance jumps to 8%, it flags an "exception" requiring immediate executive attention.
-                        </div>
-                    </li>
-                    
-                    <li><strong>Taking Corrective Action:</strong> If the deviation is unacceptable, action must be taken. This takes two forms:
-                        <ul style="list-style-type: circle; padding-left: 20px; margin-top: 5px; margin-bottom: 5px;">
-                            <li><em>Immediate Corrective Action:</em> Putting out the fire right now (e.g., stopping a defective assembly line immediately and recalibrating the machine).</li>
-                            <li><em>Basic Corrective Action:</em> Finding the root cause to ensure it never happens again (e.g., realizing the machine keeps breaking because of cheap raw materials, and changing the supplier).</li>
-                        </ul>
-                        <em>Note: Sometimes the action required is revising an unrealistic standard downward.</em>
-                    </li>
-                </ol>
-
-                <h2 id="types">5. Types of Control (Timing of Control)</h2>
-                <p>Controls can be implemented before an activity begins, while the activity is ongoing, or after the activity has been completed.</p>
+                <h2 id="types">3. Types of Control</h2>
+                <p class="lead-text">Controls can be classified in several ways, but the most widely used classification, based on when the control is applied relative to the activity, identifies three types.</p>
 
                 <div class="diagram-wrap">
-                    <svg viewBox="0 0 700 180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Timing of Control Types">
-                        <rect width="700" height="180" rx="14" class="svg-bg"/>
-                        
-                        <!-- Timeline -->
-                        <line x1="50" y1="120" x2="650" y2="120" stroke-width="4" class="svg-line"/>
-                        
-                        <!-- Feedforward -->
-                        <rect x="80" y="30" width="130" height="40" rx="6" class="svg-box-blue"/>
-                        <text x="145" y="55" text-anchor="middle" font-size="12" font-weight="700" class="svg-text-blue">Feedforward</text>
-                        <text x="145" y="145" text-anchor="middle" font-size="12" font-weight="700" class="svg-text">INPUTS</text>
-                        <text x="145" y="165" text-anchor="middle" font-size="11" class="svg-text-muted">Anticipate problems</text>
-                        <line x1="145" y1="70" x2="145" y2="120" stroke-width="2" class="svg-line"/>
-                        <circle cx="145" cy="120" r="6" class="svg-node-dark"/>
+                    <svg viewBox="0 0 620 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagram showing feedforward, concurrent and feedback control positioned along an input-process-output flow">
+                        <rect width="620" height="240" fill="#ffffff" rx="14"/>
+                        <text x="310" y="24" text-anchor="middle" font-size="15" font-weight="600" fill="#2d3748">Types of Control along the Work Process</text>
 
-                        <!-- Concurrent -->
-                        <rect x="285" y="30" width="130" height="40" rx="6" class="svg-box-yellow"/>
-                        <text x="350" y="55" text-anchor="middle" font-size="12" font-weight="700" class="svg-text-yellow">Concurrent</text>
-                        <text x="350" y="145" text-anchor="middle" font-size="12" font-weight="700" class="svg-text">PROCESSES</text>
-                        <text x="350" y="165" text-anchor="middle" font-size="11" class="svg-text-muted">Correct as it happens</text>
-                        <line x1="350" y1="70" x2="350" y2="120" stroke-width="2" class="svg-line"/>
-                        <circle cx="350" cy="120" r="6" class="svg-node-dark"/>
+                        <rect x="60" y="90" width="120" height="46" rx="8" fill="#4a5568"/>
+                        <text x="120" y="118" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">INPUT</text>
+                        <line x1="180" y1="113" x2="240" y2="113" stroke="#4a5568" stroke-width="2" marker-end="url(#arrHeadC)"/>
 
-                        <!-- Feedback -->
-                        <rect x="490" y="30" width="130" height="40" rx="6" class="svg-box-green"/>
-                        <text x="555" y="55" text-anchor="middle" font-size="12" font-weight="700" class="svg-text-green">Feedback</text>
-                        <text x="555" y="145" text-anchor="middle" font-size="12" font-weight="700" class="svg-text">OUTPUTS</text>
-                        <text x="555" y="165" text-anchor="middle" font-size="11" class="svg-text-muted">Correct after the fact</text>
-                        <line x1="555" y1="70" x2="555" y2="120" stroke-width="2" class="svg-line"/>
-                        <circle cx="555" cy="120" r="6" class="svg-node-dark"/>
+                        <rect x="240" y="90" width="140" height="46" rx="8" fill="#4a5568"/>
+                        <text x="310" y="118" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">PROCESS</text>
+                        <line x1="380" y1="113" x2="440" y2="113" stroke="#4a5568" stroke-width="2" marker-end="url(#arrHeadC)"/>
+
+                        <rect x="440" y="90" width="120" height="46" rx="8" fill="#4a5568"/>
+                        <text x="500" y="118" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">OUTPUT</text>
+
+                        <rect x="45" y="30" width="150" height="40" rx="8" fill="#2f855a"/>
+                        <text x="120" y="47" text-anchor="middle" font-size="10" font-weight="600" fill="#fff">Feedforward Control</text>
+                        <text x="120" y="61" text-anchor="middle" font-size="8.5" fill="#e2e8f0">Prevents problems before they start</text>
+                        <line x1="120" y1="70" x2="120" y2="90" stroke="#2f855a" stroke-width="1.6"/>
+
+                        <rect x="230" y="30" width="160" height="40" rx="8" fill="#b7791f"/>
+                        <text x="310" y="47" text-anchor="middle" font-size="10" font-weight="600" fill="#fff">Concurrent Control</text>
+                        <text x="310" y="61" text-anchor="middle" font-size="8.5" fill="#fefcbf">Corrects problems as they occur</text>
+                        <line x1="310" y1="70" x2="310" y2="90" stroke="#b7791f" stroke-width="1.6"/>
+
+                        <rect x="430" y="30" width="150" height="40" rx="8" fill="#c53030"/>
+                        <text x="500" y="47" text-anchor="middle" font-size="10" font-weight="600" fill="#fff">Feedback Control</text>
+                        <text x="500" y="61" text-anchor="middle" font-size="8.5" fill="#fed7d7">Reviews problems after completion</text>
+                        <line x1="500" y1="70" x2="500" y2="90" stroke="#c53030" stroke-width="1.6"/>
+
+                        <path d="M500,136 Q560,190 120,190 Q60,190 60,140" fill="none" stroke="#a0aec0" stroke-width="1.8" stroke-dasharray="5,4" marker-end="url(#arrHeadDashC)"/>
+                        <text x="310" y="212" text-anchor="middle" font-size="9.5" fill="#718096">Feedback control results inform the next cycle's inputs and standards</text>
                     </svg>
+                    <p class="diagram-caption">Fig. 3 — The three types of control differ in timing: before the work begins, while it is in progress, and after it is complete.</p>
                 </div>
 
+                <h3 id="preliminary">3.1 Feedforward (Preliminary / Pre-action) Control</h3>
+                <p>Feedforward control is directed at preventing anticipated problems before they occur, by ensuring that the necessary conditions — quality inputs, skilled staff, adequate resources, clear procedures — are in place before an activity begins. Example: a company inspecting raw materials from suppliers before they enter production, or verifying job candidates' qualifications before hiring.</p>
+
+                <h3 id="concurrent">3.2 Concurrent (Steering / "Yes-No") Control</h3>
+                <p>Concurrent control takes place while an activity is in progress, allowing corrective action to be taken before the activity is completed. Direct supervision is the most common form: a manager observing work as it happens and correcting problems on the spot. Example: a supervisor watching an assembly line and stopping it the moment a defect is spotted.</p>
+
+                <h3 id="feedback">3.3 Feedback (Post-Action) Control</h3>
+                <p>Feedback control is applied after an activity is completed, comparing actual results with the standard and using the deviation to guide future action. Though it cannot fix the problem in the completed activity, it provides essential, often highly reliable, information for improving future planning and performance. Example: analyzing quarterly financial statements or conducting a post-project review.</p>
+
+                <h2 id="effective">4. Characteristics of an Effective Control System</h2>
+                <ul class="custom-bullets">
+                    <li><strong>Suited to plans and positions</strong> — controls should be tailored to the specific plans and to the level and responsibility of the manager using them.</li>
+                    <li><strong>Reflective of organizational structure</strong> — control information should be routed to the manager responsible for the relevant activity.</li>
+                    <li><strong>Economical</strong> — the cost of control should not outweigh the benefits it produces.</li>
+                    <li><strong>Timely</strong> — deviations must be reported quickly enough for corrective action to still be useful.</li>
+                    <li><strong>Simple and understandable</strong> — an overly complex control system will not be used effectively by those who need it.</li>
+                    <li><strong>Flexible</strong> — a good system should remain workable even when plans change or unforeseen circumstances arise.</li>
+                    <li><strong>Objective</strong> — standards and measurements should be as precise and impersonal as possible, minimizing bias.</li>
+                    <li><strong>Points up exceptions at critical points</strong> — attention should focus on the areas and points most critical to overall performance (the exception principle).</li>
+                    <li><strong>Indicates corrective action</strong> — an ideal control system does not merely detect deviations, but also suggests remedies.</li>
+                </ul>
+
+                <h2 id="techniques">5. Techniques of Control</h2>
+                <p class="lead-text">Managers use a range of traditional and modern techniques to exercise control over organizational performance.</p>
+
+                <h3 id="traditionaltechniques">5.1 Traditional Techniques</h3>
                 <table class="tutorial-table">
                     <tr>
-                        <th style="width: 25%;">Control Type</th>
-                        <th style="width: 40%;">Meaning & Mechanism</th>
-                        <th>MBA Examples</th>
+                        <th>Technique</th>
+                        <th>Description</th>
                     </tr>
-                    <tr>
-                        <td style="background-color: rgba(59, 130, 246, 0.05);"><strong>1. Feedforward Control (Preventative)</strong></td>
-                        <td>Anticipates problems <em>before</em> they occur. Focuses on regulating inputs (human, material, financial) to ensure they meet standards before the process even begins.</td>
-                        <td><ul class="custom-bullets" style="margin-bottom:0; padding-left:15px;">
-                            <li>Giving a coding test to a software engineer <em>before</em> hiring them.</li>
-                            <li>Testing raw steel for tensile strength <em>before</em> putting it into the assembly line.</li>
-                        </ul></td>
-                    </tr>
-                    <tr>
-                        <td style="background-color: rgba(245, 158, 11, 0.05);"><strong>2. Concurrent Control (Steering)</strong></td>
-                        <td>Takes place <em>while</em> an activity is in progress. Also known as steering or real-time control. It allows management to correct problems before they become costly failures.</td>
-                        <td><ul class="custom-bullets" style="margin-bottom:0; padding-left:15px;">
-                            <li>A supervisor watching employees on a factory floor and correcting their posture.</li>
-                            <li>GPS tracking in a delivery fleet redirecting a truck around a sudden traffic jam.</li>
-                        </ul></td>
-                    </tr>
-                    <tr>
-                        <td style="background-color: rgba(16, 185, 129, 0.05);"><strong>3. Feedback Control (Post-Action)</strong></td>
-                        <td>Takes place <em>after</em> the action is completed. The major drawback is that the damage is already done. However, it provides vital data to plan for the next cycle.</td>
-                        <td><ul class="custom-bullets" style="margin-bottom:0; padding-left:15px;">
-                            <li>Reviewing quarterly financial statements (the money is already spent).</li>
-                            <li>Analyzing customer churn rates after a product launch.</li>
-                        </ul></td>
-                    </tr>
+                    <tr><td><strong>Budgetary Control</strong></td><td>Preparing budgets (sales, production, cash, capital) that state expected results in numerical terms, then comparing actual results against the budget to detect variances.</td></tr>
+                    <tr><td><strong>Personal Observation</strong></td><td>Direct, first-hand supervision of ongoing work — often called "management by walking around."</td></tr>
+                    <tr><td><strong>Statistical Reports and Data</strong></td><td>Analysis of data in the form of averages, percentages, ratios and charts to track trends and performance.</td></tr>
+                    <tr><td><strong>Break-Even Analysis</strong></td><td>Determining the volume of sales at which total revenue equals total cost, used to control profitability decisions.</td></tr>
+                    <tr><td><strong>Ratio Analysis</strong></td><td>Using financial ratios (liquidity, profitability, solvency, turnover) to control and evaluate financial performance.</td></tr>
+                    <tr><td><strong>Internal Audit</strong></td><td>An independent, ongoing appraisal of financial and operational activities within the organization to ensure compliance and identify weaknesses.</td></tr>
+                    <tr><td><strong>PERT / CPM</strong></td><td>Network-based project planning and control techniques (Program Evaluation and Review Technique / Critical Path Method) used to monitor project schedules and identify critical activities.</td></tr>
                 </table>
 
-                <h2 id="effective">6. Characteristics of an Effective Control System</h2>
-                <p>A control system that is too bureaucratic will choke an organization. To be effective, the system must be:</p>
-                <ul class="custom-bullets">
-                    <li><strong>Strategically Placed:</strong> Controls should focus on critical points (the 80/20 rule). Trying to control every tiny detail wastes time and demotivates staff.</li>
-                    <li><strong>Economical (Cost-Effective):</strong> The cost of implementing the control system must not exceed the benefits derived from it. (Don't spend $5,000 in software to catch a $500 theft).</li>
-                    <li><strong>Flexible:</strong> The system must adapt to changing environments. If a pandemic hits, the control system must allow for revised sales targets.</li>
-                    <li><strong>Understandable and Objective:</strong> Employees must understand exactly what is being measured. Vague, subjective measurements lead to resentment.</li>
-                    <li><strong>Corrective Action Oriented:</strong> A control system that only points out failures without suggesting or triggering solutions is merely an alarm bell, not a management tool.</li>
-                </ul>
+                <h3 id="moderntechniques">5.2 Modern Techniques</h3>
+                <table class="tutorial-table">
+                    <tr>
+                        <th>Technique</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr><td><strong>Management Information Systems (MIS)</strong></td><td>Computer-based systems that provide managers with timely, relevant information for planning and control decisions.</td></tr>
+                    <tr><td><strong>Balanced Scorecard</strong></td><td>A performance-measurement framework that evaluates the organization from four perspectives — financial, customer, internal process, and learning &amp; growth — rather than financial measures alone.</td></tr>
+                    <tr><td><strong>Business Analytics</strong></td><td>Use of data, statistical analysis and predictive/prescriptive models to guide and control decision-making (see Section 6).</td></tr>
+                    <tr><td><strong>Benchmarking</strong></td><td>Comparing the organization's practices and performance against those of the best-in-class performers to identify improvement opportunities (see Section 7).</td></tr>
+                    <tr><td><strong>Total Quality Management (TQM) tools</strong></td><td>Statistical process control charts, Six Sigma, and quality circles used to monitor and continuously improve process quality.</td></tr>
+                </table>
 
-                <h2 id="techniques">7. Techniques of Control</h2>
-                <p>Management uses a variety of tools to exercise control, broadly categorized into Traditional and Modern techniques.</p>
+                <h2 id="analytics">6. Business Analytics</h2>
+                <p class="lead-text">Business analytics is the systematic, data-driven exploration of an organization's information — through statistical analysis, quantitative methods and predictive modelling — to support and improve managerial decision-making, planning and control.</p>
 
-                <h3 id="traditional">7.1 Traditional Techniques</h3>
-                <ul class="custom-bullets">
-                    <li><strong>Budgetary Control:</strong> Using numerical budgets (sales budgets, cash budgets, capital expenditure budgets) as a strict baseline. Variances are tracked meticulously.</li>
-                    <li><strong>Break-Even Analysis:</strong> Charting the exact point where total revenue equals total cost (No Profit, No Loss). Managers control operations to ensure production always stays above this line.</li>
-                    <li><strong>Financial Audits:</strong> Independent, retrospective reviews of accounting records to prevent fraud and ensure compliance.</li>
-                </ul>
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 560 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The three levels of business analytics: descriptive, predictive and prescriptive">
+                        <rect width="560" height="280" fill="#ffffff" rx="14"/>
+                        <text x="280" y="24" text-anchor="middle" font-size="15" font-weight="600" fill="#2d3748">The Three Levels of Business Analytics</text>
 
-                <h3 id="modern">7.2 Modern Techniques</h3>
-                <ul class="custom-bullets">
-                    <li><strong>Return on Investment (ROI):</strong> A supreme control metric measuring the absolute efficiency of capital by tracking profit generated per dollar invested.</li>
-                    <li><strong>PERT (Program Evaluation and Review Technique) & CPM (Critical Path Method):</strong> Complex network analysis tools used for controlling massive, non-routine projects (e.g., building a stadium). They identify the longest sequence of tasks (the critical path) which, if delayed, will delay the entire project.</li>
-                    <li><strong>The Balanced Scorecard:</strong> Developed by Kaplan and Norton, this revolutionary tool shifted control away from being purely financial. It forces managers to measure performance across four distinct perspectives: <em>Financial, Customer, Internal Processes, and Learning & Growth.</em></li>
-                </ul>
+                        <rect x="60" y="50" width="440" height="60" rx="8" fill="#4299e1"/>
+                        <text x="280" y="76" text-anchor="middle" font-size="12.5" font-weight="600" fill="#fff">Descriptive Analytics — "What happened?"</text>
+                        <text x="280" y="95" text-anchor="middle" font-size="9.5" fill="#ebf8ff">Historical dashboards, reports, summary statistics</text>
 
-                <h2 id="benchmarking">8. Benchmarking</h2>
-                <p>Benchmarking is a continuous process of measuring a company's products, services, and practices against its toughest competitors or those companies recognized as industry leaders.</p>
+                        <rect x="90" y="125" width="380" height="60" rx="8" fill="#2b6cb0"/>
+                        <text x="280" y="151" text-anchor="middle" font-size="12.5" font-weight="600" fill="#fff">Predictive Analytics — "What is likely to happen?"</text>
+                        <text x="280" y="170" text-anchor="middle" font-size="9.5" fill="#ebf8ff">Forecasting models, trend analysis, regression</text>
 
-                <div class="concept-block">
-                    <strong>MBA Case Study: Southwest Airlines & Functional Benchmarking</strong><br><br>
-                    In the 1990s, Southwest Airlines needed to turn their airplanes around at the gate faster. Instead of benchmarking against other slow airlines, they used <strong>Functional Benchmarking</strong>.<br><br>
-                    They studied <strong>Formula 1 racing pit crews</strong>. They analyzed how pit crews refueled and changed tires in seconds using parallel processes. By applying these non-airline techniques to their boarding processes, Southwest achieved the fastest turnaround times in the aviation industry.
+                        <rect x="120" y="200" width="320" height="60" rx="8" fill="#2c5282"/>
+                        <text x="280" y="226" text-anchor="middle" font-size="12.5" font-weight="600" fill="#fff">Prescriptive Analytics — "What should we do?"</text>
+                        <text x="280" y="245" text-anchor="middle" font-size="9.5" fill="#ebf8ff">Optimization models, simulation, recommended actions</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 4 — As analytics moves from descriptive to predictive to prescriptive, it becomes narrower in scope but delivers progressively greater decision-making value.</p>
                 </div>
 
-                <p><strong>Types of Benchmarking:</strong></p>
+                <h3 id="analyticstypes">6.1 Types of Business Analytics</h3>
                 <ul class="custom-bullets">
-                    <li><strong>Internal Benchmarking:</strong> Comparing a poorly performing branch against the company's own best-performing branch.</li>
-                    <li><strong>Competitive Benchmarking:</strong> Directly comparing processes against direct industry rivals. (Difficult to get data, relies on reverse-engineering).</li>
-                    <li><strong>Functional/Generic Benchmarking:</strong> Comparing a specific business function (e.g., customer service) against the absolute best in the world, regardless of what industry they are in.</li>
+                    <li><strong>Descriptive Analytics</strong> — summarizes historical data to understand what has already happened (e.g., a monthly sales dashboard).</li>
+                    <li><strong>Predictive Analytics</strong> — uses statistical models and patterns in historical data to forecast what is likely to happen next (e.g., forecasting next quarter's demand).</li>
+                    <li><strong>Prescriptive Analytics</strong> — goes a step further, using optimization and simulation techniques to recommend specific actions a manager should take (e.g., the optimal inventory level to minimize cost while avoiding stock-outs).</li>
                 </ul>
 
-                <h2 id="analytics">9. Business Analytics in Controlling</h2>
-                <p>By leveraging Big Data, AI, and machine learning, Business Analytics has shifted controlling from manual reporting to proactive, algorithmic intervention.</p>
+                <h3 id="analyticsrole">6.2 Role of Business Analytics in Control</h3>
+                <p>Business analytics strengthens every stage of the control process: it helps set more realistic, data-driven standards; enables real-time or near-real-time measurement of performance; automatically flags significant deviations (exception reporting); and, at the prescriptive level, can even recommend the specific corrective action a manager should take — turning control from a purely reactive activity into a proactive, forward-looking one.</p>
 
+                <h2 id="benchmarking">7. Benchmarking</h2>
+                <p class="lead-text">Benchmarking is the continuous process of measuring an organization's products, services and practices against those of its toughest competitors or the organizations recognized as industry leaders, in order to identify performance gaps and adopt best practices.</p>
+
+                <h3 id="benchmarkingtypes">7.1 Types of Benchmarking</h3>
+                <ul class="custom-bullets">
+                    <li><strong>Internal Benchmarking</strong> — comparing performance across different departments, teams or units within the same organization.</li>
+                    <li><strong>Competitive Benchmarking</strong> — comparing performance directly against known competitors in the same industry.</li>
+                    <li><strong>Functional Benchmarking</strong> — comparing a specific business function (e.g., logistics, customer service) against the best performers of that function, even in a different industry.</li>
+                    <li><strong>Generic Benchmarking</strong> — comparing fundamental business processes that are similar regardless of industry (e.g., order processing, billing).</li>
+                </ul>
+
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 620 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The six steps of the benchmarking process shown as a continuous cycle">
+                        <rect width="620" height="340" fill="#ffffff" rx="14"/>
+                        <text x="310" y="24" text-anchor="middle" font-size="15" font-weight="600" fill="#2d3748">The Benchmarking Process</text>
+
+                        <line x1="341.6" y1="64" x2="388.4" y2="91" stroke="#4a5568" stroke-width="2.5" marker-end="url(#arrHeadC)" transform="translate(10,0)"/>
+                        <line x1="430" y1="163" x2="430" y2="217" stroke="#4a5568" stroke-width="2.5" marker-end="url(#arrHeadC)" transform="translate(10,0)"/>
+                        <line x1="388.4" y1="289" x2="341.6" y2="316" stroke="#4a5568" stroke-width="2.5" marker-end="url(#arrHeadC)" transform="translate(10,0)"/>
+                        <line x1="258.4" y1="316" x2="211.6" y2="289" stroke="#4a5568" stroke-width="2.5" marker-end="url(#arrHeadC)" transform="translate(10,0)"/>
+                        <line x1="170" y1="217" x2="170" y2="163" stroke="#4a5568" stroke-width="2.5" marker-end="url(#arrHeadC)" transform="translate(10,0)"/>
+                        <path d="M211.6,91 Q160,10 258.4,64" fill="none" stroke="#a0aec0" stroke-width="2" stroke-dasharray="5,4" marker-end="url(#arrHeadDashC)" transform="translate(10,0)"/>
+                        <text x="210" y="42" text-anchor="middle" font-size="10" fill="#a0aec0">re-benchmark periodically</text>
+
+                        <circle cx="310" cy="40" r="48" fill="#2b6cb0"/>
+                        <text x="310" y="35" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff">1. Identify What</text>
+                        <text x="310" y="49" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff">to Benchmark</text>
+
+                        <circle cx="440" cy="115" r="48" fill="#2f855a"/>
+                        <text x="440" y="110" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff">2. Identify Best-</text>
+                        <text x="440" y="124" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff">in-Class Partner</text>
+
+                        <circle cx="440" cy="265" r="48" fill="#b7791f"/>
+                        <text x="440" y="260" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff">3. Collect</text>
+                        <text x="440" y="274" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff">Data</text>
+
+                        <circle cx="310" cy="340" r="48" fill="#b83280"/>
+                        <text x="310" y="335" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff">4. Analyze the</text>
+                        <text x="310" y="349" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff">Performance Gap</text>
+
+                        <circle cx="180" cy="265" r="48" fill="#c53030"/>
+                        <text x="180" y="260" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff">5. Implement</text>
+                        <text x="180" y="274" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff">Improvements</text>
+
+                        <circle cx="180" cy="115" r="48" fill="#805ad5"/>
+                        <text x="180" y="110" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff">6. Monitor</text>
+                        <text x="180" y="124" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff">Results</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 5 — Benchmarking is not a one-time comparison; leading organizations repeat the cycle periodically as competitors and best practices keep evolving.</p>
+                </div>
+
+                <h3 id="benchmarkingbenefits">7.2 Benefits of Benchmarking</h3>
+                <ul class="custom-bullets">
+                    <li>Sets realistic, externally validated performance standards rather than purely internal targets.</li>
+                    <li>Identifies specific, actionable best practices rather than vague improvement goals.</li>
+                    <li>Builds a culture of continuous improvement and external awareness.</li>
+                    <li>Helps prioritize where improvement effort will have the greatest competitive impact.</li>
+                </ul>
+
+                <h2 id="feedforwardfeedback">8. Feed Forward vs. Feedback Control</h2>
+                <p class="lead-text">While Section 3 introduced feedforward, concurrent and feedback control together, feedforward and feedback control are frequently contrasted directly because they represent two fundamentally different philosophies of control — preventing problems in advance versus correcting them after the fact.</p>
                 <table class="tutorial-table">
                     <tr>
-                        <th style="width: 25%;">Analytics Phase</th>
-                        <th>Function in Controlling</th>
-                        <th>MBA Example</th>
+                        <th>Basis</th>
+                        <th>Feed Forward Control</th>
+                        <th>Feedback Control</th>
                     </tr>
-                    <tr>
-                        <td><strong>Descriptive Analytics</strong><br><span style="font-size: 0.8em; font-weight:normal;">(What happened?)</span></td>
-                        <td>Uses historical data, dashboards, and reporting to show exact performance metrics. It acts as advanced <em>Feedback Control</em>.</td>
-                        <td>A digital dashboard showing last month's sales dropped by 14% in the Midwest region.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Predictive Analytics</strong><br><span style="font-size: 0.8em; font-weight:normal;">(What will happen?)</span></td>
-                        <td>Uses statistical models and machine learning to forecast future trends. It acts as advanced <em>Feedforward Control</em>.</td>
-                        <td>An algorithm predicting that a critical factory machine has a 90% chance of failing next Tuesday based on heat sensors.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Prescriptive Analytics</strong><br><span style="font-size: 0.8em; font-weight:normal;">(What should we do?)</span></td>
-                        <td>The AI not only predicts a deviation but automatically suggests or takes corrective action.</td>
-                        <td>An automated supply chain system predicting a raw material shortage and automatically re-routing a shipment from a backup supplier.</td>
-                    </tr>
+                    <tr><td>Timing</td><td>Applied before the activity begins</td><td>Applied after the activity is completed</td></tr>
+                    <tr><td>Orientation</td><td>Future-oriented; prevention-focused</td><td>Past-oriented; correction-focused</td></tr>
+                    <tr><td>Objective</td><td>Anticipate and avoid problems before they occur</td><td>Detect deviations that have already occurred and learn from them</td></tr>
+                    <tr><td>Ability to fix the current activity</td><td>Can stop a flawed activity before resources are committed</td><td>Cannot change the completed activity, only guide future ones</td></tr>
+                    <tr><td>Example</td><td>Inspecting raw materials before production begins</td><td>Reviewing last quarter's financial results</td></tr>
+                    <tr><td>Data requirement</td><td>Requires accurate forecasts and reliable models of the process</td><td>Requires only accurate historical measurement</td></tr>
                 </table>
+                <p>In practice, the most effective control systems combine all three types: feedforward control to prevent likely problems, concurrent control to catch problems as they happen, and feedback control to ensure that lessons learned are carried into future cycles of planning.</p>
 
                 <h2 id="review">Review Questions</h2>
                 <h3>Short Answer Type</h3>
                 <ol class="custom-bullets">
-                    <li>Why is control considered a "forward-looking" function even though it analyzes past data?</li>
-                    <li>Differentiate between Organisational Control and Operational Control.</li>
-                    <li>Define "Management by Exception" (MBE) and explain why it saves executive time.</li>
-                    <li>What is the difference between Feedforward control and Feedback control?</li>
-                    <li>What are the four perspectives evaluated in a Balanced Scorecard?</li>
+                    <li>Define controlling. State any one definition given by a well-known management thinker.</li>
+                    <li>List the four steps in the control process.</li>
+                    <li>Explain the linkage between planning and controlling in one or two sentences.</li>
+                    <li>Distinguish between concurrent control and feedback control.</li>
+                    <li>List any four characteristics of an effective control system.</li>
+                    <li>What is business analytics? Name its three types.</li>
+                    <li>Define benchmarking. Name any two types of benchmarking.</li>
+                    <li>Give one example each of feed forward control and feedback control.</li>
                 </ol>
 
                 <h3>Long Answer / Essay Type</h3>
                 <ol class="custom-bullets">
-                    <li>"Planning and Controlling are the Siamese Twins of management." Discuss this statement in detail.</li>
-                    <li>Outline the four-step organizational control process. Why is distinguishing between "immediate" and "basic" corrective action important?</li>
-                    <li>Evaluate Benchmarking as a modern control technique. Using the Southwest Airlines case study, explain how functional benchmarking can lead to industry disruption.</li>
-                    <li>Discuss the impact of Big Data and Business Analytics on the controlling function. How do predictive and prescriptive models enhance modern control systems?</li>
+                    <li>Explain the control process with a suitable diagram.</li>
+                    <li>Discuss the linkage between planning and controlling. Why are the two often called "Siamese twins" of management?</li>
+                    <li>Explain the three types of control based on timing, with examples of each.</li>
+                    <li>What are the characteristics of an effective control system? Discuss each briefly.</li>
+                    <li>Discuss the traditional and modern techniques of managerial control.</li>
+                    <li>What is business analytics? Explain its three levels and their role in strengthening organizational control.</li>
+                    <li>Explain the concept and process of benchmarking, along with its types and benefits.</li>
+                    <li>Distinguish between feed forward control and feedback control, and explain why an effective control system uses both.</li>
                 </ol>
 
                 <h2 id="summary">Summary</h2>
-                <p>This final unit explored Controlling, the critical function that acts as the organizational thermostat, ensuring actual performance aligns with strategic plans. We examined the distinct nature of Organizational Control (broad, strategic focus) versus Operational Control (narrow, day-to-day task focus). We highlighted the unbreakable "Siamese Twins" linkage between planning (setting standards) and controlling (measuring against them). The unit detailed the rigorous 4-step control process, emphasizing the use of Management by Exception (MBE) to prevent executive burnout. We explored the timing of controls: from reactive Feedback to real-time Concurrent steering, up to highly desirable Feedforward preventative control. We evaluated traditional tools like budgets alongside modern techniques like the Balanced Scorecard. We examined Benchmarking as a tool for driving competitive excellence by studying industry bests. Finally, we explored how modern Business Analytics (Descriptive, Predictive, and Prescriptive) is revolutionizing the controlling function, allowing managers to anticipate and automatically correct deviations using Big Data and AI.</p>
+                <p>This unit examined controlling as the final link in the management process, closing the loop opened by planning. It explained the four-step control process — establishing standards, measuring performance, comparing performance with standards to identify deviations, and taking corrective action — and the close, two-way linkage between planning and control, in which planning supplies the standards and control supplies the feedback for future plans. The unit classified controls by timing into feedforward (preventive, before the activity), concurrent (steering, during the activity) and feedback (corrective, after the activity), and set out the characteristics of an effective control system, including suitability, timeliness, economy, flexibility, objectivity and focus on critical points. It surveyed both traditional techniques of control (budgetary control, personal observation, ratio and break-even analysis, internal audit, PERT/CPM) and modern techniques (MIS, the Balanced Scorecard, business analytics and benchmarking). Business analytics was explained through its three levels — descriptive, predictive and prescriptive — and its role in strengthening every stage of control, while benchmarking was covered as a continuous, cyclical process of comparing the organization against best-in-class performers to close performance gaps. Finally, the unit contrasted feed forward and feedback control directly, showing that the strongest control systems combine both prevention and correction.</p>
 
             </div>
 
@@ -465,22 +424,21 @@
             <div class="widget sticky-widget premium-card">
                 <h3>Unit Contents</h3>
                 <ul class="toc-list">
-                    <li><a href="#nature">1. Nature & Purpose</a></li>
-                    <li><a href="#areas">2. Areas & Org Levels</a></li>
-                    <li><a href="#linkage">3. Planning-Control Linkage</a></li>
-                    <li><a href="#process">4. The Control Process</a></li>
-                    <li><a href="#types">5. Types of Control</a></li>
-                    <li><a href="#effective">6. Effective Control Systems</a></li>
-                    <li><a href="#techniques">7. Techniques of Control</a></li>
-                    <li><a href="#benchmarking">8. Benchmarking</a></li>
-                    <li><a href="#analytics">9. Business Analytics</a></li>
+                    <li><a href="#intro">0. Introduction to Controlling</a></li>
+                    <li><a href="#process">1. Control Process</a></li>
+                    <li><a href="#linkage">2. Planning-Control Linkage</a></li>
+                    <li><a href="#types">3. Types of Control</a></li>
+                    <li><a href="#effective">4. Effective Control System</a></li>
+                    <li><a href="#techniques">5. Techniques of Control</a></li>
+                    <li><a href="#analytics">6. Business Analytics</a></li>
+                    <li><a href="#benchmarking">7. Benchmarking</a></li>
+                    <li><a href="#feedforwardfeedback">8. Feed Forward vs. Feedback</a></li>
                     <li><a href="#review">Review Questions</a></li>
                     <li><a href="#summary">Summary</a></li>
                 </ul>
             </div>
         </aside>
     </div>
-    
     <script src="script.js"></script>
 </body>
 </html>
