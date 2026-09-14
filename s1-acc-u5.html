@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accounting for Managers - Unit-5</title>
+        <!-- Apple Touch Icons (for iOS home screen) -->
+    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icon.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="icon.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .diagram-wrap { margin: 28px 0; text-align: center; }
+        .diagram-wrap svg { max-width: 100%; height: auto; background: #ffffff; border-radius: 14px; box-shadow: 0 1px 8px rgba(0,0,0,0.10); }
+        .diagram-caption { font-size: 0.85rem; color: #666; margin-top: 10px; font-style: italic; }
+    </style>
+</head>
+<body data-current-topic="s1-acc-u5">
+    <div class="progress-container"><div class="progress-bar" id="myBar"></div></div>
+
+    <header class="navbar glass-nav">
+        <div class="nav-left">
+            <button id="mobileMenuBtn" class="mobile-menu-btn">☰</button>
+            <div class="logo">Learn & Concure <span> MBA Tutorials</span></div>
+        </div>
+        <div class="nav-links">
+            <button id="focusModeBtn" class="theme-btn hover-effect" title="Focus Mode">📖</button>
+            <button id="darkModeToggle" class="theme-btn hover-effect" title="Dark Mode">🌙</button>
+            <a href="index.html" id="logoutBtn" class="logout-btn hover-effect">Sign Out</a>
+        </div>
+    </header>
+
+    <div class="main-wrapper" id="mainWrapper">
+
+        <!-- JavaScript will automatically generate and inject the entire 4-Semester Sidebar here -->
+        <aside class="sidebar" id="sidebar-container"></aside>
+
+        <!-- Center Content: Tutorial -->
+        <main class="content premium-card" id="mainContent">
+            <div class="bread-crumbs">Semester-I / Accounting for Managers / Unit 5</div>
+
+            <div class="article-header-flex">
+                <div>
+                    <h1>Cost Concept, Cost Classification, Cost Sheet Preparation, and Accounting &amp; Control of Material, Labour and Overhead Cost</h1>
+                    <div class="article-meta">
+                        <span>Read Time: 65 mins</span>
+                    </div>
+                </div>
+                <div class="action-buttons">
+                    <!--button class="icon-btn hover-effect" onclick="window.print()" title="Print PDF">🖨️</button-->
+                </div>
+            </div>
+            <hr class="premium-hr">
+
+            <div class="article-body">
+                <div class="concept-block">
+                    <strong>Topics Covered in This Unit:</strong>
+                    <ul class="custom-bullets" style="margin-top: 10px;">
+                        <li>Cost Concept</li>
+                        <li>Cost Classification, including Relevant Cost</li>
+                        <li>Preparation of Cost Sheet</li>
+                        <li>Accounting and Control of Material Cost</li>
+                        <li>Accounting and Control of Labour Cost</li>
+                        <li>Accounting and Control of Overhead Cost</li>
+                    </ul>
+                </div>
+
+                <h2 id="intro">0. Introduction to Cost Accounting</h2>
+                <p class="lead-text">Unit 1 introduced Cost Accounting as one of the three branches of accounting, concerned with ascertaining and controlling the cost of a product, process, job or service. This unit builds on that foundation, examining what "cost" precisely means, the many ways costs can be classified, how those costs are assembled into a Cost Sheet, and how a business specifically accounts for and controls its three basic elements of cost — material, labour and overheads.</p>
+                <h3 id="objectives">0.1 Objectives of Cost Accounting</h3>
+                <ul class="custom-bullets">
+                    <li>To ascertain the cost of a product, job, process or service.</li>
+                    <li>To assist in fixing selling prices and formulating pricing policy.</li>
+                    <li>To help control costs through budgets, standards and variance analysis.</li>
+                    <li>To provide the cost data needed for managerial decisions (make-or-buy, pricing, product mix).</li>
+                    <li>To disclose sources of wastage and inefficiency, so that corrective action can be taken.</li>
+                </ul>
+
+                <h2 id="costconcept">1. Cost Concept</h2>
+                <h3 id="costmeaning">1.1 Meaning of Cost</h3>
+                <p class="lead-text">Cost is the amount of resources, expressed in monetary terms, sacrificed or given up to acquire or produce goods or services. It is important to distinguish cost from a related but broader term: an expense is that portion of cost which has been consumed/used up in earning revenue during a period (as in the Matching Concept, Unit 1), whereas cost may also refer to an amount that is still an asset (e.g., the cost of unsold inventory).</p>
+
+                <h3 id="costterms">1.2 Cost Object, Cost Unit and Cost Centre</h3>
+                <ul class="custom-bullets">
+                    <li><strong>Cost Object</strong> — anything for which a separate measurement of cost is required (a product, service, project, department, or customer).</li>
+                    <li><strong>Cost Unit</strong> — a quantitative unit of a product or service in relation to which costs are ascertained (e.g., per tonne of cement, per kilometre of transport, per room-night in a hotel).</li>
+                    <li><strong>Cost Centre</strong> — a location, person, or item of equipment (or a group of these) for which costs are accumulated and related to cost units for control purposes (e.g., a specific machine, department, or production line).</li>
+                </ul>
+
+                <h3 id="elementsofcost">1.3 Elements of Cost</h3>
+                <p>Every cost of production can be broken down into three basic elements: <strong>Material</strong>, <strong>Labour</strong>, and <strong>Expenses</strong> — each of which can be further split into a direct and an indirect portion, as explained in Section 2.</p>
+
+                <h2 id="classification">2. Cost Classification</h2>
+                <p class="lead-text">The same rupee of cost can be classified in several different ways depending on the purpose of the analysis — for product costing, for control, or for decision-making.</p>
+
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 600 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Grid showing the different bases on which costs can be classified">
+                        <rect width="600" height="340" fill="#ffffff" rx="14"/>
+                        <text x="300" y="24" text-anchor="middle" font-size="15" font-weight="600" fill="#2d3748">Bases of Cost Classification</text>
+
+                        <rect x="30" y="45" width="260" height="80" rx="8" fill="#2b6cb0"/>
+                        <text x="160" y="68" text-anchor="middle" font-size="11.5" font-weight="600" fill="#fff">By Nature / Element</text>
+                        <text x="160" y="88" text-anchor="middle" font-size="9" fill="#e2e8f0">Material, Labour, Expenses</text>
+                        <text x="160" y="105" text-anchor="middle" font-size="9" fill="#e2e8f0">(each split into Direct / Indirect)</text>
+
+                        <rect x="310" y="45" width="260" height="80" rx="8" fill="#2f855a"/>
+                        <text x="440" y="68" text-anchor="middle" font-size="11.5" font-weight="600" fill="#fff">By Function</text>
+                        <text x="440" y="88" text-anchor="middle" font-size="9" fill="#e2e8f0">Production, Administration,</text>
+                        <text x="440" y="105" text-anchor="middle" font-size="9" fill="#e2e8f0">Selling &amp; Distribution</text>
+
+                        <rect x="30" y="140" width="260" height="80" rx="8" fill="#b7791f"/>
+                        <text x="160" y="163" text-anchor="middle" font-size="11.5" font-weight="600" fill="#fff">By Behaviour</text>
+                        <text x="160" y="183" text-anchor="middle" font-size="9" fill="#fefcbf">Fixed, Variable,</text>
+                        <text x="160" y="200" text-anchor="middle" font-size="9" fill="#fefcbf">Semi-Variable</text>
+
+                        <rect x="310" y="140" width="260" height="80" rx="8" fill="#805ad5"/>
+                        <text x="440" y="163" text-anchor="middle" font-size="11.5" font-weight="600" fill="#fff">By Controllability</text>
+                        <text x="440" y="183" text-anchor="middle" font-size="9" fill="#e9d8fd">Controllable,</text>
+                        <text x="440" y="200" text-anchor="middle" font-size="9" fill="#e9d8fd">Uncontrollable</text>
+
+                        <rect x="30" y="235" width="260" height="80" rx="8" fill="#c53030"/>
+                        <text x="160" y="258" text-anchor="middle" font-size="11.5" font-weight="600" fill="#fff">By Time</text>
+                        <text x="160" y="278" text-anchor="middle" font-size="9" fill="#fed7d7">Historical (Actual),</text>
+                        <text x="160" y="295" text-anchor="middle" font-size="9" fill="#fed7d7">Predetermined (Standard/Budgeted)</text>
+
+                        <rect x="310" y="235" width="260" height="80" rx="8" fill="#b83280"/>
+                        <text x="440" y="258" text-anchor="middle" font-size="11.5" font-weight="600" fill="#fff">By Decision-Making Relevance</text>
+                        <text x="440" y="278" text-anchor="middle" font-size="9" fill="#fed7e2">Relevant, Sunk, Opportunity,</text>
+                        <text x="440" y="295" text-anchor="middle" font-size="9" fill="#fed7e2">Differential, Imputed Cost</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 1 — The same cost item can be viewed through any of these six lenses simultaneously; which lens matters depends entirely on the purpose of the analysis.</p>
+                </div>
+
+                <h3 id="bynature">2.1 Classification by Nature / Element</h3>
+                <ul class="custom-bullets">
+                    <li><strong>Direct Material</strong> — material that can be directly, economically traced to a specific unit of output (e.g., wood in furniture).</li>
+                    <li><strong>Direct Labour</strong> — wages of workers directly engaged in converting raw material into the finished product.</li>
+                    <li><strong>Direct Expenses</strong> — any other expense directly attributable to a specific job or product (e.g., hire of a special tool for one job).</li>
+                    <li><strong>Indirect Material, Labour and Expenses</strong> — collectively termed <strong>Overheads</strong> (Section 7) — costs that cannot be conveniently and economically traced to a specific unit (e.g., factory supervisor's salary, lubricants, rent).</li>
+                </ul>
+
+                <h3 id="byfunction">2.2 Classification by Function</h3>
+                <ul class="custom-bullets">
+                    <li><strong>Production/Factory Costs</strong> — costs incurred in the factory to convert raw material into finished goods.</li>
+                    <li><strong>Administration Costs</strong> — costs of formulating policy, directing the organization, and controlling its operations, not directly related to production, selling or distribution.</li>
+                    <li><strong>Selling and Distribution Costs</strong> — costs of creating and stimulating demand, and of making the goods available to customers.</li>
+                </ul>
+
+                <h3 id="bybehaviour">2.3 Classification by Behaviour</h3>
+                <ul class="custom-bullets">
+                    <li><strong>Fixed Costs</strong> — remain constant in total regardless of the level of output within a relevant range (e.g., factory rent).</li>
+                    <li><strong>Variable Costs</strong> — change in direct proportion to the level of output (e.g., direct material cost).</li>
+                    <li><strong>Semi-Variable (Mixed) Costs</strong> — contain both a fixed and a variable element (e.g., electricity bill with a fixed minimum charge plus a per-unit consumption charge).</li>
+                </ul>
+
+                <h3 id="byothers">2.4 Other Classifications</h3>
+                <ul class="custom-bullets">
+                    <li><strong>Controllable vs. Uncontrollable Costs</strong> — whether a specific level of management can influence the amount of the cost within a given time span.</li>
+                    <li><strong>Normal vs. Abnormal Costs</strong> — normal costs are expected to be incurred at a given level of output under normal operating conditions; abnormal costs arise from unusual, unexpected circumstances (e.g., an abnormal loss from a fire).</li>
+                    <li><strong>Historical vs. Predetermined Costs</strong> — historical (actual) costs are ascertained after being incurred, while predetermined (standard or budgeted) costs are estimated in advance for planning and control purposes.</li>
+                </ul>
+
+                <h2 id="relevantcost">3. Relevant Cost and Other Decision-Making Costs</h2>
+                <h3 id="relevantmeaning">3.1 Meaning of Relevant Cost</h3>
+                <p class="lead-text">A relevant cost is a future cost that differs between the alternatives being compared in a specific managerial decision. To qualify as relevant, a cost must satisfy two conditions: it must be a <strong>future</strong> cost (not yet incurred), and it must <strong>differ</strong> between the alternatives under consideration. If a cost will be the same regardless of which alternative is chosen, it is irrelevant to that particular decision, however large it may be.</p>
+
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 560 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Comparison of relevant costs and irrelevant costs for decision making">
+                        <rect width="560" height="200" fill="#ffffff" rx="14"/>
+                        <text x="280" y="24" text-anchor="middle" font-size="15" font-weight="600" fill="#2d3748">Relevant vs. Irrelevant Costs for a Decision</text>
+
+                        <rect x="30" y="45" width="240" height="130" rx="8" fill="#2f855a"/>
+                        <text x="150" y="70" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">RELEVANT (consider these)</text>
+                        <text x="150" y="95" text-anchor="middle" font-size="9.5" fill="#e2e8f0">Future, avoidable costs that</text>
+                        <text x="150" y="110" text-anchor="middle" font-size="9.5" fill="#e2e8f0">differ between alternatives</text>
+                        <text x="150" y="130" text-anchor="middle" font-size="9" fill="#c6f6d5">e.g., Differential Cost,</text>
+                        <text x="150" y="145" text-anchor="middle" font-size="9" fill="#c6f6d5">Opportunity Cost,</text>
+                        <text x="150" y="160" text-anchor="middle" font-size="9" fill="#c6f6d5">Avoidable/Out-of-Pocket Cost</text>
+
+                        <rect x="290" y="45" width="240" height="130" rx="8" fill="#c53030"/>
+                        <text x="410" y="70" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">IRRELEVANT (ignore these)</text>
+                        <text x="410" y="95" text-anchor="middle" font-size="9.5" fill="#fed7d7">Past costs, or costs that</text>
+                        <text x="410" y="110" text-anchor="middle" font-size="9.5" fill="#fed7d7">will not change either way</text>
+                        <text x="410" y="130" text-anchor="middle" font-size="9" fill="#feb2b2">e.g., Sunk Cost,</text>
+                        <text x="410" y="145" text-anchor="middle" font-size="9" fill="#feb2b2">Committed Cost,</text>
+                        <text x="410" y="160" text-anchor="middle" font-size="9" fill="#feb2b2">Unavoidable Fixed Cost</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 2 — A cost's size has nothing to do with whether it belongs in a decision — only whether it is a future cost that changes with the choice made.</p>
+                </div>
+
+                <h3 id="irrelevantcosts">3.2 Sunk Cost and Committed Cost (Irrelevant Costs)</h3>
+                <ul class="custom-bullets">
+                    <li><strong>Sunk Cost</strong> — a cost that has already been incurred in the past and cannot be recovered or changed by any future decision (e.g., money already spent on a feasibility study). Sunk costs are never relevant to a future decision.</li>
+                    <li><strong>Committed Cost</strong> — a future cost that has already been contractually locked in and cannot be avoided regardless of the decision made (e.g., rent for the remaining period of a signed lease).</li>
+                </ul>
+
+                <h3 id="otherdecisioncosts">3.3 Other Costs Important for Decision-Making</h3>
+                <ul class="custom-bullets">
+                    <li><strong>Opportunity Cost</strong> — the value of the benefit sacrificed by choosing one alternative over the next best alternative; it does not appear in accounting records but is highly relevant for decisions.</li>
+                    <li><strong>Differential (Incremental) Cost</strong> — the difference in total cost between two alternatives.</li>
+                    <li><strong>Imputed (Notional) Cost</strong> — a hypothetical cost that does not involve an actual cash outlay but is considered for decision-making (e.g., notional interest on the firm's own capital employed in a project).</li>
+                    <li><strong>Out-of-Pocket Cost</strong> — the portion of cost that involves an actual, current or near-future cash outflow, as opposed to a non-cash cost such as depreciation.</li>
+                </ul>
+
+                <h3 id="relevantexample">3.4 Worked Example: Make-or-Buy Decision Using Relevant Costing</h3>
+                <p>A company currently manufactures a component in-house. The per-unit cost details are as follows, and an outside supplier has offered to supply the same component at ₹55 per unit.</p>
+                <table class="tutorial-table">
+                    <tr><th>Particulars</th><th>Cost per Unit (₹)</th><th>Relevant to the Decision?</th></tr>
+                    <tr><td>Direct Material</td><td>30</td><td>Yes — avoided if bought outside</td></tr>
+                    <tr><td>Direct Labour</td><td>15</td><td>Yes — avoided if bought outside</td></tr>
+                    <tr><td>Variable Overhead</td><td>5</td><td>Yes — avoided if bought outside</td></tr>
+                    <tr><td>Fixed Overhead (allocated, unavoidable)</td><td>10</td><td>No — will continue regardless of the decision</td></tr>
+                    <tr><td><strong>Total Cost per Unit (as normally reported)</strong></td><td><strong>60</strong></td><td></td></tr>
+                    <tr><td><strong>Relevant Cost of Making</strong></td><td><strong>50</strong></td><td>(30 + 15 + 5)</td></tr>
+                </table>
+                <p><em>Analysis:</em> A manager comparing the reported total cost of ₹60 against the supplier's quote of ₹55 might wrongly decide to buy. But the fixed overhead of ₹10 is unavoidable — it continues whether the component is made or bought, so it is not relevant to this decision. Comparing the true relevant cost of making (₹50) against the purchase price (₹55) shows that <strong>making the component in-house saves ₹5 per unit</strong>, the opposite conclusion to a naive comparison based on fully-absorbed cost.</p>
+
+                <h2 id="costsheet">4. Preparation of Cost Sheet</h2>
+                <h3 id="costsheetmeaning">4.1 Meaning and Purpose</h3>
+                <p class="lead-text">A cost sheet is a statement that presents, in a logically classified and analytical form, the various elements of cost that make up the total cost of a product for a given period, culminating in the cost per unit and, where sales are known, the profit earned.</p>
+
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 560 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Waterfall diagram building up a cost sheet from prime cost to sales">
+                        <rect width="560" height="400" fill="#ffffff" rx="14"/>
+                        <text x="280" y="24" text-anchor="middle" font-size="15" font-weight="600" fill="#2d3748">Building Up the Cost Sheet</text>
+
+                        <rect x="60" y="45" width="440" height="38" rx="6" fill="#2b6cb0"/>
+                        <text x="280" y="69" text-anchor="middle" font-size="11.5" font-weight="600" fill="#fff">Direct Material + Direct Labour + Direct Expenses</text>
+
+                        <rect x="100" y="93" width="360" height="36" rx="6" fill="#2f855a"/>
+                        <text x="280" y="116" text-anchor="middle" font-size="11.5" font-weight="600" fill="#fff">= Prime Cost</text>
+
+                        <rect x="120" y="139" width="320" height="36" rx="6" fill="#3182ce"/>
+                        <text x="280" y="162" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff">+ Factory / Works Overheads</text>
+
+                        <rect x="140" y="185" width="280" height="36" rx="6" fill="#805ad5"/>
+                        <text x="280" y="208" text-anchor="middle" font-size="11.5" font-weight="600" fill="#fff">= Works / Factory Cost</text>
+
+                        <rect x="160" y="231" width="240" height="36" rx="6" fill="#b7791f"/>
+                        <text x="280" y="254" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff">+ Office &amp; Admin. Overheads</text>
+
+                        <rect x="180" y="277" width="200" height="36" rx="6" fill="#dd6b20"/>
+                        <text x="280" y="300" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">= Cost of Production</text>
+
+                        <rect x="200" y="323" width="160" height="36" rx="6" fill="#c53030"/>
+                        <text x="280" y="346" text-anchor="middle" font-size="10" font-weight="600" fill="#fff">+ Selling &amp; Distribution O/H</text>
+
+                        <rect x="220" y="369" width="120" height="26" rx="6" fill="#22543d"/>
+                        <text x="280" y="387" text-anchor="middle" font-size="10.5" font-weight="700" fill="#fff">= Total Cost / Cost of Sales</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 3 — Each layer of the cost sheet adds one more category of overhead, moving from the direct, traceable costs of Prime Cost to the fully-loaded Total Cost of Sales.</p>
+                </div>
+
+                <h3 id="costsheetworked">4.2 Worked Example</h3>
+                <p>The following data relates to XYZ Manufacturing Co. for the month of March 2026, during which 1,000 units were produced and sold:</p>
+                <table class="tutorial-table">
+                    <tr><th>Particulars</th><th>Amount (₹)</th><th>Cost per Unit (₹)</th></tr>
+                    <tr><td>Direct Material Consumed</td><td>2,00,000</td><td>200</td></tr>
+                    <tr><td>Direct Labour</td><td>1,00,000</td><td>100</td></tr>
+                    <tr><td>Direct Expenses</td><td>20,000</td><td>20</td></tr>
+                    <tr><td><strong>Prime Cost</strong></td><td><strong>3,20,000</strong></td><td><strong>320</strong></td></tr>
+                    <tr><td>Add: Factory (Works) Overheads</td><td>80,000</td><td>80</td></tr>
+                    <tr><td><strong>Works / Factory Cost</strong></td><td><strong>4,00,000</strong></td><td><strong>400</strong></td></tr>
+                    <tr><td>Add: Office &amp; Administrative Overheads</td><td>40,000</td><td>40</td></tr>
+                    <tr><td><strong>Cost of Production</strong></td><td><strong>4,40,000</strong></td><td><strong>440</strong></td></tr>
+                    <tr><td>Add: Selling &amp; Distribution Overheads</td><td>60,000</td><td>60</td></tr>
+                    <tr><td><strong>Total Cost (Cost of Sales)</strong></td><td><strong>5,00,000</strong></td><td><strong>500</strong></td></tr>
+                    <tr><td>Add: Profit (20% on Cost)</td><td>1,00,000</td><td>100</td></tr>
+                    <tr><td><strong>Sales</strong></td><td><strong>6,00,000</strong></td><td><strong>600</strong></td></tr>
+                </table>
+                <p>The Cost Sheet not only reveals that each unit costs ₹500 to produce and sell, but also breaks that figure down into its constituent layers — useful for pricing decisions, cost comparison across periods, and identifying which element (material, labour, or a particular category of overhead) is driving cost changes.</p>
+
+                <h2 id="materialcost">5. Accounting and Control of Material Cost</h2>
+                <h3 id="materialimportance">5.1 Importance of Material Control</h3>
+                <p class="lead-text">Materials often represent the single largest element of cost in a manufacturing business, so their procurement, storage and use must be carefully planned and controlled to avoid both stock-outs (which halt production) and excess stock (which ties up working capital and risks obsolescence).</p>
+
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 600 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The material control cycle from purchase requisition through to usage in production">
+                        <rect width="600" height="340" fill="#ffffff" rx="14"/>
+                        <defs>
+                            <marker id="arrHeadM" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                                <path d="M0,0L10,5L0,10z" fill="#4a5568"/>
+                            </marker>
+                        </defs>
+                        <text x="300" y="24" text-anchor="middle" font-size="15" font-weight="600" fill="#2d3748">The Material Control Cycle</text>
+
+                        <rect x="30" y="50" width="130" height="46" rx="8" fill="#2b6cb0"/>
+                        <text x="95" y="70" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff">1. Purchase</text>
+                        <text x="95" y="84" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff">Requisition</text>
+                        <line x1="160" y1="73" x2="200" y2="73" stroke="#4a5568" stroke-width="2" marker-end="url(#arrHeadM)"/>
+
+                        <rect x="200" y="50" width="130" height="46" rx="8" fill="#2f855a"/>
+                        <text x="265" y="70" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff">2. Purchase</text>
+                        <text x="265" y="84" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff">Order</text>
+                        <line x1="330" y1="73" x2="370" y2="73" stroke="#4a5568" stroke-width="2" marker-end="url(#arrHeadM)"/>
+
+                        <rect x="370" y="50" width="200" height="46" rx="8" fill="#b7791f"/>
+                        <text x="470" y="70" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff">3. Goods Receipt &amp;</text>
+                        <text x="470" y="84" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff">Inspection (GRN)</text>
+
+                        <line x1="470" y1="96" x2="470" y2="140" stroke="#4a5568" stroke-width="2" marker-end="url(#arrHeadM)"/>
+                        <rect x="370" y="140" width="200" height="46" rx="8" fill="#805ad5"/>
+                        <text x="470" y="160" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff">4. Storage</text>
+                        <text x="470" y="174" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff">(Bin Card &amp; Stores Ledger)</text>
+
+                        <line x1="370" y1="163" x2="330" y2="163" stroke="#4a5568" stroke-width="2" marker-end="url(#arrHeadM)"/>
+                        <rect x="200" y="140" width="130" height="46" rx="8" fill="#c53030"/>
+                        <text x="265" y="160" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff">5. Material</text>
+                        <text x="265" y="174" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff">Requisition</text>
+
+                        <line x1="200" y1="163" x2="160" y2="163" stroke="#4a5568" stroke-width="2" marker-end="url(#arrHeadM)"/>
+                        <rect x="30" y="140" width="130" height="46" rx="8" fill="#b83280"/>
+                        <text x="95" y="160" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff">6. Issue to</text>
+                        <text x="95" y="174" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff">Production</text>
+
+                        <text x="300" y="240" text-anchor="middle" font-size="9.5" fill="#718096">Every step generates a document, giving management a complete, traceable record of each material's</text>
+                        <text x="300" y="256" text-anchor="middle" font-size="9.5" fill="#718096">journey from requisition to consumption — the basis of effective material control.</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 4 — Documenting each stage of the material's journey (requisition, order, receipt, storage, issue, consumption) is the foundation of material control.</p>
+                </div>
+
+                <h3 id="materialdocuments">5.2 Key Documents in Material Control</h3>
+                <ul class="custom-bullets">
+                    <li><strong>Purchase Requisition</strong> — a formal request from a department (often the stores department, based on reorder levels) asking the purchase department to procure specific material.</li>
+                    <li><strong>Purchase Order</strong> — a formal, legally binding order placed with a chosen supplier, specifying quantity, price, and delivery terms.</li>
+                    <li><strong>Goods Received Note (GRN)</strong> — prepared by the receiving/stores department upon physical receipt and inspection of the material, confirming quantity and quality received.</li>
+                    <li><strong>Bin Card</strong> — a record maintained at the storage location itself, showing only the physical quantity of receipts, issues and balance of a specific material (no monetary values).</li>
+                    <li><strong>Stores Ledger</strong> — a more detailed record maintained by the accounts/stores department, showing both quantity and value of each material's receipts, issues, and balance (used to apply the FIFO/LIFO/Weighted Average pricing methods from Unit 2).</li>
+                    <li><strong>Material Requisition Note</strong> — the document authorizing the stores department to issue a specific quantity of material to a particular department or job.</li>
+                </ul>
+
+                <h3 id="inventorycontroltechniques">5.3 Inventory Control Techniques</h3>
+                <ul class="custom-bullets">
+                    <li><strong>ABC Analysis</strong> — classifies inventory items into three categories based on value: "A" items (few in number, high value, tightly controlled), "B" items (moderate value, moderately controlled), and "C" items (many in number, low value, loosely controlled).</li>
+                    <li><strong>Re-Order Level, Minimum Level and Maximum Level</strong> — pre-set stock levels that trigger a fresh purchase order (re-order level) and bound the acceptable range of stock (minimum and maximum) to avoid both stock-outs and overstocking.</li>
+                    <li><strong>Economic Order Quantity (EOQ)</strong> — the order quantity that minimizes the combined total of ordering costs (which fall as order size rises, since fewer orders are placed) and carrying costs (which rise as order size rises, since more stock is held on average).</li>
+                    <li><strong>Just-in-Time (JIT)</strong> — a system that aims to minimize inventory holding by procuring materials only as and when needed for production, requiring very close coordination with reliable suppliers.</li>
+                </ul>
+
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 560 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Chart showing ordering cost, carrying cost and total cost curves against order quantity, with the economic order quantity marked at the minimum of the total cost curve">
+                        <rect width="560" height="320" fill="#ffffff" rx="14"/>
+                        <text x="280" y="24" text-anchor="middle" font-size="14.5" font-weight="600" fill="#2d3748">Economic Order Quantity (EOQ)</text>
+
+                        <line x1="60" y1="270" x2="520" y2="270" stroke="#2d3748" stroke-width="1.6"/>
+                        <line x1="60" y1="270" x2="60" y2="45" stroke="#2d3748" stroke-width="1.6"/>
+                        <text x="290" y="295" text-anchor="middle" font-size="10" fill="#4a5568">Order Quantity (Q)</text>
+                        <text x="22" y="160" text-anchor="middle" font-size="10" fill="#4a5568" transform="rotate(-90 22 160)">Annual Cost (₹)</text>
+
+                        <polyline points="70,60 150,120 240,180 340,220 500,250" fill="none" stroke="#c53030" stroke-width="2.4"/>
+                        <text x="500" y="245" text-anchor="middle" font-size="8.5" fill="#742a2a">Ordering Cost</text>
+
+                        <line x1="70" y1="260" x2="500" y2="60" stroke="#2f855a" stroke-width="2.4"/>
+                        <text x="500" y="75" text-anchor="middle" font-size="8.5" fill="#22543d">Carrying Cost</text>
+
+                        <polyline points="70,140 150,105 240,90 320,88 400,100 500,145" fill="none" stroke="#2b6cb0" stroke-width="2.6"/>
+                        <text x="470" y="130" text-anchor="middle" font-size="8.5" fill="#2c5282">Total Cost</text>
+
+                        <line x1="320" y1="270" x2="320" y2="88" stroke="#a0aec0" stroke-width="1.6" stroke-dasharray="4,4"/>
+                        <circle cx="320" cy="88" r="4" fill="#2d3748"/>
+                        <text x="320" y="290" text-anchor="middle" font-size="9.5" font-weight="600" fill="#2d3748">EOQ ≈ 707 units</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 5 — The Economic Order Quantity is the order size at which the Total Cost curve reaches its minimum — the point where ordering cost and carrying cost are optimally balanced.</p>
+                </div>
+
+                <p><strong>Worked Example (EOQ Formula):</strong> Annual demand (D) = 10,000 units; Ordering cost per order (S) = ₹100; Annual carrying cost per unit (Cc) = ₹4.</p>
+                <div class="concept-block">
+                    <strong>EOQ = √(2DS ÷ Cc) = √(2 × 10,000 × 100 ÷ 4) = √5,00,000 ≈ 707 units</strong>
+                </div>
+                <p>Ordering roughly 707 units at a time minimizes the combined annual cost of placing orders and carrying inventory for this material.</p>
+
+                <h2 id="labourcost">6. Accounting and Control of Labour Cost</h2>
+                <h3 id="labourimportance">6.1 Importance and Components of Labour Cost</h3>
+                <p class="lead-text">Labour cost control aims to secure the right quantity and quality of labour at the right cost, while keeping workers motivated and productive. Like material, labour cost is split into a <strong>direct</strong> portion (wages of workers directly engaged in production, traceable to a specific job/product) and an <strong>indirect</strong> portion (wages of supervisors, maintenance staff, and other support labour, forming part of overheads).</p>
+
+                <h3 id="timekeeping">6.2 Time-Keeping and Time-Booking</h3>
+                <ul class="custom-bullets">
+                    <li><strong>Time-Keeping</strong> — recording the total time each worker spends on the factory premises (attendance), used for wage calculation, discipline, and statutory compliance.</li>
+                    <li><strong>Time-Booking</strong> — recording how a worker's time was actually spent among specific jobs, orders or processes, essential for accurately charging direct labour cost to the correct cost unit.</li>
+                </ul>
+
+                <h3 id="wagepayment">6.3 Methods of Wage Payment</h3>
+                <ul class="custom-bullets">
+                    <li><strong>Time Rate System</strong> — wages are paid strictly according to the time worked (e.g., ₹X per hour), regardless of output; simple and fair, but provides little direct incentive for higher output.</li>
+                    <li><strong>Piece Rate System</strong> — wages are paid strictly according to the quantity of output produced (e.g., ₹Y per unit), directly rewarding higher productivity, but potentially at the cost of quality if not carefully monitored.</li>
+                    <li><strong>Incentive (Premium Bonus) Schemes</strong> — hybrid systems that guarantee a base time wage while rewarding workers who complete a job in less than the standard time allowed, by sharing the resulting time saved as a bonus.</li>
+                </ul>
+
+                <h3 id="incentiveworked">6.4 Worked Example: Halsey and Rowan Premium Bonus Schemes</h3>
+                <p>Standard time allowed for a job = 10 hours; Time rate = ₹50 per hour; Actual time taken by the worker = 8 hours (i.e., 2 hours saved).</p>
+                <table class="tutorial-table">
+                    <tr><th>Scheme</th><th>Bonus Formula</th><th>Bonus Calculation</th><th>Total Wages</th></tr>
+                    <tr><td><strong>Halsey Plan</strong></td><td>50% of Time Saved × Time Rate</td><td>50% × 2 hrs × ₹50 = ₹50</td><td>(8 × ₹50) + ₹50 = <strong>₹450</strong></td></tr>
+                    <tr><td><strong>Rowan Plan</strong></td><td>(Time Saved ÷ Standard Time) × Time Taken × Time Rate</td><td>(2 ÷ 10) × 8 × ₹50 = ₹80</td><td>(8 × ₹50) + ₹80 = <strong>₹480</strong></td></tr>
+                </table>
+                <p>Both schemes reward the worker for finishing early, but the Rowan Plan gives a proportionally larger bonus for moderate time savings, while the Halsey Plan's bonus rises in strict proportion to time saved — the two plans can produce quite different bonus amounts for the same time saved, which is why the choice of scheme itself becomes a labour-cost-control decision.</p>
+
+                <h3 id="labourturnover">6.5 Labour Turnover and Idle Time</h3>
+                <ul class="custom-bullets">
+                    <li><strong>Labour Turnover</strong> — the rate at which employees leave and are replaced; high turnover is costly, since it involves recruitment, training and lost productivity during the learning curve of new employees.</li>
+                    <li><strong>Idle Time</strong> — time for which wages are paid but no output is produced (e.g., machine breakdown, power failure). <strong>Normal idle time</strong> (unavoidable, e.g., routine tea breaks) is treated as a factory overhead; <strong>abnormal idle time</strong> (avoidable, e.g., a major unexpected breakdown) is charged directly to the Costing Profit &amp; Loss Account, not to the cost of production.</li>
+                    <li><strong>Overtime</strong> — work done beyond normal working hours, usually paid at a premium rate; overtime premium should be closely controlled, as excessive overtime can signal poor production planning.</li>
+                </ul>
+
+                <h2 id="overheadcost">7. Accounting and Control of Overhead Cost</h2>
+                <h3 id="overheadmeaning">7.1 Meaning and Classification of Overheads</h3>
+                <p class="lead-text">Overheads are the aggregate of indirect material, indirect labour and indirect expenses — costs that cannot be conveniently and economically traced to a specific cost unit, but are nonetheless necessary to run the business. As introduced in Section 4, overheads are functionally classified into Factory (Works), Administration, and Selling &amp; Distribution Overheads.</p>
+
+                <h3 id="overheaddistribution">7.2 Distribution of Overheads: Allocation, Apportionment and Absorption</h3>
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 560 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The three-step process of allocation, apportionment and absorption of overheads">
+                        <rect width="560" height="200" fill="#ffffff" rx="14"/>
+                        <defs>
+                            <marker id="arrHeadO2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                                <path d="M0,0L10,5L0,10z" fill="#4a5568"/>
+                            </marker>
+                        </defs>
+                        <text x="280" y="24" text-anchor="middle" font-size="15" font-weight="600" fill="#2d3748">Distributing Overheads to Cost Units</text>
+
+                        <rect x="30" y="55" width="150" height="80" rx="8" fill="#2b6cb0"/>
+                        <text x="105" y="85" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">1. Allocation</text>
+                        <text x="105" y="105" text-anchor="middle" font-size="8.5" fill="#e2e8f0">Charging a whole item</text>
+                        <text x="105" y="118" text-anchor="middle" font-size="8.5" fill="#e2e8f0">directly to one cost centre</text>
+                        <line x1="180" y1="95" x2="210" y2="95" stroke="#4a5568" stroke-width="2" marker-end="url(#arrHeadO2)"/>
+
+                        <rect x="210" y="55" width="150" height="80" rx="8" fill="#2f855a"/>
+                        <text x="285" y="85" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">2. Apportionment</text>
+                        <text x="285" y="105" text-anchor="middle" font-size="8.5" fill="#e2e8f0">Sharing a common item</text>
+                        <text x="285" y="118" text-anchor="middle" font-size="8.5" fill="#e2e8f0">across several cost centres</text>
+                        <line x1="360" y1="95" x2="390" y2="95" stroke="#4a5568" stroke-width="2" marker-end="url(#arrHeadO2)"/>
+
+                        <rect x="390" y="55" width="150" height="80" rx="8" fill="#b7791f"/>
+                        <text x="465" y="85" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">3. Absorption</text>
+                        <text x="465" y="105" text-anchor="middle" font-size="8.5" fill="#fefcbf">Charging overheads onto</text>
+                        <text x="465" y="118" text-anchor="middle" font-size="8.5" fill="#fefcbf">individual cost units</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 6 — Allocation and apportionment get overheads onto the right cost centre (e.g., a department); absorption then spreads that department's overheads onto the individual units it produces.</p>
+                </div>
+                <ul class="custom-bullets">
+                    <li><strong>Allocation</strong> — the process of directly charging a whole item of overhead cost that is clearly identifiable with one specific cost centre (e.g., the salary of a supervisor who works in only one department).</li>
+                    <li><strong>Apportionment</strong> — the process of distributing a common overhead item across several cost centres on some equitable, logical basis (e.g., factory rent apportioned on the basis of floor area occupied by each department).</li>
+                    <li><strong>Absorption</strong> — the process of charging the overheads allocated/apportioned to a cost centre onto the individual cost units (products/jobs) passing through it, usually using a pre-determined <strong>overhead absorption rate</strong>.</li>
+                </ul>
+
+                <h3 id="absorptionrate">7.3 Overhead Absorption Rate</h3>
+                <p>An overhead absorption rate (OAR) is typically calculated in advance as: <strong>OAR = Budgeted Overheads ÷ Budgeted Base</strong> (the base commonly being machine hours, labour hours, or units of output), and is then applied to actual activity during the period to absorb overhead into the cost of production.</p>
+                <p><strong>Worked Example:</strong> Budgeted Factory Overheads = ₹1,00,000; Budgeted Machine Hours = 10,000 hours.</p>
+                <div class="concept-block">
+                    <strong>Overhead Absorption Rate = ₹1,00,000 ÷ 10,000 hours = ₹10 per Machine Hour</strong>
+                </div>
+                <p>If the actual machine hours worked during the period turn out to be 10,500 hours, the overhead <em>absorbed</em> into production = 10,500 × ₹10 = ₹1,05,000.</p>
+
+                <h3 id="underoverabsorption">7.4 Under- and Over-Absorption of Overheads</h3>
+                <p>Since the absorption rate is based on budgeted (estimated) figures, the overhead actually absorbed rarely exactly equals the overhead actually incurred, resulting in under- or over-absorption.</p>
+                <table class="tutorial-table">
+                    <tr><th>Particulars</th><th>Amount (₹)</th></tr>
+                    <tr><td>Actual Factory Overheads Incurred</td><td>1,10,000</td></tr>
+                    <tr><td>Overheads Absorbed (10,500 hrs × ₹10)</td><td>1,05,000</td></tr>
+                    <tr><td><strong>Under-Absorption of Overheads</strong></td><td><strong>5,000</strong></td></tr>
+                </table>
+                <ul class="custom-bullets">
+                    <li><strong>Under-Absorption</strong> — occurs when overhead absorbed is less than overhead actually incurred (as above); the shortfall is usually written off to the Costing Profit &amp; Loss Account.</li>
+                    <li><strong>Over-Absorption</strong> — occurs when overhead absorbed exceeds overhead actually incurred; the excess is usually credited back to the Costing Profit &amp; Loss Account.</li>
+                </ul>
+
+                <h2 id="review">Review Questions</h2>
+                <h3>Short Answer Type</h3>
+                <ol class="custom-bullets">
+                    <li>Distinguish between a cost unit and a cost centre.</li>
+                    <li>State the three elements of cost.</li>
+                    <li>Distinguish between fixed cost and variable cost with an example of each.</li>
+                    <li>What is a sunk cost? Why is it irrelevant to decision-making?</li>
+                    <li>Define opportunity cost with an example.</li>
+                    <li>What is the purpose of a cost sheet? Name any four items that appear in it.</li>
+                    <li>Distinguish between a bin card and a stores ledger.</li>
+                    <li>What is Economic Order Quantity (EOQ)?</li>
+                    <li>Distinguish between normal idle time and abnormal idle time.</li>
+                    <li>Distinguish between allocation and apportionment of overheads.</li>
+                </ol>
+                <h3>Long Answer / Essay Type</h3>
+                <ol class="custom-bullets">
+                    <li>Explain the meaning of cost and discuss the various bases on which costs are classified.</li>
+                    <li>What is meant by relevant cost? Explain with a make-or-buy example how relevant costing differs from a simple comparison of total costs.</li>
+                    <li>Explain the format of a cost sheet and prepare one from given cost data.</li>
+                    <li>Discuss the procedure and documents involved in the purchase, storage and issue of materials, along with the key techniques of inventory control.</li>
+                    <li>Explain the methods of wage payment, and illustrate the Halsey and Rowan premium bonus schemes with a numerical example.</li>
+                    <li>Explain the meaning of overheads and the process of allocation, apportionment and absorption of overhead costs.</li>
+                    <li>What is under- and over-absorption of overheads? Explain with an example how each is treated in cost accounts.</li>
+                </ol>
+
+                <h2 id="summary">Summary</h2>
+                <p>This unit examined the foundations of cost accounting. It defined cost and related terms — cost object, cost unit and cost centre — and explained the many ways costs can be classified: by nature (material, labour, expenses, each split into direct/indirect), by function (production, administration, selling and distribution), by behaviour (fixed, variable, semi-variable), and by other bases including controllability, normality and time. It gave particular attention to the costs relevant for decision-making — future, differential costs such as opportunity cost and differential cost — as against irrelevant sunk and committed costs, illustrated through a make-or-buy example where ignoring an unavoidable fixed cost reversed the "obvious" decision. The unit explained the preparation of a cost sheet, building up from Prime Cost through Works Cost and Cost of Production to the final Cost of Sales and Sales figure, with a fully worked numerical example. It then covered the accounting and control of the three basic elements of cost: material (the purchase-to-issue documentation cycle, ABC analysis, and the Economic Order Quantity model), labour (time-keeping, time-booking, wage payment methods, and the Halsey and Rowan incentive schemes, along with labour turnover and idle time), and overheads (their classification, the allocation-apportionment-absorption process, overhead absorption rates, and the treatment of under- and over-absorbed overheads).</p>
+
+            </div>
+
+            <div class="completion-section">
+                <button id="markCompleteBtn" class="complete-btn">✔️ Mark as Complete</button>
+            </div>
+
+            <div class="pagination">
+                <a href="s1-acc-u4.html" style="text-decoration: none;"><button class="prev-btn hover-effect">❮ Unit 4: Financial Statement Analysis</button></a>
+                <a href="s1-acc-u6.html" style="text-decoration: none;"><button class="next-btn hover-effect">Unit 6: Marginal Costing ❯</button></a>
+            </div>
+        </main>
+
+        <aside class="right-sidebar" id="rightSidebar">
+            <div class="widget sticky-widget premium-card">
+                <h3>Unit Contents</h3>
+                <ul class="toc-list">
+                    <li><a href="#intro">0. Introduction to Cost Accounting</a></li>
+                    <li><a href="#costconcept">1. Cost Concept</a></li>
+                    <li><a href="#classification">2. Cost Classification</a></li>
+                    <li><a href="#relevantcost">3. Relevant Cost</a></li>
+                    <li><a href="#costsheet">4. Cost Sheet</a></li>
+                    <li><a href="#materialcost">5. Material Cost Control</a></li>
+                    <li><a href="#labourcost">6. Labour Cost Control</a></li>
+                    <li><a href="#overheadcost">7. Overhead Cost Control</a></li>
+                    <li><a href="#review">Review Questions</a></li>
+                    <li><a href="#summary">Summary</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
