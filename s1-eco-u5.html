@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Economics for Managers - Unit-5</title>
+        <!-- Apple Touch Icons (for iOS home screen) -->
+    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icon.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="icon.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .diagram-wrap { margin: 28px 0; text-align: center; }
+        .diagram-wrap svg { max-width: 100%; height: auto; background: #ffffff; border-radius: 14px; box-shadow: 0 1px 8px rgba(0,0,0,0.10); }
+        .diagram-caption { font-size: 0.85rem; color: #666; margin-top: 10px; font-style: italic; }
+    </style>
+</head>
+<body data-current-topic="s1-eco-u5">
+    <div class="progress-container"><div class="progress-bar" id="myBar"></div></div>
+
+    <header class="navbar glass-nav">
+        <div class="nav-left">
+            <button id="mobileMenuBtn" class="mobile-menu-btn">☰</button>
+            <div class="logo">Learn & Concure <span> MBA Tutorials</span></div>
+        </div>
+        <div class="nav-links">
+            <button id="focusModeBtn" class="theme-btn hover-effect" title="Focus Mode">📖</button>
+            <button id="darkModeToggle" class="theme-btn hover-effect" title="Dark Mode">🌙</button>
+            <a href="index.html" id="logoutBtn" class="logout-btn hover-effect">Sign Out</a>
+        </div>
+    </header>
+
+    <div class="main-wrapper" id="mainWrapper">
+
+        <!-- JavaScript will automatically generate and inject the entire 4-Semester Sidebar here -->
+        <aside class="sidebar" id="sidebar-container"></aside>
+
+        <!-- Center Content: Tutorial -->
+        <main class="content premium-card" id="mainContent">
+            <div class="bread-crumbs">Semester-I / Economics for Managers / Unit 5</div>
+
+            <div class="article-header-flex">
+                <div>
+                    <h1>Macroeconomic Aggregates: GNP and GDP, National Income Measurement, Income Determination and the Consumption Function</h1>
+                    <div class="article-meta">
+                        <span>Read Time: 70 mins</span>
+                    </div>
+                </div>
+                <div class="action-buttons">
+                    <!--button class="icon-btn hover-effect" onclick="window.print()" title="Print PDF">🖨️</button-->
+                </div>
+            </div>
+            <hr class="premium-hr">
+
+            <div class="article-body">
+                <div class="concept-block">
+                    <strong>Topics Covered in This Unit:</strong>
+                    <ul class="custom-bullets" style="margin-top: 10px;">
+                        <li>Macroeconomic Aggregates — GNP and GDP</li>
+                        <li>Concepts and Measurement of National Income</li>
+                        <li>Determination of National Income</li>
+                        <li>Aggregate Consumption</li>
+                        <li>Consumption Function</li>
+                        <li>Numerical Problems Related to Management</li>
+                    </ul>
+                </div>
+
+                <h2 id="intro">0. Introduction to Macroeconomics</h2>
+                <p class="lead-text">Units 1–4 of this course examined microeconomics — the behaviour of individual consumers, firms, and markets. This unit shifts to macroeconomics, which studies the economy as a whole: aggregate output, income, employment, and the overall price level. A manager needs macroeconomic literacy because the demand for almost every firm's product (Unit 1), the cost of borrowing, and the general business climate all move with the broader economy's performance.</p>
+
+                <h2 id="gnpgdp">1. Macroeconomic Aggregates: GNP and GDP</h2>
+                <h3 id="gdpmeaning">1.1 Gross Domestic Product (GDP)</h3>
+                <div class="concept-block">
+                    <strong>GDP</strong> is the total market value of all final goods and services produced <em>within the geographical boundaries of a country</em> during a given period (usually a year), regardless of who owns the resources used in production (domestic residents or foreigners).
+                </div>
+
+                <h3 id="gnpmeaning">1.2 Gross National Product (GNP)</h3>
+                <div class="concept-block">
+                    <strong>GNP</strong> is the total market value of all final goods and services produced <em>by the normal residents of a country</em> (using resources owned by them), whether located within the country or abroad, during a given period.
+                </div>
+
+                <h3 id="gnpgdprelation">1.3 Relationship Between GNP and GDP</h3>
+                <div class="concept-block">
+                    <strong>GNP = GDP + Net Factor Income from Abroad (NFIA)</strong><br>
+                    where NFIA = (Factor income earned by domestic residents from abroad) − (Factor income earned by foreigners within the domestic economy)
+                </div>
+                <p><strong>Worked Example:</strong> A country's GDP is ₹100 lakh crore. Its residents earn ₹5 lakh crore in factor income from abroad, while foreign residents working within the country earn ₹3 lakh crore.</p>
+                <table class="tutorial-table">
+                    <tr><td>Net Factor Income from Abroad (NFIA) = 5 − 3</td><td>₹2 lakh crore</td></tr>
+                    <tr><td><strong>GNP = GDP + NFIA = 100 + 2</strong></td><td><strong>₹102 lakh crore</strong></td></tr>
+                </table>
+                <p>If NFIA is positive (as above), GNP exceeds GDP; if domestic residents earn less abroad than foreigners earn domestically, NFIA is negative and GNP falls short of GDP.</p>
+
+                <h3 id="nominalrealgdp">1.4 Nominal vs. Real GDP</h3>
+                <ul class="custom-bullets">
+                    <li><strong>Nominal GDP</strong> — output valued at current year (prevailing) prices, so it can rise simply because prices have risen, even if actual physical output is unchanged.</li>
+                    <li><strong>Real GDP</strong> — output valued at constant (base-year) prices, isolating the true change in the physical volume of goods and services produced, stripped of the effect of price changes (inflation).</li>
+                    <li><strong>GDP Deflator</strong> = (Nominal GDP ÷ Real GDP) × 100 — a broad price index measuring the average price level of everything included in GDP.</li>
+                </ul>
+
+                <h2 id="nationalincome">2. Concepts and Measurement of National Income</h2>
+                <h3 id="circularflow">2.1 The Circular Flow of Income</h3>
+                <p class="lead-text">The circular flow of income illustrates why an economy's total output, total income, and total expenditure are, in principle, all equal to one another — the same total value simply keeps circulating between households and firms.</p>
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 520 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Circular flow of income between households and firms showing factor services, factor income, goods and services, and consumption expenditure">
+                        <rect width="520" height="300" fill="#ffffff" rx="14"/>
+                        <defs>
+                            <marker id="arrHeadCF" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                                <path d="M0,0L10,5L0,10z" fill="#4a5568"/>
+                            </marker>
+                        </defs>
+                        <text x="260" y="24" text-anchor="middle" font-size="15" font-weight="600" fill="#2d3748">The Circular Flow of Income (Two-Sector Model)</text>
+
+                        <rect x="40" y="110" width="140" height="70" rx="8" fill="#2b6cb0"/>
+                        <text x="110" y="150" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">Households</text>
+
+                        <rect x="340" y="110" width="140" height="70" rx="8" fill="#c53030"/>
+                        <text x="410" y="150" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">Firms</text>
+
+                        <path d="M180,130 L340,130" stroke="#2f855a" stroke-width="2.2" marker-end="url(#arrHeadCF)" fill="none"/>
+                        <text x="260" y="122" text-anchor="middle" font-size="9" fill="#22543d">Factor Services (Land, Labour, Capital)</text>
+
+                        <path d="M340,160 L180,160" stroke="#b7791f" stroke-width="2.2" marker-end="url(#arrHeadCF)" fill="none"/>
+                        <text x="260" y="178" text-anchor="middle" font-size="9" fill="#7b341e">Factor Income (Rent, Wages, Interest, Profit)</text>
+
+                        <path d="M180,225 L340,225" stroke="#805ad5" stroke-width="2.2" marker-end="url(#arrHeadCF)" fill="none"/>
+                        <text x="260" y="217" text-anchor="middle" font-size="9" fill="#553c9a">Consumption Expenditure (₹)</text>
+
+                        <path d="M340,255 L180,255" stroke="#c53030" stroke-width="2.2" marker-end="url(#arrHeadCF)" fill="none"/>
+                        <text x="260" y="273" text-anchor="middle" font-size="9" fill="#742a2a">Goods and Services</text>
+
+                        <line x1="110" y1="180" x2="110" y2="225" stroke="#a0aec0" stroke-width="1.6"/>
+                        <line x1="410" y1="180" x2="410" y2="255" stroke="#a0aec0" stroke-width="1.6"/>
+                    </svg>
+                    <p class="diagram-caption">Fig. 1 — Households supply factor services to firms and receive factor income in return (the upper loop); firms supply goods and services to households, who pay for them with consumption expenditure (the lower loop) — the same rupee value flows continuously in a circle.</p>
+                </div>
+
+                <h3 id="incomeaggregates">2.2 National Income Aggregates</h3>
+                <p class="lead-text">Starting from GNP, a sequence of standard deductions and additions produces the other national income aggregates commonly used by governments and analysts.</p>
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 560 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Waterfall showing the derivation of NNP, National Income, Personal Income and Disposable Income from GNP">
+                        <rect width="560" height="420" fill="#ffffff" rx="14"/>
+                        <text x="280" y="24" text-anchor="middle" font-size="15" font-weight="600" fill="#2d3748">From GNP to Disposable Income</text>
+
+                        <rect x="90" y="45" width="380" height="38" rx="6" fill="#2b6cb0"/>
+                        <text x="280" y="69" text-anchor="middle" font-size="11.5" font-weight="600" fill="#fff">GNP (at Market Price) = ₹102 lakh crore</text>
+
+                        <rect x="120" y="97" width="320" height="34" rx="6" fill="#c53030"/>
+                        <text x="280" y="119" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff">Less: Depreciation (₹10)</text>
+
+                        <rect x="140" y="145" width="280" height="38" rx="6" fill="#2f855a"/>
+                        <text x="280" y="169" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">= NNP (at Market Price) = ₹92</text>
+
+                        <rect x="160" y="197" width="240" height="34" rx="6" fill="#c53030"/>
+                        <text x="280" y="219" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff">Less: Net Indirect Taxes (₹8)</text>
+
+                        <rect x="180" y="245" width="200" height="38" rx="6" fill="#3182ce"/>
+                        <text x="280" y="269" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">= National Income (NI) = ₹84</text>
+
+                        <rect x="180" y="297" width="200" height="46" rx="6" fill="#c53030"/>
+                        <text x="280" y="315" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff">Less: Corp. Tax (₹5) &amp; Undistributed</text>
+                        <text x="280" y="329" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff">Profit (₹3); Add: Transfers (₹6)</text>
+
+                        <rect x="180" y="357" width="200" height="34" rx="6" fill="#805ad5"/>
+                        <text x="280" y="379" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">= Personal Income (PI) = ₹82</text>
+
+                        <text x="280" y="410" text-anchor="middle" font-size="9.5" fill="#718096">Less: Personal Taxes (₹12) → Disposable Income (DI) = ₹70</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 2 — Each aggregate answers a different question: NNP nets out capital consumed; National Income strips out indirect taxes; Personal Income reflects what households actually receive; Disposable Income is what remains after personal taxes, available to spend or save.</p>
+                </div>
+                <table class="tutorial-table">
+                    <tr><th>Aggregate</th><th>Formula</th></tr>
+                    <tr><td>Net National Product (NNP) at Market Price</td><td>GNP − Depreciation</td></tr>
+                    <tr><td>National Income (NI) / NNP at Factor Cost</td><td>NNP at Market Price − Net Indirect Taxes (Indirect Taxes − Subsidies)</td></tr>
+                    <tr><td>Personal Income (PI)</td><td>NI − Corporate Taxes − Undistributed Profits − Social Security Contributions + Transfer Payments</td></tr>
+                    <tr><td>Disposable Income (DI)</td><td>PI − Personal (Direct) Taxes</td></tr>
+                    <tr><td>Per Capita Income</td><td>National Income ÷ Total Population</td></tr>
+                </table>
+
+                <h3 id="measurementmethods">2.3 Methods of Measuring National Income</h3>
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 560 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The three methods of measuring national income: product method, income method and expenditure method">
+                        <rect width="560" height="200" fill="#ffffff" rx="14"/>
+                        <text x="280" y="24" text-anchor="middle" font-size="15" font-weight="600" fill="#2d3748">Three Methods of Measuring National Income</text>
+
+                        <rect x="200" y="42" width="160" height="34" rx="6" fill="#2d3748"/>
+                        <text x="280" y="63" text-anchor="middle" font-size="10" font-weight="600" fill="#fff">NATIONAL INCOME</text>
+
+                        <line x1="225" y1="76" x2="95" y2="115" stroke="#a0aec0" stroke-width="1.4"/>
+                        <line x1="280" y1="76" x2="280" y2="115" stroke="#a0aec0" stroke-width="1.4"/>
+                        <line x1="335" y1="76" x2="465" y2="115" stroke="#a0aec0" stroke-width="1.4"/>
+
+                        <rect x="20" y="115" width="150" height="65" rx="6" fill="#2b6cb0"/>
+                        <text x="95" y="138" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff">Product (Value</text>
+                        <text x="95" y="152" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff">Added) Method</text>
+                        <text x="95" y="168" text-anchor="middle" font-size="8" fill="#e2e8f0">Sums value added at</text>
+                        <text x="95" y="178" text-anchor="middle" font-size="8" fill="#e2e8f0">each stage of production</text>
+
+                        <rect x="205" y="115" width="150" height="65" rx="6" fill="#2f855a"/>
+                        <text x="280" y="140" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff">Income Method</text>
+                        <text x="280" y="158" text-anchor="middle" font-size="8" fill="#e2e8f0">Sums all factor incomes:</text>
+                        <text x="280" y="170" text-anchor="middle" font-size="8" fill="#e2e8f0">rent + wages + interest + profit</text>
+
+                        <rect x="390" y="115" width="150" height="65" rx="6" fill="#b7791f"/>
+                        <text x="465" y="138" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff">Expenditure</text>
+                        <text x="465" y="152" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff">Method</text>
+                        <text x="465" y="168" text-anchor="middle" font-size="8" fill="#fefcbf">Y = C + I + G + (X − M)</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 3 — All three approaches should, in principle, yield the same total, since total output equals total income equals total expenditure — the logic behind the circular flow (Fig. 1).</p>
+                </div>
+                <ul class="custom-bullets">
+                    <li><strong>Product (Value Added) Method</strong> — sums the value added by every producing unit in the economy at every stage of production, carefully avoiding double-counting of intermediate goods.</li>
+                    <li><strong>Income Method</strong> — sums all factor incomes earned in the economy: rent (for land), wages (for labour), interest (for capital), and profit (for entrepreneurship).</li>
+                    <li><strong>Expenditure Method</strong> — sums all final expenditure on goods and services: <strong>Y = C + I + G + (X − M)</strong>, where C = private consumption, I = investment, G = government expenditure, and (X − M) = net exports.</li>
+                </ul>
+
+                <h3 id="measurementdifficulties">2.4 Difficulties in Measuring National Income</h3>
+                <ul class="custom-bullets">
+                    <li><strong>Non-monetized/informal sector transactions</strong> — subsistence farming, unpaid household work, and informal-sector output are difficult to value and often go unrecorded.</li>
+                    <li><strong>Risk of double counting</strong> — care must be taken to count only the value added at each stage, or only final goods, not intermediate goods.</li>
+                    <li><strong>Data and statistical limitations</strong> — especially in developing economies, comprehensive and reliable data may not be available.</li>
+                    <li><strong>Black money / unreported income</strong> — income from illegal or undeclared activities is excluded, understating true national income.</li>
+                </ul>
+
+                <h2 id="incomedetermination">3. Determination of National Income</h2>
+                <h3 id="keynesianmodel">3.1 The Simple Keynesian (Two-Sector) Model</h3>
+                <p class="lead-text">In the simplest Keynesian model of an economy with only households and firms (no government or foreign trade), national income (Y) is determined by the level of Aggregate Demand (AD), which consists of planned consumption expenditure (C) and planned investment expenditure (I).</p>
+                <div class="concept-block">
+                    <strong>Equilibrium Condition: Y = C + I</strong> &nbsp; (equivalently, Saving = Investment, i.e., S = I)
+                </div>
+
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 520 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The Keynesian cross diagram showing equilibrium national income where aggregate demand equals the forty five degree line">
+                        <rect width="520" height="360" fill="#ffffff" rx="14"/>
+                        <text x="260" y="22" text-anchor="middle" font-size="14.5" font-weight="600" fill="#2d3748">The Keynesian Cross: Equilibrium National Income</text>
+
+                        <line x1="60" y1="310" x2="480" y2="310" stroke="#2d3748" stroke-width="1.5"/>
+                        <line x1="60" y1="310" x2="60" y2="40" stroke="#2d3748" stroke-width="1.5"/>
+                        <text x="270" y="332" text-anchor="middle" font-size="9.5" fill="#4a5568">National Income / Output (Y)</text>
+                        <text x="25" y="180" text-anchor="middle" font-size="9.5" fill="#4a5568" transform="rotate(-90 25 180)">Aggregate Demand (₹)</text>
+
+                        <line x1="60" y1="310" x2="460" y2="42" stroke="#a0aec0" stroke-width="2" stroke-dasharray="5,3"/>
+                        <text x="440" y="55" text-anchor="middle" font-size="9" fill="#718096">45° Line (Y = AD)</text>
+
+                        <line x1="60" y1="293.25" x2="460" y2="92.25" stroke="#2f855a" stroke-width="2.2"/>
+                        <text x="475" y="90" text-anchor="middle" font-size="9" fill="#22543d">C</text>
+
+                        <line x1="60" y1="259.75" x2="460" y2="58.75" stroke="#2b6cb0" stroke-width="2.6"/>
+                        <text x="475" y="60" text-anchor="middle" font-size="9" fill="#2c5282">AD = C + I</text>
+
+                        <line x1="360" y1="310" x2="360" y2="109" stroke="#805ad5" stroke-width="1.6" stroke-dasharray="4,3"/>
+                        <circle cx="360" cy="109" r="5.5" fill="#c53030"/>
+                        <text x="360" y="95" text-anchor="middle" font-size="9.5" font-weight="600" fill="#742a2a">E (Equilibrium)</text>
+                        <text x="360" y="330" text-anchor="middle" font-size="9" fill="#4a5568">Y* = 600</text>
+
+                        <line x1="360" y1="142.5" x2="360" y2="109" stroke="#c53030" stroke-width="3"/>
+                        <text x="390" y="128" text-anchor="middle" font-size="8.5" fill="#742a2a">I = 100</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 4 — Equilibrium income (Y* = 600) occurs exactly where the Aggregate Demand line crosses the 45° line — at any lower income, AD exceeds output and firms respond by producing more; at any higher income, AD falls short and firms cut back.</p>
+                </div>
+
+                <p><strong>Worked Example:</strong> Consumption function C = 50 + 0.75Y; Investment I = ₹100 crore (autonomous, i.e., independent of income).</p>
+                <table class="tutorial-table">
+                    <tr><td>Aggregate Demand: AD = C + I = 50 + 0.75Y + 100 = 150 + 0.75Y</td></tr>
+                    <tr><td>Equilibrium condition: Y = AD → Y = 150 + 0.75Y</td></tr>
+                    <tr><td>0.25Y = 150 → <strong>Y* = ₹600 crore</strong></td></tr>
+                </table>
+                <p><em>Verification:</em> At Y = 600, C = 50 + 0.75(600) = 50 + 450 = ₹500 crore, so Saving S = Y − C = 600 − 500 = ₹100 crore — exactly equal to Investment (I = ₹100 crore), confirming the equilibrium condition S = I.</p>
+
+                <h2 id="aggregateconsumption">4. Aggregate Consumption</h2>
+                <h3 id="aggregateconsumptionmeaning">4.1 Meaning</h3>
+                <p class="lead-text">Aggregate consumption is the total expenditure by all households in an economy on final consumer goods and services during a given period — typically the single largest component of Aggregate Demand (as in Section 3.1) in most economies.</p>
+
+                <h3 id="psychologicallaw">4.2 Keynes' Psychological Law of Consumption</h3>
+                <p>John Maynard Keynes proposed that, as aggregate income rises, aggregate consumption also rises, but by a smaller amount than the rise in income — households tend to save a growing proportion of each additional rupee earned. This "law" is the behavioural foundation of the consumption function examined next.</p>
+
+                <h2 id="consumptionfunction">5. Consumption Function</h2>
+                <h3 id="cfmeaning">5.1 Meaning and Linear Form</h3>
+                <div class="concept-block">
+                    <strong>C = a + bY</strong><br>
+                    where C = consumption expenditure; a = autonomous consumption (consumption that occurs even at zero income, e.g., financed by borrowing or past savings); b = Marginal Propensity to Consume (MPC); Y = income.
+                </div>
+
+                <h3 id="apcmpc">5.2 Average and Marginal Propensity to Consume</h3>
+                <ul class="custom-bullets">
+                    <li><strong>Average Propensity to Consume (APC)</strong> = Total Consumption ÷ Total Income (C ÷ Y) — the proportion of total income spent on consumption.</li>
+                    <li><strong>Marginal Propensity to Consume (MPC)</strong> = Change in Consumption ÷ Change in Income (ΔC ÷ ΔY) — the proportion of each <em>additional</em> rupee of income that is spent on consumption; this is the slope (b) of the consumption function, and per Keynes' psychological law (Section 4.2), 0 &lt; MPC &lt; 1.</li>
+                </ul>
+
+                <h3 id="savingfunction">5.3 The Saving Function</h3>
+                <div class="concept-block">
+                    <strong>S = Y − C = Y − (a + bY) = −a + (1 − b)Y</strong><br>
+                    Marginal Propensity to Save (MPS) = 1 − MPC, and MPC + MPS = 1 always.
+                </div>
+
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 480 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Consumption function graph showing the break even point where consumption equals income, with saving and dissaving regions marked">
+                        <rect width="480" height="320" fill="#ffffff" rx="14"/>
+                        <text x="240" y="22" text-anchor="middle" font-size="14" font-weight="600" fill="#2d3748">The Consumption Function: C = 50 + 0.75Y</text>
+
+                        <line x1="60" y1="270" x2="420" y2="270" stroke="#2d3748" stroke-width="1.5"/>
+                        <line x1="60" y1="270" x2="60" y2="40" stroke="#2d3748" stroke-width="1.5"/>
+                        <text x="240" y="292" text-anchor="middle" font-size="9.5" fill="#4a5568">Income (Y)</text>
+                        <text x="25" y="155" text-anchor="middle" font-size="9.5" fill="#4a5568" transform="rotate(-90 25 155)">Consumption (C)</text>
+
+                        <line x1="60" y1="270" x2="420" y2="70" stroke="#a0aec0" stroke-width="2" stroke-dasharray="5,3"/>
+                        <text x="400" y="82" text-anchor="middle" font-size="8.5" fill="#718096">45° Line (C = Y)</text>
+
+                        <line x1="60" y1="245" x2="420" y2="95" stroke="#2b6cb0" stroke-width="2.6"/>
+                        <text x="435" y="92" text-anchor="middle" font-size="9" fill="#2c5282">C</text>
+
+                        <polygon points="60,270 240,170 60,170" fill="#fed7d7" opacity="0.6"/>
+                        <text x="105" y="230" text-anchor="middle" font-size="8" font-weight="600" fill="#742a2a">Dis-saving</text>
+
+                        <polygon points="240,170 420,70 420,170" fill="#c6f6d5" opacity="0.6"/>
+                        <text x="360" y="150" text-anchor="middle" font-size="8" font-weight="600" fill="#22543d">Saving</text>
+
+                        <circle cx="240" cy="170" r="5.5" fill="#2d3748"/>
+                        <text x="240" y="155" text-anchor="middle" font-size="9" font-weight="600" fill="#2d3748">Break-Even Point (Y = 200)</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 5 — Below the break-even income of ₹200, households consume more than their income (dis-saving, financed by borrowing or drawing down savings); above it, households save a positive amount, and that saved amount grows with income.</p>
+                </div>
+
+                <p><strong>Worked Example (continuing C = 50 + 0.75Y):</strong></p>
+                <table class="tutorial-table">
+                    <tr><th>Particulars</th><th>Calculation</th><th>Result</th></tr>
+                    <tr><td>Break-even income (where C = Y)</td><td>Y = 50 + 0.75Y → 0.25Y = 50</td><td><strong>Y = ₹200</strong></td></tr>
+                    <tr><td>Consumption at Y = ₹400</td><td>50 + 0.75(400)</td><td>C = ₹350</td></tr>
+                    <tr><td>Saving at Y = ₹400</td><td>400 − 350</td><td>S = ₹50</td></tr>
+                    <tr><td>APC at Y = ₹400</td><td>350 ÷ 400</td><td>0.875</td></tr>
+                    <tr><td>MPC (slope of C function)</td><td>—</td><td>0.75</td></tr>
+                    <tr><td>MPS</td><td>1 − 0.75</td><td>0.25</td></tr>
+                </table>
+                <p>Note that APC (0.875) is greater than MPC (0.75) at this income level — consistent with Keynes' psychological law (Section 4.2): as income rises, the <em>average</em> share spent on consumption gradually falls (approaching, but staying above, the constant marginal share) as the fixed autonomous consumption "a" becomes a smaller fraction of total income.</p>
+
+                <h2 id="numericalproblems">6. Numerical Problems Related to Management</h2>
+                <p><strong>Problem 1 (GNP/GDP):</strong> A country's GDP is ₹500 crore. Factor income earned by its residents abroad is ₹40 crore, and factor income earned by foreigners within the country is ₹55 crore. Find the country's GNP.<br>
+                <em>Solution:</em> NFIA = 40 − 55 = −₹15 crore. GNP = GDP + NFIA = 500 + (−15) = <strong>₹485 crore</strong> (GNP is less than GDP here, since foreigners earn more domestically than residents earn abroad).</p>
+                <p><strong>Problem 2 (Equilibrium Income):</strong> If C = 80 + 0.6Y and I = ₹120 crore, find the equilibrium level of national income.<br>
+                <em>Solution:</em> AD = C + I = 80 + 0.6Y + 120 = 200 + 0.6Y. Equilibrium: Y = 200 + 0.6Y → 0.4Y = 200 → <strong>Y* = ₹500 crore</strong>.</p>
+                <p><strong>Problem 3 (Consumption Function):</strong> If C = 40 + 0.8Y, find the level of saving when income is ₹300.<br>
+                <em>Solution:</em> C at Y = 300: 40 + 0.8(300) = 40 + 240 = ₹280. S = Y − C = 300 − 280 = <strong>₹20</strong>.</p>
+
+                <h2 id="review">Review Questions</h2>
+                <h3>Short Answer Type</h3>
+                <ol class="custom-bullets">
+                    <li>Define GDP and GNP. State the relationship between them.</li>
+                    <li>What is Net Factor Income from Abroad?</li>
+                    <li>Distinguish between nominal GDP and real GDP.</li>
+                    <li>Name the three methods of measuring national income.</li>
+                    <li>Distinguish between National Income and Personal Income.</li>
+                    <li>State the equilibrium condition for national income in the simple two-sector Keynesian model.</li>
+                    <li>State Keynes' psychological law of consumption.</li>
+                    <li>Distinguish between APC and MPC.</li>
+                    <li>What is the break-even level of income in the context of the consumption function?</li>
+                </ol>
+                <h3>Long Answer / Essay Type / Numerical</h3>
+                <ol class="custom-bullets">
+                    <li>Explain the meaning of GDP and GNP, and calculate GNP from given GDP and factor income data.</li>
+                    <li>Explain the circular flow of income and how it demonstrates the equality of output, income and expenditure.</li>
+                    <li>Explain the various national income aggregates (GNP, NNP, NI, PI, DI) and how each is derived from the one before it.</li>
+                    <li>Explain the three methods of measuring national income, and the difficulties involved in measuring it accurately.</li>
+                    <li>Explain the determination of equilibrium national income in the simple Keynesian model, with a numerical example and diagram.</li>
+                    <li>Explain the consumption function, and calculate APC, MPC and the break-even level of income from a given consumption function.</li>
+                    <li>Discuss the relationship between the consumption function and the saving function.</li>
+                </ol>
+
+                <h2 id="summary">Summary</h2>
+                <p>This unit introduced macroeconomics through its core aggregates and models. It defined GDP (output produced within a country's borders) and GNP (output produced by a country's residents, wherever located), linked by Net Factor Income from Abroad, and distinguished nominal from real GDP via the GDP deflator. It explained the circular flow of income between households and firms as the underlying reason why output, income and expenditure are equal, and traced the sequence of national income aggregates from GNP down to Disposable Income through a worked numerical example, alongside the product, income and expenditure methods of measuring national income and the practical difficulties involved. The unit then covered the determination of national income in the simple two-sector Keynesian model, where equilibrium output occurs where Y = C + I (equivalently, S = I), illustrated through the Keynesian cross diagram and a worked example yielding an equilibrium income of ₹600 crore. It introduced aggregate consumption and Keynes' psychological law of consumption, before formalizing this behaviour through the linear consumption function C = a + bY, explaining the Average and Marginal Propensities to Consume, the saving function, and the break-even level of income at which saving is exactly zero — closing with worked numerical problems on GNP calculation, equilibrium income determination, and the consumption/saving function.</p>
+
+            </div>
+
+            <div class="completion-section">
+                <button id="markCompleteBtn" class="complete-btn">✔️ Mark as Complete</button>
+            </div>
+
+            <div class="pagination">
+                <a href="s1-eco-u4.html" style="text-decoration: none;"><button class="prev-btn hover-effect">❮ Unit 4: Economic Goals of the Firm and Managerial Theories</button></a>
+                <a href="s1-eco-u6.html" style="text-decoration: none;"><button class="next-btn hover-effect">Unit 6: Inflation, Business Cycles, Business Decision-Making ❯</button></a>
+            </div>
+        </main>
+
+        <aside class="right-sidebar" id="rightSidebar">
+            <div class="widget sticky-widget premium-card">
+                <h3>Unit Contents</h3>
+                <ul class="toc-list">
+                    <li><a href="#intro">0. Introduction to Macroeconomics</a></li>
+                    <li><a href="#gnpgdp">1. GNP and GDP</a></li>
+                    <li><a href="#nationalincome">2. Concepts &amp; Measurement of NI</a></li>
+                    <li><a href="#incomedetermination">3. Determination of National Income</a></li>
+                    <li><a href="#aggregateconsumption">4. Aggregate Consumption</a></li>
+                    <li><a href="#consumptionfunction">5. Consumption Function</a></li>
+                    <li><a href="#numericalproblems">6. Numerical Problems</a></li>
+                    <li><a href="#review">Review Questions</a></li>
+                    <li><a href="#summary">Summary</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
