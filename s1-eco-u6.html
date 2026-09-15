@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Economics for Managers - Unit-6</title>
+        <!-- Apple Touch Icons (for iOS home screen) -->
+    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icon.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="icon.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .diagram-wrap { margin: 28px 0; text-align: center; }
+        .diagram-wrap svg { max-width: 100%; height: auto; background: #ffffff; border-radius: 14px; box-shadow: 0 1px 8px rgba(0,0,0,0.10); }
+        .diagram-caption { font-size: 0.85rem; color: #666; margin-top: 10px; font-style: italic; }
+    </style>
+</head>
+<body data-current-topic="s1-eco-u6">
+    <div class="progress-container"><div class="progress-bar" id="myBar"></div></div>
+
+    <header class="navbar glass-nav">
+        <div class="nav-left">
+            <button id="mobileMenuBtn" class="mobile-menu-btn">☰</button>
+            <div class="logo">Learn & Concure <span> MBA Tutorials</span></div>
+        </div>
+        <div class="nav-links">
+            <button id="focusModeBtn" class="theme-btn hover-effect" title="Focus Mode">📖</button>
+            <button id="darkModeToggle" class="theme-btn hover-effect" title="Dark Mode">🌙</button>
+            <a href="index.html" id="logoutBtn" class="logout-btn hover-effect">Sign Out</a>
+        </div>
+    </header>
+    <div class="main-wrapper" id="mainWrapper">
+
+        <!-- JavaScript will automatically generate and inject the entire 4-Semester Sidebar here -->
+        <aside class="sidebar" id="sidebar-container"></aside>
+
+        <!-- Center Content: Tutorial -->
+        <main class="content premium-card" id="mainContent">
+            <div class="bread-crumbs">Semester-I / Economics for Managers / Unit 6</div>
+
+            <div class="article-header-flex">
+                <div>
+                    <h1>Inflation, Business Cycles, Business Decision-Making, and Fiscal &amp; Monetary Policy</h1>
+                    <div class="article-meta">
+                        <span>Read Time: 70 mins</span>
+                    </div>
+                </div>
+                <div class="action-buttons">
+                    <!--button class="icon-btn hover-effect" onclick="window.print()" title="Print PDF">🖨️</button-->
+                </div>
+            </div>
+            <hr class="premium-hr">
+
+            <div class="article-body">
+                <div class="concept-block">
+                    <strong>Topics Covered in This Unit:</strong>
+                    <ul class="custom-bullets" style="margin-top: 10px;">
+                        <li>Inflation — Causes and Remedies</li>
+                        <li>Business Cycles — Concepts, Phases and Characteristics</li>
+                        <li>Business Decision-Making Across the Business Cycle</li>
+                        <li>Inflation and the Business Cycle</li>
+                        <li>Fiscal Policy</li>
+                        <li>Monetary Policy</li>
+                        <li>Numerical Problems Related to Management</li>
+                    </ul>
+                </div>
+
+                <h2 id="intro">0. Introduction</h2>
+                <p class="lead-text">Unit 5 explained how the equilibrium level of national income is determined. In reality, that equilibrium rarely stays still — economies experience recurring fluctuations in output and employment (business cycles) and a persistent tendency for the general price level to rise (inflation). This unit examines both phenomena and the fiscal and monetary policy tools governments and central banks use to manage them — knowledge every manager needs to anticipate the economic environment their firm will operate in.</p>
+
+                <h2 id="inflation">1. Inflation — Causes and Remedies</h2>
+                <h3 id="inflationmeaning">1.1 Meaning</h3>
+                <div class="concept-block">
+                    <strong>Inflation</strong> is a sustained, general rise in the price level of an economy over time, resulting in a fall in the purchasing power of money — it refers to a broad, economy-wide rise in prices, not a one-off increase in the price of a single good.
+                </div>
+                <p>Inflation is commonly measured using price indices such as the Consumer Price Index (CPI) or the GDP Deflator (Unit 5, Section 1.4).</p>
+                <p><strong>Worked Example:</strong> If the Consumer Price Index was 200 last year and is 220 this year:</p>
+                <div class="concept-block">
+                    <strong>Rate of Inflation = [(CPI this year − CPI last year) ÷ CPI last year] × 100 = [(220 − 200) ÷ 200] × 100 = 10%</strong>
+                </div>
+
+                <h3 id="inflationtypes">1.2 Types of Inflation</h3>
+                <table class="tutorial-table">
+                    <tr><th>Basis</th><th>Type</th><th>Description</th></tr>
+                    <tr><td rowspan="2"><strong>By Cause</strong></td><td>Demand-Pull Inflation</td><td>Prices rise because aggregate demand (Unit 5, Section 3) grows faster than the economy's productive capacity</td></tr>
+                    <tr><td>Cost-Push Inflation</td><td>Prices rise because the cost of production (wages, raw materials, energy) rises, independent of demand</td></tr>
+                    <tr><td rowspan="4"><strong>By Rate/Speed</strong></td><td>Creeping Inflation</td><td>A mild, gradual rise in prices (roughly up to 3% per year)</td></tr>
+                    <tr><td>Walking/Trotting Inflation</td><td>A moderate rise in prices (roughly 3–10% per year)</td></tr>
+                    <tr><td>Galloping Inflation</td><td>A very rapid rise in prices (double digits, or higher, per year)</td></tr>
+                    <tr><td>Hyperinflation</td><td>An extremely rapid, often uncontrollable rise in prices (can exceed 50% per month), effectively destroying the value of money</td></tr>
+                </table>
+
+                <h3 id="inflationcauses">1.3 Causes of Inflation</h3>
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 560 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Demand pull inflation caused by an increase in aggregate demand, compared with cost push inflation caused by a decrease in aggregate supply">
+                        <rect width="560" height="260" fill="#ffffff" rx="14"/>
+                        <text x="280" y="22" text-anchor="middle" font-size="14.5" font-weight="600" fill="#2d3748">Demand-Pull vs. Cost-Push Inflation</text>
+
+                        <!-- Panel A: Demand-Pull -->
+                        <line x1="40" y1="230" x2="240" y2="230" stroke="#2d3748" stroke-width="1.3"/>
+                        <line x1="40" y1="230" x2="40" y2="50" stroke="#2d3748" stroke-width="1.3"/>
+                        <text x="140" y="42" text-anchor="middle" font-size="10" font-weight="600" fill="#22543d">A. Demand-Pull</text>
+
+                        <line x1="55" y1="215" x2="215" y2="70" stroke="#b7791f" stroke-width="2.2"/>
+                        <text x="222" y="66" text-anchor="middle" font-size="8" fill="#7b341e">AS</text>
+
+                        <line x1="55" y1="90" x2="215" y2="210" stroke="#2b6cb0" stroke-width="2"/>
+                        <text x="55" y="82" text-anchor="middle" font-size="7.5" fill="#2c5282">AD₁</text>
+                        <line x1="90" y1="90" x2="240" y2="200" stroke="#2b6cb0" stroke-width="2.2"/>
+                        <text x="245" y="196" text-anchor="middle" font-size="7.5" fill="#2c5282">AD₂</text>
+
+                        <circle cx="135" cy="148" r="3.5" fill="#2d3748"/>
+                        <circle cx="167" cy="120" r="3.5" fill="#c53030"/>
+                        <text x="140" y="252" text-anchor="middle" font-size="8" fill="#4a5568">Price ↑, Output ↑</text>
+
+                        <!-- Panel B: Cost-Push -->
+                        <line x1="320" y1="230" x2="520" y2="230" stroke="#2d3748" stroke-width="1.3"/>
+                        <line x1="320" y1="230" x2="320" y2="50" stroke="#2d3748" stroke-width="1.3"/>
+                        <text x="420" y="42" text-anchor="middle" font-size="10" font-weight="600" fill="#742a2a">B. Cost-Push</text>
+
+                        <line x1="335" y1="90" x2="495" y2="210" stroke="#2b6cb0" stroke-width="2.2"/>
+                        <text x="502" y="206" text-anchor="middle" font-size="7.5" fill="#2c5282">AD</text>
+
+                        <line x1="335" y1="215" x2="495" y2="70" stroke="#b7791f" stroke-width="2"/>
+                        <text x="335" y="222" text-anchor="middle" font-size="7.5" fill="#7b341e">AS₁</text>
+                        <line x1="365" y1="215" x2="510" y2="70" stroke="#c53030" stroke-width="2.2"/>
+                        <text x="518" y="66" text-anchor="middle" font-size="7.5" fill="#742a2a">AS₂</text>
+
+                        <circle cx="415" cy="148" r="3.5" fill="#2d3748"/>
+                        <circle cx="393" cy="120" r="3.5" fill="#c53030"/>
+                        <text x="420" y="252" text-anchor="middle" font-size="8" fill="#4a5568">Price ↑, Output ↓</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 1 — Demand-pull inflation (AD shifting right against a given AS) raises both price and output together; cost-push inflation (AS shifting left/up against a given AD) raises price while output actually falls — a combination sometimes called "stagflation" (Section 4.2).</p>
+                </div>
+                <ul class="custom-bullets">
+                    <li><strong>Demand-Pull Causes</strong> — expansionary fiscal policy (Section 5), expansionary monetary policy (Section 6), rising exports, or a consumption/investment boom pushing aggregate demand beyond the economy's full-capacity output.</li>
+                    <li><strong>Cost-Push Causes</strong> — rising wages (often outpacing productivity), rising raw material or energy prices (e.g., an oil price shock), supply-chain disruptions, or currency depreciation raising the cost of imported inputs.</li>
+                    <li><strong>Monetary Causes</strong> — an excessive growth in money supply relative to the growth of real output, in line with the classical Quantity Theory of Money ("too much money chasing too few goods").</li>
+                    <li><strong>Structural Causes</strong> — bottlenecks and inefficiencies (especially in developing economies) in specific sectors like agriculture or infrastructure that limit supply response even when demand rises.</li>
+                </ul>
+
+                <h3 id="inflationeffects">1.4 Effects of Inflation</h3>
+                <ul class="custom-bullets">
+                    <li>Erodes the real purchasing power of fixed-income earners (pensioners, salaried employees on fixed contracts) and lenders (since loans are repaid in money worth less than when lent).</li>
+                    <li>Discourages saving, since the real return on savings falls, while it can benefit borrowers and holders of physical/real assets.</li>
+                    <li>Distorts business planning and long-term investment decisions, as future costs and prices become harder to forecast (Section 3).</li>
+                    <li>Can erode a country's export competitiveness if domestic prices rise faster than those of trading partners.</li>
+                    <li>Moderate, predictable inflation is sometimes considered mildly beneficial (encouraging spending over hoarding), but high or volatile inflation is broadly damaging to growth and stability.</li>
+                </ul>
+
+                <h3 id="inflationremedies">1.5 Remedies to Control Inflation</h3>
+                <table class="tutorial-table">
+                    <tr><th>Category</th><th>Measures</th></tr>
+                    <tr><td><strong>Monetary Measures</strong></td><td>Contractionary monetary policy (Section 6) — raising interest rates, raising CRR/SLR, selling government securities (Open Market Operations) to reduce money supply and cool demand.</td></tr>
+                    <tr><td><strong>Fiscal Measures</strong></td><td>Contractionary fiscal policy (Section 5) — reducing government expenditure and/or raising taxes to reduce aggregate demand.</td></tr>
+                    <tr><td><strong>Supply-Side Measures</strong></td><td>Removing supply bottlenecks, improving productivity, easing imports of scarce goods, and investing in infrastructure to expand the economy's productive capacity — particularly important against cost-push and structural inflation.</td></tr>
+                    <tr><td><strong>Direct/Administrative Measures</strong></td><td>Price controls, rationing of essential goods, or wage-price guidelines — generally regarded as short-term or emergency tools, since they can create shortages if used for long periods.</td></tr>
+                </table>
+
+                <h2 id="businesscycle">2. Business Cycles</h2>
+                <h3 id="businesscyclemeaning">2.1 Meaning and Concept</h3>
+                <p class="lead-text">A business cycle (or trade cycle) refers to the recurring, wave-like fluctuations in the level of economic activity — output, employment, income and prices — around the economy's long-term growth trend, alternating between periods of expansion and contraction.</p>
+                <h3 id="businesscyclecharacteristics">2.2 Characteristics of Business Cycles</h3>
+                <ul class="custom-bullets">
+                    <li><strong>Recurrent but not periodic</strong> — cycles repeat over time, but their length and severity vary considerably from one cycle to the next.</li>
+                    <li><strong>Wide-ranging (pervasive)</strong> — fluctuations show up simultaneously across most sectors and indicators of the economy (output, employment, income, prices, profits).</li>
+                    <li><strong>Cumulative and self-reinforcing</strong> — each phase tends to feed on itself, at least for a time, before eventually turning.</li>
+                    <li><strong>International transmission</strong> — in an interconnected global economy, cycles in one major economy often spread to others through trade and financial linkages.</li>
+                </ul>
+
+                <h3 id="businesscyclephases">2.3 Phases of the Business Cycle</h3>
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 600 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Business cycle wave showing the phases of expansion, peak, recession, trough and recovery around a long term growth trend">
+                        <rect width="600" height="320" fill="#ffffff" rx="14"/>
+                        <text x="300" y="22" text-anchor="middle" font-size="15" font-weight="600" fill="#2d3748">The Phases of the Business Cycle</text>
+
+                        <line x1="60" y1="280" x2="560" y2="280" stroke="#2d3748" stroke-width="1.5"/>
+                        <line x1="60" y1="280" x2="60" y2="45" stroke="#2d3748" stroke-width="1.5"/>
+                        <text x="310" y="300" text-anchor="middle" font-size="9.5" fill="#4a5568">Time</text>
+                        <text x="25" y="165" text-anchor="middle" font-size="9.5" fill="#4a5568" transform="rotate(-90 25 165)">Level of Economic Activity</text>
+
+                        <line x1="90" y1="230" x2="510" y2="150" stroke="#a0aec0" stroke-width="1.8" stroke-dasharray="5,3"/>
+                        <text x="500" y="140" text-anchor="middle" font-size="8.5" fill="#718096">Long-Run Growth Trend</text>
+
+                        <path d="M90,260 Q180,60 270,90 Q360,120 450,260 L510,230" fill="none" stroke="#2b6cb0" stroke-width="2.8"/>
+
+                        <circle cx="90" cy="260" r="5" fill="#c53030"/>
+                        <text x="90" y="280" text-anchor="middle" font-size="8.5" font-weight="600" fill="#742a2a"></text>
+                        <text x="70" y="298" text-anchor="middle" font-size="8.5" font-weight="600" fill="#742a2a">Trough</text>
+
+                        <text x="175" y="150" text-anchor="middle" font-size="9" font-weight="600" fill="#22543d">Expansion</text>
+
+                        <circle cx="270" cy="90" r="5" fill="#2f855a"/>
+                        <text x="270" y="75" text-anchor="middle" font-size="9" font-weight="600" fill="#22543d">Peak / Boom</text>
+
+                        <text x="365" y="195" text-anchor="middle" font-size="9" font-weight="600" fill="#742a2a">Recession</text>
+
+                        <circle cx="450" cy="260" r="5" fill="#c53030"/>
+                        <text x="450" y="298" text-anchor="middle" font-size="8.5" font-weight="600" fill="#742a2a">Trough</text>
+
+                        <text x="495" y="238" text-anchor="middle" font-size="8.5" font-weight="600" fill="#2c5282">Recovery →</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 2 — A complete business cycle runs from one trough, through expansion to a peak, then through recession back down to the next trough, with recovery marking the turning point back into expansion — all oscillating around the economy's underlying long-run growth trend.</p>
+                </div>
+
+                <h3 id="phasecharacteristics">2.4 Characteristics of Each Phase</h3>
+                <table class="tutorial-table">
+                    <tr><th>Phase</th><th>Key Characteristics</th></tr>
+                    <tr><td><strong>Expansion (Recovery/Prosperity)</strong></td><td>Rising output, employment, income and consumer spending; business optimism grows; investment picks up; prices begin to rise moderately.</td></tr>
+                    <tr><td><strong>Peak (Boom)</strong></td><td>Economic activity reaches its highest point; output near or at full capacity; unemployment at its lowest; prices rising faster (demand-pull pressure, Section 1.3); often accompanied by speculative excess and over-optimism.</td></tr>
+                    <tr><td><strong>Recession (Contraction/Downturn)</strong></td><td>Output, income, employment and business confidence all decline; investment is cut back; inventories build up unsold; profits fall.</td></tr>
+                    <tr><td><strong>Trough (Depression, if severe/prolonged)</strong></td><td>Economic activity at its lowest point; high unemployment; widespread pessimism; prices may stagnate or fall; weaker firms may exit the market.</td></tr>
+                    <tr><td><strong>Recovery</strong></td><td>The turning point from trough back toward expansion; output and employment begin rising again as confidence slowly returns.</td></tr>
+                </table>
+
+                <h2 id="businessdecisions">3. Business Decision-Making Across the Business Cycle</h2>
+                <p class="lead-text">Because a firm's optimal strategy for pricing, inventory, staffing, investment and financing depends heavily on where the broader economy stands in the business cycle, understanding the current and likely future phase is a core input into managerial decision-making.</p>
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Recommended managerial actions across the five phases of the business cycle">
+                        <rect width="600" height="400" fill="#ffffff" rx="14"/>
+                        <defs>
+                            <marker id="arrHeadBC" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                                <path d="M0,0L10,5L0,10z" fill="#4a5568"/>
+                            </marker>
+                        </defs>
+                        <text x="300" y="22" text-anchor="middle" font-size="15" font-weight="600" fill="#2d3748">Managerial Actions Across the Business Cycle</text>
+
+                        <line x1="338.8" y1="76.1" x2="367.2" y2="87.9" stroke="#4a5568" stroke-width="2.2" marker-end="url(#arrHeadBC)"/>
+                        <line x1="422.1" y1="142.8" x2="433.9" y2="171.2" stroke="#4a5568" stroke-width="2.2" marker-end="url(#arrHeadBC)"/>
+                        <line x1="433.9" y1="248.8" x2="422.1" y2="277.2" stroke="#4a5568" stroke-width="2.2" marker-end="url(#arrHeadBC)"/>
+                        <line x1="367.2" y1="332.1" x2="338.8" y2="343.9" stroke="#4a5568" stroke-width="2.2" marker-end="url(#arrHeadBC)"/>
+                        <line x1="261.2" y1="343.9" x2="232.8" y2="332.1" stroke="#4a5568" stroke-width="2.2" marker-end="url(#arrHeadBC)"/>
+
+                        <circle cx="300" cy="60" r="48" fill="#2f855a"/>
+                        <text x="300" y="55" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff">Expansion</text>
+                        <text x="300" y="68" text-anchor="middle" font-size="8" fill="#e2e8f0">Expand capacity,</text>
+                        <text x="300" y="79" text-anchor="middle" font-size="8" fill="#e2e8f0">build inventory</text>
+
+                        <circle cx="406" cy="104" r="48" fill="#b7791f"/>
+                        <text x="406" y="99" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff">Peak</text>
+                        <text x="406" y="112" text-anchor="middle" font-size="8" fill="#fefcbf">Lock in financing,</text>
+                        <text x="406" y="123" text-anchor="middle" font-size="8" fill="#fefcbf">avoid over-expansion</text>
+
+                        <circle cx="450" cy="210" r="48" fill="#c53030"/>
+                        <text x="450" y="205" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff">Recession</text>
+                        <text x="450" y="218" text-anchor="middle" font-size="8" fill="#fed7d7">Control costs,</text>
+                        <text x="450" y="229" text-anchor="middle" font-size="8" fill="#fed7d7">protect cash flow</text>
+
+                        <circle cx="406" cy="316" r="48" fill="#805ad5"/>
+                        <text x="406" y="311" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff">Trough</text>
+                        <text x="406" y="324" text-anchor="middle" font-size="8" fill="#e9d8fd">Seek undervalued</text>
+                        <text x="406" y="335" text-anchor="middle" font-size="8" fill="#e9d8fd">assets, plan ahead</text>
+
+                        <circle cx="300" cy="360" r="48" fill="#3182ce"/>
+                        <text x="300" y="355" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff">Recovery</text>
+                        <text x="300" y="368" text-anchor="middle" font-size="8" fill="#ebf8ff">Rehire selectively,</text>
+                        <text x="300" y="379" text-anchor="middle" font-size="8" fill="#ebf8ff">rebuild stock</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 3 — Prudent managers act counter-cyclically where possible: investing cautiously and locking in resources near a peak, and conserving cash while watching for opportunities near a trough.</p>
+                </div>
+                <ul class="custom-bullets">
+                    <li><strong>Pricing</strong> — firms often have more pricing power during expansion/peak (rising demand) and must compete more aggressively on price during recession/trough.</li>
+                    <li><strong>Inventory management</strong> — building stock ahead of expected demand growth in expansion, but cutting inventory quickly as a recession approaches to avoid being caught with unsold goods.</li>
+                    <li><strong>Investment and capital expenditure</strong> — capacity expansion is generally most attractive during expansion (and least attractive at the peak, given the risk of a coming downturn), while a trough can offer opportunities to acquire assets or competitors cheaply.</li>
+                    <li><strong>Staffing</strong> — hiring ahead of demand during expansion, cautious/selective hiring near a peak, and careful workforce planning (avoiding premature layoffs) through recession and trough.</li>
+                    <li><strong>Financing</strong> — locking in favourable long-term financing terms before a peak (when interest rates, per Section 6, may be rising to control inflation), and maintaining strong liquidity heading into a potential downturn.</li>
+                </ul>
+
+                <h2 id="inflationbusinesscycle">4. Inflation and the Business Cycle</h2>
+                <h3 id="ibcrelationship">4.1 The Relationship</h3>
+                <p class="lead-text">Inflation and the business cycle are closely linked: demand-pull inflationary pressure (Section 1.3) typically builds as an economy approaches the peak of its cycle, when output nears full capacity and demand continues to grow, while inflationary pressure typically eases during recession and trough, when demand and output are weak.</p>
+                <h3 id="stagflation">4.2 Stagflation</h3>
+                <p>Stagflation refers to the unusual and particularly difficult combination of high inflation occurring <em>together with</em> stagnant output and high unemployment (rather than the normal pattern of inflation rising during booms and falling during downturns). It is most often triggered by a severe cost-push shock (Section 1.2, Fig. 1B) — such as a sudden oil price spike — which simultaneously raises prices and reduces output, leaving policymakers with a painful trade-off: measures to fight inflation (Section 1.5) risk worsening the stagnation, while measures to boost output (Section 5–6) risk worsening the inflation.</p>
+
+                <h2 id="fiscalpolicy">5. Fiscal Policy</h2>
+                <h3 id="fiscalmeaning">5.1 Meaning and Instruments</h3>
+                <p class="lead-text">Fiscal policy refers to the government's use of its spending and taxation powers to influence aggregate demand (Unit 5, Section 3) and thereby the level of economic activity, employment, and prices.</p>
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 560 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Comparison of expansionary and contractionary fiscal policy">
+                        <rect width="560" height="220" fill="#ffffff" rx="14"/>
+                        <text x="280" y="24" text-anchor="middle" font-size="15" font-weight="600" fill="#2d3748">Expansionary vs. Contractionary Fiscal Policy</text>
+
+                        <rect x="30" y="45" width="240" height="150" rx="8" fill="#2f855a"/>
+                        <text x="150" y="70" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">EXPANSIONARY</text>
+                        <text x="150" y="95" text-anchor="middle" font-size="9.5" fill="#e2e8f0">↑ Government Spending</text>
+                        <text x="150" y="112" text-anchor="middle" font-size="9.5" fill="#e2e8f0">↓ Taxes</text>
+                        <text x="150" y="135" text-anchor="middle" font-size="9" fill="#c6f6d5">Used to boost demand during</text>
+                        <text x="150" y="150" text-anchor="middle" font-size="9" fill="#c6f6d5">recession / trough (Section 3)</text>
+                        <text x="150" y="172" text-anchor="middle" font-size="9" fill="#c6f6d5">→ Widens fiscal deficit</text>
+
+                        <rect x="290" y="45" width="240" height="150" rx="8" fill="#c53030"/>
+                        <text x="410" y="70" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">CONTRACTIONARY</text>
+                        <text x="410" y="95" text-anchor="middle" font-size="9.5" fill="#fed7d7">↓ Government Spending</text>
+                        <text x="410" y="112" text-anchor="middle" font-size="9.5" fill="#fed7d7">↑ Taxes</text>
+                        <text x="410" y="135" text-anchor="middle" font-size="9" fill="#feb2b2">Used to cool demand-pull</text>
+                        <text x="410" y="150" text-anchor="middle" font-size="9" fill="#feb2b2">inflation near a peak/boom</text>
+                        <text x="410" y="172" text-anchor="middle" font-size="9" fill="#feb2b2">→ Narrows fiscal deficit</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 4 — The same two fiscal tools — spending and taxation — are used in opposite directions depending on whether the economy needs a demand boost (recession) or demand restraint (overheating boom).</p>
+                </div>
+
+                <h3 id="fiscalmultiplier">5.2 The Fiscal Multiplier</h3>
+                <p>Because of the consumption function's Marginal Propensity to Consume (Unit 5, Section 5.2), an initial rupee of extra government spending triggers successive rounds of extra income and spending throughout the economy — the total eventual rise in national income exceeds the initial injection, an effect captured by the government spending multiplier.</p>
+                <div class="concept-block">
+                    <strong>Government Spending Multiplier (k) = 1 ÷ (1 − MPC)</strong>
+                </div>
+                <p><strong>Worked Example:</strong> Using the MPC of 0.75 from Unit 5's consumption function example (C = 50 + 0.75Y):</p>
+                <table class="tutorial-table">
+                    <tr><td>Multiplier: k = 1 ÷ (1 − 0.75) = 1 ÷ 0.25</td><td><strong>k = 4</strong></td></tr>
+                    <tr><td>If government spending rises by ₹50 crore, total rise in national income = k × ΔG = 4 × 50</td><td><strong>₹200 crore</strong></td></tr>
+                </table>
+                <p>This multiplier effect is precisely why expansionary fiscal policy can be a powerful tool for pulling an economy out of recession (Section 3) — a relatively modest increase in government spending can generate a considerably larger increase in overall national income.</p>
+
+                <h2 id="monetarypolicy">6. Monetary Policy</h2>
+                <h3 id="monetarymeaning">6.1 Meaning and Role of the Central Bank</h3>
+                <p class="lead-text">Monetary policy refers to the actions taken by a country's central bank (the Reserve Bank of India, in India's case) to control the money supply and interest rates in the economy, in order to influence aggregate demand, inflation, and employment.</p>
+
+                <h3 id="monetaryinstruments">6.2 Instruments of Monetary Policy</h3>
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 600 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The main instruments of monetary policy used by a central bank">
+                        <rect width="600" height="240" fill="#ffffff" rx="14"/>
+                        <text x="300" y="24" text-anchor="middle" font-size="15" font-weight="600" fill="#2d3748">Key Instruments of Monetary Policy</text>
+
+                        <rect x="240" y="42" width="120" height="34" rx="6" fill="#2d3748"/>
+                        <text x="300" y="63" text-anchor="middle" font-size="10" font-weight="600" fill="#fff">CENTRAL BANK</text>
+
+                        <line x1="255" y1="76" x2="70" y2="115" stroke="#a0aec0" stroke-width="1.3"/>
+                        <line x1="275" y1="76" x2="200" y2="115" stroke="#a0aec0" stroke-width="1.3"/>
+                        <line x1="300" y1="76" x2="300" y2="115" stroke="#a0aec0" stroke-width="1.3"/>
+                        <line x1="325" y1="76" x2="400" y2="115" stroke="#a0aec0" stroke-width="1.3"/>
+                        <line x1="345" y1="76" x2="530" y2="115" stroke="#a0aec0" stroke-width="1.3"/>
+
+                        <rect x="15" y="115" width="110" height="60" rx="6" fill="#2b6cb0"/>
+                        <text x="70" y="138" text-anchor="middle" font-size="9" font-weight="600" fill="#fff">Repo Rate</text>
+                        <text x="70" y="155" text-anchor="middle" font-size="7.5" fill="#e2e8f0">Rate at which banks</text>
+                        <text x="70" y="165" text-anchor="middle" font-size="7.5" fill="#e2e8f0">borrow from central bank</text>
+
+                        <rect x="145" y="115" width="110" height="60" rx="6" fill="#2f855a"/>
+                        <text x="200" y="138" text-anchor="middle" font-size="9" font-weight="600" fill="#fff">CRR</text>
+                        <text x="200" y="155" text-anchor="middle" font-size="7.5" fill="#e2e8f0">Cash Reserve Ratio</text>
+                        <text x="200" y="165" text-anchor="middle" font-size="7.5" fill="#e2e8f0">held with central bank</text>
+
+                        <rect x="245" y="115" width="110" height="60" rx="6" fill="#b7791f"/>
+                        <text x="300" y="138" text-anchor="middle" font-size="9" font-weight="600" fill="#fff">SLR</text>
+                        <text x="300" y="155" text-anchor="middle" font-size="7.5" fill="#fefcbf">Statutory Liquidity</text>
+                        <text x="300" y="165" text-anchor="middle" font-size="7.5" fill="#fefcbf">Ratio in approved assets</text>
+
+                        <rect x="345" y="115" width="110" height="60" rx="6" fill="#805ad5"/>
+                        <text x="400" y="138" text-anchor="middle" font-size="9" font-weight="600" fill="#fff">Open Market</text>
+                        <text x="400" y="150" text-anchor="middle" font-size="9" font-weight="600" fill="#fff">Operations</text>
+                        <text x="400" y="165" text-anchor="middle" font-size="7.5" fill="#e9d8fd">Buying/selling govt. securities</text>
+
+                        <rect x="475" y="115" width="110" height="60" rx="6" fill="#c53030"/>
+                        <text x="530" y="138" text-anchor="middle" font-size="9" font-weight="600" fill="#fff">Bank Rate</text>
+                        <text x="530" y="155" text-anchor="middle" font-size="7.5" fill="#fed7d7">Long-term lending rate</text>
+                        <text x="530" y="165" text-anchor="middle" font-size="7.5" fill="#fed7d7">to commercial banks</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 5 — By adjusting any of these levers, the central bank changes how much money commercial banks can lend, and at what cost — which then ripples through to businesses and consumers via changed borrowing costs.</p>
+                </div>
+
+                <h3 id="monetarystance">6.3 Expansionary vs. Contractionary Monetary Policy</h3>
+                <table class="tutorial-table">
+                    <tr><th>Stance</th><th>Typical Action</th><th>Used When</th></tr>
+                    <tr><td><strong>Expansionary (Easy Money)</strong></td><td>Lower repo rate; lower CRR/SLR; buy government securities (injecting money into the banking system)</td><td>During recession/trough (Section 3), to lower borrowing costs and stimulate investment and consumption</td></tr>
+                    <tr><td><strong>Contractionary (Tight Money)</strong></td><td>Raise repo rate; raise CRR/SLR; sell government securities (withdrawing money from the banking system)</td><td>During a peak/boom with rising demand-pull inflation (Section 1.3), to cool aggregate demand</td></tr>
+                </table>
+
+                <h2 id="numericalproblems">7. Numerical Problems Related to Management</h2>
+                <p><strong>Problem 1 (Inflation Rate):</strong> The GDP deflator was 125 last year and is 135 this year. Calculate the rate of inflation.<br>
+                <em>Solution:</em> Inflation Rate = [(135 − 125) ÷ 125] × 100 = (10 ÷ 125) × 100 = <strong>8%</strong>.</p>
+                <p><strong>Problem 2 (Fiscal Multiplier):</strong> If MPC = 0.8 and the government increases spending by ₹100 crore, find the total increase in national income.<br>
+                <em>Solution:</em> Multiplier k = 1 ÷ (1 − 0.8) = 1 ÷ 0.2 = 5. Total increase in income = k × ΔG = 5 × 100 = <strong>₹500 crore</strong>.</p>
+                <p><strong>Problem 3 (Real vs. Nominal Values):</strong> A firm's nominal revenue grew from ₹400 crore to ₹440 crore over a year in which inflation was 8%. Estimate the approximate real growth in revenue.<br>
+                <em>Solution:</em> Nominal growth = (440 − 400) ÷ 400 × 100 = 10%. Approximate Real Growth ≈ Nominal Growth − Inflation Rate = 10% − 8% = <strong>≈ 2%</strong> (an approximation commonly used for small rates; the firm's revenue barely grew once inflation is accounted for).</p>
+
+                <h2 id="review">Review Questions</h2>
+                <h3>Short Answer Type</h3>
+                <ol class="custom-bullets">
+                    <li>Define inflation. How is the rate of inflation calculated?</li>
+                    <li>Distinguish between demand-pull and cost-push inflation.</li>
+                    <li>Name any two monetary and two fiscal measures to control inflation.</li>
+                    <li>Define a business cycle. State any two of its characteristics.</li>
+                    <li>Name the phases of the business cycle in order.</li>
+                    <li>What is stagflation? Why is it particularly difficult for policymakers?</li>
+                    <li>Distinguish between expansionary and contractionary fiscal policy.</li>
+                    <li>Name any three instruments of monetary policy.</li>
+                    <li>State the formula for the government spending multiplier.</li>
+                </ol>
+                <h3>Long Answer / Essay Type / Numerical</h3>
+                <ol class="custom-bullets">
+                    <li>Explain the meaning, types and causes of inflation, along with the measures available to control it.</li>
+                    <li>Explain the meaning, characteristics and phases of the business cycle, describing each phase in detail.</li>
+                    <li>Discuss how managerial decisions on pricing, inventory, investment and staffing should vary across the different phases of the business cycle.</li>
+                    <li>Explain the relationship between inflation and the business cycle, including the concept of stagflation.</li>
+                    <li>Explain the meaning and instruments of fiscal policy, and illustrate the government spending multiplier with a numerical example.</li>
+                    <li>Explain the meaning and instruments of monetary policy, and distinguish between an expansionary and a contractionary monetary stance.</li>
+                    <li>Given data on government spending and the marginal propensity to consume, calculate the resulting change in national income.</li>
+                </ol>
+
+                <h2 id="summary">Summary</h2>
+                <p>This unit examined how economies fluctuate over time and how policymakers respond. It explained inflation as a sustained rise in the general price level, distinguishing demand-pull from cost-push inflation and creeping through hyperinflation by rate, along with its monetary, structural and other causes, its effects on different groups, and the monetary, fiscal, supply-side and administrative remedies available to control it. It then covered the business cycle as the recurring, wave-like fluctuation of economic activity around its long-run growth trend, detailing the characteristics of each of its five phases — expansion, peak, recession, trough and recovery — and explained how prudent managerial decisions on pricing, inventory, investment, staffing and financing should adapt to each phase. The unit examined the close relationship between inflation and the business cycle, including the particularly difficult case of stagflation triggered by cost-push shocks, before covering fiscal policy (government spending and taxation, used expansionarily during downturns and contractionarily during inflationary booms, amplified through the government spending multiplier built on Unit 5's consumption function) and monetary policy (the central bank's instruments — repo rate, CRR, SLR, open market operations, and the bank rate — used to expand or contract the money supply as needed) — closing with worked numerical problems on the inflation rate, the fiscal multiplier, and estimating real revenue growth.</p>
+
+            </div>
+
+            <div class="completion-section">
+                <button id="markCompleteBtn" class="complete-btn">✔️ Mark as Complete</button>
+            </div>
+
+            <div class="pagination">
+                <a href="s1-eco-u5.html" style="text-decoration: none;"><button class="prev-btn hover-effect">❮ Unit 5: Macroeconomic Aggregates</button></a>
+                <button class="next-btn hover-effect" style="opacity: 0.5; cursor: not-allowed;" disabled>End of Module 🏁</button>
+            </div>
+        </main>
+
+        <aside class="right-sidebar" id="rightSidebar">
+            <div class="widget sticky-widget premium-card">
+                <h3>Unit Contents</h3>
+                <ul class="toc-list">
+                    <li><a href="#intro">0. Introduction</a></li>
+                    <li><a href="#inflation">1. Inflation — Causes &amp; Remedies</a></li>
+                    <li><a href="#businesscycle">2. Business Cycles</a></li>
+                    <li><a href="#businessdecisions">3. Business Decisions Across the Cycle</a></li>
+                    <li><a href="#inflationbusinesscycle">4. Inflation &amp; Business Cycle</a></li>
+                    <li><a href="#fiscalpolicy">5. Fiscal Policy</a></li>
+                    <li><a href="#monetarypolicy">6. Monetary Policy</a></li>
+                    <li><a href="#numericalproblems">7. Numerical Problems</a></li>
+                    <li><a href="#review">Review Questions</a></li>
+                    <li><a href="#summary">Summary</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
