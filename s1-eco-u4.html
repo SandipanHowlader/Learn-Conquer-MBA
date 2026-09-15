@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Economics for Managers - Unit-4</title>
+        <!-- Apple Touch Icons (for iOS home screen) -->
+    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icon.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="icon.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .diagram-wrap { margin: 28px 0; text-align: center; }
+        .diagram-wrap svg { max-width: 100%; height: auto; background: #ffffff; border-radius: 14px; box-shadow: 0 1px 8px rgba(0,0,0,0.10); }
+        .diagram-caption { font-size: 0.85rem; color: #666; margin-top: 10px; font-style: italic; }
+    </style>
+</head>
+<body data-current-topic="s1-eco-u4">
+    <div class="progress-container"><div class="progress-bar" id="myBar"></div></div>
+
+    <header class="navbar glass-nav">
+        <div class="nav-left">
+            <button id="mobileMenuBtn" class="mobile-menu-btn">☰</button>
+            <div class="logo">Learn & Concure <span> MBA Tutorials</span></div>
+        </div>
+        <div class="nav-links">
+            <button id="focusModeBtn" class="theme-btn hover-effect" title="Focus Mode">📖</button>
+            <button id="darkModeToggle" class="theme-btn hover-effect" title="Dark Mode">🌙</button>
+            <a href="index.html" id="logoutBtn" class="logout-btn hover-effect">Sign Out</a>
+        </div>
+    </header>
+
+    <div class="main-wrapper" id="mainWrapper">
+
+        <!-- JavaScript will automatically generate and inject the entire 4-Semester Sidebar here -->
+        <aside class="sidebar" id="sidebar-container"></aside>
+
+        <!-- Center Content: Tutorial -->
+        <main class="content premium-card" id="mainContent">
+            <div class="bread-crumbs">Semester-I / Economics for Managers / Unit 4</div>
+
+            <div class="article-header-flex">
+                <div>
+                    <h1>Economic Goals of the Firm and Managerial Theories: Cyert &amp; March, Baumol, and Williamson</h1>
+                    <div class="article-meta">
+                        <span>Read Time: 60 mins</span>
+                    </div>
+                </div>
+                <div class="action-buttons">
+                    <!--button class="icon-btn hover-effect" onclick="window.print()" title="Print PDF">🖨️</button-->
+                </div>
+            </div>
+            <hr class="premium-hr">
+
+            <div class="article-body">
+                <div class="concept-block">
+                    <strong>Topics Covered in This Unit:</strong>
+                    <ul class="custom-bullets" style="margin-top: 10px;">
+                        <li>Economic Goals of the Firm — Profit Maximization</li>
+                        <li>Why Managerial Theories of the Firm Emerged</li>
+                        <li>Behavioural Model of Cyert and March</li>
+                        <li>Baumol's Sales (Revenue) Maximization Model</li>
+                        <li>Williamson's Model of Managerial Discretion</li>
+                        <li>Comparing the Models</li>
+                        <li>Numerical Problems Related to Management</li>
+                    </ul>
+                </div>
+
+                <h2 id="profitmax">0. Economic Goals of the Firm: Profit Maximization</h2>
+                <h3 id="traditionaltheory">0.1 The Traditional Theory of the Firm</h3>
+                <p class="lead-text">The traditional (classical) theory of the firm, which underpins the equilibrium analysis in Unit 3, assumes that the sole objective of a firm — and, by extension, of the manager running it — is to maximize profit. Under this assumption, a firm sets output wherever Marginal Revenue equals Marginal Cost (Unit 3, Section 0.2), regardless of market structure.</p>
+                <div class="concept-block">
+                    <strong>Profit Maximization Condition: MR = MC</strong> (with MC cutting MR from below)
+                </div>
+                <ul class="custom-bullets">
+                    <li><strong>Short-Run Profit Maximization</strong> — the firm maximizes profit within its existing plant capacity, treating some inputs as fixed (Unit 2, Section 8.1).</li>
+                    <li><strong>Long-Run Profit Maximization</strong> — the firm can also adjust plant size and scale (Unit 2, Section 8.2), maximizing profit across every possible scale of operation.</li>
+                </ul>
+
+                <h3 id="assumptions">0.2 Assumptions of the Traditional Theory</h3>
+                <ul class="custom-bullets">
+                    <li>The firm is managed directly by its owner(s), so there is no conflict between the goals of ownership and management.</li>
+                    <li>The manager/owner has complete and accurate information about revenue and cost conditions.</li>
+                    <li>The sole motive driving every decision is the maximization of profit — no other objective (growth, prestige, market share, or a "quiet life") is assumed to matter.</li>
+                </ul>
+
+                <h3 id="criticisms">0.3 Criticisms of the Profit Maximization Assumption</h3>
+                <p class="lead-text">In large, modern corporations, the assumptions above frequently break down — giving rise to the managerial theories covered in the rest of this unit.</p>
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 500 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Separation of ownership and control between shareholders and professional managers">
+                        <rect width="500" height="240" fill="#ffffff" rx="14"/>
+                        <defs>
+                            <marker id="arrHeadU4" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                                <path d="M0,0L10,5L0,10z" fill="#4a5568"/>
+                            </marker>
+                        </defs>
+                        <text x="250" y="24" text-anchor="middle" font-size="15" font-weight="600" fill="#2d3748">Separation of Ownership and Control</text>
+
+                        <rect x="40" y="60" width="170" height="80" rx="8" fill="#2b6cb0"/>
+                        <text x="125" y="90" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">Shareholders</text>
+                        <text x="125" y="108" text-anchor="middle" font-size="9.5" fill="#e2e8f0">(Owners / Principals)</text>
+                        <text x="125" y="124" text-anchor="middle" font-size="9" fill="#bee3f8">Goal: maximize profit</text>
+
+                        <line x1="210" y1="90" x2="290" y2="90" stroke="#4a5568" stroke-width="2" marker-end="url(#arrHeadU4)"/>
+                        <text x="250" y="82" text-anchor="middle" font-size="8.5" fill="#4a5568">delegate control to</text>
+                        <line x1="290" y1="115" x2="210" y2="115" stroke="#a0aec0" stroke-width="1.6" stroke-dasharray="4,3"/>
+                        <text x="250" y="130" text-anchor="middle" font-size="8.5" fill="#718096">imperfect oversight of</text>
+
+                        <rect x="290" y="60" width="170" height="80" rx="8" fill="#c53030"/>
+                        <text x="375" y="90" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">Professional</text>
+                        <text x="375" y="106" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">Managers</text>
+                        <text x="375" y="124" text-anchor="middle" font-size="9" fill="#fed7d7">(Agents — may pursue their own goals)</text>
+
+                        <text x="250" y="185" text-anchor="middle" font-size="9.5" fill="#4a5568">Managers have better day-to-day information than shareholders (information</text>
+                        <text x="250" y="200" text-anchor="middle" font-size="9.5" fill="#4a5568">asymmetry) and may pursue objectives other than pure profit maximization —</text>
+                        <text x="250" y="215" text-anchor="middle" font-size="9.5" fill="#4a5568">this "principal-agent problem" is the starting point for every model in this unit.</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 1 — In large modern corporations, ownership (shareholders) and control (professional managers) are separated, so the traditional assumption that the "firm" single-mindedly maximizes profit no longer necessarily holds.</p>
+                </div>
+                <ul class="custom-bullets">
+                    <li><strong>Separation of ownership and control</strong> — in large corporations, managers (agents) run day-to-day operations on behalf of shareholders (principals), who cannot perfectly monitor every managerial decision.</li>
+                    <li><strong>Divergent goals</strong> — managers may value growth, sales revenue, salary, job security, prestige, or a comfortable working environment, in addition to or instead of pure profit maximization.</li>
+                    <li><strong>Uncertainty and imperfect information</strong> — real managers rarely have the complete information the traditional theory assumes, making pure profit maximization difficult to calculate, let alone pursue exactly.</li>
+                    <li><strong>Organizations, not individuals</strong> — a modern firm is really a coalition of many people and groups (Section 2), each with different goals, not a single profit-maximizing decision-maker.</li>
+                </ul>
+
+                <h2 id="managerialtheoriesintro">1. Managerial Theories of the Firm — Introduction</h2>
+                <p class="lead-text">Managerial theories of the firm were developed from the 1950s–60s onward, precisely to address the criticisms above, by proposing alternative objectives that a firm's actual managers might pursue instead of (or alongside) pure profit maximization. This unit examines three influential models: the behavioural model of Cyert and March, Baumol's sales maximization model, and Williamson's model of managerial discretion.</p>
+
+                <h2 id="cyertmarch">2. Behavioural Model of Cyert and March</h2>
+                <h3 id="cmbackground">2.1 Background and Key Idea</h3>
+                <p class="lead-text">Richard Cyert and James March, in their 1963 work <em>A Behavioral Theory of the Firm</em>, rejected the idea of the firm as a single decision-maker altogether. Instead, they modelled the firm as a <strong>coalition</strong> of different individuals and groups — shareholders, managers, workers, customers, suppliers — each with their own distinct goals, which must be reconciled through an ongoing process of internal bargaining.</p>
+
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 520 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The firm as a coalition of different stakeholder groups, each with their own goals">
+                        <rect width="520" height="340" fill="#ffffff" rx="14"/>
+                        <text x="260" y="24" text-anchor="middle" font-size="15" font-weight="600" fill="#2d3748">The Firm as a Coalition (Cyert &amp; March)</text>
+
+                        <circle cx="260" cy="180" r="55" fill="#2d3748"/>
+                        <text x="260" y="176" text-anchor="middle" font-size="11.5" font-weight="600" fill="#fff">THE FIRM</text>
+                        <text x="260" y="192" text-anchor="middle" font-size="9" fill="#e2e8f0">(a coalition)</text>
+
+                        <line x1="260" y1="125" x2="260" y2="75" stroke="#a0aec0" stroke-width="1.4"/>
+                        <rect x="185" y="40" width="150" height="40" rx="6" fill="#2b6cb0"/>
+                        <text x="260" y="56" text-anchor="middle" font-size="9" font-weight="600" fill="#fff">Shareholders</text>
+                        <text x="260" y="70" text-anchor="middle" font-size="8" fill="#e2e8f0">Goal: profit / dividends</text>
+
+                        <line x1="315" y1="150" x2="380" y2="105" stroke="#a0aec0" stroke-width="1.4"/>
+                        <rect x="370" y="70" width="140" height="40" rx="6" fill="#2f855a"/>
+                        <text x="440" y="86" text-anchor="middle" font-size="9" font-weight="600" fill="#fff">Managers</text>
+                        <text x="440" y="100" text-anchor="middle" font-size="8" fill="#e2e8f0">Goal: growth, salary, status</text>
+
+                        <line x1="315" y1="215" x2="380" y2="260" stroke="#a0aec0" stroke-width="1.4"/>
+                        <rect x="370" y="245" width="140" height="40" rx="6" fill="#b7791f"/>
+                        <text x="440" y="261" text-anchor="middle" font-size="9" font-weight="600" fill="#fff">Workers</text>
+                        <text x="440" y="275" text-anchor="middle" font-size="8" fill="#fefcbf">Goal: wages, job security</text>
+
+                        <line x1="205" y1="215" x2="140" y2="260" stroke="#a0aec0" stroke-width="1.4"/>
+                        <rect x="10" y="245" width="140" height="40" rx="6" fill="#805ad5"/>
+                        <text x="80" y="261" text-anchor="middle" font-size="9" font-weight="600" fill="#fff">Customers</text>
+                        <text x="80" y="275" text-anchor="middle" font-size="8" fill="#e9d8fd">Goal: quality, low price</text>
+
+                        <line x1="205" y1="150" x2="140" y2="105" stroke="#a0aec0" stroke-width="1.4"/>
+                        <rect x="10" y="70" width="140" height="40" rx="6" fill="#c53030"/>
+                        <text x="80" y="86" text-anchor="middle" font-size="9" font-weight="600" fill="#fff">Suppliers</text>
+                        <text x="80" y="100" text-anchor="middle" font-size="8" fill="#fed7d7">Goal: timely payment</text>
+
+                        <text x="260" y="320" text-anchor="middle" font-size="9" fill="#718096">The firm's actual behaviour emerges from ongoing bargaining and compromise among these groups.</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 2 — Rather than assuming a single-minded profit-maximizer, Cyert and March saw the firm as a shifting coalition whose observed goals reflect a continuous internal negotiation.</p>
+                </div>
+
+                <h3 id="cmconcepts">2.2 Key Concepts of the Behavioural Model</h3>
+                <ul class="custom-bullets">
+                    <li><strong>Satisficing, not Maximizing</strong> — because information is limited and reconciling every coalition member's goals perfectly is impossible, the firm does not truly "maximize" anything; instead, it seeks outcomes that are merely "good enough" (satisfactory) on each of several goals — echoing Herbert Simon's concept of bounded rationality (Management Principles and Application, Unit 3, Section 1.3).</li>
+                    <li><strong>Multiple, Often Conflicting Goals</strong> — rather than one overriding objective, Cyert and March identified five broad organizational goals commonly pursued simultaneously: production goals, inventory goals, sales goals, market-share goals, and profit goals.</li>
+                    <li><strong>Organizational Slack</strong> — the difference between the total resources available to the firm and the minimum resources actually required to hold the coalition together; slack (e.g., excess staff, generous budgets, unnecessarily high dividends) acts as a buffer that lets the firm survive downturns without renegotiating every goal from scratch.</li>
+                    <li><strong>Problemistic Search</strong> — the firm searches for solutions only when a problem actually arises (e.g., a goal is not being met), and search is typically local — trying solutions similar to past successful ones — rather than a comprehensive search of every possible alternative.</li>
+                    <li><strong>Uncertainty Avoidance</strong> — firms prefer predictable, short-run reactive decision rules (e.g., matching a competitor's price) over complex long-run forecasting, since the future is inherently uncertain.</li>
+                    <li><strong>Organizational Learning</strong> — over time, the firm adapts its goals and standard procedures based on past experience of success and failure.</li>
+                </ul>
+
+                <h3 id="cmcriticism">2.3 Criticism of the Behavioural Model</h3>
+                <ul class="custom-bullets">
+                    <li>Being descriptive rather than predictive, it is difficult to derive precise, testable conclusions (unlike the clean MR = MC rule of the traditional theory).</li>
+                    <li>Based largely on case studies of specific firms, raising questions about how generalizable its conclusions are.</li>
+                    <li>Provides less guidance for formal optimization-based managerial decision tools than the other models in this unit.</li>
+                </ul>
+
+                <h2 id="baumol">3. Baumol's Sales (Revenue) Maximization Model</h2>
+                <h3 id="baumolbackground">3.1 Background and Key Idea</h3>
+                <p class="lead-text">William Baumol, in his 1959 model, proposed that many managers of large corporations aim to maximize <strong>total sales revenue</strong>, rather than profit, subject to earning at least a minimum acceptable level of profit demanded by shareholders.</p>
+                <h3 id="baumolreasons">3.2 Why Managers Might Prefer Sales Maximization</h3>
+                <ul class="custom-bullets">
+                    <li>Managerial salaries, bonuses, and prestige are often more closely tied to the size (sales revenue) of the firm than to its profit level.</li>
+                    <li>A larger market share and sales volume improve the firm's competitive standing and bargaining power with distributors and suppliers.</li>
+                    <li>Banks and other creditors often look more favourably on firms with strong and growing sales when extending credit.</li>
+                    <li>Rising sales are easier to sustain employee morale and retain staff, compared to a firm optimizing purely for profit (which might mean cutting output or staff).</li>
+                    <li>Falling sales, even with maintained profit, can be a visible signal of trouble to the stock market, competitors, and employees — something managers wish to avoid.</li>
+                </ul>
+
+                <h3 id="baumolmodel">3.3 The Model</h3>
+                <p><strong>Worked Example:</strong> A firm faces Total Revenue TR = 100Q − Q² and Total Cost TC = 10Q + 400, giving Profit π = TR − TC = 90Q − Q² − 400.</p>
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 560 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Baumol's sales maximization model showing the profit maximizing output at the widest gap between total revenue and total cost, and the sales maximizing output where total revenue peaks">
+                        <rect width="560" height="340" fill="#ffffff" rx="14"/>
+                        <text x="280" y="22" text-anchor="middle" font-size="14.5" font-weight="600" fill="#2d3748">Profit-Maximizing vs. Sales-Maximizing Output</text>
+
+                        <line x1="55" y1="310" x2="500" y2="310" stroke="#2d3748" stroke-width="1.5"/>
+                        <line x1="55" y1="310" x2="55" y2="40" stroke="#2d3748" stroke-width="1.5"/>
+                        <text x="280" y="330" text-anchor="middle" font-size="9.5" fill="#4a5568">Output (Q)</text>
+                        <text x="22" y="180" text-anchor="middle" font-size="9.5" fill="#4a5568" transform="rotate(-90 22 180)">Revenue / Cost (₹)</text>
+
+                        <path d="M70,310 Q170,84.4 270,25.4 T470,310" fill="none" stroke="#2b6cb0" stroke-width="2.6"/>
+                        <text x="480" y="305" text-anchor="middle" font-size="9" fill="#2c5282">TR</text>
+
+                        <line x1="70" y1="264" x2="470" y2="149" stroke="#c53030" stroke-width="2.4"/>
+                        <text x="480" y="145" text-anchor="middle" font-size="9" fill="#742a2a">TC</text>
+
+                        <line x1="250" y1="310" x2="250" y2="25.4" stroke="#2f855a" stroke-width="1.6" stroke-dasharray="4,3"/>
+                        <circle cx="250" cy="25.4" r="4.5" fill="#2f855a"/>
+                        <circle cx="250" cy="206.5" r="4.5" fill="#2f855a"/>
+                        <text x="250" y="330" text-anchor="middle" font-size="8.5" fill="#22543d">Qπ = 45 (Profit-Max)</text>
+
+                        <line x1="270" y1="310" x2="270" y2="22.5" stroke="#805ad5" stroke-width="1.6" stroke-dasharray="4,3"/>
+                        <circle cx="270" cy="22.5" r="4.5" fill="#805ad5"/>
+                        <circle cx="270" cy="206.5" r="4.5" fill="#805ad5"/>
+                        <text x="410" y="290" text-anchor="middle" font-size="8.5" fill="#553c9a">Qs = 50 (Sales-Max, TR peak)</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 3 — Profit (the vertical gap between TR and TC) is largest at Qπ = 45, but total revenue itself keeps rising until Qs = 50, where TR peaks — Baumol's central insight is that the sales-maximizing output always equals or exceeds the profit-maximizing output.</p>
+                </div>
+
+                <table class="tutorial-table">
+                    <tr><th>Objective</th><th>Condition</th><th>Output</th><th>Profit at that Output</th></tr>
+                    <tr><td>Profit Maximization (traditional theory)</td><td>dπ/dQ = 90 − 2Q = 0</td><td><strong>Qπ = 45 units</strong></td><td>90(45) − 45² − 400 = <strong>₹1,625 (maximum possible)</strong></td></tr>
+                    <tr><td>Sales Maximization (Baumol, unconstrained)</td><td>dTR/dQ = 100 − 2Q = 0 (i.e., MR = 0)</td><td><strong>Qs = 50 units</strong></td><td>90(50) − 50² − 400 = <strong>₹1,600</strong></td></tr>
+                </table>
+                <p><em>Key Result:</em> The sales-maximizing manager produces <strong>more</strong> (50 units) than the profit-maximizing level (45 units) — the defining prediction of Baumol's model — accepting a slightly lower profit (₹1,600 instead of the maximum possible ₹1,625) in exchange for higher sales revenue.</p>
+
+                <h3 id="baumolconstraint">3.4 The Minimum Profit Constraint</h3>
+                <p>Baumol recognized that shareholders will not tolerate unlimited revenue-chasing at the expense of profit — so the model includes a <strong>minimum acceptable profit constraint</strong>, set by shareholder expectations, below which the manager cannot go without risking their job or a takeover.</p>
+                <ul class="custom-bullets">
+                    <li>If the minimum required profit is <strong>at or below</strong> the profit earned at the unconstrained sales-maximizing output (e.g., a required minimum of ₹1,500, which is less than the ₹1,600 earned at Qs = 50), the constraint is <strong>non-binding</strong> — the manager simply produces at Qs = 50, the pure sales-maximizing output.</li>
+                    <li>If the minimum required profit is set <strong>above</strong> ₹1,600 (but still below the maximum possible profit of ₹1,625), the constraint becomes <strong>binding</strong> — the manager must cut back output below 50 units (moving back toward, but not necessarily all the way to, the profit-maximizing 45 units) until the required minimum profit is just satisfied.</li>
+                </ul>
+
+                <h3 id="baumolcriticism">3.5 Criticism of Baumol's Model</h3>
+                <ul class="custom-bullets">
+                    <li>Assumes managerial reward is tied to sales revenue, which may not hold for every firm or every industry.</li>
+                    <li>Relies on a single, static minimum-profit constraint that may be difficult to identify precisely in practice.</li>
+                    <li>Ignores the wide range of other possible managerial goals identified by Cyert and March (Section 2) and Williamson (Section 4).</li>
+                </ul>
+
+                <h2 id="williamson">4. Williamson's Model of Managerial Discretion</h2>
+                <h3 id="williamsonbackground">4.1 Background and Key Idea</h3>
+                <p class="lead-text">Oliver Williamson's model (1963) argues that, whenever the separation of ownership and control (Section 0.3) gives managers real discretion, they will use it to maximize their <strong>own utility</strong> — not shareholders' profit or even pure sales revenue — subject only to a minimum profit constraint necessary to keep shareholders satisfied and avoid takeover.</p>
+
+                <h3 id="williamsonutility">4.2 The Managerial Utility Function</h3>
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 520 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Williamson's managerial utility function composed of staff expenditure, managerial emoluments and discretionary investment">
+                        <rect width="520" height="260" fill="#ffffff" rx="14"/>
+                        <text x="260" y="24" text-anchor="middle" font-size="15" font-weight="600" fill="#2d3748">Williamson's Managerial Utility Function</text>
+
+                        <rect x="180" y="45" width="160" height="40" rx="6" fill="#2d3748"/>
+                        <text x="260" y="70" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">Managerial Utility (U)</text>
+
+                        <line x1="210" y1="85" x2="110" y2="125" stroke="#a0aec0" stroke-width="1.4"/>
+                        <line x1="260" y1="85" x2="260" y2="125" stroke="#a0aec0" stroke-width="1.4"/>
+                        <line x1="310" y1="85" x2="410" y2="125" stroke="#a0aec0" stroke-width="1.4"/>
+
+                        <rect x="30" y="125" width="160" height="90" rx="6" fill="#2b6cb0"/>
+                        <text x="110" y="150" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff">Staff Expenditure (S)</text>
+                        <text x="110" y="170" text-anchor="middle" font-size="8.5" fill="#e2e8f0">Larger departments and</text>
+                        <text x="110" y="183" text-anchor="middle" font-size="8.5" fill="#e2e8f0">headcount → more power</text>
+                        <text x="110" y="200" text-anchor="middle" font-size="8.5" fill="#e2e8f0">and prestige for the manager</text>
+
+                        <rect x="180" y="125" width="160" height="90" rx="6" fill="#2f855a"/>
+                        <text x="260" y="150" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff">Managerial Emoluments (M)</text>
+                        <text x="260" y="170" text-anchor="middle" font-size="8.5" fill="#e2e8f0">Perks: company cars,</text>
+                        <text x="260" y="183" text-anchor="middle" font-size="8.5" fill="#e2e8f0">expense accounts,</text>
+                        <text x="260" y="200" text-anchor="middle" font-size="8.5" fill="#e2e8f0">lavish offices</text>
+
+                        <rect x="350" y="125" width="160" height="90" rx="6" fill="#b7791f"/>
+                        <text x="430" y="150" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff">Discretionary</text>
+                        <text x="430" y="164" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff">Investment (Id)</text>
+                        <text x="430" y="184" text-anchor="middle" font-size="8.5" fill="#fefcbf">Investment beyond what is</text>
+                        <text x="430" y="197" text-anchor="middle" font-size="8.5" fill="#fefcbf">strictly necessary for profit</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 4 — Williamson's manager derives satisfaction from three sources beyond reported profit itself, collectively termed "expense preference" behaviour.</p>
+                </div>
+                <div class="concept-block">
+                    <strong>Managerial Utility Function: U = f(S, M, Id)</strong><br>
+                    where S = Staff Expenditure; M = Managerial Emoluments (perks/slack payments); Id = Discretionary Investment (investment beyond the minimum required for reported profit).
+                </div>
+
+                <h3 id="expensepreference">4.3 Expense Preference Behaviour</h3>
+                <p>Williamson calls this pattern "expense preference" behaviour: given the choice, managers prefer to direct any resources beyond the minimum required profit toward expanding staff, perks, and discretionary projects — increasing their own utility (power, comfort, prestige) — rather than passing the full surplus back to shareholders as higher reported profit.</p>
+
+                <h3 id="williamsoncriticism">4.4 Criticism of Williamson's Model</h3>
+                <ul class="custom-bullets">
+                    <li>The managerial utility function is not directly observable or easy to measure empirically, unlike sales revenue (Baumol) or profit (traditional theory).</li>
+                    <li>Assumes managers have substantial real discretion, which may be limited in tightly governed or closely-held firms.</li>
+                    <li>Like Baumol's model, it depends on a minimum profit constraint whose exact level is difficult to pin down in practice.</li>
+                </ul>
+
+                <h2 id="comparison">5. Comparing the Models</h2>
+                <table class="tutorial-table">
+                    <tr>
+                        <th>Model</th>
+                        <th>Assumed Objective</th>
+                        <th>Key Constraint</th>
+                        <th>Predicted Output vs. Profit-Max Output</th>
+                    </tr>
+                    <tr><td>Traditional Theory</td><td>Maximize profit</td><td>None (profit itself is the goal)</td><td>The benchmark (Qπ)</td></tr>
+                    <tr><td>Cyert &amp; March (Behavioural)</td><td>"Satisfice" across five organizational goals (production, inventory, sales, market share, profit)</td><td>Organizational slack absorbs shocks; no single formal constraint</td><td>Indeterminate — depends on coalition bargaining, not a single formula</td></tr>
+                    <tr><td>Baumol (Sales Maximization)</td><td>Maximize total sales revenue</td><td>Minimum acceptable profit (shareholder-driven)</td><td>Equal to or greater than Qπ (Section 3.3)</td></tr>
+                    <tr><td>Williamson (Managerial Discretion)</td><td>Maximize managerial utility (staff, perks, discretionary investment)</td><td>Minimum acceptable profit (shareholder-driven)</td><td>Generally greater than Qπ, with resources also diverted into staff/perks rather than only output</td></tr>
+                </table>
+                <p>All three managerial theories share one important common thread: because managers, not owners, make day-to-day decisions, and because a minimum (not maximum) profit is usually enough to keep shareholders satisfied, actual firm behaviour can systematically diverge from the pure profit-maximizing predictions of the traditional theory (Section 0) — a key insight for anyone managing, or analyzing, a real corporation.</p>
+
+                <h2 id="numericalproblems">6. Numerical Problems Related to Management</h2>
+                <p><strong>Problem 1 (Baumol's Model):</strong> A firm has TR = 80Q − 2Q² and TC = 20Q + 100. Find (a) the profit-maximizing output and profit, and (b) the sales-maximizing output and the profit earned there.<br>
+                <em>Solution:</em> Profit π = TR − TC = 80Q − 2Q² − 20Q − 100 = 60Q − 2Q² − 100.<br>
+                (a) Profit-maximizing: dπ/dQ = 60 − 4Q = 0 → <strong>Q = 15 units</strong>; Profit = 60(15) − 2(225) − 100 = 900 − 450 − 100 = <strong>₹350</strong>.<br>
+                (b) Sales-maximizing: dTR/dQ = 80 − 4Q = 0 → <strong>Q = 20 units</strong>; Profit at Q = 20 = 60(20) − 2(400) − 100 = 1200 − 800 − 100 = <strong>₹300</strong>.<br>
+                As expected under Baumol's model, the sales-maximizing output (20 units) exceeds the profit-maximizing output (15 units), at the cost of some profit (₹300 instead of the maximum possible ₹350).</p>
+                <p><strong>Problem 2 (Binding Constraint):</strong> Using Problem 1's figures, if shareholders require a minimum profit of ₹320, is the manager able to produce at the pure sales-maximizing output of 20 units?<br>
+                <em>Solution:</em> No — at Q = 20, profit is only ₹300, which is below the required minimum of ₹320. The constraint is therefore <strong>binding</strong>, and the manager must reduce output below 20 units (toward, but not necessarily all the way to, 15 units) until profit rises to at least ₹320.</p>
+
+                <h2 id="review">Review Questions</h2>
+                <h3>Short Answer Type</h3>
+                <ol class="custom-bullets">
+                    <li>State the profit-maximizing condition assumed by the traditional theory of the firm.</li>
+                    <li>What is meant by the "separation of ownership and control"? Why does it matter for the theory of the firm?</li>
+                    <li>What does Cyert and March mean by describing the firm as a "coalition"?</li>
+                    <li>Define organizational slack.</li>
+                    <li>What is the central objective assumed in Baumol's model? What constraint does it operate under?</li>
+                    <li>State Baumol's key prediction about sales-maximizing output relative to profit-maximizing output.</li>
+                    <li>What three variables make up Williamson's managerial utility function?</li>
+                    <li>What is meant by "expense preference" behaviour?</li>
+                </ol>
+                <h3>Long Answer / Essay Type / Numerical</h3>
+                <ol class="custom-bullets">
+                    <li>Explain the traditional theory of the firm and the criticisms that led to the development of managerial theories.</li>
+                    <li>Explain the behavioural model of Cyert and March, including the concepts of satisficing, organizational slack, and problemistic search.</li>
+                    <li>Explain Baumol's sales maximization model, including the role of the minimum profit constraint, with a numerical illustration.</li>
+                    <li>Explain Williamson's model of managerial discretion and the components of the managerial utility function.</li>
+                    <li>Compare and contrast the traditional profit-maximization theory with the behavioural, Baumol, and Williamson managerial theories of the firm.</li>
+                    <li>Given a firm's revenue and cost functions, calculate its profit-maximizing and sales-maximizing output and profit, and explain the significance of any difference between them.</li>
+                </ol>
+
+                <h2 id="summary">Summary</h2>
+                <p>This unit examined the economic goals firms are assumed to pursue, starting with the traditional theory's assumption of pure profit maximization at the output where MR = MC (building on Unit 3), and the criticisms of that assumption once ownership and control are separated in large modern corporations. It then covered three influential managerial theories developed to address these criticisms. Cyert and March's behavioural model reconceived the firm as a coalition of shareholders, managers, workers, customers and suppliers, whose behaviour reflects "satisficing" across five organizational goals rather than pure maximization, supported by organizational slack and shaped by problemistic search, uncertainty avoidance, and organizational learning. Baumol's sales maximization model proposed that managers maximize total sales revenue subject to a minimum acceptable profit constraint, a claim illustrated through a worked example showing the sales-maximizing output (50 units, profit ₹1,600) exceeding the profit-maximizing output (45 units, profit ₹1,625), and explained how a sufficiently high minimum profit requirement can bind and pull output back down. Williamson's model of managerial discretion went further, arguing that managers maximize their own utility — derived from staff expenditure, managerial emoluments, and discretionary investment — again subject to a minimum profit constraint, a pattern termed "expense preference" behaviour. The unit closed by comparing all four theories side by side and working through additional numerical problems applying Baumol's model, including a case where a binding minimum profit constraint forces output below the pure sales-maximizing level.</p>
+
+            </div>
+
+            <div class="completion-section">
+                <button id="markCompleteBtn" class="complete-btn">✔️ Mark as Complete</button>
+            </div>
+
+            <div class="pagination">
+                <a href="s1-eco-u3.html" style="text-decoration: none;"><button class="prev-btn hover-effect">❮ Unit 3: Market Structure and the Equilibrium of the Firm</button></a>
+                <a href="s1-eco-u5.html" style="text-decoration: none;"><button class="next-btn hover-effect">Unit 5: Macroeconomic Aggregates ❯</button></a>
+            </div>
+        </main>
+
+        <aside class="right-sidebar" id="rightSidebar">
+            <div class="widget sticky-widget premium-card">
+                <h3>Unit Contents</h3>
+                <ul class="toc-list">
+                    <li><a href="#profitmax">0. Profit Maximization</a></li>
+                    <li><a href="#managerialtheoriesintro">1. Managerial Theories — Intro</a></li>
+                    <li><a href="#cyertmarch">2. Cyert &amp; March's Behavioural Model</a></li>
+                    <li><a href="#baumol">3. Baumol's Sales Maximization Model</a></li>
+                    <li><a href="#williamson">4. Williamson's Managerial Discretion</a></li>
+                    <li><a href="#comparison">5. Comparing the Models</a></li>
+                    <li><a href="#numericalproblems">6. Numerical Problems</a></li>
+                    <li><a href="#review">Review Questions</a></li>
+                    <li><a href="#summary">Summary</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
