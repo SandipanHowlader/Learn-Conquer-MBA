@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Economics for Managers - Unit-2</title>
+        <!-- Apple Touch Icons (for iOS home screen) -->
+    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icon.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="icon.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .diagram-wrap { margin: 28px 0; text-align: center; }
+        .diagram-wrap svg { max-width: 100%; height: auto; background: #ffffff; border-radius: 14px; box-shadow: 0 1px 8px rgba(0,0,0,0.10); }
+        .diagram-caption { font-size: 0.85rem; color: #666; margin-top: 10px; font-style: italic; }
+    </style>
+</head>
+<body data-current-topic="s1-eco-u2">
+    <div class="progress-container"><div class="progress-bar" id="myBar"></div></div>
+
+    <header class="navbar glass-nav">
+        <div class="nav-left">
+            <button id="mobileMenuBtn" class="mobile-menu-btn">☰</button>
+            <div class="logo">Learn & Concure <span> MBA Tutorials</span></div>
+        </div>
+        <div class="nav-links">
+            <button id="focusModeBtn" class="theme-btn hover-effect" title="Focus Mode">📖</button>
+            <button id="darkModeToggle" class="theme-btn hover-effect" title="Dark Mode">🌙</button>
+            <a href="index.html" id="logoutBtn" class="logout-btn hover-effect">Sign Out</a>
+        </div>
+    </header>
+
+    <div class="main-wrapper" id="mainWrapper">
+
+        <!-- JavaScript will automatically generate and inject the entire 4-Semester Sidebar here -->
+        <aside class="sidebar" id="sidebar-container"></aside>
+
+        <!-- Center Content: Tutorial -->
+        <main class="content premium-card" id="mainContent">
+            <div class="bread-crumbs">Semester-I / Economics for Managers / Unit 2</div>
+
+            <div class="article-header-flex">
+                <div>
+                    <h1>Production and the Firm, Production Function, Laws of Production, and the Theory of Cost</h1>
+                    <div class="article-meta">
+                        <span>Read Time: 75 mins</span>
+                    </div>
+                </div>
+                <div class="action-buttons">
+                    <!--button class="icon-btn hover-effect" onclick="window.print()" title="Print PDF">🖨️</button-->
+                </div>
+            </div>
+            <hr class="premium-hr">
+
+            <div class="article-body">
+                <div class="concept-block">
+                    <strong>Topics Covered in This Unit:</strong>
+                    <ul class="custom-bullets" style="margin-top: 10px;">
+                        <li>Production and the Firm; Production Function</li>
+                        <li>Factor Productivities and Laws of Production</li>
+                        <li>Choice of the Best Combination of Inputs</li>
+                        <li>Derivation of Cost Functions from Production Functions</li>
+                        <li>Cost Concepts, Classifications, and Importance in Managerial Decisions</li>
+                        <li>Short-Run and Long-Run Cost, and Cost Relationships</li>
+                        <li>Economies of Scale and Scope</li>
+                        <li>Methods of Estimating Cost Functions</li>
+                        <li>Numerical Problems Related to Management</li>
+                    </ul>
+                </div>
+
+                <h2 id="intro">0. Production and the Firm</h2>
+                <h3 id="productionmeaning">0.1 Meaning of Production and the Firm</h3>
+                <p class="lead-text">Production is the process of transforming inputs (land, labour, capital, and entrepreneurship — the factors of production) into outputs (goods and services) that satisfy consumer wants, as analyzed through the theory of demand in Unit 1. The firm is the basic decision-making unit that organizes this transformation, choosing what combination of inputs to employ and how much output to produce.</p>
+
+                <h3 id="pfmeaning">0.2 The Production Function — Meaning</h3>
+                <p class="lead-text">A production function is a technical (engineering) relationship that shows the maximum quantity of output a firm can produce from a given combination of inputs, with the best available technology.</p>
+                <div class="concept-block">
+                    <strong>General Form: Q = f(L, K, ...)</strong><br>
+                    where Q = quantity of output; L = quantity of labour employed; K = quantity of capital employed (other inputs such as land and raw material can be added as needed).
+                </div>
+
+                <h2 id="productionfunction">1. Production Function and Its Importance in Managerial Decision-Making</h2>
+                <h3 id="pftimeframes">1.1 Short-Run and Long-Run Production Functions</h3>
+                <ul class="custom-bullets">
+                    <li><strong>Short-Run Production Function</strong> — at least one input (typically capital/plant size) is fixed, while other inputs (typically labour) can be varied; governed by the Law of Variable Proportions (Section 3.1).</li>
+                    <li><strong>Long-Run Production Function</strong> — all inputs can be varied, including plant size and capital; governed by the Law of Returns to Scale (Section 3.2).</li>
+                </ul>
+
+                <h3 id="pfimportance">1.2 Importance of the Production Function in Managerial Decision-Making</h3>
+                <ul class="custom-bullets">
+                    <li>Helps a manager determine the least-cost combination of inputs to produce a given level of output (Section 4).</li>
+                    <li>Provides the technical foundation from which the firm's cost function is derived (Section 5).</li>
+                    <li>Guides decisions on plant capacity and expansion, by revealing whether returns to scale are increasing, constant, or decreasing (Section 3.2).</li>
+                    <li>Assists in evaluating the productivity of individual factors, supporting decisions on hiring, capital investment, and technology adoption.</li>
+                </ul>
+
+                <h2 id="factorproductivity">2. Factor Productivities</h2>
+                <h3 id="tpapmp">2.1 Total, Average and Marginal Product</h3>
+                <ul class="custom-bullets">
+                    <li><strong>Total Product (TP)</strong> — the total quantity of output produced by a given quantity of the variable input, holding other inputs fixed.</li>
+                    <li><strong>Average Product (AP)</strong> — output per unit of the variable input: AP = TP ÷ Units of Variable Input.</li>
+                    <li><strong>Marginal Product (MP)</strong> — the addition to total product from employing one more unit of the variable input: MP = ΔTP ÷ ΔUnits of Variable Input.</li>
+                </ul>
+
+                <p><strong>Worked Example:</strong> A firm with a fixed amount of capital employs increasing units of labour:</p>
+                <table class="tutorial-table">
+                    <tr><th>Units of Labour (L)</th><th>Total Product (TP)</th><th>Marginal Product (MP)</th><th>Average Product (AP)</th></tr>
+                    <tr><td>1</td><td>10</td><td>10</td><td>10.0</td></tr>
+                    <tr><td>2</td><td>24</td><td>14</td><td>12.0</td></tr>
+                    <tr><td>3</td><td>39</td><td>15</td><td>13.0</td></tr>
+                    <tr><td>4</td><td>52</td><td>13</td><td>13.0</td></tr>
+                    <tr><td>5</td><td>60</td><td>8</td><td>12.0</td></tr>
+                    <tr><td>6</td><td>64</td><td>4</td><td>10.67</td></tr>
+                    <tr><td>7</td><td>64</td><td>0</td><td>9.14</td></tr>
+                    <tr><td>8</td><td>60</td><td>−4</td><td>7.50</td></tr>
+                </table>
+
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 560 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Total, average and marginal product curves showing the three stages of the law of variable proportions">
+                        <rect width="560" height="360" fill="#ffffff" rx="14"/>
+                        <text x="280" y="22" text-anchor="middle" font-size="14.5" font-weight="600" fill="#2d3748">TP, AP and MP — The Three Stages of Production</text>
+
+                        <line x1="55" y1="310" x2="520" y2="310" stroke="#2d3748" stroke-width="1.5"/>
+                        <line x1="55" y1="310" x2="55" y2="45" stroke="#2d3748" stroke-width="1.5"/>
+                        <text x="285" y="332" text-anchor="middle" font-size="9.5" fill="#4a5568">Units of Labour (Variable Input)</text>
+
+                        <rect x="55" y="45" width="130" height="265" fill="#c6f6d5" opacity="0.35"/>
+                        <rect x="185" y="45" width="185" height="265" fill="#fefcbf" opacity="0.5"/>
+                        <rect x="370" y="45" width="150" height="265" fill="#fed7d7" opacity="0.35"/>
+                        <text x="120" y="60" text-anchor="middle" font-size="9" font-weight="600" fill="#22543d">Stage I</text>
+                        <text x="277" y="60" text-anchor="middle" font-size="9" font-weight="600" fill="#7b341e">Stage II</text>
+                        <text x="445" y="60" text-anchor="middle" font-size="9" font-weight="600" fill="#742a2a">Stage III</text>
+
+                        <polyline points="80,270 138,205 197,155 255,120 313,100 372,88 430,88 488,100" fill="none" stroke="#2b6cb0" stroke-width="2.4"/>
+                        <text x="500" y="80" text-anchor="middle" font-size="8.5" fill="#2c5282">TP</text>
+
+                        <polyline points="80,240 138,205 197,178 255,178 313,200 372,225 430,242 488,262" fill="none" stroke="#2f855a" stroke-width="2.2"/>
+                        <text x="500" y="255" text-anchor="middle" font-size="8.5" fill="#22543d">AP</text>
+
+                        <polyline points="80,205 138,178 197,168 255,190 313,222 372,255 430,290 488,320" fill="none" stroke="#c53030" stroke-width="2.2"/>
+                        <text x="500" y="290" text-anchor="middle" font-size="8.5" fill="#742a2a">MP</text>
+
+                        <line x1="185" y1="45" x2="185" y2="310" stroke="#718096" stroke-width="1" stroke-dasharray="3,3"/>
+                        <line x1="370" y1="45" x2="370" y2="310" stroke="#718096" stroke-width="1" stroke-dasharray="3,3"/>
+                    </svg>
+                    <p class="diagram-caption">Fig. 1 — Stage I: AP is rising (MP &gt; AP). Stage II: AP is falling but MP is still positive (the stage of rational operation). Stage III: MP is negative and TP is falling.</p>
+                </div>
+
+                <h2 id="lawsofproduction">3. Laws of Production</h2>
+                <h3 id="lawvariableproportions">3.1 Law of Variable Proportions (Short-Run)</h3>
+                <p class="lead-text">The law of variable proportions states that as more and more units of a variable input are combined with a fixed input, the marginal product of the variable input will eventually decline — this is the short-run counterpart to the long-run law of returns to scale, and is illustrated by the three stages in Fig. 1 above.</p>
+                <ul class="custom-bullets">
+                    <li><strong>Stage I (Increasing Returns)</strong> — both TP and MP rise; AP is rising and MP exceeds AP. A firm should not stop production in this stage, since the fixed input is still being under-utilized.</li>
+                    <li><strong>Stage II (Diminishing Returns)</strong> — TP continues to rise but at a decreasing rate; both AP and MP are falling, though MP remains positive. A rational firm will always choose to operate somewhere in this stage.</li>
+                    <li><strong>Stage III (Negative Returns)</strong> — MP becomes negative and TP starts to fall, since the fixed input is now being overcrowded by too much of the variable input. No rational firm operates here.</li>
+                </ul>
+
+                <h3 id="returnstoscale">3.2 Law of Returns to Scale (Long-Run)</h3>
+                <p class="lead-text">The law of returns to scale examines what happens to output when <em>all</em> inputs are increased simultaneously and in the same proportion — a purely long-run concept, since it requires every input, including capital and plant size, to be variable.</p>
+                <table class="tutorial-table">
+                    <tr><th>Type</th><th>Meaning</th><th>Worked Example (Labour &amp; Capital both doubled)</th></tr>
+                    <tr><td><strong>Increasing Returns to Scale (IRS)</strong></td><td>Output increases by a larger proportion than the increase in inputs</td><td>Inputs double (100% increase) → Output rises from 100 to 220 units (120% increase)</td></tr>
+                    <tr><td><strong>Constant Returns to Scale (CRS)</strong></td><td>Output increases in exactly the same proportion as inputs</td><td>Inputs double (100% increase) → Output rises from 100 to 200 units (100% increase)</td></tr>
+                    <tr><td><strong>Decreasing Returns to Scale (DRS)</strong></td><td>Output increases by a smaller proportion than the increase in inputs</td><td>Inputs double (100% increase) → Output rises from 100 to 180 units (80% increase)</td></tr>
+                </table>
+                <p>Increasing returns to scale typically arise from specialization and the indivisibility of large-scale equipment; decreasing returns to scale typically arise from the growing difficulty of managing and coordinating a very large-scale operation — the same underlying forces explored further as economies and diseconomies of scale in Section 10.</p>
+
+                <h2 id="bestcombination">4. Choice of the Best Combination of Inputs</h2>
+                <h3 id="isoquant">4.1 Isoquants</h3>
+                <p>An isoquant ("equal quantity" curve) shows all the different combinations of two inputs (labour and capital) that can produce the same level of output. Like an indifference curve (Unit 1, Section 7), an isoquant slopes downward and is convex to the origin, reflecting a diminishing marginal rate of technical substitution between the two inputs.</p>
+
+                <h3 id="isocost">4.2 Isocost Line</h3>
+                <p>An isocost line shows all the different combinations of two inputs that a firm can purchase for a given total outlay, at given input prices — directly analogous to the consumer's budget line (Unit 1, Section 7.3).</p>
+                <div class="concept-block">
+                    <strong>Isocost Equation: C = (w × L) + (r × K)</strong><br>
+                    where w = wage rate (price of labour) and r = rental rate (price of capital).
+                </div>
+
+                <h3 id="producerequilibrium">4.3 Producer's Equilibrium (Least-Cost Combination)</h3>
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 480 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Producer equilibrium shown as the tangency point between an isoquant and the isocost line">
+                        <rect width="480" height="380" fill="#ffffff" rx="14"/>
+                        <text x="240" y="24" text-anchor="middle" font-size="15" font-weight="600" fill="#2d3748">Producer's Equilibrium: Least-Cost Input Combination</text>
+
+                        <line x1="60" y1="330" x2="440" y2="330" stroke="#2d3748" stroke-width="1.6"/>
+                        <line x1="60" y1="330" x2="60" y2="50" stroke="#2d3748" stroke-width="1.6"/>
+                        <text x="250" y="352" text-anchor="middle" font-size="10.5" fill="#4a5568">Labour (L)</text>
+                        <text x="25" y="190" text-anchor="middle" font-size="10.5" fill="#4a5568" transform="rotate(-90 25 190)">Capital (K)</text>
+
+                        <path d="M120,300 Q230,220 380,160" fill="none" stroke="#a0aec0" stroke-width="2"/>
+                        <text x="375" y="150" text-anchor="middle" font-size="9" fill="#718096">Q₂ (higher output — unaffordable)</text>
+
+                        <path d="M130,280 Q225,205 330,175" fill="none" stroke="#2f855a" stroke-width="2.6"/>
+                        <text x="322" y="165" text-anchor="middle" font-size="9" fill="#22543d">Q₁ (equilibrium output)</text>
+
+                        <path d="M140,255 Q220,200 290,185" fill="none" stroke="#a0aec0" stroke-width="2"/>
+                        <text x="280" y="200" text-anchor="middle" font-size="9" fill="#718096">Q₀ (lower output)</text>
+
+                        <line x1="70" y1="315" x2="410" y2="65" stroke="#2b6cb0" stroke-width="2.4"/>
+                        <text x="400" y="55" text-anchor="middle" font-size="9.5" fill="#2c5282">Isocost Line</text>
+
+                        <circle cx="222" cy="205" r="5.5" fill="#c53030"/>
+                        <text x="222" y="232" text-anchor="middle" font-size="10" font-weight="600" fill="#742a2a">E (Least-Cost Combination)</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 2 — At point E, the firm produces the maximum output (Q₁) attainable for its given budget — the isoquant is exactly tangent to the isocost line, and it cannot reach higher output (Q₂) without exceeding its budget.</p>
+                </div>
+                <div class="concept-block">
+                    <strong>Equilibrium Condition: MPL ÷ w = MPK ÷ r</strong> (equivalently, MRTS<sub>LK</sub> = w ÷ r)<br>
+                    The marginal product per rupee spent on labour must equal the marginal product per rupee spent on capital — directly parallel to the equi-marginal principle for consumers (Unit 1, Section 6.3).
+                </div>
+
+                <h2 id="costderivation">5. Derivation of Cost Functions from Production Functions</h2>
+                <p class="lead-text">A firm's cost function — the relationship between total cost and the level of output — is not independent of its production function; it is derived directly from it, once input prices are known.</p>
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 600 140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Flow diagram showing the derivation of a cost function from a production function">
+                        <rect width="600" height="140" fill="#ffffff" rx="14"/>
+                        <defs>
+                            <marker id="arrHeadE" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                                <path d="M0,0L10,5L0,10z" fill="#4a5568"/>
+                            </marker>
+                        </defs>
+                        <rect x="20" y="45" width="130" height="50" rx="8" fill="#2b6cb0"/>
+                        <text x="85" y="65" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff">Production</text>
+                        <text x="85" y="79" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff">Function Q=f(L,K)</text>
+                        <line x1="150" y1="70" x2="185" y2="70" stroke="#4a5568" stroke-width="2" marker-end="url(#arrHeadE)"/>
+
+                        <rect x="185" y="45" width="150" height="50" rx="8" fill="#2f855a"/>
+                        <text x="260" y="65" text-anchor="middle" font-size="9" font-weight="600" fill="#fff">+ Input Prices (w, r)</text>
+                        <text x="260" y="79" text-anchor="middle" font-size="9" font-weight="600" fill="#fff">→ Cost Minimization</text>
+                        <line x1="335" y1="70" x2="370" y2="70" stroke="#4a5568" stroke-width="2" marker-end="url(#arrHeadE)"/>
+
+                        <rect x="370" y="45" width="120" height="50" rx="8" fill="#b7791f"/>
+                        <text x="430" y="65" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff">Expansion</text>
+                        <text x="430" y="79" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff">Path</text>
+                        <line x1="490" y1="70" x2="525" y2="70" stroke="#4a5568" stroke-width="2" marker-end="url(#arrHeadE)"/>
+
+                        <rect x="525" y="45" width="60" height="50" rx="8" fill="#c53030"/>
+                        <text x="555" y="65" text-anchor="middle" font-size="9" font-weight="600" fill="#fff">Cost</text>
+                        <text x="555" y="79" text-anchor="middle" font-size="9" font-weight="600" fill="#fff">C=f(Q)</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 3 — For each possible output level, finding the least-cost input combination (Section 4.3) at given input prices, and tracing this "expansion path," generates the total cost figure for that output — the cost function.</p>
+                </div>
+                <p>In short, the cost function C = f(Q) is obtained by finding, for every possible output level Q, the least-cost combination of labour and capital (per the tangency condition in Section 4.3) required to produce it, and multiplying those input quantities by their respective prices. This is why the shape of the production function — particularly whether returns to scale are increasing, constant or decreasing (Section 3.2) — directly shapes whether long-run average cost falls, stays flat, or rises as output expands (explored further in Section 10).</p>
+
+                <h2 id="costimportance">6. Importance of Cost in Managerial Decisions</h2>
+                <ul class="custom-bullets">
+                    <li><strong>Pricing decisions</strong> — cost sets the floor below which a price cannot sustainably be set (linking to marginal costing decisions in Unit 6 of Accounting for Managers).</li>
+                    <li><strong>Output and capacity decisions</strong> — understanding how cost behaves as output changes (Sections 8–9) helps a firm decide the most efficient scale of operation.</li>
+                    <li><strong>Make-or-buy and outsourcing decisions</strong> — comparing internal cost against external purchase price (Unit 5 of Accounting for Managers, Section 3.4).</li>
+                    <li><strong>Plant expansion decisions</strong> — knowledge of economies and diseconomies of scale (Section 10) guides whether, and by how much, to expand capacity.</li>
+                    <li><strong>Cost control and efficiency</strong> — identifying which cost components are rising disproportionately with output flags where managerial attention is needed.</li>
+                </ul>
+
+                <h2 id="costconcepts">7. Different Cost Concepts and Classifications</h2>
+                <p class="lead-text">Unit 5 of Accounting for Managers classified costs from an accounting perspective (by nature, function, and behaviour). Managerial economics adds several further distinctions important for decision-making:</p>
+                <table class="tutorial-table">
+                    <tr>
+                        <th>Concept</th>
+                        <th>Meaning</th>
+                    </tr>
+                    <tr><td><strong>Accounting Cost</strong></td><td>Actual, explicit expenditure recorded in the firm's books (as covered throughout Accounting for Managers).</td></tr>
+                    <tr><td><strong>Economic Cost</strong></td><td>Accounting (explicit) cost plus implicit costs, including the opportunity cost of resources owned and used by the firm itself.</td></tr>
+                    <tr><td><strong>Explicit Cost</strong></td><td>Actual cash payments made by the firm to outsiders for inputs (wages, rent, raw material).</td></tr>
+                    <tr><td><strong>Implicit (Imputed) Cost</strong></td><td>The estimated value of self-owned, self-employed resources (e.g., the entrepreneur's own time, or the opportunity cost of capital invested by the owner) for which no direct cash payment is made — directly linked to the imputed cost concept in Unit 5 of Accounting for Managers, Section 3.3.</td></tr>
+                    <tr><td><strong>Private Cost</strong></td><td>The cost actually borne by the firm undertaking the economic activity.</td></tr>
+                    <tr><td><strong>Social Cost</strong></td><td>Private cost plus any external costs imposed on third parties or society (e.g., pollution) that are not borne directly by the firm.</td></tr>
+                </table>
+                <p><em>Economic profit</em> (Total Revenue − Economic Cost) is therefore always less than or equal to accounting profit (Total Revenue − Accounting Cost), since it additionally deducts the implicit/opportunity costs that accounting profit ignores.</p>
+
+                <h2 id="shortlongruncost">8. Short-Run and Long-Run Cost</h2>
+                <h3 id="shortruncost">8.1 Short-Run Cost Curves</h3>
+                <p class="lead-text">In the short run, some costs are fixed (do not vary with output) and others are variable (vary directly with output) — the same Fixed/Variable distinction introduced in Unit 5 of Accounting for Managers, Section 2.3, now examined through its effect on per-unit cost curves.</p>
+                <table class="tutorial-table">
+                    <tr><th>Cost Concept</th><th>Formula</th></tr>
+                    <tr><td>Total Fixed Cost (TFC)</td><td>Constant regardless of output</td></tr>
+                    <tr><td>Total Variable Cost (TVC)</td><td>Varies with output</td></tr>
+                    <tr><td>Total Cost (TC)</td><td>TC = TFC + TVC</td></tr>
+                    <tr><td>Average Fixed Cost (AFC)</td><td>AFC = TFC ÷ Q</td></tr>
+                    <tr><td>Average Variable Cost (AVC)</td><td>AVC = TVC ÷ Q</td></tr>
+                    <tr><td>Average Total Cost (ATC / AC)</td><td>ATC = TC ÷ Q = AFC + AVC</td></tr>
+                    <tr><td>Marginal Cost (MC)</td><td>MC = ΔTC ÷ ΔQ</td></tr>
+                </table>
+
+                <p><strong>Worked Example:</strong></p>
+                <table class="tutorial-table">
+                    <tr><th>Q</th><th>TFC (₹)</th><th>TVC (₹)</th><th>TC (₹)</th><th>AFC</th><th>AVC</th><th>ATC</th><th>MC</th></tr>
+                    <tr><td>1</td><td>100</td><td>40</td><td>140</td><td>100</td><td>40</td><td>140</td><td>40</td></tr>
+                    <tr><td>2</td><td>100</td><td>70</td><td>170</td><td>50</td><td>35</td><td>85</td><td>30</td></tr>
+                    <tr><td>3</td><td>100</td><td>90</td><td>190</td><td>33.3</td><td>30</td><td>63.3</td><td>20</td></tr>
+                    <tr><td>4</td><td>100</td><td>130</td><td>230</td><td>25</td><td>32.5</td><td>57.5</td><td>40</td></tr>
+                    <tr><td>5</td><td>100</td><td>200</td><td>300</td><td>20</td><td>40</td><td>60</td><td>70</td></tr>
+                </table>
+
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 520 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="U-shaped short run average variable cost, average total cost, and marginal cost curves">
+                        <rect width="520" height="320" fill="#ffffff" rx="14"/>
+                        <text x="260" y="22" text-anchor="middle" font-size="14.5" font-weight="600" fill="#2d3748">Short-Run Cost Curves (AVC, ATC, MC)</text>
+
+                        <line x1="55" y1="270" x2="480" y2="270" stroke="#2d3748" stroke-width="1.5"/>
+                        <line x1="55" y1="270" x2="55" y2="45" stroke="#2d3748" stroke-width="1.5"/>
+                        <text x="265" y="292" text-anchor="middle" font-size="9.5" fill="#4a5568">Output (Q)</text>
+                        <text x="22" y="160" text-anchor="middle" font-size="9.5" fill="#4a5568" transform="rotate(-90 22 160)">Cost (₹)</text>
+
+                        <polyline points="95,180 180,195 265,205 350,190 435,150" fill="none" stroke="#2f855a" stroke-width="2.4"/>
+                        <text x="450" y="145" text-anchor="middle" font-size="8.5" fill="#22543d">AVC</text>
+
+                        <polyline points="95,90 180,135 265,155 350,168 435,155" fill="none" stroke="#2b6cb0" stroke-width="2.4"/>
+                        <text x="450" y="150" text-anchor="middle" font-size="8.5" fill="#2c5282">ATC</text>
+
+                        <polyline points="95,195 180,215 265,225 350,180 435,105" fill="none" stroke="#c53030" stroke-width="2.4"/>
+                        <text x="450" y="100" text-anchor="middle" font-size="8.5" fill="#742a2a">MC</text>
+
+                        <text x="265" y="250" text-anchor="middle" font-size="8.5" fill="#718096">MC cuts both AVC and ATC from below, exactly at each curve's minimum point.</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 4 — All three curves are U-shaped, reflecting the law of variable proportions (Section 3.1): costs fall initially due to increasing returns, then rise as diminishing returns set in.</p>
+                </div>
+
+                <h3 id="longruncost">8.2 Long-Run Average Cost (LAC)</h3>
+                <p>In the long run, since all inputs (including plant size) are variable, the firm can choose from among many possible plant sizes, each with its own short-run average cost (SAC) curve. The Long-Run Average Cost (LAC) curve is the "envelope" of all these short-run SAC curves — for each output level, it shows the lowest possible average cost achievable by building the optimal plant size for that specific output.</p>
+
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 560 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Long run average cost curve as the envelope of several short run average cost curves, with economies and diseconomies of scale zones marked">
+                        <rect width="560" height="320" fill="#ffffff" rx="14"/>
+                        <text x="280" y="22" text-anchor="middle" font-size="14.5" font-weight="600" fill="#2d3748">LAC as the Envelope of Short-Run SAC Curves</text>
+
+                        <line x1="55" y1="270" x2="520" y2="270" stroke="#2d3748" stroke-width="1.5"/>
+                        <line x1="55" y1="270" x2="55" y2="45" stroke="#2d3748" stroke-width="1.5"/>
+                        <text x="285" y="292" text-anchor="middle" font-size="9.5" fill="#4a5568">Output (Q)</text>
+                        <text x="22" y="160" text-anchor="middle" font-size="9.5" fill="#4a5568" transform="rotate(-90 22 160)">Average Cost (₹)</text>
+
+                        <path d="M85,240 Q135,140 195,200" fill="none" stroke="#a0aec0" stroke-width="1.8"/>
+                        <text x="95" y="235" text-anchor="middle" font-size="8" fill="#718096">SAC₁</text>
+                        <path d="M160,220 Q225,110 300,190" fill="none" stroke="#a0aec0" stroke-width="1.8"/>
+                        <text x="180" y="215" text-anchor="middle" font-size="8" fill="#718096">SAC₂</text>
+                        <path d="M250,205 Q325,95 400,180" fill="none" stroke="#a0aec0" stroke-width="1.8"/>
+                        <text x="270" y="200" text-anchor="middle" font-size="8" fill="#718096">SAC₃</text>
+                        <path d="M340,195 Q420,110 490,220" fill="none" stroke="#a0aec0" stroke-width="1.8"/>
+                        <text x="360" y="190" text-anchor="middle" font-size="8" fill="#718096">SAC₄</text>
+
+                        <path d="M85,240 Q290,80 490,220" fill="none" stroke="#c53030" stroke-width="2.8"/>
+                        <text x="500" y="215" text-anchor="middle" font-size="9" font-weight="600" fill="#742a2a">LAC</text>
+
+                        <line x1="290" y1="45" x2="290" y2="270" stroke="#718096" stroke-width="1" stroke-dasharray="3,3"/>
+                        <text x="180" y="270" text-anchor="middle" font-size="8.5" fill="#22543d">◄ Economies of Scale</text>
+                        <text x="390" y="270" text-anchor="middle" font-size="8.5" fill="#742a2a">Diseconomies of Scale ►</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 5 — LAC falls as long as economies of scale outweigh diseconomies, reaches a minimum at the Minimum Efficient Scale, and rises once diseconomies of scale start to dominate.</p>
+                </div>
+
+                <h2 id="costrelationships">9. Different Cost Relationships</h2>
+                <ul class="custom-bullets">
+                    <li><strong>AC and MC</strong> — as long as MC is below AC, AC is falling; as long as MC is above AC, AC is rising; MC always intersects AC (and AVC) exactly at their minimum points (visible in Fig. 4).</li>
+                    <li><strong>AFC and Output</strong> — AFC continuously declines as output rises, since a constant fixed cost is spread over more units (the principle of "spreading overheads").</li>
+                    <li><strong>AVC and MC</strong> — the two move together at low output levels, but MC eventually rises faster than AVC due to diminishing returns (Section 3.1), so MC crosses AVC from below.</li>
+                    <li><strong>SAC and LAC</strong> — the LAC curve is tangent to (touches, but generally does not cross) each SAC curve; only at the very minimum point of LAC does that tangency occur exactly at the minimum point of the corresponding SAC curve.</li>
+                </ul>
+
+                <h2 id="economiesscale">10. Economies of Scale and Scope</h2>
+                <h3 id="economiesofscale">10.1 Economies and Diseconomies of Scale</h3>
+                <p class="lead-text">Economies of scale refer to the cost advantages a firm experiences as it increases its scale of output, causing long-run average cost to fall (Section 8.2, Fig. 5). Diseconomies of scale are the opposite — cost disadvantages that cause LAC to rise once the firm becomes too large to manage efficiently.</p>
+                <table class="tutorial-table">
+                    <tr><th>Type</th><th>Source</th><th>Examples</th></tr>
+                    <tr><td><strong>Internal Economies</strong></td><td>Arise from the growth of the firm itself</td><td>Technical (specialized machinery), Managerial (specialized departments), Financial (easier/cheaper access to capital), Marketing (bulk buying/selling discounts), Risk-bearing (diversification across products/markets)</td></tr>
+                    <tr><td><strong>External Economies</strong></td><td>Arise from the growth of the whole industry, benefiting all firms in it</td><td>Better transport and infrastructure, a larger pool of skilled labour, specialized ancillary suppliers clustering nearby</td></tr>
+                    <tr><td><strong>Internal Diseconomies</strong></td><td>Arise from the firm becoming too large to manage efficiently</td><td>Managerial inefficiency and communication breakdown, coordination difficulties, labour relations problems</td></tr>
+                    <tr><td><strong>External Diseconomies</strong></td><td>Arise from the growth of the whole industry straining shared resources</td><td>Rising input prices due to industry-wide competition for scarce resources, congestion, environmental strain</td></tr>
+                </table>
+
+                <h3 id="economiesofscope">10.2 Economies of Scope</h3>
+                <p>Economies of scope are cost savings that arise when a firm produces two or more different products <em>together</em>, using shared inputs, facilities or expertise, rather than producing them separately in different firms. For example, a single dairy firm producing both milk and cheese from common inputs (dairy cattle, processing facilities, distribution network) typically incurs lower total cost than two separate firms each producing only one of the two products — distinct from economies of scale, which relate to producing more of a <em>single</em> product.</p>
+
+                <h2 id="estimatingcost">11. Methods of Estimating Cost Functions</h2>
+                <ul class="custom-bullets">
+                    <li><strong>Statistical (Regression) Method</strong> — uses historical data on output and cost to statistically estimate the mathematical relationship between them (the most widely used approach in practice).</li>
+                    <li><strong>Engineering Method</strong> — estimates the cost function from technical and engineering data about the production process itself (input-output relationships, equipment specifications), rather than from historical accounting records — useful for new products with no cost history.</li>
+                    <li><strong>Survivorship Method</strong> — infers the most cost-efficient firm size within an industry by observing, over time, which size categories of firms grow and "survive," and which shrink or disappear.</li>
+                </ul>
+
+                <h2 id="numericalproblems">12. Numerical Problems Related to Management</h2>
+                <p><strong>Problem 1 (Returns to Scale):</strong> A firm's production function is Q = 10L<sup>0.5</sup>K<sup>0.5</sup>. If both L and K are doubled, what happens to output?<br>
+                <em>Solution:</em> New output = 10(2L)<sup>0.5</sup>(2K)<sup>0.5</sup> = 10 × 2<sup>0.5</sup> × L<sup>0.5</sup> × 2<sup>0.5</sup> × K<sup>0.5</sup> = 10 × 2 × L<sup>0.5</sup>K<sup>0.5</sup> = 2 × (10L<sup>0.5</sup>K<sup>0.5</sup>) = 2Q. Since output exactly doubles when inputs double, this production function exhibits <strong>Constant Returns to Scale</strong>.</p>
+                <p><strong>Problem 2 (Cost Function):</strong> A firm's total cost function is TC = 100 + 10Q + 2Q². Find the AFC, AVC, ATC and MC at Q = 5 units.<br>
+                <em>Solution:</em> TFC = ₹100 (the constant term); TVC = 10Q + 2Q² = (10 × 5) + (2 × 25) = 50 + 50 = ₹100; TC = 100 + 100 = ₹200.<br>
+                AFC = 100 ÷ 5 = <strong>₹20</strong>; AVC = 100 ÷ 5 = <strong>₹20</strong>; ATC = 200 ÷ 5 = <strong>₹40</strong>; MC = 10 + 4Q = 10 + (4 × 5) = <strong>₹30</strong>.</p>
+                <p><strong>Problem 3 (Factor Productivity):</strong> Using the table in Section 2.1, at what level of labour does Stage I of production end?<br>
+                <em>Solution:</em> Stage I ends where AP reaches its maximum, i.e., where AP = MP — from the table, this occurs at <strong>L = 3–4</strong> (AP peaks at 13.0, matched by MP at L = 3). Beyond this point, AP begins to fall, marking the start of Stage II.</p>
+
+                <h2 id="review">Review Questions</h2>
+                <h3>Short Answer Type</h3>
+                <ol class="custom-bullets">
+                    <li>Define a production function and state its general form.</li>
+                    <li>Distinguish between total product, average product and marginal product.</li>
+                    <li>State the law of variable proportions and name its three stages.</li>
+                    <li>Distinguish between increasing, constant and decreasing returns to scale.</li>
+                    <li>What is an isoquant? How does it differ from an indifference curve?</li>
+                    <li>State the equilibrium condition for the least-cost combination of inputs.</li>
+                    <li>Distinguish between explicit cost and implicit cost.</li>
+                    <li>Distinguish between short-run and long-run average cost curves.</li>
+                    <li>What is meant by economies of scale? Distinguish between internal and external economies.</li>
+                    <li>Distinguish between economies of scale and economies of scope.</li>
+                </ol>
+                <h3>Long Answer / Essay Type / Numerical</h3>
+                <ol class="custom-bullets">
+                    <li>Explain the production function and its importance in managerial decision-making.</li>
+                    <li>Explain the law of variable proportions with the help of TP, AP and MP curves and its three stages.</li>
+                    <li>Explain the law of returns to scale with numerical examples of increasing, constant and decreasing returns.</li>
+                    <li>Explain, with a diagram, how a firm determines the least-cost combination of inputs using isoquants and isocost lines.</li>
+                    <li>Explain how a cost function is derived from a production function.</li>
+                    <li>Discuss the different cost concepts used in managerial economics, distinguishing accounting cost from economic cost.</li>
+                    <li>Explain the short-run cost curves (AFC, AVC, ATC, MC) and their relationships, with a numerical illustration.</li>
+                    <li>Explain the derivation of the long-run average cost curve as an envelope of short-run average cost curves.</li>
+                    <li>Discuss the sources of economies and diseconomies of scale, and explain the concept of economies of scope.</li>
+                    <li>Discuss the different methods used to estimate a firm's cost function.</li>
+                </ol>
+
+                <h2 id="summary">Summary</h2>
+                <p>This unit examined the theory of production and cost that underlies a firm's supply-side decisions. It began with the production function and its importance in guiding input, capacity and cost decisions, then explained factor productivity through total, average and marginal product, and the law of variable proportions with its three stages of production. It covered the law of returns to scale for the long run (increasing, constant and decreasing returns), and explained how a firm chooses the least-cost combination of inputs using isoquants and isocost lines, arriving at the tangency condition MPL ÷ w = MPK ÷ r. The unit then showed how this production-and-input-price foundation is used to derive the firm's cost function, before covering the importance of cost in managerial decisions and the key cost concepts of managerial economics — accounting versus economic cost, explicit versus implicit cost, and private versus social cost. It explained the short-run cost curves (TFC, TVC, TC, AFC, AVC, ATC, MC) and their U-shaped pattern arising from the law of variable proportions, the derivation of the long-run average cost curve as an envelope of short-run curves, and the key relationships between these cost curves. Finally, it distinguished economies of scale (internal and external) from diseconomies of scale and from economies of scope, and surveyed the statistical, engineering and survivorship methods used to estimate cost functions in practice — closing with worked numerical problems on returns to scale, cost function calculation, and factor productivity.</p>
+
+            </div>
+
+            <div class="completion-section">
+                <button id="markCompleteBtn" class="complete-btn">✔️ Mark as Complete</button>
+            </div>
+
+            <div class="pagination">
+                <a href="s1-eco-u1.html" style="text-decoration: none;"><button class="prev-btn hover-effect">❮ Unit 1: Introduction to Managerial Economics</button></a>
+                <a href="s1-eco-u3.html" style="text-decoration: none;"><button class="next-btn hover-effect">Unit 3: Market Structure and the Equilibrium of the Firm ❯</button></a>
+            </div>
+        </main>
+
+        <aside class="right-sidebar" id="rightSidebar">
+            <div class="widget sticky-widget premium-card">
+                <h3>Unit Contents</h3>
+                <ul class="toc-list">
+                    <li><a href="#intro">0. Production and the Firm</a></li>
+                    <li><a href="#productionfunction">1. Production Function</a></li>
+                    <li><a href="#factorproductivity">2. Factor Productivities</a></li>
+                    <li><a href="#lawsofproduction">3. Laws of Production</a></li>
+                    <li><a href="#bestcombination">4. Best Combination of Inputs</a></li>
+                    <li><a href="#costderivation">5. Deriving Cost from Production</a></li>
+                    <li><a href="#costimportance">6. Importance of Cost</a></li>
+                    <li><a href="#costconcepts">7. Cost Concepts &amp; Classification</a></li>
+                    <li><a href="#shortlongruncost">8. Short-Run &amp; Long-Run Cost</a></li>
+                    <li><a href="#costrelationships">9. Cost Relationships</a></li>
+                    <li><a href="#economiesscale">10. Economies of Scale &amp; Scope</a></li>
+                    <li><a href="#estimatingcost">11. Estimating Cost Functions</a></li>
+                    <li><a href="#numericalproblems">12. Numerical Problems</a></li>
+                    <li><a href="#review">Review Questions</a></li>
+                    <li><a href="#summary">Summary</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
