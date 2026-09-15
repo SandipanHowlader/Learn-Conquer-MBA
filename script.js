@@ -316,7 +316,7 @@ document.addEventListener('DOMContentLoaded', () => {
        3. AUTHENTICATION (Split-Screen Login)
     ========================================= */
     const loginForm = document.getElementById('loginForm');
-    const userDatabase = { "admin": "admin123", "Sandipan": "DMM-2026-11", "Neha": "DMM-2026-01", "Prodip": "DMM-2026-02", "Amrita": "DMM-2026-03", "Shreya": "DMM-2026-04", "Koyel": "DMM-2026-05", "Srijit": "DMM-2026-06", "Indrajit": "DMM-2026-07", "Sagar": "DMM-2026-08", "Shabnam": "DMM-2026-09", "Rabi": "DMM-2026-10", "Diptak": "DMM-2026-12", "Abhijit": "DMM-2026-13", "Suman": "DMM-2026-14", "Debajyoti": "DMM-2026-15", "Sk": "DMM-2026-16", "Gargi": "DMM-2026-17", "Pallabi": "DMM-2026-18", "Debadrick": "DMM-2026-19", "Deep": "DMM-2026-20", "Payel": "DMM-2026-21", "_": "DMM-2026-22", "Neha": "DMM-2026-23", "Souvik": "DMM-2026-24", "": "DMM-2026-25",}; // Add your 200 users here
+    const userDatabase = { "admin": "admin123", "student": "student123", "Sandipan": "DMM-2026-11", "NehaS": "DMM-2026-01", "Prodip": "DMM-2026-02", "Amrita": "DMM-2026-03", "Shreya": "DMM-2026-04", "Koyel": "DMM-2026-05", "Srijit": "DMM-2026-06", "Indrajit": "DMM-2026-07", "Sagar": "DMM-2026-08", "Shabnam": "DMM-2026-09", "Rabi": "DMM-2026-10", "Diptak": "DMM-2026-12", "Abhijit": "DMM-2026-13", "Suman": "DMM-2026-14", "Debajyoti": "DMM-2026-15", "Sk": "DMM-2026-16", "Gargi": "DMM-2026-17", "Pallabi": "DMM-2026-18", "Debadrick": "DMM-2026-19", "Deep": "DMM-2026-20", "Payel": "DMM-2026-21", "_": "DMM-2026-22", "NehaD": "DMM-2026-23", "Souvik": "DMM-2026-24", "": "DMM-2026-25",}; // Add your 200 users here
 
     if (loginForm) {
         const errorMsg = document.getElementById('error-msg');
