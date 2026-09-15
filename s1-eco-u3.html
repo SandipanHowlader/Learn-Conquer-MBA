@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Economics for Managers - Unit-3</title>
+        <!-- Apple Touch Icons (for iOS home screen) -->
+    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icon.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="icon.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .diagram-wrap { margin: 28px 0; text-align: center; }
+        .diagram-wrap svg { max-width: 100%; height: auto; background: #ffffff; border-radius: 14px; box-shadow: 0 1px 8px rgba(0,0,0,0.10); }
+        .diagram-caption { font-size: 0.85rem; color: #666; margin-top: 10px; font-style: italic; }
+    </style>
+</head>
+<body data-current-topic="s1-eco-u3">
+    <div class="progress-container"><div class="progress-bar" id="myBar"></div></div>
+
+    <header class="navbar glass-nav">
+        <div class="nav-left">
+            <button id="mobileMenuBtn" class="mobile-menu-btn">☰</button>
+            <div class="logo">Learn & Concure <span> MBA Tutorials</span></div>
+        </div>
+        <div class="nav-links">
+            <button id="focusModeBtn" class="theme-btn hover-effect" title="Focus Mode">📖</button>
+            <button id="darkModeToggle" class="theme-btn hover-effect" title="Dark Mode">🌙</button>
+            <a href="index.html" id="logoutBtn" class="logout-btn hover-effect">Sign Out</a>
+        </div>
+    </header>
+
+    <div class="main-wrapper" id="mainWrapper">
+
+        <!-- JavaScript will automatically generate and inject the entire 4-Semester Sidebar here -->
+        <aside class="sidebar" id="sidebar-container"></aside>
+
+        <!-- Center Content: Tutorial -->
+        <main class="content premium-card" id="mainContent">
+            <div class="bread-crumbs">Semester-I / Economics for Managers / Unit 3</div>
+
+            <div class="article-header-flex">
+                <div>
+                    <h1>Market Structure and the Equilibrium of the Firm: Perfect Competition, Monopoly, Monopolistic Competition and Oligopoly</h1>
+                    <div class="article-meta">
+                        <span>Read Time: 80 mins</span>
+                    </div>
+                </div>
+                <div class="action-buttons">
+                    <!--button class="icon-btn hover-effect" onclick="window.print()" title="Print PDF">🖨️</button-->
+                </div>
+            </div>
+            <hr class="premium-hr">
+
+            <div class="article-body">
+                <div class="concept-block">
+                    <strong>Topics Covered in This Unit:</strong>
+                    <ul class="custom-bullets" style="margin-top: 10px;">
+                        <li>Market Structure and the General Equilibrium of the Firm</li>
+                        <li>Perfect Competition — Characteristics, Short-Run and Long-Run Equilibrium</li>
+                        <li>Monopoly — Equilibrium, Monopoly Power and Price Discrimination</li>
+                        <li>Monopolistic Competition — Equilibrium of the Firm</li>
+                        <li>Concept of Oligopoly</li>
+                        <li>Implications of Perfect Competition and Monopoly for Managerial Decision-Making</li>
+                        <li>Numerical Problems Related to Management</li>
+                    </ul>
+                </div>
+
+                <h2 id="marketstructure">0. Market Structure</h2>
+                <h3 id="marketstructuremeaning">0.1 Meaning and Basis of Classification</h3>
+                <p class="lead-text">Market structure refers to the organizational and competitive characteristics of a market — chiefly the number of sellers, the nature of the product they sell, the ease of entry and exit, and the degree of control any single seller has over price. These characteristics jointly determine how a firm sets its price and output, building directly on the production and cost theory from Unit 2.</p>
+
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 620 190" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Spectrum of market structures from perfect competition through monopolistic competition and oligopoly to monopoly">
+                        <rect width="620" height="190" fill="#ffffff" rx="14"/>
+                        <defs>
+                            <marker id="arrHeadMS" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                                <path d="M0,0L10,5L0,10z" fill="#4a5568"/>
+                            </marker>
+                        </defs>
+                        <text x="310" y="24" text-anchor="middle" font-size="15" font-weight="600" fill="#2d3748">The Spectrum of Market Structures</text>
+
+                        <rect x="20" y="55" width="140" height="60" fill="#2f855a" rx="8"/>
+                        <text x="90" y="80" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff">Perfect</text>
+                        <text x="90" y="95" text-anchor="middle" font-size="10.5" font-weight="600" fill="#fff">Competition</text>
+
+                        <rect x="175" y="55" width="140" height="60" fill="#4299e1" rx="8"/>
+                        <text x="245" y="80" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff">Monopolistic</text>
+                        <text x="245" y="95" text-anchor="middle" font-size="9.5" font-weight="600" fill="#fff">Competition</text>
+
+                        <rect x="330" y="55" width="140" height="60" fill="#b7791f" rx="8"/>
+                        <text x="400" y="90" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">Oligopoly</text>
+
+                        <rect x="460" y="55" width="140" height="60" fill="#c53030" rx="8"/>
+                        <text x="530" y="90" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">Monopoly</text>
+
+                        <line x1="20" y1="135" x2="600" y2="135" stroke="#4a5568" stroke-width="2" marker-end="url(#arrHeadMS)"/>
+                        <text x="310" y="155" text-anchor="middle" font-size="9.5" fill="#4a5568">Fewer sellers, more product differentiation, higher entry barriers, greater price control →</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 1 — As we move from left to right, the number of firms falls, entry barriers rise, and each firm gains progressively more control over the price it charges.</p>
+                </div>
+
+                <table class="tutorial-table">
+                    <tr><th>Structure</th><th>Number of Sellers</th><th>Nature of Product</th><th>Entry Barriers</th><th>Control over Price</th></tr>
+                    <tr><td>Perfect Competition</td><td>Very large</td><td>Homogeneous (identical)</td><td>None (free entry/exit)</td><td>None — firm is a "price taker"</td></tr>
+                    <tr><td>Monopolistic Competition</td><td>Large</td><td>Differentiated</td><td>Low</td><td>Limited, due to differentiation</td></tr>
+                    <tr><td>Oligopoly</td><td>Few</td><td>Homogeneous or differentiated</td><td>High</td><td>Significant, but interdependent</td></tr>
+                    <tr><td>Monopoly</td><td>One</td><td>No close substitutes</td><td>Very high / blocked</td><td>Considerable — firm is a "price maker"</td></tr>
+                </table>
+
+                <h3 id="firmequilibrium">0.2 General Equilibrium of the Firm</h3>
+                <p class="lead-text">Regardless of market structure, a profit-maximizing firm reaches equilibrium at the output level where <strong>Marginal Revenue equals Marginal Cost (MR = MC)</strong>, provided MC is rising (cutting MR from below) at that point. This single rule, applied differently depending on how each market structure shapes the firm's revenue curves, underlies every equilibrium analyzed in this unit.</p>
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 480 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Generic marginal revenue equals marginal cost profit maximizing condition">
+                        <rect width="480" height="300" fill="#ffffff" rx="14"/>
+                        <text x="240" y="22" text-anchor="middle" font-size="14.5" font-weight="600" fill="#2d3748">The Profit-Maximizing Rule: MR = MC</text>
+
+                        <line x1="55" y1="270" x2="440" y2="270" stroke="#2d3748" stroke-width="1.5"/>
+                        <line x1="55" y1="270" x2="55" y2="45" stroke="#2d3748" stroke-width="1.5"/>
+                        <text x="245" y="292" text-anchor="middle" font-size="9.5" fill="#4a5568">Output (Q)</text>
+                        <text x="22" y="160" text-anchor="middle" font-size="9.5" fill="#4a5568" transform="rotate(-90 22 160)">Revenue / Cost (₹)</text>
+
+                        <line x1="80" y1="250" x2="400" y2="80" stroke="#c53030" stroke-width="2.4"/>
+                        <text x="410" y="75" text-anchor="middle" font-size="9" fill="#742a2a">MC</text>
+
+                        <line x1="80" y1="80" x2="400" y2="200" stroke="#2b6cb0" stroke-width="2.4"/>
+                        <text x="410" y="205" text-anchor="middle" font-size="9" fill="#2c5282">MR</text>
+
+                        <circle cx="267" cy="150" r="5.5" fill="#2d3748"/>
+                        <text x="267" y="135" text-anchor="middle" font-size="9.5" font-weight="600" fill="#2d3748">E (Optimal Output)</text>
+                        <line x1="267" y1="150" x2="267" y2="270" stroke="#718096" stroke-width="1.4" stroke-dasharray="3,3"/>
+                        <text x="267" y="285" text-anchor="middle" font-size="8.5" fill="#718096">Q*</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 2 — At any output below Q*, MR &gt; MC, so producing more adds to profit; beyond Q*, MC &gt; MR, so producing more reduces profit — Q* is therefore the profit-maximizing output.</p>
+                </div>
+
+                <h2 id="perfectcompetition">1. Perfect Competition</h2>
+                <h3 id="pccharacteristics">1.1 Characteristics of Perfect Competition</h3>
+                <ul class="custom-bullets">
+                    <li><strong>Large number of buyers and sellers</strong> — no single firm can influence the market price by its own actions alone.</li>
+                    <li><strong>Homogeneous product</strong> — every firm's output is a perfect substitute for every other firm's, so buyers are indifferent about which seller they buy from.</li>
+                    <li><strong>Free entry and exit</strong> — no barriers prevent new firms from entering the industry in response to profit, or existing firms from leaving in response to loss.</li>
+                    <li><strong>Perfect information</strong> — buyers and sellers have complete knowledge of prices and market conditions.</li>
+                    <li><strong>Firm is a "price taker"</strong> — since output is homogeneous and the firm is small relative to the market, it must accept the price set by market demand and supply; consequently, for the individual firm, Price = Average Revenue (AR) = Marginal Revenue (MR), and the firm's demand curve is a horizontal line at the market price.</li>
+                </ul>
+
+                <h3 id="pcequilibrium">1.2 Short-Run and Long-Run Equilibrium</h3>
+                <p><strong>Worked Example:</strong> A firm operating under perfect competition has the total cost function TC = Q² + 100, giving Average Cost AC = Q + (100 ÷ Q) and Marginal Cost MC = 2Q.</p>
+
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 620 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Short run equilibrium showing supernormal profit and long run equilibrium showing only normal profit for a perfectly competitive firm">
+                        <rect width="620" height="320" fill="#ffffff" rx="14"/>
+                        <text x="310" y="20" text-anchor="middle" font-size="14" font-weight="600" fill="#2d3748">Perfectly Competitive Firm: Short-Run vs. Long-Run Equilibrium</text>
+
+                        <!-- Short run panel -->
+                        <line x1="70" y1="280" x2="270" y2="280" stroke="#2d3748" stroke-width="1.4"/>
+                        <line x1="70" y1="280" x2="70" y2="55" stroke="#2d3748" stroke-width="1.4"/>
+                        <text x="170" y="40" text-anchor="middle" font-size="10.5" font-weight="600" fill="#22543d">Short Run: Supernormal Profit</text>
+
+                        <polygon points="70,115 220,115 220,160.8 70,160.8" fill="#c6f6d5" opacity="0.7"/>
+                        <line x1="120" y1="225" x2="170" y2="170" stroke="#a0aec0" stroke-width="2"/>
+                        <polyline points="120,142.5 170,170 220,160.8" fill="none" stroke="#2f855a" stroke-width="2.2"/>
+                        <text x="235" y="165" text-anchor="middle" font-size="8" fill="#22543d">AC</text>
+                        <line x1="70" y1="280" x2="270" y2="60" stroke="#c53030" stroke-width="2.2"/>
+                        <text x="255" y="70" text-anchor="middle" font-size="8" fill="#742a2a">MC</text>
+                        <line x1="70" y1="115" x2="270" y2="115" stroke="#2b6cb0" stroke-width="2" stroke-dasharray="4,3"/>
+                        <text x="75" y="108" font-size="8.5" fill="#2c5282">P = MR = ₹30</text>
+                        <circle cx="220" cy="115" r="4.5" fill="#2d3748"/>
+                        <text x="220" y="297" text-anchor="middle" font-size="8" fill="#4a5568">Q = 15</text>
+
+                        <!-- Long run panel -->
+                        <line x1="390" y1="280" x2="590" y2="280" stroke="#2d3748" stroke-width="1.4"/>
+                        <line x1="390" y1="280" x2="390" y2="55" stroke="#2d3748" stroke-width="1.4"/>
+                        <text x="490" y="40" text-anchor="middle" font-size="10.5" font-weight="600" fill="#2c5282">Long Run: Normal Profit Only</text>
+
+                        <polyline points="440,142.5 490,170 540,160.8" fill="none" stroke="#2f855a" stroke-width="2.2"/>
+                        <text x="555" y="165" text-anchor="middle" font-size="8" fill="#22543d">AC</text>
+                        <line x1="390" y1="280" x2="590" y2="60" stroke="#c53030" stroke-width="2.2"/>
+                        <text x="575" y="70" text-anchor="middle" font-size="8" fill="#742a2a">MC</text>
+                        <line x1="390" y1="170" x2="590" y2="170" stroke="#2b6cb0" stroke-width="2" stroke-dasharray="4,3"/>
+                        <text x="395" y="163" font-size="8.5" fill="#2c5282">P = AC = MC = ₹20</text>
+                        <circle cx="490" cy="170" r="5" fill="#2d3748"/>
+                        <text x="490" y="297" text-anchor="middle" font-size="8" fill="#4a5568">Q = 10</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 3 — In the short run, a price of ₹30 exceeds average cost, generating a supernormal profit (shaded). This profit attracts new entrants (free entry, Section 1.1), shifting industry supply until price falls to ₹20 — exactly equal to the minimum point of AC — leaving only normal profit in the long run.</p>
+                </div>
+
+                <table class="tutorial-table">
+                    <tr><th>Particulars</th><th>Short Run (Market Price = ₹30)</th><th>Long Run (Market Price = ₹20)</th></tr>
+                    <tr><td>Equilibrium condition</td><td>P = MC → 30 = 2Q → Q = 15</td><td>P = AC = MC → 20 = Q + 100/Q = 2Q → Q = 10</td></tr>
+                    <tr><td>Average Cost at that output</td><td>AC = 15 + 100/15 = ₹21.67</td><td>AC = 10 + 100/10 = ₹20 (minimum AC)</td></tr>
+                    <tr><td>Profit per unit</td><td>30 − 21.67 = ₹8.33</td><td>20 − 20 = ₹0</td></tr>
+                    <tr><td>Total profit</td><td>8.33 × 15 = <strong>₹125 (supernormal profit)</strong></td><td><strong>₹0 (only normal profit)</strong></td></tr>
+                </table>
+                <p>This is the defining long-run result of perfect competition: because entry is free (Section 1.1), any supernormal profit is competed away as new firms enter, and the industry settles where price equals the minimum point of every firm's average cost curve.</p>
+
+                <h2 id="monopoly">2. Monopoly</h2>
+                <h3 id="monopolymeaning">2.1 Meaning and Characteristics</h3>
+                <ul class="custom-bullets">
+                    <li><strong>Single seller</strong> — one firm constitutes the entire industry.</li>
+                    <li><strong>No close substitutes</strong> — the product has no readily available substitute, so consumers have no alternative supplier to switch to.</li>
+                    <li><strong>Very high or blocked entry barriers</strong> — legal restrictions, control of a key resource, patents, or economies of scale (Unit 2, Section 10) prevent new firms from entering.</li>
+                    <li><strong>"Price maker"</strong> — since the monopolist's demand curve <em>is</em> the market demand curve (downward sloping, Unit 1, Section 3.2), the firm's Average Revenue curve slopes downward, and its Marginal Revenue curve lies below the AR curve (MR falls twice as fast as AR for a straight-line demand curve) — unlike the perfectly competitive firm, where AR = MR.</li>
+                </ul>
+
+                <h3 id="monopolyequilibrium">2.2 Equilibrium of the Monopoly Firm</h3>
+                <p><strong>Worked Example:</strong> A monopolist faces demand AR = 50 − 0.5Q (so MR = 50 − Q) and has the total cost function TC = 10Q + 0.5Q² + 100 (so MC = 10 + Q and ATC = 10 + 0.5Q + 100/Q).</p>
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 520 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Monopoly equilibrium showing marginal revenue equal to marginal cost, price read off the average revenue curve, and the resulting supernormal profit rectangle">
+                        <rect width="520" height="340" fill="#ffffff" rx="14"/>
+                        <text x="260" y="22" text-anchor="middle" font-size="14.5" font-weight="600" fill="#2d3748">Monopoly Equilibrium and Profit</text>
+
+                        <line x1="70" y1="290" x2="470" y2="290" stroke="#2d3748" stroke-width="1.5"/>
+                        <line x1="70" y1="290" x2="70" y2="50" stroke="#2d3748" stroke-width="1.5"/>
+                        <text x="270" y="312" text-anchor="middle" font-size="9.5" fill="#4a5568">Output (Q)</text>
+                        <text x="30" y="170" text-anchor="middle" font-size="9.5" fill="#4a5568" transform="rotate(-90 30 170)">Price / Cost (₹)</text>
+
+                        <polygon points="70,106 270,106 270,175 70,175" fill="#c6f6d5" opacity="0.7"/>
+
+                        <line x1="70" y1="60" x2="470" y2="152" stroke="#2b6cb0" stroke-width="2.4"/>
+                        <text x="480" y="150" text-anchor="middle" font-size="9" fill="#2c5282">AR (Demand)</text>
+
+                        <line x1="70" y1="60" x2="470" y2="244" stroke="#805ad5" stroke-width="2.2"/>
+                        <text x="480" y="248" text-anchor="middle" font-size="9" fill="#553c9a">MR</text>
+
+                        <line x1="70" y1="244" x2="470" y2="60" stroke="#c53030" stroke-width="2.2"/>
+                        <text x="480" y="56" text-anchor="middle" font-size="9" fill="#742a2a">MC</text>
+
+                        <circle cx="270" cy="152" r="5" fill="#2d3748"/>
+                        <text x="270" y="135" text-anchor="middle" font-size="9" font-weight="600" fill="#2d3748">E (MR = MC)</text>
+
+                        <line x1="270" y1="290" x2="270" y2="106" stroke="#718096" stroke-width="1.3" stroke-dasharray="3,3"/>
+                        <line x1="70" y1="106" x2="270" y2="106" stroke="#718096" stroke-width="1.3" stroke-dasharray="3,3"/>
+                        <text x="45" y="109" text-anchor="end" font-size="8.5" fill="#2c5282">P = ₹40</text>
+                        <text x="270" y="305" text-anchor="middle" font-size="8.5" fill="#4a5568">Q = 20</text>
+                        <text x="45" y="178" text-anchor="end" font-size="8.5" fill="#22543d">AC = ₹25</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 4 — The monopolist sets output where MR = MC (point E), but reads its price off the higher AR curve, not off MR — unlike perfect competition, this price (₹40) can exceed average cost (₹25), yielding a persistent supernormal profit even in the long run, since entry is blocked (Section 2.1).</p>
+                </div>
+                <table class="tutorial-table">
+                    <tr><th>Step</th><th>Calculation</th><th>Result</th></tr>
+                    <tr><td>Equilibrium output (MR = MC)</td><td>50 − Q = 10 + Q → 40 = 2Q</td><td>Q = 20</td></tr>
+                    <tr><td>Price (read off AR curve)</td><td>AR = 50 − 0.5(20)</td><td>P = ₹40</td></tr>
+                    <tr><td>Average Cost at Q = 20</td><td>10 + 0.5(20) + 100/20</td><td>AC = ₹25</td></tr>
+                    <tr><td>Profit per unit</td><td>40 − 25</td><td>₹15</td></tr>
+                    <tr><td><strong>Total Profit</strong></td><td>15 × 20</td><td><strong>₹300</strong></td></tr>
+                </table>
+                <p>Unlike the long-run equilibrium of perfect competition (Section 1.2), a monopolist can continue to earn this supernormal profit indefinitely, precisely because high entry barriers prevent new firms from competing it away.</p>
+
+                <h3 id="monopolypower">2.3 Monopoly Power</h3>
+                <p>Monopoly power refers to the degree to which a firm can profitably raise price above marginal cost without losing all its customers. It is most commonly measured using the Lerner Index.</p>
+                <div class="concept-block">
+                    <strong>Lerner Index = (P − MC) ÷ P</strong> &nbsp; (ranges from 0, for a perfectly competitive firm, to close to 1, for a firm with very high monopoly power)
+                </div>
+                <p><strong>Worked Example (continuing the monopoly above):</strong> At equilibrium, P = ₹40 and MC = 10 + Q = 10 + 20 = ₹30.<br>
+                Lerner Index = (40 − 30) ÷ 40 = <strong>0.25</strong> — meaning price exceeds marginal cost by 25% of the price, a moderate degree of monopoly power.</p>
+
+                <h3 id="pricediscrimination">2.4 Price Discrimination</h3>
+                <p class="lead-text">Price discrimination is the practice of selling the same (or a very similar) product to different buyers or in different markets at different prices, not justified by differences in cost — made possible only when the firm has some monopoly power, the markets can be kept separate (no resale between them), and the markets have different price elasticities of demand.</p>
+                <ul class="custom-bullets">
+                    <li><strong>First-Degree (Perfect) Price Discrimination</strong> — the firm charges each individual buyer the maximum price they are willing to pay, capturing the entire consumer surplus (Unit 1, Section 8) as producer profit.</li>
+                    <li><strong>Second-Degree Price Discrimination</strong> — the firm charges different prices for different <em>quantities/blocks</em> of the same good (e.g., bulk discounts, tiered electricity or data pricing).</li>
+                    <li><strong>Third-Degree Price Discrimination</strong> — the firm segments the overall market into distinct groups (e.g., students vs. working professionals, domestic vs. export markets) with different elasticities of demand, and charges each group a different price.</li>
+                </ul>
+
+                <p><strong>Worked Example (Third-Degree Price Discrimination):</strong> A firm sells in two separate markets with a common Marginal Cost of ₹20. Market A (domestic, less price-sensitive) has demand AR<sub>A</sub> = 100 − Q<sub>A</sub> (MR<sub>A</sub> = 100 − 2Q<sub>A</sub>); Market B (export, more price-sensitive) has demand AR<sub>B</sub> = 80 − 2Q<sub>B</sub> (MR<sub>B</sub> = 80 − 4Q<sub>B</sub>).</p>
+                <table class="tutorial-table">
+                    <tr><th>Market</th><th>Equilibrium (MR = MC)</th><th>Quantity</th><th>Price</th></tr>
+                    <tr><td>Market A (less elastic)</td><td>100 − 2Q<sub>A</sub> = 20 → Q<sub>A</sub> = 40</td><td>40 units</td><td>100 − 40 = <strong>₹60</strong></td></tr>
+                    <tr><td>Market B (more elastic)</td><td>80 − 4Q<sub>B</sub> = 20 → Q<sub>B</sub> = 15</td><td>15 units</td><td>80 − 2(15) = <strong>₹50</strong></td></tr>
+                </table>
+                <p><em>Key Principle:</em> The firm charges the <strong>higher</strong> price (₹60) in Market A, where demand is less elastic (less price-sensitive), and the <strong>lower</strong> price (₹50) in Market B, where demand is more elastic — profit is maximized by charging more where buyers are less responsive to price, and less where they are more responsive.</p>
+
+                <h2 id="monopolisticcompetition">3. Monopolistic Competition</h2>
+                <h3 id="mccharacteristics">3.1 Characteristics</h3>
+                <ul class="custom-bullets">
+                    <li>A large number of firms, each producing a differentiated (not identical) product — through branding, quality, features, or location — giving each firm a small degree of monopoly power over its own loyal customers.</li>
+                    <li>Relatively easy (though not entirely free) entry and exit.</li>
+                    <li>Because of product differentiation, each firm's AR curve slopes downward (like a monopolist's), but is relatively flat/elastic, since close (though not identical) substitutes are readily available from rival firms.</li>
+                </ul>
+
+                <h3 id="mcequilibrium">3.2 Equilibrium of the Firm Under Monopolistic Competition</h3>
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 480 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Long run equilibrium under monopolistic competition, with the demand curve tangent to average cost and excess capacity relative to the minimum efficient scale">
+                        <rect width="480" height="320" fill="#ffffff" rx="14"/>
+                        <text x="240" y="22" text-anchor="middle" font-size="14" font-weight="600" fill="#2d3748">Monopolistic Competition — Long-Run Equilibrium</text>
+
+                        <line x1="60" y1="270" x2="440" y2="270" stroke="#2d3748" stroke-width="1.5"/>
+                        <line x1="60" y1="270" x2="60" y2="50" stroke="#2d3748" stroke-width="1.5"/>
+                        <text x="250" y="292" text-anchor="middle" font-size="9.5" fill="#4a5568">Output (Q)</text>
+                        <text x="25" y="160" text-anchor="middle" font-size="9.5" fill="#4a5568" transform="rotate(-90 25 160)">Price / Cost (₹)</text>
+
+                        <polyline points="110,150 220,105 330,150" fill="none" stroke="#2f855a" stroke-width="2.4"/>
+                        <text x="345" y="150" text-anchor="middle" font-size="8.5" fill="#22543d">AC</text>
+
+                        <line x1="90" y1="90" x2="410" y2="190" stroke="#2b6cb0" stroke-width="2.4"/>
+                        <text x="420" y="188" text-anchor="middle" font-size="8.5" fill="#2c5282">AR (Demand)</text>
+
+                        <line x1="90" y1="90" x2="410" y2="240" stroke="#805ad5" stroke-width="2"/>
+                        <text x="420" y="243" text-anchor="middle" font-size="8.5" fill="#553c9a">MR</text>
+
+                        <line x1="90" y1="240" x2="410" y2="100" stroke="#c53030" stroke-width="2"/>
+                        <text x="420" y="95" text-anchor="middle" font-size="8.5" fill="#742a2a">MC</text>
+
+                        <circle cx="260" cy="125" r="5" fill="#2d3748"/>
+                        <text x="260" y="110" text-anchor="middle" font-size="9" font-weight="600" fill="#2d3748">E (Tangency — zero profit)</text>
+
+                        <line x1="220" y1="270" x2="220" y2="105" stroke="#a0aec0" stroke-width="1.2" stroke-dasharray="3,3"/>
+                        <text x="220" y="285" text-anchor="middle" font-size="8" fill="#718096">Min. Efficient Scale</text>
+
+                        <line x1="260" y1="270" x2="260" y2="125" stroke="#718096" stroke-width="1.2" stroke-dasharray="3,3"/>
+                        <text x="260" y="298" text-anchor="middle" font-size="8" fill="#4a5568">Actual Output</text>
+
+                        <path d="M225,175 L255,175" stroke="#c53030" stroke-width="2"/>
+                        <text x="240" y="190" text-anchor="middle" font-size="8" fill="#742a2a">Excess Capacity</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 5 — Free entry (Section 3.1) drives long-run profit to zero, just as in perfect competition — but because the AR curve is downward sloping (not flat), the tangency with AC occurs to the left of AC's minimum point, leaving the firm with "excess capacity" it would not have under perfect competition.</p>
+                </div>
+                <p>In the short run, a monopolistically competitive firm behaves like a monopolist — it can earn supernormal profit by equating MR and MC and pricing off its downward-sloping AR curve (Section 2.2). But because entry is relatively easy (Section 3.1), any supernormal profit attracts new competing brands, shifting each existing firm's demand curve inward until, in the long run, the AR curve is tangent to the AC curve (Fig. 5) — profit falls to normal levels, just as in perfect competition, but at an output below the AC-minimizing scale.</p>
+
+                <h2 id="oligopoly">4. Concept of Oligopoly</h2>
+                <h3 id="oligopolymeaning">4.1 Meaning and Characteristics</h3>
+                <p class="lead-text">Oligopoly is a market structure with only a few large sellers, whose actions are mutually interdependent — each firm must explicitly consider how its rivals are likely to react to its own pricing, output, or advertising decisions, a feature absent from every other market structure covered in this unit.</p>
+                <ul class="custom-bullets">
+                    <li><strong>Few sellers</strong>, each large enough to have a noticeable impact on market price and on rivals.</li>
+                    <li><strong>Product may be homogeneous</strong> (e.g., cement, steel) <strong>or differentiated</strong> (e.g., automobiles, smartphones).</li>
+                    <li><strong>High entry barriers</strong>, often due to economies of scale (Unit 2, Section 10), large capital requirements, or brand loyalty.</li>
+                    <li><strong>Mutual interdependence</strong> — no single equilibrium model fits all oligopoly situations, since outcomes depend heavily on how firms expect rivals to respond (an insight central to game theory).</li>
+                </ul>
+
+                <h3 id="kinkeddemand">4.2 The Kinked Demand Curve — Price Rigidity</h3>
+                <p>One well-known model of oligopoly behaviour is the kinked demand curve, which explains why oligopoly prices often remain rigid (stable) for long periods, even when costs change.</p>
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 480 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kinked demand curve showing price rigidity in oligopoly, with a discontinuous marginal revenue curve">
+                        <rect width="480" height="320" fill="#ffffff" rx="14"/>
+                        <text x="240" y="22" text-anchor="middle" font-size="14" font-weight="600" fill="#2d3748">The Kinked Demand Curve</text>
+
+                        <line x1="60" y1="270" x2="440" y2="270" stroke="#2d3748" stroke-width="1.5"/>
+                        <line x1="60" y1="270" x2="60" y2="50" stroke="#2d3748" stroke-width="1.5"/>
+                        <text x="250" y="292" text-anchor="middle" font-size="9.5" fill="#4a5568">Output (Q)</text>
+                        <text x="25" y="160" text-anchor="middle" font-size="9.5" fill="#4a5568" transform="rotate(-90 25 160)">Price (₹)</text>
+
+                        <line x1="90" y1="90" x2="240" y2="150" stroke="#2b6cb0" stroke-width="2.6"/>
+                        <line x1="240" y1="150" x2="380" y2="255" stroke="#2b6cb0" stroke-width="2.6"/>
+                        <text x="400" y="258" text-anchor="middle" font-size="8.5" fill="#2c5282">D (Demand)</text>
+
+                        <line x1="90" y1="110" x2="240" y2="185" stroke="#805ad5" stroke-width="2"/>
+                        <line x1="240" y1="185" x2="240" y2="230" stroke="#805ad5" stroke-width="2"/>
+                        <line x1="240" y1="230" x2="380" y2="295" stroke="#805ad5" stroke-width="2"/>
+                        <text x="400" y="298" text-anchor="middle" font-size="8.5" fill="#553c9a">MR (with a gap)</text>
+
+                        <line x1="150" y1="210" x2="330" y2="208" stroke="#c53030" stroke-width="2.2"/>
+                        <text x="345" y="205" text-anchor="middle" font-size="8.5" fill="#742a2a">MC can shift within the gap</text>
+
+                        <circle cx="240" cy="150" r="5" fill="#2d3748"/>
+                        <text x="240" y="135" text-anchor="middle" font-size="9" font-weight="600" fill="#2d3748">Kink at Current Price</text>
+
+                        <text x="150" y="115" text-anchor="middle" font-size="8" fill="#718096">Elastic above (rivals ignore a price rise)</text>
+                        <text x="330" y="245" text-anchor="middle" font-size="8" fill="#718096">Inelastic below (rivals match a price cut)</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 6 — Because rivals are assumed to match a price cut (making demand inelastic below the kink) but ignore a price rise (making demand elastic above it), the firm's best response to a range of possible cost changes is often to leave price unchanged — the discontinuity ("gap") in the MR curve at the kink can absorb moderate shifts in MC without altering the optimal price or quantity.</p>
+                </div>
+
+                <h2 id="implications">5. Implications of Perfect Competition and Monopoly for Managerial Decision-Making</h2>
+                <table class="tutorial-table">
+                    <tr>
+                        <th>Managerial Concern</th>
+                        <th>Under Perfect Competition</th>
+                        <th>Under Monopoly</th>
+                    </tr>
+                    <tr><td>Pricing strategy</td><td>None available — the firm must accept the market price (P = MR = AR)</td><td>Significant discretion — the firm sets price by choosing output where MR = MC and reading price off the AR curve</td></tr>
+                    <tr><td>Long-run profitability</td><td>Only normal profit possible in the long run (Section 1.2), since free entry competes away supernormal profit</td><td>Supernormal profit can persist indefinitely (Section 2.2), protected by entry barriers</td></tr>
+                    <tr><td>Focus of managerial effort</td><td>Cost minimization and efficiency, since price cannot be influenced</td><td>Demand estimation, price discrimination (Section 2.4), and protecting entry barriers</td></tr>
+                    <tr><td>Risk of new entry</td><td>Constant threat, requires no special strategy since entry is already free</td><td>Must actively maintain barriers (patents, scale, brand) to sustain its position</td></tr>
+                    <tr><td>Advertising and differentiation</td><td>Largely irrelevant, since the product is homogeneous</td><td>Less relevant for a pure monopolist (no rivals to differentiate from), but highly relevant in monopolistic competition (Section 3) and oligopoly (Section 4)</td></tr>
+                </table>
+                <p>In practice, most real-world managers operate somewhere between these two extremes — in monopolistic competition or oligopoly — meaning they retain some pricing discretion (as under monopoly) but must also constantly watch competitors and the threat of entry (as under perfect competition), making the analysis of all four market structures directly relevant to real managerial strategy.</p>
+
+                <h2 id="numericalproblems">6. Numerical Problems Related to Management</h2>
+                <p><strong>Problem 1 (Perfect Competition):</strong> A perfectly competitive firm has MC = 4 + 2Q. If the market price is ₹20, find the firm's profit-maximizing output.<br>
+                <em>Solution:</em> P = MC → 20 = 4 + 2Q → 2Q = 16 → <strong>Q = 8 units</strong>.</p>
+                <p><strong>Problem 2 (Monopoly):</strong> A monopolist's demand function is P = 200 − 2Q, and MC = 20. Find the profit-maximizing price and quantity.<br>
+                <em>Solution:</em> Since AR = 200 − 2Q, MR = 200 − 4Q (twice the slope of AR). Setting MR = MC: 200 − 4Q = 20 → 4Q = 180 → <strong>Q = 45 units</strong>. Price = 200 − 2(45) = 200 − 90 = <strong>₹110</strong>.</p>
+                <p><strong>Problem 3 (Lerner Index):</strong> Using Problem 2's results, calculate the monopolist's Lerner Index.<br>
+                <em>Solution:</em> Lerner Index = (P − MC) ÷ P = (110 − 20) ÷ 110 = 90 ÷ 110 = <strong>0.82</strong> — a very high degree of monopoly power.</p>
+
+                <h2 id="review">Review Questions</h2>
+                <h3>Short Answer Type</h3>
+                <ol class="custom-bullets">
+                    <li>Define market structure and state its main bases of classification.</li>
+                    <li>State the general profit-maximizing condition for a firm under any market structure.</li>
+                    <li>State any three characteristics of perfect competition.</li>
+                    <li>Why does a perfectly competitive firm earn only normal profit in the long run?</li>
+                    <li>Why does AR exceed MR for a monopolist, but AR = MR for a perfectly competitive firm?</li>
+                    <li>Define the Lerner Index of monopoly power.</li>
+                    <li>Distinguish between first-degree, second-degree and third-degree price discrimination.</li>
+                    <li>What is meant by "excess capacity" under monopolistic competition?</li>
+                    <li>What is the key distinguishing feature of an oligopoly market?</li>
+                    <li>Why does the kinked demand curve model suggest oligopoly prices tend to be rigid?</li>
+                </ol>
+                <h3>Long Answer / Essay Type / Numerical</h3>
+                <ol class="custom-bullets">
+                    <li>Explain the meaning of market structure and the characteristics that distinguish perfect competition, monopolistic competition, oligopoly and monopoly.</li>
+                    <li>Explain the short-run and long-run equilibrium of a firm under perfect competition, with a numerical illustration.</li>
+                    <li>Explain the equilibrium of a monopoly firm, and calculate its price, output and profit from given demand and cost functions.</li>
+                    <li>Explain the concept of monopoly power and its measurement using the Lerner Index.</li>
+                    <li>Explain the meaning, types and conditions necessary for price discrimination, with a numerical example of third-degree price discrimination.</li>
+                    <li>Explain the long-run equilibrium of a firm under monopolistic competition, and the concept of excess capacity.</li>
+                    <li>Discuss the meaning and characteristics of oligopoly, and explain the kinked demand curve model of price rigidity.</li>
+                    <li>Discuss the implications of perfect competition and monopoly for managerial pricing and strategic decision-making.</li>
+                </ol>
+
+                <h2 id="summary">Summary</h2>
+                <p>This unit examined how market structure shapes a firm's pricing and output decisions, all built on the common profit-maximizing rule of MR = MC established in Section 0.2. It classified market structures along a spectrum from perfect competition (many sellers, homogeneous product, no entry barriers, firm is a price taker with AR = MR) to monopoly (single seller, no substitutes, blocked entry, firm is a price maker with AR &gt; MR), covering monopolistic competition and oligopoly in between. For perfect competition, the unit showed how short-run supernormal profit is competed away by free entry, driving the industry to a long-run equilibrium where price equals the minimum point of every firm's average cost curve. For monopoly, it derived the profit-maximizing price and output using MR = MC with price read off the AR curve, introduced the Lerner Index to measure monopoly power, and explained first-, second- and third-degree price discrimination with a worked example showing why firms charge higher prices in less elastic markets. It explained monopolistic competition's long-run tangency equilibrium and the resulting "excess capacity," and introduced oligopoly's defining feature of mutual interdependence, illustrated through the kinked demand curve's explanation of price rigidity. Finally, the unit drew out the practical managerial implications of operating under perfect competition versus monopoly — from pricing discretion and long-run profitability to the strategic importance of entry barriers and differentiation — closing with worked numerical problems on competitive and monopoly equilibrium and the Lerner Index.</p>
+
+            </div>
+
+            <div class="completion-section">
+                <button id="markCompleteBtn" class="complete-btn">✔️ Mark as Complete</button>
+            </div>
+
+            <div class="pagination">
+                <a href="s1-eco-u2.html" style="text-decoration: none;"><button class="prev-btn hover-effect">❮ Unit 2: Production and the Firm</button></a>
+                <a href="s1-eco-u4.html" style="text-decoration: none;"><button class="next-btn hover-effect">Unit 4: Economic Goals of the Firm and Managerial Theories ❯</button></a>
+            </div>
+        </main>
+
+        <aside class="right-sidebar" id="rightSidebar">
+            <div class="widget sticky-widget premium-card">
+                <h3>Unit Contents</h3>
+                <ul class="toc-list">
+                    <li><a href="#marketstructure">0. Market Structure</a></li>
+                    <li><a href="#perfectcompetition">1. Perfect Competition</a></li>
+                    <li><a href="#monopoly">2. Monopoly</a></li>
+                    <li><a href="#monopolisticcompetition">3. Monopolistic Competition</a></li>
+                    <li><a href="#oligopoly">4. Concept of Oligopoly</a></li>
+                    <li><a href="#implications">5. Managerial Implications</a></li>
+                    <li><a href="#numericalproblems">6. Numerical Problems</a></li>
+                    <li><a href="#review">Review Questions</a></li>
+                    <li><a href="#summary">Summary</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
