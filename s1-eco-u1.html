@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Economics for Managers - Unit-1</title>
+        <!-- Apple Touch Icons (for iOS home screen) -->
+    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icon.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="icon.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .diagram-wrap { margin: 28px 0; text-align: center; }
+        .diagram-wrap svg { max-width: 100%; height: auto; background: #ffffff; border-radius: 14px; box-shadow: 0 1px 8px rgba(0,0,0,0.10); }
+        .diagram-caption { font-size: 0.85rem; color: #666; margin-top: 10px; font-style: italic; }
+    </style>
+</head>
+<body data-current-topic="s1-eco-u1">
+    <div class="progress-container"><div class="progress-bar" id="myBar"></div></div>
+
+    <header class="navbar glass-nav">
+        <div class="nav-left">
+            <button id="mobileMenuBtn" class="mobile-menu-btn">☰</button>
+            <div class="logo">Learn & Concure <span> MBA Tutorials</span></div>
+        </div>
+        <div class="nav-links">
+            <button id="focusModeBtn" class="theme-btn hover-effect" title="Focus Mode">📖</button>
+            <button id="darkModeToggle" class="theme-btn hover-effect" title="Dark Mode">🌙</button>
+            <a href="index.html" id="logoutBtn" class="logout-btn hover-effect">Sign Out</a>
+        </div>
+    </header>
+
+    <div class="main-wrapper" id="mainWrapper">
+
+        <!-- JavaScript will automatically generate and inject the entire 4-Semester Sidebar here -->
+        <aside class="sidebar" id="sidebar-container"></aside>
+
+        <!-- Center Content: Tutorial -->
+        <main class="content premium-card" id="mainContent">
+            <div class="bread-crumbs">Semester-I / Economics for Managers / Unit 1</div>
+
+            <div class="article-header-flex">
+                <div>
+                    <h1>Introduction to Managerial Economics, Choice, Decision-Making and the Theory of Demand</h1>
+                    <div class="article-meta">
+                        <span> Read Time: 75 mins</span>
+                    </div>
+                </div>
+                <div class="action-buttons">
+                    <!--button class="icon-btn hover-effect" onclick="window.print()" title="Print PDF">🖨️</button-->
+                </div>
+            </div>
+            <hr class="premium-hr">
+
+            <div class="article-body">
+                <div class="concept-block">
+                    <strong>Topics Covered in This Unit:</strong>
+                    <ul class="custom-bullets" style="margin-top: 10px;">
+                        <li>Introduction and Basic Concepts of Managerial Economics</li>
+                        <li>Choice as an Economic Problem</li>
+                        <li>Concept of Decision-Making and Decision-Making under Different Conditions</li>
+                        <li>Theory of Demand, Demand Function, and Elasticity of Demand</li>
+                        <li>Cardinal Utility Theory and Indifference Curve Theory</li>
+                        <li>Consumer Surplus</li>
+                        <li>Demand and Price — Managerial Applications</li>
+                        <li>Derivation of Market Demand and Determinants of Demand</li>
+                        <li>Overview of Demand Forecasting</li>
+                        <li>Numerical Problems Related to Management</li>
+                    </ul>
+                </div>
+
+                <h2 id="intro">0. Introduction to Managerial Economics</h2>
+                <h3 id="meaning">0.1 Meaning and Scope</h3>
+                <p class="lead-text">Managerial economics is the application of economic theory and quantitative methods to the analysis of business decision-making problems. It bridges traditional economic theory and actual managerial practice, helping managers make optimal decisions about pricing, output, resource allocation and investment under conditions of scarcity and uncertainty.</p>
+                <div class="concept-block">
+                    <button class="copy-btn" onclick="copyText('def-text', this)">Copy</button>
+                    <div id="def-text">
+                        <strong>Spencer and Siegelman:</strong> Managerial economics is the integration of economic theory with business practice for the purpose of facilitating decision-making and forward planning by management.
+                    </div>
+                </div>
+
+                <h3 id="basicconcepts">0.2 Basic Economic Concepts</h3>
+                <ul class="custom-bullets">
+                    <li><strong>Scarcity</strong> — resources (time, money, materials) are limited relative to unlimited human wants, making choice unavoidable (explored further in Section 1).</li>
+                    <li><strong>Opportunity Cost</strong> — the value of the next best alternative forgone when a choice is made (introduced formally in Unit 5 of Accounting for Managers as a decision-making cost).</li>
+                    <li><strong>Marginal Analysis</strong> — examining the effect of a small (one-unit) change in one variable on another; the basis of most optimization decisions in economics.</li>
+                    <li><strong>Equi-Marginal Principle</strong> — resources should be allocated across alternative uses so that the marginal benefit per unit of resource is equal in every use (elaborated in Section 6.3).</li>
+                    <li><strong>Time Perspective</strong> — economic decisions must distinguish between the short run (some factors fixed) and the long run (all factors variable).</li>
+                    <li><strong>Discounting Principle</strong> — a rupee receivable in the future is worth less than a rupee in hand today, since money has a time value.</li>
+                </ul>
+
+                <h2 id="choice">1. Choice as an Economic Problem</h2>
+                <h3 id="scarcitychoice">1.1 Scarcity and the Need to Choose</h3>
+                <p class="lead-text">The fundamental economic problem facing every individual, firm and economy is that resources are scarce (limited) while wants are virtually unlimited. Because not everything that is wanted can be produced or consumed, every economic agent is forced to choose which wants will be satisfied and which will remain unmet — choice, and the opportunity cost that comes with it, is therefore the very essence of economics.</p>
+
+                <h3 id="centralproblems">1.2 The Central Problems of an Economy</h3>
+                <ul class="custom-bullets">
+                    <li><strong>What to produce</strong> — which goods and services, and in what quantities, should be produced with the available scarce resources?</li>
+                    <li><strong>How to produce</strong> — which technique or combination of resources (labour-intensive or capital-intensive) should be used?</li>
+                    <li><strong>For whom to produce</strong> — how should the resulting output be distributed among the members of society?</li>
+                </ul>
+
+                <h3 id="ppc">1.3 The Production Possibility Curve (PPC)</h3>
+                <p>The Production Possibility Curve (or Frontier) illustrates the concept of choice and opportunity cost graphically. It shows the maximum possible combinations of two goods that an economy (or firm) can produce with its given resources and technology, assuming full and efficient utilization of those resources.</p>
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 500 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Production possibility curve showing efficient, inefficient and unattainable points">
+                        <rect width="500" height="380" fill="#ffffff" rx="14"/>
+                        <text x="250" y="24" text-anchor="middle" font-size="15" font-weight="600" fill="#2d3748">The Production Possibility Curve</text>
+
+                        <line x1="60" y1="340" x2="460" y2="340" stroke="#2d3748" stroke-width="1.6"/>
+                        <line x1="60" y1="340" x2="60" y2="50" stroke="#2d3748" stroke-width="1.6"/>
+                        <text x="260" y="362" text-anchor="middle" font-size="10.5" fill="#4a5568">Good X (e.g., Consumer Goods)</text>
+                        <text x="25" y="200" text-anchor="middle" font-size="10.5" fill="#4a5568" transform="rotate(-90 25 200)">Good Y (e.g., Capital Goods)</text>
+
+                        <path d="M60,60 Q100,260 460,340" fill="none" stroke="#2b6cb0" stroke-width="2.6"/>
+
+                        <circle cx="270" cy="158" r="5" fill="#2f855a"/>
+                        <text x="270" y="145" text-anchor="middle" font-size="9.5" font-weight="600" fill="#22543d">A — Efficient (on the curve)</text>
+
+                        <circle cx="220" cy="240" r="5" fill="#c53030"/>
+                        <text x="220" y="260" text-anchor="middle" font-size="9.5" font-weight="600" fill="#742a2a">B — Inefficient (inside)</text>
+
+                        <circle cx="360" cy="150" r="5" fill="#805ad5"/>
+                        <text x="360" y="137" text-anchor="middle" font-size="9.5" font-weight="600" fill="#553c9a">C — Unattainable (outside)</text>
+
+                        <text x="250" y="310" text-anchor="middle" font-size="9" fill="#718096">The curve bows outward because resources are not equally suited to producing both goods.</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 1 — Producing more of Good X (moving along the curve from left to right) requires giving up some quantity of Good Y — the curve itself is a picture of opportunity cost.</p>
+                </div>
+
+                <h2 id="decisionmaking">2. Concept of Decision-Making</h2>
+                <h3 id="decisionmeaning">2.1 Meaning of Managerial Decision-Making</h3>
+                <p class="lead-text">Managerial decision-making is the process of selecting the best available course of action from among competing alternatives, in order to achieve a specific managerial objective, subject to the constraints imposed by scarce resources. This process, its rationality, and its key steps were examined in detail in Unit 3 of Management Principles and Application; here the focus is specifically on how the economic conditions surrounding a decision shape the approach a manager must take.</p>
+
+                <h3 id="decisionconditions">2.2 Decision-Making Under Different Conditions</h3>
+                <table class="tutorial-table">
+                    <tr>
+                        <th>Condition</th>
+                        <th>Manager's Knowledge of Outcomes</th>
+                        <th>Typical Economic Tool Used</th>
+                    </tr>
+                    <tr><td><strong>Certainty</strong></td><td>Outcome of each alternative is known with certainty</td><td>Direct comparison of costs, revenues or profits</td></tr>
+                    <tr><td><strong>Risk</strong></td><td>Possible outcomes are known, and probabilities can be assigned to each</td><td>Expected value analysis, decision trees</td></tr>
+                    <tr><td><strong>Uncertainty</strong></td><td>Possible outcomes are known, but probabilities cannot be reliably assigned</td><td>Maximax, Maximin, Minimax Regret criteria</td></tr>
+                </table>
+                <p><em>These three conditions, and the decision criteria used under each, are explained with worked examples in Unit 3 of Management Principles and Application, Section 6 — the economic logic there applies directly to the demand- and pricing-related decisions covered in the rest of this unit.</em></p>
+
+                <h2 id="demandtheory">3. Theory of Demand</h2>
+                <h3 id="demandmeaning">3.1 Meaning of Demand</h3>
+                <p class="lead-text">In economics, demand refers to the quantity of a good or service that consumers are willing and able to purchase at a given price, during a given period of time. Both willingness and ability to pay are essential — a want that is not backed by purchasing power is not "demand" in the economic sense.</p>
+
+                <h3 id="lawofdemand">3.2 The Law of Demand</h3>
+                <p>The law of demand states that, other things remaining constant (the "ceteris paribus" condition), the quantity demanded of a good is inversely related to its price — as price rises, quantity demanded falls, and as price falls, quantity demanded rises.</p>
+
+                <h3 id="demandcurve">3.3 Demand Schedule and Demand Curve</h3>
+                <p><strong>Worked Example:</strong> Consider a good X with the inverse demand relationship P = 100 − 0.2Q (equivalently, Qd = 500 − 5P):</p>
+                <table class="tutorial-table">
+                    <tr><th>Price (₹)</th><th>Quantity Demanded (units)</th></tr>
+                    <tr><td>100</td><td>0</td></tr>
+                    <tr><td>80</td><td>100</td></tr>
+                    <tr><td>60</td><td>200</td></tr>
+                    <tr><td>50</td><td>250</td></tr>
+                    <tr><td>40</td><td>300</td></tr>
+                </table>
+
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Downward sloping demand curve with consumer surplus shaded at the market price">
+                        <rect width="500" height="400" fill="#ffffff" rx="14"/>
+                        <text x="250" y="24" text-anchor="middle" font-size="15" font-weight="600" fill="#2d3748">Demand Curve for Good X (and Consumer Surplus)</text>
+
+                        <line x1="60" y1="340" x2="460" y2="340" stroke="#2d3748" stroke-width="1.6"/>
+                        <line x1="60" y1="340" x2="60" y2="50" stroke="#2d3748" stroke-width="1.6"/>
+                        <text x="260" y="362" text-anchor="middle" font-size="10.5" fill="#4a5568">Quantity Demanded (units)</text>
+                        <text x="25" y="200" text-anchor="middle" font-size="10.5" fill="#4a5568" transform="rotate(-90 25 200)">Price (₹)</text>
+
+                        <polygon points="60,60 260,200 60,200" fill="#c6f6d5" opacity="0.7"/>
+                        <text x="120" y="150" text-anchor="middle" font-size="9.5" font-weight="600" fill="#22543d">Consumer</text>
+                        <text x="120" y="163" text-anchor="middle" font-size="9.5" font-weight="600" fill="#22543d">Surplus</text>
+
+                        <line x1="60" y1="60" x2="460" y2="340" stroke="#2b6cb0" stroke-width="2.6"/>
+                        <text x="420" y="330" text-anchor="middle" font-size="9.5" fill="#2c5282">Demand Curve (D)</text>
+
+                        <line x1="60" y1="200" x2="260" y2="200" stroke="#805ad5" stroke-width="1.8" stroke-dasharray="4,3"/>
+                        <line x1="260" y1="200" x2="260" y2="340" stroke="#805ad5" stroke-width="1.8" stroke-dasharray="4,3"/>
+                        <circle cx="260" cy="200" r="4.5" fill="#2d3748"/>
+                        <text x="260" y="357" text-anchor="middle" font-size="9" fill="#553c9a">Q = 250</text>
+                        <text x="45" y="203" text-anchor="end" font-size="9" fill="#553c9a">P = 50</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 2 — The demand curve slopes downward per the law of demand; the shaded triangle is the consumer surplus at a market price of ₹50, explained fully in Section 8.</p>
+                </div>
+
+                <h3 id="exceptions">3.4 Exceptions to the Law of Demand</h3>
+                <ul class="custom-bullets">
+                    <li><strong>Giffen Goods</strong> — certain inferior goods (essential to the very poor) where a fall in price can actually reduce quantity demanded, because the resulting rise in real income leads consumers to substitute toward a more preferred good.</li>
+                    <li><strong>Veblen (Conspicuous Consumption) Goods</strong> — luxury goods bought partly <em>for</em> their high price as a status symbol, where demand can rise as price rises.</li>
+                    <li><strong>Speculative Demand</strong> — if consumers expect prices to rise further, they may buy more even at a current higher price (e.g., stocks, real estate, or essential goods during expected shortages).</li>
+                </ul>
+
+                <h2 id="demandfunction">4. Demand Function</h2>
+                <h3 id="demandfunctionmeaning">4.1 Meaning and General Form</h3>
+                <p class="lead-text">A demand function expresses the quantity demanded of a good as a mathematical function of all the variables that influence it, not price alone.</p>
+                <div class="concept-block">
+                    <strong>Qdx = f(Px, Py, Y, T, E, N, A, ...)</strong><br><br>
+                    where: Px = price of the good itself; Py = price of related goods (substitutes/complements); Y = consumer income; T = tastes and preferences; E = expected future price; N = number of buyers; A = advertising/promotional expenditure.
+                </div>
+                <p><strong>Worked Example:</strong> If the demand function for Good X is Qdx = 500 − 5Px, then at a price of ₹50, quantity demanded = 500 − (5 × 50) = 500 − 250 = <strong>250 units</strong> — the same figure used to build the demand schedule and curve in Section 3.3.</p>
+
+                <h2 id="elasticity">5. Elasticity of Demand</h2>
+                <h3 id="elasticitymeaning">5.1 Meaning</h3>
+                <p class="lead-text">Elasticity of demand measures the degree of responsiveness of quantity demanded to a change in one of its determinants — price, income, or the price of a related good — expressed as a ratio of percentage changes, which makes it a "unit-free" measure comparable across very different goods.</p>
+
+                <h3 id="elasticitytypes">5.2 Types of Elasticity of Demand</h3>
+                <ul class="custom-bullets">
+                    <li><strong>Price Elasticity of Demand (Ed)</strong> — responsiveness of quantity demanded to a change in the good's own price.</li>
+                    <li><strong>Income Elasticity of Demand (Ey)</strong> — responsiveness of quantity demanded to a change in consumer income; positive for normal goods, negative for inferior goods.</li>
+                    <li><strong>Cross Elasticity of Demand (Exy)</strong> — responsiveness of the quantity demanded of one good to a change in the price of another; positive for substitutes, negative for complements.</li>
+                </ul>
+
+                <h3 id="elasticitydegrees">5.3 Degrees of Price Elasticity</h3>
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The five degrees of price elasticity of demand shown as small graphs">
+                        <rect width="600" height="200" fill="#ffffff" rx="14"/>
+                        <text x="300" y="20" text-anchor="middle" font-size="13.5" font-weight="600" fill="#2d3748">The Five Degrees of Price Elasticity of Demand</text>
+
+                        <line x1="40" y1="140" x2="130" y2="140" stroke="#a0aec0" stroke-width="1.2"/>
+                        <line x1="40" y1="140" x2="40" y2="50" stroke="#a0aec0" stroke-width="1.2"/>
+                        <line x1="40" y1="95" x2="130" y2="95" stroke="#2b6cb0" stroke-width="2.2"/>
+                        <text x="85" y="158" text-anchor="middle" font-size="7.5" fill="#4a5568">Perfectly Elastic</text>
+                        <text x="85" y="170" text-anchor="middle" font-size="7.5" fill="#718096">(Ed = ∞)</text>
+
+                        <line x1="152" y1="140" x2="242" y2="140" stroke="#a0aec0" stroke-width="1.2"/>
+                        <line x1="152" y1="140" x2="152" y2="50" stroke="#a0aec0" stroke-width="1.2"/>
+                        <line x1="162" y1="60" x2="232" y2="120" stroke="#2f855a" stroke-width="2.2"/>
+                        <text x="197" y="158" text-anchor="middle" font-size="7.5" fill="#4a5568">Relatively Elastic</text>
+                        <text x="197" y="170" text-anchor="middle" font-size="7.5" fill="#718096">(Ed &gt; 1)</text>
+
+                        <line x1="264" y1="140" x2="354" y2="140" stroke="#a0aec0" stroke-width="1.2"/>
+                        <line x1="264" y1="140" x2="264" y2="50" stroke="#a0aec0" stroke-width="1.2"/>
+                        <path d="M274,55 Q309,95 344,135" fill="none" stroke="#b7791f" stroke-width="2.2"/>
+                        <text x="309" y="158" text-anchor="middle" font-size="7.5" fill="#4a5568">Unit Elastic</text>
+                        <text x="309" y="170" text-anchor="middle" font-size="7.5" fill="#718096">(Ed = 1)</text>
+
+                        <line x1="376" y1="140" x2="466" y2="140" stroke="#a0aec0" stroke-width="1.2"/>
+                        <line x1="376" y1="140" x2="376" y2="50" stroke="#a0aec0" stroke-width="1.2"/>
+                        <line x1="401" y1="55" x2="421" y2="135" stroke="#c53030" stroke-width="2.2"/>
+                        <text x="421" y="158" text-anchor="middle" font-size="7.5" fill="#4a5568">Relatively Inelastic</text>
+                        <text x="421" y="170" text-anchor="middle" font-size="7.5" fill="#718096">(Ed &lt; 1)</text>
+
+                        <line x1="488" y1="140" x2="578" y2="140" stroke="#a0aec0" stroke-width="1.2"/>
+                        <line x1="488" y1="140" x2="488" y2="50" stroke="#a0aec0" stroke-width="1.2"/>
+                        <line x1="533" y1="55" x2="533" y2="135" stroke="#805ad5" stroke-width="2.2"/>
+                        <text x="533" y="158" text-anchor="middle" font-size="7.5" fill="#4a5568">Perfectly Inelastic</text>
+                        <text x="533" y="170" text-anchor="middle" font-size="7.5" fill="#718096">(Ed = 0)</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 3 — The flatter the demand curve, the more elastic (responsive) demand is to a change in price.</p>
+                </div>
+
+                <h3 id="elasticitymeasurement">5.4 Measurement of Price Elasticity</h3>
+                <p><strong>(a) Percentage (Proportionate) Method:</strong></p>
+                <div class="concept-block">
+                    <strong>Ed = (% Change in Quantity Demanded) ÷ (% Change in Price)</strong>
+                </div>
+                <p><strong>Worked Example:</strong> When the price of Good X falls from ₹50 to ₹40, quantity demanded rises from 250 to 300 units.</p>
+                <table class="tutorial-table">
+                    <tr><td>% Change in Quantity Demanded = (300 − 250) ÷ 250 × 100</td><td>+20%</td></tr>
+                    <tr><td>% Change in Price = (40 − 50) ÷ 50 × 100</td><td>−20%</td></tr>
+                    <tr><td><strong>Ed = 20% ÷ (−20%)</strong></td><td><strong>−1 (i.e., |Ed| = 1, Unit Elastic)</strong></td></tr>
+                </table>
+
+                <p><strong>(b) Total Outlay (Total Expenditure) Method:</strong> Observe how total consumer expenditure (Price × Quantity) changes as price changes.</p>
+                <table class="tutorial-table">
+                    <tr><th>Price (₹)</th><th>Quantity</th><th>Total Outlay (₹)</th></tr>
+                    <tr><td>20</td><td>100</td><td>2,000</td></tr>
+                    <tr><td>15</td><td>150</td><td>2,250</td></tr>
+                </table>
+                <p><em>Interpretation:</em> As price fell from ₹20 to ₹15, total outlay <strong>rose</strong> from ₹2,000 to ₹2,250 — whenever a price fall increases total outlay (or a price rise decreases it), demand is <strong>elastic (Ed &gt; 1)</strong> over that range. If outlay had fallen along with price, demand would be inelastic; if outlay had stayed unchanged, demand would be unit elastic.</p>
+
+                <h3 id="elasticityfactors">5.5 Factors Affecting Price Elasticity of Demand</h3>
+                <ul class="custom-bullets">
+                    <li><strong>Availability of substitutes</strong> — the more close substitutes a good has, the more elastic its demand.</li>
+                    <li><strong>Nature of the good</strong> — necessities tend to have inelastic demand; luxuries tend to have elastic demand.</li>
+                    <li><strong>Proportion of income spent</strong> — goods that take up a larger share of the consumer's budget tend to have more elastic demand.</li>
+                    <li><strong>Time period</strong> — demand tends to be more elastic in the long run, as consumers have more time to adjust their behaviour.</li>
+                    <li><strong>Number of uses of the good</strong> — a good with many alternative uses tends to have more elastic demand.</li>
+                </ul>
+
+                <h2 id="cardinalutility">6. Cardinal Utility Theory</h2>
+                <h3 id="utilitymeaning">6.1 Meaning of Utility and Assumptions</h3>
+                <p class="lead-text">Utility is the satisfaction a consumer derives from consuming a good or service. The cardinal utility approach (associated with Alfred Marshall) assumes that utility can be measured numerically, in units called "utils," and that the marginal utility of money itself remains constant, allowing a consumer's satisfaction to be added, subtracted and compared across goods.</p>
+
+                <h3 id="diminishingmu">6.2 Law of Diminishing Marginal Utility</h3>
+                <p>The law of diminishing marginal utility states that as a consumer consumes successive additional units of a good (holding consumption of all other goods constant), the additional (marginal) utility derived from each successive unit tends to decline.</p>
+                <table class="tutorial-table">
+                    <tr><th>Units Consumed</th><th>Total Utility (utils)</th><th>Marginal Utility (utils)</th></tr>
+                    <tr><td>1</td><td>20</td><td>20</td></tr>
+                    <tr><td>2</td><td>36</td><td>16</td></tr>
+                    <tr><td>3</td><td>48</td><td>12</td></tr>
+                    <tr><td>4</td><td>56</td><td>8</td></tr>
+                    <tr><td>5</td><td>60</td><td>4</td></tr>
+                </table>
+
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 520 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Chart showing total utility rising at a decreasing rate and marginal utility declining as units consumed increase">
+                        <rect width="520" height="300" fill="#ffffff" rx="14"/>
+                        <text x="260" y="22" text-anchor="middle" font-size="14.5" font-weight="600" fill="#2d3748">Total Utility and Diminishing Marginal Utility</text>
+
+                        <line x1="55" y1="250" x2="480" y2="250" stroke="#2d3748" stroke-width="1.5"/>
+                        <line x1="55" y1="250" x2="55" y2="40" stroke="#2d3748" stroke-width="1.5"/>
+                        <text x="265" y="272" text-anchor="middle" font-size="9.5" fill="#4a5568">Units Consumed</text>
+                        <text x="22" y="145" text-anchor="middle" font-size="9.5" fill="#4a5568" transform="rotate(-90 22 145)">Utility (utils)</text>
+
+                        <polyline points="95,225 175,155 255,105 335,73 415,58" fill="none" stroke="#2b6cb0" stroke-width="2.4"/>
+                        <text x="440" y="52" text-anchor="middle" font-size="8.5" fill="#2c5282">Total Utility</text>
+
+                        <polyline points="95,88 175,118 255,148 335,178 415,208" fill="none" stroke="#c53030" stroke-width="2.4"/>
+                        <text x="440" y="212" text-anchor="middle" font-size="8.5" fill="#742a2a">Marginal Utility</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 4 — As long as marginal utility is positive, total utility keeps rising — but at a slower and slower rate, since each successive unit adds less satisfaction than the one before.</p>
+                </div>
+
+                <h3 id="equimarginal">6.3 Law of Equi-Marginal Utility (Consumer Equilibrium)</h3>
+                <p class="lead-text">A rational consumer, spending a fixed income across two or more goods, maximizes total satisfaction by allocating that income so that the marginal utility per rupee spent is equal across all goods purchased.</p>
+                <div class="concept-block">
+                    <strong>Consumer Equilibrium Condition: MUx ÷ Px = MUy ÷ Py = Marginal Utility of Money</strong>
+                </div>
+                <p><strong>Worked Example:</strong> A consumer has an income of ₹18 to spend on Apples (₹2 each) and Oranges (₹3 each), with the following marginal utility schedule:</p>
+                <table class="tutorial-table">
+                    <tr><th>Unit</th><th>MU of Apples</th><th>MU/Price (÷2)</th><th>MU of Oranges</th><th>MU/Price (÷3)</th></tr>
+                    <tr><td>1</td><td>30</td><td>15</td><td>36</td><td>12</td></tr>
+                    <tr><td>2</td><td>24</td><td>12</td><td>27</td><td>9</td></tr>
+                    <tr><td>3</td><td>18</td><td>9</td><td>18</td><td>6</td></tr>
+                    <tr><td>4</td><td>12</td><td>6</td><td>9</td><td>3</td></tr>
+                </table>
+                <p><em>Analysis:</em> The consumer buys units in descending order of MU/Price. Equilibrium is reached at <strong>4 Apples and 3 Oranges</strong>, where MU/Price is equal for both goods (Apple's 4th unit = Orange's 3rd unit = 6), at a total cost of (4 × ₹2) + (3 × ₹3) = ₹8 + ₹9 = <strong>₹17</strong> — close to the full ₹18 income, with the small remainder reflecting the indivisibility of whole units in this simplified example.</p>
+
+                <h2 id="indifferencecurve">7. Indifference Curve Theory (Ordinal Utility Approach)</h2>
+                <h3 id="icmeaning">7.1 Meaning and Assumptions</h3>
+                <p class="lead-text">The indifference curve approach, developed by J.R. Hicks and R.G.D. Allen, avoids the assumption that utility can be measured numerically. Instead, it assumes only that a consumer can <em>rank</em> (order) different combinations of two goods according to preference — an "ordinal" rather than "cardinal" measure of satisfaction.</p>
+
+                <h3 id="icproperties">7.2 Properties of Indifference Curves</h3>
+                <ul class="custom-bullets">
+                    <li>An indifference curve shows all combinations of two goods that give the consumer an equal level of total satisfaction, so the consumer is indifferent between any two points on the same curve.</li>
+                    <li>Indifference curves slope downward from left to right, reflecting the fact that more of one good must be compensated by less of the other to keep satisfaction constant.</li>
+                    <li>Indifference curves are convex to the origin, reflecting the diminishing marginal rate of substitution between the two goods.</li>
+                    <li>Higher indifference curves represent higher levels of satisfaction, and indifference curves belonging to the same consumer can never intersect.</li>
+                </ul>
+
+                <h3 id="budgetline">7.3 The Budget Line</h3>
+                <p>The budget line (or price line) shows all the combinations of two goods that a consumer can just afford to buy, given their income and the prices of the two goods. Its slope reflects the ratio of the two goods' prices (Px ÷ Py).</p>
+
+                <h3 id="icequilibrium">7.4 Consumer Equilibrium (Tangency Condition)</h3>
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 480 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Consumer equilibrium shown as the tangency point between the budget line and the highest attainable indifference curve">
+                        <rect width="480" height="380" fill="#ffffff" rx="14"/>
+                        <text x="240" y="24" text-anchor="middle" font-size="15" font-weight="600" fill="#2d3748">Consumer Equilibrium: IC Tangent to Budget Line</text>
+
+                        <line x1="60" y1="330" x2="440" y2="330" stroke="#2d3748" stroke-width="1.6"/>
+                        <line x1="60" y1="330" x2="60" y2="50" stroke="#2d3748" stroke-width="1.6"/>
+                        <text x="250" y="352" text-anchor="middle" font-size="10.5" fill="#4a5568">Good X</text>
+                        <text x="25" y="190" text-anchor="middle" font-size="10.5" fill="#4a5568" transform="rotate(-90 25 190)">Good Y</text>
+
+                        <path d="M90,320 Q220,230 400,150" fill="none" stroke="#a0aec0" stroke-width="2"/>
+                        <text x="395" y="140" text-anchor="middle" font-size="9" fill="#718096">IC₃ (too high — unaffordable)</text>
+
+                        <path d="M100,300 Q220,215 360,170" fill="none" stroke="#2f855a" stroke-width="2.6"/>
+                        <text x="352" y="160" text-anchor="middle" font-size="9" fill="#22543d">IC₂ (equilibrium)</text>
+
+                        <path d="M110,280 Q220,205 320,190" fill="none" stroke="#a0aec0" stroke-width="2"/>
+                        <text x="310" y="205" text-anchor="middle" font-size="9" fill="#718096">IC₁ (attainable but lower)</text>
+
+                        <line x1="70" y1="315" x2="410" y2="65" stroke="#2b6cb0" stroke-width="2.4"/>
+                        <text x="400" y="55" text-anchor="middle" font-size="9.5" fill="#2c5282">Budget Line</text>
+
+                        <circle cx="222" cy="212" r="5.5" fill="#c53030"/>
+                        <text x="222" y="240" text-anchor="middle" font-size="10" font-weight="600" fill="#742a2a">E (Equilibrium)</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 5 — Consumer equilibrium occurs where the budget line is exactly tangent to the highest indifference curve the consumer can reach (IC₂ at point E) — any higher curve (IC₃) is unaffordable, and any lower one (IC₁) leaves satisfaction unnecessarily low.</p>
+                </div>
+                <p>At the equilibrium point, the slope of the indifference curve (the Marginal Rate of Substitution, MRSxy) exactly equals the slope of the budget line (the price ratio Px ÷ Py) — the consumer cannot reach a higher indifference curve without violating the budget constraint.</p>
+
+                <h2 id="consumersurplus">8. Consumer Surplus</h2>
+                <h3 id="csmeaning">8.1 Meaning</h3>
+                <p class="lead-text">Consumer surplus, a concept developed by Alfred Marshall, is the difference between the maximum price a consumer is willing and able to pay for a given quantity of a good (as shown by the demand curve) and the price they actually have to pay (the market price). It is a monetary measure of the net benefit consumers gain from being able to buy a good at the market price.</p>
+
+                <h3 id="csworked">8.2 Worked Example</h3>
+                <p>Using the demand function from Section 4 (Qd = 500 − 5P, so the inverse demand curve is P = 100 − 0.2Q) and a market price of ₹50 (at which Qd = 250 units, as calculated in Section 4.1):</p>
+                <div class="concept-block">
+                    <strong>Consumer Surplus = ½ × Base × Height = ½ × Quantity × (Choke Price − Market Price)</strong><br>
+                    Consumer Surplus = ½ × 250 × (100 − 50) = ½ × 250 × 50 = <strong>₹6,250</strong>
+                </div>
+                <p>This ₹6,250 represents the total extra value consumers collectively receive — because most units were valued by consumers at a price above ₹50 (as shown by the demand curve in Fig. 2), yet everyone pays only the uniform market price of ₹50.</p>
+
+                <h2 id="applications">9. Demand and Price: Managerial Applications</h2>
+                <p class="lead-text">The theory of demand covered in Sections 3–8 is not merely academic — it directly informs several practical managerial challenges:</p>
+                <ul class="custom-bullets">
+                    <li><strong>Pricing decisions</strong> — a manager facing inelastic demand (Section 5.3) can raise price to increase total revenue; a manager facing elastic demand should generally avoid price increases, or consider price cuts to boost revenue.</li>
+                    <li><strong>Price discrimination</strong> — knowledge of different elasticities across customer segments (e.g., business vs. leisure air travellers) allows firms to charge different prices to different groups, capturing more of the consumer surplus described in Section 8.</li>
+                    <li><strong>Product bundling and discounting</strong> — understanding the shape of the demand curve and consumer surplus helps managers judge how much a promotional discount will actually increase sales volume.</li>
+                    <li><strong>Tax incidence and subsidy design</strong> — the relative price elasticity of demand and supply determines how much of a tax burden (or subsidy benefit) is passed on to consumers versus absorbed by producers.</li>
+                    <li><strong>New product forecasting</strong> — estimating a demand function (Section 4) for a new or existing product allows a manager to simulate the revenue impact of different pricing strategies before committing to one.</li>
+                </ul>
+
+                <h2 id="marketdemand">10. Derivation of Market Demand</h2>
+                <h3 id="marketdemandmeaning">10.1 Meaning: Horizontal Summation</h3>
+                <p class="lead-text">Market demand is the total quantity of a good that all buyers in the market are willing and able to purchase at each possible price. It is derived by adding together, at each price level, the individual quantities demanded by every buyer in the market — a process called horizontal summation, since quantities (the horizontal axis) are added at each given price.</p>
+
+                <div class="diagram-wrap">
+                    <svg viewBox="0 0 560 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Deriving market demand by horizontally summing two individual demand curves">
+                        <rect width="560" height="260" fill="#ffffff" rx="14"/>
+                        <text x="280" y="22" text-anchor="middle" font-size="14.5" font-weight="600" fill="#2d3748">Deriving Market Demand (Horizontal Summation)</text>
+
+                        <line x1="40" y1="220" x2="150" y2="220" stroke="#2d3748" stroke-width="1.3"/>
+                        <line x1="40" y1="220" x2="40" y2="50" stroke="#2d3748" stroke-width="1.3"/>
+                        <line x1="40" y1="60" x2="140" y2="210" stroke="#2b6cb0" stroke-width="2.2"/>
+                        <text x="95" y="238" text-anchor="middle" font-size="9" fill="#4a5568">Buyer A's Demand</text>
+
+                        <text x="175" y="140" text-anchor="middle" font-size="16" font-weight="700" fill="#2d3748">+</text>
+
+                        <line x1="200" y1="220" x2="310" y2="220" stroke="#2d3748" stroke-width="1.3"/>
+                        <line x1="200" y1="220" x2="200" y2="50" stroke="#2d3748" stroke-width="1.3"/>
+                        <line x1="200" y1="60" x2="285" y2="210" stroke="#2f855a" stroke-width="2.2"/>
+                        <text x="255" y="238" text-anchor="middle" font-size="9" fill="#4a5568">Buyer B's Demand</text>
+
+                        <text x="335" y="140" text-anchor="middle" font-size="16" font-weight="700" fill="#2d3748">=</text>
+
+                        <line x1="365" y1="220" x2="530" y2="220" stroke="#2d3748" stroke-width="1.3"/>
+                        <line x1="365" y1="220" x2="365" y2="50" stroke="#2d3748" stroke-width="1.3"/>
+                        <line x1="365" y1="60" x2="500" y2="210" stroke="#c53030" stroke-width="2.6"/>
+                        <text x="450" y="238" text-anchor="middle" font-size="9" fill="#4a5568">Market Demand (A + B)</text>
+                    </svg>
+                    <p class="diagram-caption">Fig. 6 — At every given price, the market demand curve's quantity is simply the sum of every individual buyer's quantity demanded at that same price.</p>
+                </div>
+
+                <h3 id="marketdemandworked">10.2 Worked Example</h3>
+                <table class="tutorial-table">
+                    <tr><th>Price (₹)</th><th>Buyer A's Demand (units)</th><th>Buyer B's Demand (units)</th><th>Market Demand (A + B)</th></tr>
+                    <tr><td>10</td><td>20</td><td>15</td><td><strong>35</strong></td></tr>
+                    <tr><td>8</td><td>25</td><td>20</td><td><strong>45</strong></td></tr>
+                </table>
+
+                <h2 id="determinants">11. Determinants of Demand</h2>
+                <ul class="custom-bullets">
+                    <li><strong>Price of the good itself</strong> — the basis of the law of demand (Section 3.2).</li>
+                    <li><strong>Income of consumers</strong> — demand for normal goods rises with income; demand for inferior goods falls with income.</li>
+                    <li><strong>Price of related goods</strong> — a rise in the price of a substitute increases demand for the good in question; a rise in the price of a complement decreases it.</li>
+                    <li><strong>Tastes and preferences</strong> — shaped by fashion, advertising, and changing consumer habits.</li>
+                    <li><strong>Consumer expectations</strong> — expectations of future price rises or shortages can increase current demand.</li>
+                    <li><strong>Population and number of buyers</strong> — a larger market generally means higher total demand.</li>
+                    <li><strong>Advertising and promotional expenditure</strong> — can shift the entire demand curve outward by influencing tastes and awareness.</li>
+                    <li><strong>Government policy</strong> — taxes, subsidies, and regulations can raise or lower the effective price faced by consumers.</li>
+                </ul>
+
+                <h2 id="forecasting">12. Overview of Demand Forecasting</h2>
+                <h3 id="forecastingmeaning">12.1 Meaning and Need</h3>
+                <p class="lead-text">Demand forecasting is the process of estimating the likely future demand for a product or service, providing the foundation for a firm's production planning, budgeting, inventory management (Unit 5 of Accounting for Managers), staffing and financial planning.</p>
+
+                <h3 id="forecastingmethods">12.2 Methods of Demand Forecasting</h3>
+                <table class="tutorial-table">
+                    <tr><th>Category</th><th>Method</th><th>Brief Description</th></tr>
+                    <tr><td rowspan="2"><strong>Survey Methods</strong></td><td>Consumer Survey Method</td><td>Directly asking existing or potential consumers about their purchase intentions</td></tr>
+                    <tr><td>Expert/Sales-Force Opinion &amp; Delphi Method</td><td>Systematically pooling and refining the judgement of salespeople or industry experts</td></tr>
+                    <tr><td rowspan="3"><strong>Statistical Methods</strong></td><td>Trend Projection (Time-Series Analysis)</td><td>Extrapolating a company's own historical sales data forward, assuming past patterns continue</td></tr>
+                    <tr><td>Barometric (Leading Indicator) Method</td><td>Using a related economic indicator that historically moves ahead of demand to predict future changes</td></tr>
+                    <tr><td>Econometric (Regression) Method</td><td>Statistically estimating the demand function itself (Section 4) from historical data on price, income and other determinants</td></tr>
+                </table>
+
+                <h2 id="numericalproblems">13. Numerical Problems Related to Management</h2>
+                <p class="lead-text">The following additional problems draw together the concepts covered in this unit.</p>
+                <p><strong>Problem 1 (Demand Function):</strong> If Qd = 800 − 4P, find the quantity demanded when price = ₹100.<br>
+                <em>Solution:</em> Qd = 800 − (4 × 100) = 800 − 400 = <strong>400 units</strong>.</p>
+                <p><strong>Problem 2 (Price Elasticity):</strong> When the price of a good rises from ₹25 to ₹30, quantity demanded falls from 400 to 340 units. Calculate the price elasticity of demand and state whether demand is elastic or inelastic.<br>
+                <em>Solution:</em> % Change in Quantity = (340 − 400) ÷ 400 × 100 = −15%. % Change in Price = (30 − 25) ÷ 25 × 100 = +20%. Ed = −15% ÷ 20% = <strong>−0.75</strong> (|Ed| = 0.75 &lt; 1, so demand is <strong>relatively inelastic</strong>).</p>
+                <p><strong>Problem 3 (Consumer Surplus):</strong> If the inverse demand curve is P = 60 − 0.5Q and the market price is ₹20, find the consumer surplus.<br>
+                <em>Solution:</em> At P = 20: 20 = 60 − 0.5Q → Q = 80 units. Consumer Surplus = ½ × 80 × (60 − 20) = ½ × 80 × 40 = <strong>₹1,600</strong>.</p>
+
+                <h2 id="review">Review Questions</h2>
+                <h3>Short Answer Type</h3>
+                <ol class="custom-bullets">
+                    <li>Define managerial economics. State any two basic economic concepts used in managerial decision-making.</li>
+                    <li>Why does scarcity make choice unavoidable? State the three central problems of an economy.</li>
+                    <li>State the law of demand and give an example of an exception to it.</li>
+                    <li>Write the general form of a demand function and explain any three of its determinants.</li>
+                    <li>Distinguish between price elasticity, income elasticity and cross elasticity of demand.</li>
+                    <li>State the law of diminishing marginal utility.</li>
+                    <li>State the condition for consumer equilibrium under the indifference curve approach.</li>
+                    <li>Define consumer surplus.</li>
+                    <li>How is market demand derived from individual demand curves?</li>
+                    <li>Name any two methods of demand forecasting.</li>
+                </ol>
+                <h3>Long Answer / Essay Type / Numerical</h3>
+                <ol class="custom-bullets">
+                    <li>Explain choice as the central economic problem, using the Production Possibility Curve to illustrate opportunity cost.</li>
+                    <li>Explain decision-making under conditions of certainty, risk and uncertainty in an economic context.</li>
+                    <li>Explain the law of demand and the exceptions to it, with suitable examples.</li>
+                    <li>Explain the different types and degrees of elasticity of demand, and the methods of measuring price elasticity, with numerical examples.</li>
+                    <li>Explain the cardinal utility theory of consumer behaviour, including the law of diminishing marginal utility and the law of equi-marginal utility, with a numerical illustration.</li>
+                    <li>Explain the indifference curve theory of consumer equilibrium, including the properties of indifference curves and the role of the budget line.</li>
+                    <li>Explain the concept of consumer surplus and calculate it from a given demand function and market price.</li>
+                    <li>Discuss the practical managerial applications of demand and price theory.</li>
+                    <li>Explain the derivation of market demand from individual demand curves, and discuss the major determinants of demand.</li>
+                    <li>Discuss the need for, and the major methods of, demand forecasting available to a business manager.</li>
+                </ol>
+
+                <h2 id="summary">Summary</h2>
+                <p>This unit introduced managerial economics as the application of economic theory to business decision-making, starting from the basic economic concepts of scarcity, opportunity cost, and marginal and equi-marginal analysis. It explained choice as the fundamental economic problem, illustrated through the central "what, how, for whom" questions and the Production Possibility Curve, and linked managerial decision-making to the conditions of certainty, risk and uncertainty covered more fully in Management Principles and Application. The unit then built a complete picture of demand theory: the law of demand and its exceptions (Giffen and Veblen goods), the demand function and its determinants, and elasticity of demand (price, income and cross elasticity, its five degrees, and the percentage and total outlay methods of measurement). It covered both major theories of consumer behaviour — cardinal utility theory (diminishing marginal utility and the equi-marginal principle) and the ordinal indifference curve approach (properties of indifference curves, the budget line, and the tangency condition for consumer equilibrium) — and explained consumer surplus as the monetary value of the gap between what consumers are willing to pay and what they actually pay. Finally, it connected this theory to managerial practice through applications in pricing and price discrimination, explained how individual demand curves are horizontally summed into market demand, listed the key determinants of demand, and gave an overview of survey-based and statistical methods of demand forecasting — closing with fully worked numerical problems drawing the unit's concepts together.</p>
+
+            </div>
+
+            <div class="completion-section">
+                <button id="markCompleteBtn" class="complete-btn">✔️ Mark as Complete</button>
+            </div>
+
+            <div class="pagination">
+                <button class="prev-btn hover-effect disabled">❮ Previous</button>
+                <a href="s1-eco-u2.html" style="text-decoration: none;"><button class="next-btn hover-effect">Unit 2: Production and the Firm ❯</button></a>
+            </div>
+        </main>
+
+        <aside class="right-sidebar" id="rightSidebar">
+            <div class="widget sticky-widget premium-card">
+                <h3>Unit Contents</h3>
+                <ul class="toc-list">
+                    <li><a href="#intro">0. Introduction to Managerial Economics</a></li>
+                    <li><a href="#choice">1. Choice as an Economic Problem</a></li>
+                    <li><a href="#decisionmaking">2. Concept of Decision-Making</a></li>
+                    <li><a href="#demandtheory">3. Theory of Demand</a></li>
+                    <li><a href="#demandfunction">4. Demand Function</a></li>
+                    <li><a href="#elasticity">5. Elasticity of Demand</a></li>
+                    <li><a href="#cardinalutility">6. Cardinal Utility Theory</a></li>
+                    <li><a href="#indifferencecurve">7. Indifference Curve Theory</a></li>
+                    <li><a href="#consumersurplus">8. Consumer Surplus</a></li>
+                    <li><a href="#applications">9. Demand &amp; Price: Applications</a></li>
+                    <li><a href="#marketdemand">10. Derivation of Market Demand</a></li>
+                    <li><a href="#determinants">11. Determinants of Demand</a></li>
+                    <li><a href="#forecasting">12. Demand Forecasting Overview</a></li>
+                    <li><a href="#numericalproblems">13. Numerical Problems</a></li>
+                    <li><a href="#review">Review Questions</a></li>
+                    <li><a href="#summary">Summary</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
